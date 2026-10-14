@@ -126,7 +126,7 @@ Prioridades: **P0** integridad · **P1** núcleo presupuestario · **P2** produc
 
 | ID | Función documentada | Evidencia | Estado PRECOST | Implementación actual | Brecha funcional | Pri | Dependencias | Prueba de aceptación | Estado |
 |---|---|---|---|---|---|---|---|---|---|
-| S-080 | **Calculadora: evaluar precio de una actividad con coeficientes personalizados** | pág. 18 | ausente | — | herramienta de análisis rápido por actividad | **P1** | S-003, descomposición III-C | abrir calculadora, elegir 012141, aplicar coef. 1.15, ver precio recalculado con traza | **en desarrollo (Fase D de esta misión)** |
+| S-080 | **Calculadora: evaluar precio de una actividad con coeficientes personalizados** | pág. 18 | overlay `calculadora.js` | Fase D MISIÓN IV | herramienta de análisis rápido por actividad | **P1** | S-003, descomposición III-C | abrir calculadora, elegir 012141, aplicar coef. 1.15, ver precio recalculado con traza | **probado (Fase D: 19/19 suite + 18/18 navegador)** |
 | S-081 | Normas de consumo: editar, exportar e imprimir fichas | pág. 18 | parcial | consulta PRECODI (III-B/C) | edición e impresión | P2 | S-011 | exportar ficha de norma 012141 | pendiente |
 | S-082 | Exportaciones/importaciones generales (obras, renglones, macroactividades, catálogos, paquetes) | pág. 18 | parcial | export JSON presupuesto | formatos e alcance | P2 | S-022 | exportar catálogo de renglones | pendiente |
 | S-083 | Precisión de resultados de A.C. y fichas | pág. 18 | parcial | reglas de precisión propias | — | P2 | — | — | pendiente |

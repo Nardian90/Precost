@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-14T06:26:38.258022+00:00",
+ "generado": "2026-10-14T07:50:57.012607+00:00",
  "versiones": [
   {
    "id": 1,
@@ -126,7 +126,7 @@
    "catalogo_id": 1,
    "version": "2017-raiz",
    "fecha_publicacion": null,
-   "fecha_importacion": "2026-10-14 06:26:31",
+   "fecha_importacion": "2026-10-14 07:50:50",
    "fuente_archivo": "/home/z/my-project/work/recuperacion/analisis/PRECODI/Codigo (PRECODI)/codigo.mdb",
    "fuente_sha256": "c4f94962c3e0cde62bc455262830904b033425f00f1946000dc9eb2869e175bc",
    "fuente_detalle": "codigo.mdb raíz 2017 (canónico, junto a Codigo.exe)",
@@ -136,8 +136,8 @@
     {
      "id": 8,
      "version_id": 8,
-     "iniciada_en": "2026-10-14T06:26:31.169072+00:00",
-     "finalizada_en": "2026-10-14T06:26:38.202804+00:00",
+     "iniciada_en": "2026-10-14T07:50:49.898726+00:00",
+     "finalizada_en": "2026-10-14T07:50:56.956374+00:00",
      "script": "importar_precodi.py",
      "filas_por_tabla": "{\"Nomenclador de SobreGrupos RV\": {\"ya_existentes\": 40}, \"Nomenclador de Grupos RV\": {\"ya_existentes\": 320}, \"Nomenclador de SubGrupos RV\": {\"ya_existentes\": 1518}, \"Nomenclador de Materiales\": {\"insertadas\": 7769}, \"Nomenclador de Mano de Obra\": {\"insertadas\": 248}, \"Nomenclador de Equipos\": {\"insertadas\": 414, \"omitidas_invalidas\": 1}, \"_controles\": {\"_ej_Nomenclador de Equipos_fila con código nulo/vacío (omitida)\": 1}, \"Nomenclador de Juegos\": {\"insertadas\": 328}, \"Nomenclador de Semielaborados\": {\"insertadas\": 353}, \"Nomenclador de RV\": {\"insertadas\": 15351}, \"Norma de Materiales\": {\"insertadas\": 18060}, \"Norma de Mano de Obra\": {\"insertadas\": 41662}, \"Norma de Equipos\": {\"insertadas\": 12909}, \"Norma de Juegos\": {\"insertadas\": 341}, \"Norma de Semielaborados\": {\"insertadas\": 1006}, \"Norma Juego Material\": {\"insertadas\": 2936}, \"Norma Semi Material\": {\"insertadas\": 681}, \"Norma Semi RHumanos\": {\"insertadas\": 149}, \"Norma Semi Equipos\": {\"insertadas\": 120}, \"Norma Juego Material1\": {\"fuente\": 2936, \"insertadas\": 0, \"nota\": \"duplicado exacto de Norma Juego Material\"}}",
      "advertencias": "[\"Detectado intento de importación anterior incompleto para esta versión: se purga la cáscara sin filas y se reintenta desde cero\", \"tabla opcional 'Actividades de Estimación' presente en esta base (se procesa en SBD)\", \"tabla opcional 'Norma Juego Material1' presente en esta base (verificada como duplicada)\", \"Nomenclador de Equipos: fila con código nulo/vacío (omitida)\", \"Norma Juego Material1: copia EXACTA de Norma Juego Material (2936 filas idénticas) → no se reimporta (verificado con datos)\"]",
