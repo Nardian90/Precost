@@ -85,14 +85,14 @@ Prioridades: **P0** integridad · **P1** núcleo presupuestario · **P2** produc
 
 | ID | Función documentada | Evidencia | Estado PRECOST | Implementación actual | Brecha funcional | Pri | Dependencias | Prueba de aceptación | Estado |
 |---|---|---|---|---|---|---|---|---|---|
-| S-050 | Indicadores M/H/E por A.C. y especificación | págs. 32–33 | parcial | pestaña Recursos: flags M/H/E (III-C) | edición de la descomposición en el presupuesto | P1 | S-034 | quitar palomita M y ver recursos especificables | pendiente |
+| S-050 | Indicadores M/H/E por A.C. y especificación | págs. 32–33 | implementado (MISIÓN V) | barra de palomitas M/H/E ligada al campo existente `it.flags` (mismo modelo del motor y de la pestaña Partidas); quitar palomita desactiva las filas de la norma de esa familia y activa su especificación; reponer descarta lo especificado (confirmación) | — (con BD completa: «Cargar normas» sobre filas normativas) | P1 | S-034 | ✓ 23/23 navegador + 28/28 suite (validar_v_navegador.sh; pasos 17–18b pendientes de datos) | verificada (parcial por datos) |
 | S-051 | Panel multiventana: Materiales, Semielaborados, Juegos, RH del semi, Equipos del semi, Producciones de taller | págs. 33–34 | parcial | expansión de juegos/semis (III-C) | edición + producciones de taller | P2 | S-050 | abrir panel y navegar pestañas | pendiente |
-| S-052 | Cargar normas por defecto y modificar cantidad/precio | pág. 34 | parcial | descomposición con coef×precio (III-C) | modificación persistente en el presupuesto | P1 | S-050 | modificar coeficiente y recalcular importe | pendiente |
+| S-052 | Cargar normas por defecto y modificar cantidad/precio | pág. 34 | implementado (MISIÓN V) | edición in-line de coef/precio con original→editado y reversión por fila/familia/global; capa `it.edicionRecursos` persistente en el presupuesto (p3pro.budgets); entrada manual y desde el nomenclador (/api/recursos) | — (con BD completa: edición sobre filas de la propia norma) | P1 | S-050 | ✓ 23/23 navegador + 28/28 suite (validar_v_navegador.sh; pasos 17–18 pendientes de datos) | verificada (parcial por datos) |
 | S-053 | Ir a catálogo de materiales y crear nuevos | pág. 33 | existente | vista catálogo + PRECODI | crear material propio no persistido | P2 | S-011 | crear material y usarlo en descomposición | pendiente |
 | S-054 | Descomponer semielaborados seleccionados | pág. 35 | parcial | expansión visual (III-C) | descomposición real en el presupuesto | P2 | S-051 | descomponer mortero → materiales separados | pendiente |
 | S-055 | Especificar recursos humanos | pág. 35 | parcial | ver RH de la norma | edición | P2 | S-050 | cambiar especialidad y recalcular | pendiente |
 | S-056 | Especificar equipos | pág. 35 | parcial | ver equipos de la norma | edición | P2 | S-050 | cambiar equipo y recalcular | pendiente |
-| S-057 | Marca visual de especificado (sombreado rojo) | pág. 35 | ausente | — | feedback de estado | P2 | S-050 | ver marca tras especificar | pendiente |
+| S-057 | Marca visual de especificado (sombreado rojo) | pág. 35 | parcial (MISIÓN V) | chip de la familia sombreado en rojo + texto «(n esp.)» cuando tiene recursos especificados | marca por fila en la tabla | P2 | S-050 | ✓ visible en las capturas de validación | parcial |
 
 ## M6 — Informes de presupuesto y exportación (págs. 36–42)
 
