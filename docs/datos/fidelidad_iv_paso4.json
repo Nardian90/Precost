@@ -1,0 +1,3529 @@
+{
+ "1_descripciones": {
+  "clases": {
+   "exacta": 13619,
+   "artefacto_sufijo_pdf": 104,
+   "diferente_real": 167,
+   "equivalente_espaciado_pdf": 1312,
+   "truncada_pdf": 709,
+   "equivalente_puntuacion_pdf": 1
+  },
+  "ejemplos_reales": [
+   {
+    "codigo": "011342",
+    "emb": "DE MAS DE 300 HASTA 600 MM DE DIAMETRO (400 MM DIAMETRO PROMEDIO) CON DESRAIZAMIENTO , PARA LA CON ST. DE TROCHAS O ACCESOS PARA LINEAS DE 110 Y 220 KV EN ZONAS MONTAÑOSAS CON ALTAS PENDIENTES. L ista de Costos de Renglones Constructivos Hoja No. 4",
+    "sbd": "DE MAS DE 300 HASTA 600 MM  DE DIAMETRO (400 MM DIAMETRO PROMEDIO) CON DESRAIZAMIENTO MECANIZADO, PARA LA CONST. DE TROCHAS O ACCESOS PARA LINEAS DE 110 Y 220 KV EN ZONAS MONTAÑOSAS CON ALTAS PENDIENTES."
+   },
+   {
+    "codigo": "012278",
+    "emb": "EXCAVACION ROCA DURA COMPACTADO(CON -755-COMMAN D ER CON SABLE 0.50 metros) HASTA 2.00 metros DE PROFUNDIDAD",
+    "sbd": "EXCAVACION ROCA DURA COMPACTADO(CON  ZANJEADORA T-755-COMMANDER CON SABLE 0.50 metros) HASTA 2.00 metros DE PROFUNDIDAD"
+   },
+   {
+    "codigo": "012279",
+    "emb": "EXCAVACION ROCA DURA COMPACTADO(CON T-755-COMMA NDER CON SABLE 0.75 metros) HASTA 2.00 metros DE PROFUNDIDAD",
+    "sbd": "EXCAVACION ROCA DURA COMPACTADO(CON  ZANJEADORA T-755-COMMANDER CON SABLE 0.75 metros) HASTA 2.00 metros DE PROFUNDIDAD"
+   },
+   {
+    "codigo": "012280",
+    "emb": "EXCAVACION ROCA DURA COMPACTADO( CON -755-COMMAN D ER CON SABLE1.10 metros) HASTA 2.00 metros DE PROFUNDIDAD",
+    "sbd": "EXCAVACION ROCA DURA COMPACTADO( CON ZANJEADORA T-755-COMMANDER CON SABLE1.10 metros) HASTA 2.00 metros DE PROFUNDIDAD"
+   },
+   {
+    "codigo": "012283",
+    "emb": "EXCAVACION ROCA DURA COMPACTADO( CON T-755-COMMA NDER CON SABLE 0.50 metros) HASTA 2.00 metros DE PROFUNDIDAD",
+    "sbd": "EXCAVACION ROCA DURA COMPACTADO( CON ZANJEADORA T-755-COMMANDER CON SABLE 0.50 metros) HASTA 2.00 metros DE PROFUNDIDAD"
+   },
+   {
+    "codigo": "012284",
+    "emb": "EXCAVACION ROCA DURA COMPACTADO(CON T-755-COMMA NDER CON SABLE 0.75 metros) HASTA 2.00 metros DE PROFUNDIDAD L ista de Costos de Renglones Constructivos Hoja No. 10",
+    "sbd": "EXCAVACION ROCA DURA COMPACTADO(CON  ZANJEADORA T-755-COMMANDER CON SABLE 0.75 metros) HASTA 2.00 metros DE PROFUNDIDAD"
+   },
+   {
+    "codigo": "012285",
+    "emb": "EXCAVACION ROCA DURA COMPACTADO( CON T-755-COMMA NDER CON SABLE1.10 metros) HASTA 2.00 metros DE PROFUNDIDAD",
+    "sbd": "EXCAVACION ROCA DURA COMPACTADO( CON ZANJEADORA T-755-COMMANDER CON SABLE1.10 metros) HASTA 2.00 metros DE PROFUNDIDAD"
+   },
+   {
+    "codigo": "013822",
+    "emb": "CON RETROEXCAVADORA SOBRE ESTERA PREVIA DEL CUELE DE LA SECCION DE 10-25 M2, FKP 2.1-6.0",
+    "sbd": "CON RETROEXCAVADORA SOBRE ESTERA PREVIA VOLADURA DEL CUELE DE LA  SECCION DE 10-25 M2, FKP 2.1-6.0"
+   },
+   {
+    "codigo": "014213",
+    "emb": "COMPACTADO MANUALMENTE .-INCLUYE AGOTAMIENTO BOM BA DE 201-600 LT./MIN.",
+    "sbd": "COMPACTADO MANUALMENTE .-INCLUYE AGOTAMIENTO CON BOMBA DE 201-600 LT./MIN."
+   },
+   {
+    "codigo": "016133",
+    "emb": "POR TERRAPLEN MEJORADO(VELOCIDAD 20-30 KM/H) 1 KM DE DISTANCIA, CON CAMION DE VOLTEO DE 4.6-6.0 M3 016134 POR TERRAPLEN MEJORADO (VELOCIDAD 20-30 KM/H) 100 m3/km 1,150.21 1,150.21 0.00 0.00 1,150.21 0.00 DISTANCIA ADICIONAL A 1 KM, CON CAMION DE VOLTEO DE 4.6-6.0 M3",
+    "sbd": "POR TERRAPLEN MEJORADO(VELOCIDAD 20-30 KM/H) HASTA 1 KM DE DISTANCIA, CON CAMION DE VOLTEO DE 4.6-6.0 M3"
+   },
+   {
+    "codigo": "016325",
+    "emb": "DE MATERIAL PRODUCTO DE EXCAVACIONES HASTA ML DE DISTANCIA EN OBRAS SUBTERRANEAS TP1.",
+    "sbd": "DE MATERIAL PRODUCTO DE EXCAVACIONES HASTA 100 ML DE DISTANCIA EN OBRAS SUBTERRANEAS TP1."
+   },
+   {
+    "codigo": "016711",
+    "emb": "TERRESTRE A VAGON DE MATERIAL SUELTO DE 50 A M DE DISTANCIA",
+    "sbd": "TERRESTRE A VAGON DE MATERIAL SUELTO DE 50 A 100 M DE DISTANCIA"
+   },
+   {
+    "codigo": "017092",
+    "emb": "Hinca de camisas de acero perforada de 219 mm de diametro Perf oradora por rotopercusion Modelo Zahori 803.-(No incluye el valor de la camisa).",
+    "sbd": "Hinca de camisas de acero perforada de 219  mm de diametro con Perforadora por rotopercusion Modelo Zahori 803.-(No incluye el valor de la camisa)."
+   },
+   {
+    "codigo": "017521",
+    "emb": "POR CUBETEO HASTA 1 LT/SEG (CAPACIDAD DE LA CUBETA 100 389.5 LT, APROX.0.40M3",
+    "sbd": "POR CUBETEO HASTA 1 LT/SEG (CAPACIDAD DE LA CUBETA 389.5 LT, APROX.0.40M3"
+   },
+   {
+    "codigo": "017522",
+    "emb": "POR CUBETEO HASTA 1 LT/SEG (CAPACIDAD DE LA CUBETA 100 DE 196.2 LITROS) 10\"",
+    "sbd": "POR CUBETEO HASTA 1 LT/SEG (CAPACIDAD DE LA CUBETA DE 196.2 LITROS) 10\""
+   }
+  ]
+ },
+ "2_precios_grandes": [
+  {
+   "campo": "mat",
+   "codigo": "032261",
+   "emb": 888.65,
+   "sbd": 898.6191,
+   "delta": -9.97,
+   "um_emb": "m",
+   "um_sbd": "ml"
+  },
+  {
+   "campo": "mat",
+   "codigo": "039722",
+   "emb": 888.65,
+   "sbd": 898.6191,
+   "delta": -9.97,
+   "um_emb": "m",
+   "um_sbd": "ml"
+  },
+  {
+   "campo": "mat",
+   "codigo": "032251",
+   "emb": 1062.73,
+   "sbd": 1071.9606,
+   "delta": -9.23,
+   "um_emb": "m",
+   "um_sbd": "ml"
+  },
+  {
+   "campo": "mat",
+   "codigo": "039721",
+   "emb": 1062.73,
+   "sbd": 1071.9606,
+   "delta": -9.23,
+   "um_emb": "m",
+   "um_sbd": "ml"
+  },
+  {
+   "campo": "mat",
+   "codigo": "031201",
+   "emb": 676.66,
+   "sbd": 684.4547,
+   "delta": -7.79,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "031202",
+   "emb": 676.66,
+   "sbd": 684.4547,
+   "delta": -7.79,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "037115",
+   "emb": 694.46,
+   "sbd": 702.2542,
+   "delta": -7.79,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "039212",
+   "emb": 694.46,
+   "sbd": 702.2542,
+   "delta": -7.79,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "031203",
+   "emb": 657.48,
+   "sbd": 664.8699,
+   "delta": -7.39,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "031255",
+   "emb": 657.48,
+   "sbd": 664.8699,
+   "delta": -7.39,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "036921",
+   "emb": 675.28,
+   "sbd": 682.6694,
+   "delta": -7.39,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "039211",
+   "emb": 675.28,
+   "sbd": 682.6694,
+   "delta": -7.39,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "039213",
+   "emb": 675.28,
+   "sbd": 682.6694,
+   "delta": -7.39,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "037114",
+   "emb": 520.02,
+   "sbd": 525.8586,
+   "delta": -5.84,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "036922",
+   "emb": 506.08,
+   "sbd": 511.6151,
+   "delta": -5.54,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "039221",
+   "emb": 506.08,
+   "sbd": 511.6151,
+   "delta": -5.54,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "039222",
+   "emb": 506.08,
+   "sbd": 511.6151,
+   "delta": -5.54,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "039223",
+   "emb": 506.08,
+   "sbd": 511.6151,
+   "delta": -5.54,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "031211",
+   "emb": 497.26,
+   "sbd": 502.7927,
+   "delta": -5.53,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "031212",
+   "emb": 497.26,
+   "sbd": 502.7927,
+   "delta": -5.53,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "031213",
+   "emb": 497.26,
+   "sbd": 502.7927,
+   "delta": -5.53,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "031254",
+   "emb": 497.26,
+   "sbd": 502.7927,
+   "delta": -5.53,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "031411",
+   "emb": 471.69,
+   "sbd": 476.8585,
+   "delta": -5.17,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "032271",
+   "emb": 487.82,
+   "sbd": 492.2531,
+   "delta": -4.43,
+   "um_emb": "m",
+   "um_sbd": "ml"
+  },
+  {
+   "campo": "mat",
+   "codigo": "039723",
+   "emb": 487.82,
+   "sbd": 492.2531,
+   "delta": -4.43,
+   "um_emb": "m",
+   "um_sbd": "ml"
+  },
+  {
+   "campo": "mat",
+   "codigo": "031221",
+   "emb": 329.13,
+   "sbd": 332.8219,
+   "delta": -3.69,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "031222",
+   "emb": 329.13,
+   "sbd": 332.8219,
+   "delta": -3.69,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "031223",
+   "emb": 329.13,
+   "sbd": 332.8219,
+   "delta": -3.69,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "031253",
+   "emb": 372.47,
+   "sbd": 376.1597,
+   "delta": -3.69,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "031451",
+   "emb": 323.79,
+   "sbd": 327.4839,
+   "delta": -3.69,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "036923",
+   "emb": 336.87,
+   "sbd": 340.5608,
+   "delta": -3.69,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "039231",
+   "emb": 336.87,
+   "sbd": 340.5608,
+   "delta": -3.69,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "039232",
+   "emb": 336.87,
+   "sbd": 340.5608,
+   "delta": -3.69,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "039233",
+   "emb": 336.87,
+   "sbd": 340.5608,
+   "delta": -3.69,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "039303",
+   "emb": 389.47,
+   "sbd": 392.9882,
+   "delta": -3.52,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "039411",
+   "emb": 235.89,
+   "sbd": 239.3608,
+   "delta": -3.47,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "031421",
+   "emb": 306.36,
+   "sbd": 309.6795,
+   "delta": -3.32,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "037113",
+   "emb": 303.19,
+   "sbd": 306.5047,
+   "delta": -3.31,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "032281",
+   "emb": 359.76,
+   "sbd": 362.9582,
+   "delta": -3.2,
+   "um_emb": "m",
+   "um_sbd": "ml"
+  },
+  {
+   "campo": "mat",
+   "codigo": "039724",
+   "emb": 359.76,
+   "sbd": 362.9582,
+   "delta": -3.2,
+   "um_emb": "m",
+   "um_sbd": "ml"
+  },
+  {
+   "campo": "mat",
+   "codigo": "031331",
+   "emb": 310.46,
+   "sbd": 313.2627,
+   "delta": -2.8,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "039312",
+   "emb": 300.25,
+   "sbd": 302.9581,
+   "delta": -2.71,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "039313",
+   "emb": 300.25,
+   "sbd": 302.9581,
+   "delta": -2.71,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "033321",
+   "emb": 154.79,
+   "sbd": 157.3857,
+   "delta": -2.6,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "031311",
+   "emb": 292.74,
+   "sbd": 295.3217,
+   "delta": -2.58,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "031312",
+   "emb": 292.74,
+   "sbd": 295.3217,
+   "delta": -2.58,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "039726",
+   "emb": 222.17,
+   "sbd": 224.6548,
+   "delta": -2.48,
+   "um_emb": "m",
+   "um_sbd": "ml"
+  },
+  {
+   "campo": "mat",
+   "codigo": "032241",
+   "emb": 204.06,
+   "sbd": 206.3496,
+   "delta": -2.29,
+   "um_emb": "m",
+   "um_sbd": "ml"
+  },
+  {
+   "campo": "mat",
+   "codigo": "032242",
+   "emb": 204.06,
+   "sbd": 206.3496,
+   "delta": -2.29,
+   "um_emb": "m",
+   "um_sbd": "ml"
+  },
+  {
+   "campo": "mat",
+   "codigo": "039725",
+   "emb": 264.89,
+   "sbd": 267.1773,
+   "delta": -2.29,
+   "um_emb": "m",
+   "um_sbd": "ml"
+  },
+  {
+   "campo": "eq",
+   "codigo": "208852",
+   "emb": 57450.27,
+   "sbd": 57452.5592,
+   "delta": -2.29,
+   "um_emb": "u",
+   "um_sbd": "u"
+  },
+  {
+   "campo": "mat",
+   "codigo": "149531",
+   "emb": 265.56,
+   "sbd": 267.4064,
+   "delta": -1.85,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "147121",
+   "emb": 172.06,
+   "sbd": 173.8991,
+   "delta": -1.84,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "032231",
+   "emb": 162.92,
+   "sbd": 164.7468,
+   "delta": -1.83,
+   "um_emb": "m",
+   "um_sbd": "ml"
+  },
+  {
+   "campo": "mat",
+   "codigo": "032232",
+   "emb": 162.92,
+   "sbd": 164.7468,
+   "delta": -1.83,
+   "um_emb": "m",
+   "um_sbd": "ml"
+  },
+  {
+   "campo": "mat",
+   "codigo": "033212",
+   "emb": 112.74,
+   "sbd": 114.5682,
+   "delta": -1.83,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "039811",
+   "emb": 112.74,
+   "sbd": 114.5682,
+   "delta": -1.83,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "eq",
+   "codigo": "208857",
+   "emb": 33010.67,
+   "sbd": 33012.3452,
+   "delta": -1.68,
+   "um_emb": "u",
+   "um_sbd": "u"
+  },
+  {
+   "campo": "mat",
+   "codigo": "037112",
+   "emb": 151.67,
+   "sbd": 153.3297,
+   "delta": -1.66,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "039727",
+   "emb": 148.11,
+   "sbd": 149.7698,
+   "delta": -1.66,
+   "um_emb": "m",
+   "um_sbd": "ml"
+  },
+  {
+   "campo": "mat",
+   "codigo": "147111",
+   "emb": 116.22,
+   "sbd": 117.6952,
+   "delta": -1.48,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "144121",
+   "emb": 423.67,
+   "sbd": 425.0741,
+   "delta": -1.4,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "032221",
+   "emb": 121.12,
+   "sbd": 122.4784,
+   "delta": -1.36,
+   "um_emb": "m",
+   "um_sbd": "ml"
+  },
+  {
+   "campo": "mat",
+   "codigo": "032222",
+   "emb": 121.12,
+   "sbd": 122.4784,
+   "delta": -1.36,
+   "um_emb": "m",
+   "um_sbd": "ml"
+  },
+  {
+   "campo": "mat",
+   "codigo": "039242",
+   "emb": 139.57,
+   "sbd": 140.7868,
+   "delta": -1.22,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "144511",
+   "emb": 169.24,
+   "sbd": 170.455,
+   "delta": -1.22,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "145113",
+   "emb": 468.71,
+   "sbd": 469.9255,
+   "delta": -1.22,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "145211",
+   "emb": 277.65,
+   "sbd": 278.8716,
+   "delta": -1.22,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "149148",
+   "emb": 169.24,
+   "sbd": 170.455,
+   "delta": -1.22,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "149153",
+   "emb": 468.71,
+   "sbd": 469.9255,
+   "delta": -1.22,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "149155",
+   "emb": 277.65,
+   "sbd": 278.8716,
+   "delta": -1.22,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "149451",
+   "emb": 169.24,
+   "sbd": 170.455,
+   "delta": -1.22,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "149521",
+   "emb": 277.65,
+   "sbd": 278.8716,
+   "delta": -1.22,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "149522",
+   "emb": 332.67,
+   "sbd": 333.8916,
+   "delta": -1.22,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "039151",
+   "emb": 359.94,
+   "sbd": 361.1545,
+   "delta": -1.21,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "144512",
+   "emb": 700.73,
+   "sbd": 701.944,
+   "delta": -1.21,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "144513",
+   "emb": 156.98,
+   "sbd": 158.191,
+   "delta": -1.21,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "145111",
+   "emb": 492.42,
+   "sbd": 493.6345,
+   "delta": -1.21,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "145112",
+   "emb": 480.57,
+   "sbd": 481.78,
+   "delta": -1.21,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "145114",
+   "emb": 456.91,
+   "sbd": 458.1235,
+   "delta": -1.21,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "149149",
+   "emb": 700.73,
+   "sbd": 701.944,
+   "delta": -1.21,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "149150",
+   "emb": 156.98,
+   "sbd": 158.191,
+   "delta": -1.21,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "149151",
+   "emb": 492.42,
+   "sbd": 493.6345,
+   "delta": -1.21,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "149152",
+   "emb": 480.57,
+   "sbd": 481.78,
+   "delta": -1.21,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "149154",
+   "emb": 456.91,
+   "sbd": 458.1235,
+   "delta": -1.21,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "149452",
+   "emb": 700.73,
+   "sbd": 701.944,
+   "delta": -1.21,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "032331",
+   "emb": 144.76,
+   "sbd": 145.9487,
+   "delta": -1.19,
+   "um_emb": "m",
+   "um_sbd": "ml"
+  },
+  {
+   "campo": "mat",
+   "codigo": "031231",
+   "emb": 154.54,
+   "sbd": 155.6911,
+   "delta": -1.15,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "031232",
+   "emb": 154.54,
+   "sbd": 155.6911,
+   "delta": -1.15,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "031233",
+   "emb": 154.54,
+   "sbd": 155.6911,
+   "delta": -1.15,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "031234",
+   "emb": 389.35,
+   "sbd": 390.5029,
+   "delta": -1.15,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "031252",
+   "emb": 154.54,
+   "sbd": 155.6911,
+   "delta": -1.15,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "036924",
+   "emb": 136.43,
+   "sbd": 137.582,
+   "delta": -1.15,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "037311",
+   "emb": 101.12,
+   "sbd": 102.2672,
+   "delta": -1.15,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "037411",
+   "emb": 101.12,
+   "sbd": 102.2672,
+   "delta": -1.15,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "039241",
+   "emb": 136.43,
+   "sbd": 137.582,
+   "delta": -1.15,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "039243",
+   "emb": 136.43,
+   "sbd": 137.582,
+   "delta": -1.15,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "031431",
+   "emb": 131.51,
+   "sbd": 132.6164,
+   "delta": -1.11,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "037111",
+   "emb": 101.07,
+   "sbd": 102.1683,
+   "delta": -1.1,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "037213",
+   "emb": 611.93,
+   "sbd": 613.0292,
+   "delta": -1.1,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "144111",
+   "emb": 52.31,
+   "sbd": 53.4132,
+   "delta": -1.1,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "144221",
+   "emb": 86.87,
+   "sbd": 87.9708,
+   "delta": -1.1,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "144231",
+   "emb": 139.6,
+   "sbd": 140.7008,
+   "delta": -1.1,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "147311",
+   "emb": 1172.01,
+   "sbd": 1173.1132,
+   "delta": -1.1,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "149141",
+   "emb": 86.87,
+   "sbd": 87.9708,
+   "delta": -1.1,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "149142",
+   "emb": 139.6,
+   "sbd": 140.7008,
+   "delta": -1.1,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "eq",
+   "codigo": "454211",
+   "emb": 53419.8,
+   "sbd": 53418.7531,
+   "delta": 1.05,
+   "um_emb": "u",
+   "um_sbd": "u"
+  },
+  {
+   "campo": "mat",
+   "codigo": "031302",
+   "emb": 136.22,
+   "sbd": 137.2246,
+   "delta": -1.0,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "031332",
+   "emb": 136.22,
+   "sbd": 137.2246,
+   "delta": -1.0,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "039322",
+   "emb": 132.66,
+   "sbd": 133.6369,
+   "delta": -0.98,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "039323",
+   "emb": 132.66,
+   "sbd": 133.6369,
+   "delta": -0.98,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "032211",
+   "emb": 86.56,
+   "sbd": 87.5321,
+   "delta": -0.97,
+   "um_emb": "m",
+   "um_sbd": "ml"
+  },
+  {
+   "campo": "mat",
+   "codigo": "032212",
+   "emb": 86.56,
+   "sbd": 87.5321,
+   "delta": -0.97,
+   "um_emb": "m",
+   "um_sbd": "ml"
+  },
+  {
+   "campo": "mat",
+   "codigo": "132511",
+   "emb": 276.99,
+   "sbd": 277.9155,
+   "delta": -0.93,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "132513",
+   "emb": 276.99,
+   "sbd": 277.9155,
+   "delta": -0.93,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "136251",
+   "emb": 276.99,
+   "sbd": 277.9155,
+   "delta": -0.93,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "136934",
+   "emb": 221.97,
+   "sbd": 222.8955,
+   "delta": -0.93,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "139751",
+   "emb": 221.97,
+   "sbd": 222.8955,
+   "delta": -0.93,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "139752",
+   "emb": 221.97,
+   "sbd": 222.8955,
+   "delta": -0.93,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "139754",
+   "emb": 221.97,
+   "sbd": 222.8955,
+   "delta": -0.93,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "139542",
+   "emb": 43.59,
+   "sbd": 44.511,
+   "delta": -0.92,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "144421",
+   "emb": 444.11,
+   "sbd": 445.029,
+   "delta": -0.92,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "144422",
+   "emb": 444.11,
+   "sbd": 445.029,
+   "delta": -0.92,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "149421",
+   "emb": 78.15,
+   "sbd": 79.0686,
+   "delta": -0.92,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "149422",
+   "emb": 130.88,
+   "sbd": 131.7986,
+   "delta": -0.92,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "149441",
+   "emb": 444.11,
+   "sbd": 445.029,
+   "delta": -0.92,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "149442",
+   "emb": 444.11,
+   "sbd": 445.029,
+   "delta": -0.92,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "031111",
+   "emb": 344.24,
+   "sbd": 345.1305,
+   "delta": -0.89,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "031112",
+   "emb": 344.24,
+   "sbd": 345.1305,
+   "delta": -0.89,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "031113",
+   "emb": 344.24,
+   "sbd": 345.1305,
+   "delta": -0.89,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "031114",
+   "emb": 419.43,
+   "sbd": 420.3228,
+   "delta": -0.89,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "036111",
+   "emb": 351.33,
+   "sbd": 352.218,
+   "delta": -0.89,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "036911",
+   "emb": 339.52,
+   "sbd": 340.4055,
+   "delta": -0.89,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "037211",
+   "emb": 344.24,
+   "sbd": 345.1305,
+   "delta": -0.89,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "039111",
+   "emb": 344.24,
+   "sbd": 345.1305,
+   "delta": -0.89,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "039112",
+   "emb": 344.24,
+   "sbd": 345.1305,
+   "delta": -0.89,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "039113",
+   "emb": 344.24,
+   "sbd": 345.1305,
+   "delta": -0.89,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "039161",
+   "emb": 1475.06,
+   "sbd": 1475.9465,
+   "delta": -0.89,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "eq",
+   "codigo": "305611",
+   "emb": 3072.0,
+   "sbd": 3072.87,
+   "delta": -0.87,
+   "um_emb": "t",
+   "um_sbd": "tm"
+  },
+  {
+   "campo": "mat",
+   "codigo": "039421",
+   "emb": 76.9,
+   "sbd": 77.7499,
+   "delta": -0.85,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "035201",
+   "emb": 94.59,
+   "sbd": 95.4021,
+   "delta": -0.81,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "131512",
+   "emb": 38.36,
+   "sbd": 39.1697,
+   "delta": -0.81,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "139522",
+   "emb": 38.36,
+   "sbd": 39.1697,
+   "delta": -0.81,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "139541",
+   "emb": 38.36,
+   "sbd": 39.1697,
+   "delta": -0.81,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "139731",
+   "emb": 678.34,
+   "sbd": 679.1507,
+   "delta": -0.81,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "139732",
+   "emb": 678.34,
+   "sbd": 679.1507,
+   "delta": -0.81,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "132411",
+   "emb": 596.83,
+   "sbd": 597.6347,
+   "delta": -0.8,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "132412",
+   "emb": 596.83,
+   "sbd": 597.6347,
+   "delta": -0.8,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "132521",
+   "emb": 366.61,
+   "sbd": 367.4117,
+   "delta": -0.8,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "132522",
+   "emb": 366.61,
+   "sbd": 367.4117,
+   "delta": -0.8,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "136261",
+   "emb": 366.61,
+   "sbd": 367.4117,
+   "delta": -0.8,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "032321",
+   "emb": 89.0,
+   "sbd": 89.7911,
+   "delta": -0.79,
+   "um_emb": "m",
+   "um_sbd": "ml"
+  },
+  {
+   "campo": "mat",
+   "codigo": "039511",
+   "emb": 101.67,
+   "sbd": 102.4536,
+   "delta": -0.78,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "eq",
+   "codigo": "274215",
+   "emb": 58360.32,
+   "sbd": 58361.0952,
+   "delta": -0.78,
+   "um_emb": "u",
+   "um_sbd": "ct"
+  },
+  {
+   "campo": "eq",
+   "codigo": "451381",
+   "emb": 99137.53,
+   "sbd": 99136.7567,
+   "delta": 0.77,
+   "um_emb": "km",
+   "um_sbd": "km"
+  },
+  {
+   "campo": "mat",
+   "codigo": "031511",
+   "emb": 44.95,
+   "sbd": 45.6887,
+   "delta": -0.74,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "031611",
+   "emb": 99.17,
+   "sbd": 99.9078,
+   "delta": -0.74,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "131112",
+   "emb": 34.87,
+   "sbd": 35.6088,
+   "delta": -0.74,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "131212",
+   "emb": 34.87,
+   "sbd": 35.6088,
+   "delta": -0.74,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "131511",
+   "emb": 34.87,
+   "sbd": 35.6088,
+   "delta": -0.74,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "136102",
+   "emb": 34.87,
+   "sbd": 35.6088,
+   "delta": -0.74,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "136133",
+   "emb": 34.87,
+   "sbd": 35.6088,
+   "delta": -0.74,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "136905",
+   "emb": 34.87,
+   "sbd": 35.6088,
+   "delta": -0.74,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "136907",
+   "emb": 34.87,
+   "sbd": 35.6088,
+   "delta": -0.74,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "139122",
+   "emb": 34.87,
+   "sbd": 35.6088,
+   "delta": -0.74,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "139142",
+   "emb": 34.87,
+   "sbd": 35.6088,
+   "delta": -0.74,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "139521",
+   "emb": 34.87,
+   "sbd": 35.6088,
+   "delta": -0.74,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "139702",
+   "emb": 122.16,
+   "sbd": 122.8964,
+   "delta": -0.74,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "149712",
+   "emb": 119.75,
+   "sbd": 120.486,
+   "delta": -0.74,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "139734",
+   "emb": 130.96,
+   "sbd": 131.6605,
+   "delta": -0.7,
+   "um_emb": "m",
+   "um_sbd": "ml"
+  },
+  {
+   "campo": "mat",
+   "codigo": "139753",
+   "emb": 211.51,
+   "sbd": 212.2128,
+   "delta": -0.7,
+   "um_emb": "m",
+   "um_sbd": "ml"
+  },
+  {
+   "campo": "mat",
+   "codigo": "139785",
+   "emb": 58.8,
+   "sbd": 59.501,
+   "delta": -0.7,
+   "um_emb": "m",
+   "um_sbd": "ml"
+  },
+  {
+   "campo": "mat",
+   "codigo": "033211",
+   "emb": 49.06,
+   "sbd": 49.7317,
+   "delta": -0.67,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "033221",
+   "emb": 577.88,
+   "sbd": 578.5479,
+   "delta": -0.67,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "036912",
+   "emb": 1442.2,
+   "sbd": 1442.8699,
+   "delta": -0.67,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "031122",
+   "emb": 1464.6,
+   "sbd": 1465.2639,
+   "delta": -0.66,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "031123",
+   "emb": 1464.6,
+   "sbd": 1465.2639,
+   "delta": -0.66,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "031124",
+   "emb": 362.41,
+   "sbd": 363.073,
+   "delta": -0.66,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "036112",
+   "emb": 1498.19,
+   "sbd": 1498.8549,
+   "delta": -0.66,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "039121",
+   "emb": 1464.6,
+   "sbd": 1465.2639,
+   "delta": -0.66,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "039122",
+   "emb": 1464.6,
+   "sbd": 1465.2639,
+   "delta": -0.66,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "039123",
+   "emb": 1464.6,
+   "sbd": 1465.2639,
+   "delta": -0.66,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "eq",
+   "codigo": "274214",
+   "emb": 49491.84,
+   "sbd": 49492.4974,
+   "delta": -0.66,
+   "um_emb": "u",
+   "um_sbd": "ct"
+  },
+  {
+   "campo": "eq",
+   "codigo": "451122",
+   "emb": 82256.73,
+   "sbd": 82256.097,
+   "delta": 0.63,
+   "um_emb": "km",
+   "um_sbd": "km"
+  },
+  {
+   "campo": "eq",
+   "codigo": "287131",
+   "emb": 83890.55,
+   "sbd": 83889.9497,
+   "delta": 0.6,
+   "um_emb": "km",
+   "um_sbd": "km"
+  },
+  {
+   "campo": "mat",
+   "codigo": "149711",
+   "emb": 74.38,
+   "sbd": 74.9646,
+   "delta": -0.58,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "eq",
+   "codigo": "274213",
+   "emb": 43341.12,
+   "sbd": 43341.6957,
+   "delta": -0.58,
+   "um_emb": "u",
+   "um_sbd": "ct"
+  },
+  {
+   "campo": "mat",
+   "codigo": "131101",
+   "emb": 26.15,
+   "sbd": 26.7066,
+   "delta": -0.56,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "131102",
+   "emb": 26.15,
+   "sbd": 26.7066,
+   "delta": -0.56,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "131103",
+   "emb": 26.15,
+   "sbd": 26.7066,
+   "delta": -0.56,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "131104",
+   "emb": 26.15,
+   "sbd": 26.7066,
+   "delta": -0.56,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "131105",
+   "emb": 26.15,
+   "sbd": 26.7066,
+   "delta": -0.56,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "135611",
+   "emb": 126.18,
+   "sbd": 126.7371,
+   "delta": -0.56,
+   "um_emb": "m",
+   "um_sbd": "ml"
+  },
+  {
+   "campo": "mat",
+   "codigo": "136101",
+   "emb": 26.15,
+   "sbd": 26.7066,
+   "delta": -0.56,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "136904",
+   "emb": 26.15,
+   "sbd": 26.7066,
+   "delta": -0.56,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "136906",
+   "emb": 26.15,
+   "sbd": 26.7066,
+   "delta": -0.56,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "139121",
+   "emb": 26.15,
+   "sbd": 26.7066,
+   "delta": -0.56,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "mat",
+   "codigo": "139141",
+   "emb": 26.15,
+   "sbd": 26.7066,
+   "delta": -0.56,
+   "um_emb": "m2",
+   "um_sbd": "m2"
+  },
+  {
+   "campo": "eq",
+   "codigo": "451341",
+   "emb": 70806.95,
+   "sbd": 70806.3944,
+   "delta": 0.56,
+   "um_emb": "km",
+   "um_sbd": "km"
+  },
+  {
+   "campo": "eq",
+   "codigo": "287119",
+   "emb": 78252.74,
+   "sbd": 78252.1943,
+   "delta": 0.55,
+   "um_emb": "km",
+   "um_sbd": "km"
+  },
+  {
+   "campo": "mat",
+   "codigo": "032311",
+   "emb": 60.99,
+   "sbd": 61.5234,
+   "delta": -0.53,
+   "um_emb": "m",
+   "um_sbd": "ml"
+  }
+ ],
+ "3_inconsistencias_emb": [
+  {
+   "codigo": "017147",
+   "total": 11458.37,
+   "mat": 0.0,
+   "mo": 179.86,
+   "eq": 11278.5,
+   "desvio": 0.01
+  },
+  {
+   "codigo": "028124",
+   "total": 12289.31,
+   "mat": 544.4,
+   "mo": 125.9,
+   "eq": 11619.0,
+   "desvio": 0.01
+  },
+  {
+   "codigo": "052288",
+   "total": 13410.24,
+   "mat": 14.02,
+   "mo": 654.41,
+   "eq": 12741.8,
+   "desvio": 0.01
+  },
+  {
+   "codigo": "052498",
+   "total": 18257.22,
+   "mat": 200.18,
+   "mo": 577.63,
+   "eq": 17479.4,
+   "desvio": 0.01
+  },
+  {
+   "codigo": "052579",
+   "total": 12538.65,
+   "mat": 760.73,
+   "mo": 193.71,
+   "eq": 11584.2,
+   "desvio": 0.01
+  },
+  {
+   "codigo": "052597",
+   "total": 17001.95,
+   "mat": 760.73,
+   "mo": 398.11,
+   "eq": 15843.1,
+   "desvio": 0.01
+  },
+  {
+   "codigo": "057218",
+   "total": 18486.47,
+   "mat": 0.0,
+   "mo": 185.56,
+   "eq": 18300.9,
+   "desvio": 0.01
+  },
+  {
+   "codigo": "085221",
+   "total": 188512.59,
+   "mat": 121361.0,
+   "mo": 3648.18,
+   "eq": 63503.4,
+   "desvio": 0.01
+  },
+  {
+   "codigo": "188150",
+   "total": 14732.64,
+   "mat": 0.0,
+   "mo": 3535.92,
+   "eq": 11196.7,
+   "desvio": 0.02
+  },
+  {
+   "codigo": "190234",
+   "total": 13467.47,
+   "mat": 0.0,
+   "mo": 1635.66,
+   "eq": 11831.8,
+   "desvio": 0.01
+  },
+  {
+   "codigo": "191107",
+   "total": 12242.13,
+   "mat": 140.84,
+   "mo": 1750.78,
+   "eq": 10350.5,
+   "desvio": 0.01
+  },
+  {
+   "codigo": "192104",
+   "total": 15756.68,
+   "mat": 724.32,
+   "mo": 2134.45,
+   "eq": 12897.9,
+   "desvio": 0.01
+  },
+  {
+   "codigo": "195387",
+   "total": 11117.32,
+   "mat": 34.39,
+   "mo": 540.62,
+   "eq": 10542.3,
+   "desvio": 0.01
+  },
+  {
+   "codigo": "195600",
+   "total": 36976.21,
+   "mat": 2336.95,
+   "mo": 10098.55,
+   "eq": 24540.7,
+   "desvio": 0.01
+  },
+  {
+   "codigo": "195624",
+   "total": 40671.85,
+   "mat": 2565.84,
+   "mo": 11112.89,
+   "eq": 26993.1,
+   "desvio": 0.02
+  },
+  {
+   "codigo": "195632",
+   "total": 16239.81,
+   "mat": 1461.44,
+   "mo": 3991.35,
+   "eq": 10787.0,
+   "desvio": 0.02
+  },
+  {
+   "codigo": "198229",
+   "total": 20558.37,
+   "mat": 2.6,
+   "mo": 1693.56,
+   "eq": 18862.2,
+   "desvio": 0.01
+  },
+  {
+   "codigo": "200606",
+   "total": 15849.27,
+   "mat": 0.0,
+   "mo": 3163.86,
+   "eq": 12685.4,
+   "desvio": 0.01
+  },
+  {
+   "codigo": "204160",
+   "total": 19105.73,
+   "mat": 1147.24,
+   "mo": 5273.08,
+   "eq": 12685.4,
+   "desvio": 0.01
+  },
+  {
+   "codigo": "287113",
+   "total": 33976.09,
+   "mat": 0.0,
+   "mo": 3613.17,
+   "eq": 30362.9,
+   "desvio": 0.02
+  },
+  {
+   "codigo": "287115",
+   "total": 29526.1,
+   "mat": 0.0,
+   "mo": 3122.49,
+   "eq": 26403.6,
+   "desvio": 0.01
+  },
+  {
+   "codigo": "287117",
+   "total": 47444.28,
+   "mat": 0.0,
+   "mo": 5055.46,
+   "eq": 42388.8,
+   "desvio": 0.02
+  },
+  {
+   "codigo": "287126",
+   "total": 38492.33,
+   "mat": 0.0,
+   "mo": 4163.32,
+   "eq": 34329.0,
+   "desvio": 0.01
+  },
+  {
+   "codigo": "287220",
+   "total": 20183.42,
+   "mat": 0.0,
+   "mo": 729.81,
+   "eq": 19453.6,
+   "desvio": 0.01
+  },
+  {
+   "codigo": "287221",
+   "total": 20183.42,
+   "mat": 0.0,
+   "mo": 729.81,
+   "eq": 19453.6,
+   "desvio": 0.01
+  },
+  {
+   "codigo": "287225",
+   "total": 40366.84,
+   "mat": 0.0,
+   "mo": 1459.62,
+   "eq": 38907.2,
+   "desvio": 0.02
+  },
+  {
+   "codigo": "305811",
+   "total": 22674.6,
+   "mat": 237.1,
+   "mo": 2767.49,
+   "eq": 19670.0,
+   "desvio": 0.01
+  },
+  {
+   "codigo": "342238",
+   "total": 14003.15,
+   "mat": 0.0,
+   "mo": 1676.44,
+   "eq": 12326.7,
+   "desvio": 0.01
+  },
+  {
+   "codigo": "343129",
+   "total": 13289.82,
+   "mat": 0.0,
+   "mo": 2881.1,
+   "eq": 10408.7,
+   "desvio": 0.02
+  },
+  {
+   "codigo": "458113",
+   "total": 13047.06,
+   "mat": 0.0,
+   "mo": 513.35,
+   "eq": 12533.7,
+   "desvio": 0.01
+  },
+  {
+   "codigo": "458115",
+   "total": 18048.4,
+   "mat": 0.0,
+   "mo": 718.69,
+   "eq": 17329.7,
+   "desvio": 0.01
+  }
+ ],
+ "4_unidades_riesgo": [
+  {
+   "codigo": "011152",
+   "um_emb": "m2",
+   "um_sbd": "d2",
+   "um_p17": "d2",
+   "total_emb": 7.55,
+   "total_sbd": 7.554,
+   "desc": "DE HIERBA CON GUATACA 10"
+  },
+  {
+   "codigo": "011153",
+   "um_emb": "m2",
+   "um_sbd": "d2",
+   "um_p17": "d2",
+   "total_emb": 3.95,
+   "total_sbd": 3.951,
+   "desc": "DE HIERBA CON MAQUINA MANUAL 10"
+  },
+  {
+   "codigo": "017521",
+   "um_emb": "l",
+   "um_sbd": "hl",
+   "um_p17": "hl",
+   "total_emb": 148.48,
+   "total_sbd": 148.47439999999997,
+   "desc": "POR CUBETEO HASTA 1 LT/SEG (CAPACIDAD DE LA CUBETA"
+  },
+  {
+   "codigo": "017522",
+   "um_emb": "l",
+   "um_sbd": "hl",
+   "um_p17": "hl",
+   "total_emb": 126.27,
+   "total_sbd": 126.27120000000001,
+   "desc": "POR CUBETEO HASTA 1 LT/SEG (CAPACIDAD DE LA CUBETA"
+  },
+  {
+   "codigo": "017523",
+   "um_emb": "l",
+   "um_sbd": "hl",
+   "um_p17": "hl",
+   "total_emb": 129.29,
+   "total_sbd": 129.292,
+   "desc": "POR CUBETEO HASTA 1 LT/SEG (CAPACIDAD DE LA CUBETA"
+  },
+  {
+   "codigo": "017531",
+   "um_emb": "l",
+   "um_sbd": "hl",
+   "um_p17": "hl",
+   "total_emb": 45.11,
+   "total_sbd": 45.11,
+   "desc": "DE 0-5 LT/SEG POR LEVANTAMIENTO CON AIRE (INCLUYE "
+  },
+  {
+   "codigo": "031901",
+   "um_emb": "u",
+   "um_sbd": "ct",
+   "um_p17": "ct",
+   "total_emb": 1118.12,
+   "total_sbd": 1118.1154999999999,
+   "desc": "COLOCACION DE BLOQUE PANEL BP-1. 100 L ista de Cos"
+  },
+  {
+   "codigo": "031902",
+   "um_emb": "u",
+   "um_sbd": "ct",
+   "um_p17": "ct",
+   "total_emb": 950.12,
+   "total_sbd": 950.1155,
+   "desc": "COLOCACION DE BLOQUE PANEL BP-2. 100"
+  },
+  {
+   "codigo": "031903",
+   "um_emb": "u",
+   "um_sbd": "ct",
+   "um_p17": "ct",
+   "total_emb": 771.12,
+   "total_sbd": 771.1155,
+   "desc": "COLOCACION DE BLOQUE PANEL BP-3. 100"
+  },
+  {
+   "codigo": "096911",
+   "um_emb": "u",
+   "um_sbd": "dc",
+   "um_p17": "dc",
+   "total_emb": 1121.16,
+   "total_sbd": 1121.1705,
+   "desc": "PUERTA PARA MANGA CIRCULAR PARA CUBRIR 6 M. 10"
+  },
+  {
+   "codigo": "184111",
+   "um_emb": "u",
+   "um_sbd": "cu",
+   "um_p17": "cu",
+   "total_emb": 1980.11,
+   "total_sbd": 1980.1063,
+   "desc": "DE 12 MM DE DIAMETRO CON HERRAMIENTA MANUAL 100 EX"
+  },
+  {
+   "codigo": "184112",
+   "um_emb": "u",
+   "um_sbd": "cu",
+   "um_p17": "cu",
+   "total_emb": 3087.26,
+   "total_sbd": 3087.2644,
+   "desc": "DE 18 MM DE DIAMETRO CON HERRAMIENTA MANUAL 100 EX"
+  },
+  {
+   "codigo": "184113",
+   "um_emb": "u",
+   "um_sbd": "cu",
+   "um_p17": "cu",
+   "total_emb": 4075.75,
+   "total_sbd": 4075.7655000000004,
+   "desc": "DE 25 MM DE DIAMETRO CON HERRAMIENTA MANUAL 100 EX"
+  },
+  {
+   "codigo": "184114",
+   "um_emb": "u",
+   "um_sbd": "cu",
+   "um_p17": "cu",
+   "total_emb": 5341.01,
+   "total_sbd": 5341.0225,
+   "desc": "DE 32 MM DE DIAMETRO CON HERRAMIENTA MANUAL 100 EX"
+  },
+  {
+   "codigo": "184115",
+   "um_emb": "u",
+   "um_sbd": "cu",
+   "um_p17": "cu",
+   "total_emb": 6171.32,
+   "total_sbd": 6171.3328,
+   "desc": "DE 38 MM DE DIAMETRO CON HERRAMIENTA MANUAL 100 EX"
+  },
+  {
+   "codigo": "184116",
+   "um_emb": "u",
+   "um_sbd": "cu",
+   "um_p17": "cu",
+   "total_emb": 7080.78,
+   "total_sbd": 7080.7847,
+   "desc": "DE 42 MM DE DIAMETRO CON HERRAMIENTA MANUAL 100 EX"
+  },
+  {
+   "codigo": "184117",
+   "um_emb": "u",
+   "um_sbd": "cu",
+   "um_p17": "cu",
+   "total_emb": 7911.08,
+   "total_sbd": 7911.0933,
+   "desc": "DE 50 MM DE DIAMETRO CON HERRAMIENTA MANUAL 100 EX"
+  },
+  {
+   "codigo": "184121",
+   "um_emb": "u",
+   "um_sbd": "cu",
+   "um_p17": "cu",
+   "total_emb": 754.4,
+   "total_sbd": 754.4104,
+   "desc": "DE 12 MM DE DIAMETRO CON MAQUINA HERRAMIENTA 100 E"
+  },
+  {
+   "codigo": "184122",
+   "um_emb": "u",
+   "um_sbd": "cu",
+   "um_p17": "cu",
+   "total_emb": 1189.38,
+   "total_sbd": 1189.3791,
+   "desc": "DE 18 MM DE DIAMETRO CON MAQUINA HERRAMIENTA 100 E"
+  },
+  {
+   "codigo": "184123",
+   "um_emb": "u",
+   "um_sbd": "cu",
+   "um_p17": "cu",
+   "total_emb": 1861.58,
+   "total_sbd": 1861.5875999999998,
+   "desc": "DE 25 MM DE DIAMETRO CON MAQUINA HERRAMIENTA 100 E"
+  },
+  {
+   "codigo": "184124",
+   "um_emb": "u",
+   "um_sbd": "cu",
+   "um_p17": "cu",
+   "total_emb": 2731.45,
+   "total_sbd": 2731.4591,
+   "desc": "DE 32 MM DE DIAMETRO CON MAQUINA HERRAMIENTA 100 E"
+  },
+  {
+   "codigo": "184125",
+   "um_emb": "u",
+   "um_sbd": "cu",
+   "um_p17": "cu",
+   "total_emb": 3324.52,
+   "total_sbd": 3324.5280000000002,
+   "desc": "DE 38 MM DE DIAMETRO CON MAQUINA HERRAMIENTA 100 E"
+  },
+  {
+   "codigo": "184126",
+   "um_emb": "u",
+   "um_sbd": "cu",
+   "um_p17": "cu",
+   "total_emb": 3957.19,
+   "total_sbd": 3957.2018,
+   "desc": "DE 42 MM DE DIAMETRO CON MAQUINA HERRAMIENTA 100 E"
+  },
+  {
+   "codigo": "184127",
+   "um_emb": "u",
+   "um_sbd": "cu",
+   "um_p17": "cu",
+   "total_emb": 4827.07,
+   "total_sbd": 4827.0718,
+   "desc": "DE 50 MM DE DIAMETRO CON MAQUINA HERRAMIENTA 100 E"
+  },
+  {
+   "codigo": "184221",
+   "um_emb": "u",
+   "um_sbd": "cu",
+   "um_p17": "cu",
+   "total_emb": 1704.44,
+   "total_sbd": 1704.4424999999999,
+   "desc": "DE 25 MM DE DIAMETRO CON MAQUINA HERRAMIENTA 100 E"
+  },
+  {
+   "codigo": "184222",
+   "um_emb": "u",
+   "um_sbd": "cu",
+   "um_p17": "cu",
+   "total_emb": 2574.28,
+   "total_sbd": 2574.286,
+   "desc": "DE 32 MM DE DIAMETRO CON MAQUINA HERRAMIENTA 100 E"
+  },
+  {
+   "codigo": "184223",
+   "um_emb": "u",
+   "um_sbd": "cu",
+   "um_p17": "cu",
+   "total_emb": 2930.77,
+   "total_sbd": 2930.7714,
+   "desc": "DE 38 MM DE DIAMETRO CON MAQUINA HERRAMIENTA 100 E"
+  },
+  {
+   "codigo": "184224",
+   "um_emb": "u",
+   "um_sbd": "cu",
+   "um_p17": "cu",
+   "total_emb": 3564.08,
+   "total_sbd": 3564.0811000000003,
+   "desc": "DE 42 MM DE DIAMETRO CON MAQUINA HERRAMIENTA 100 E"
+  },
+  {
+   "codigo": "184225",
+   "um_emb": "u",
+   "um_sbd": "cu",
+   "um_p17": "cu",
+   "total_emb": 4277.13,
+   "total_sbd": 4277.1421,
+   "desc": "DE 50 MM DE DIAMETRO CON MAQUINA HERRAMIENTA 100 E"
+  },
+  {
+   "codigo": "184226",
+   "um_emb": "u",
+   "um_sbd": "cu",
+   "um_p17": "cu",
+   "total_emb": 5899.38,
+   "total_sbd": 5899.3826,
+   "desc": "DE 76 MM DE DIAMETRO CON MAQUINA HERRAMIENTA 100 E"
+  },
+  {
+   "codigo": "184227",
+   "um_emb": "u",
+   "um_sbd": "cu",
+   "um_p17": "cu",
+   "total_emb": 6651.61,
+   "total_sbd": 6651.6175,
+   "desc": "DE 100 MM DE DIAMETRO CON MAQUINA HERRAMIENTA 100 "
+  },
+  {
+   "codigo": "184251",
+   "um_emb": "u",
+   "um_sbd": "cu",
+   "um_p17": "cu",
+   "total_emb": 3155.0,
+   "total_sbd": 3155.0012,
+   "desc": "DE 32 MM DE DIAMETRO EN CALDERAS CON 1 O VARIOS 10"
+  },
+  {
+   "codigo": "184252",
+   "um_emb": "u",
+   "um_sbd": "cu",
+   "um_p17": "cu",
+   "total_emb": 4384.49,
+   "total_sbd": 4384.5015,
+   "desc": "DE 50 MM DE DIAMETRO EN CALDERAS CON 1 O VARIOS 10"
+  },
+  {
+   "codigo": "184253",
+   "um_emb": "u",
+   "um_sbd": "cu",
+   "um_p17": "cu",
+   "total_emb": 7436.67,
+   "total_sbd": 7436.6738000000005,
+   "desc": "DE 76 MM DE DIAMETRO EN CALDERAS CON 1 O VARIOS 10"
+  },
+  {
+   "codigo": "184254",
+   "um_emb": "u",
+   "um_sbd": "cu",
+   "um_p17": "cu",
+   "total_emb": 10488.21,
+   "total_sbd": 10488.233100000001,
+   "desc": "DE 89 MM DE DIAMETRO EN CALDERAS CON 1 O VARIOS 10"
+  },
+  {
+   "codigo": "189202",
+   "um_emb": "u",
+   "um_sbd": "ct",
+   "um_p17": null,
+   "total_emb": 229.36,
+   "total_sbd": 229.36,
+   "desc": "REHABILITACION DE TUBOS FLUSES DE ACERO Y DE 100 C"
+  },
+  {
+   "codigo": "190987",
+   "um_emb": "u",
+   "um_sbd": "ct",
+   "um_p17": null,
+   "total_emb": 34.38,
+   "total_sbd": 34.384,
+   "desc": "DESFUCELAR TUBOS DE ACERO Y DE COBRE DE 100 CUALQU"
+  },
+  {
+   "codigo": "195048",
+   "um_emb": "u",
+   "um_sbd": "ct",
+   "um_p17": "ct",
+   "total_emb": 752.15,
+   "total_sbd": 752.1598,
+   "desc": "COLOCACION PINES EN CHAPA P/AISLAMIENTO D<=8 MM 10"
+  },
+  {
+   "codigo": "195049",
+   "um_emb": "u",
+   "um_sbd": "ct",
+   "um_p17": "ct",
+   "total_emb": 1192.64,
+   "total_sbd": 1192.6584,
+   "desc": "COLOCACION PINES EN CHAPA P/AISLAMIENTO D>8 MM 100"
+  },
+  {
+   "codigo": "195050",
+   "um_emb": "u",
+   "um_sbd": "ct",
+   "um_p17": "ct",
+   "total_emb": 868.04,
+   "total_sbd": 868.0328,
+   "desc": "COLOCACION PINES EN TUB. P/AISLAMIENTO D<=8 MM 100"
+  },
+  {
+   "codigo": "195051",
+   "um_emb": "u",
+   "um_sbd": "ct",
+   "um_p17": "ct",
+   "total_emb": 1427.29,
+   "total_sbd": 1427.2897,
+   "desc": "COLOCACION PINES EN TUB. P/AISLAMIENTO D>8 MM 100 "
+  },
+  {
+   "codigo": "195818",
+   "um_emb": "u",
+   "um_sbd": "ct",
+   "um_p17": "ct",
+   "total_emb": 1000.13,
+   "total_sbd": 1000.1311,
+   "desc": "COLOCACION PINES EN CHAPA, D <=8 MM SOLDADO 100"
+  },
+  {
+   "codigo": "195819",
+   "um_emb": "u",
+   "um_sbd": "ct",
+   "um_p17": "ct",
+   "total_emb": 1469.65,
+   "total_sbd": 1469.6719,
+   "desc": "COLOCACION PINES EN CHAPA, D >8 MM SOLDADO 100"
+  },
+  {
+   "codigo": "195820",
+   "um_emb": "u",
+   "um_sbd": "ct",
+   "um_p17": "ct",
+   "total_emb": 1504.06,
+   "total_sbd": 1504.0712,
+   "desc": "COLOCACION PINES EN TUBERIAS, D <= 8 MM SOLDADO 10"
+  },
+  {
+   "codigo": "195821",
+   "um_emb": "u",
+   "um_sbd": "ct",
+   "um_p17": "ct",
+   "total_emb": 1771.36,
+   "total_sbd": 1771.3671,
+   "desc": "COLOCACION PINES EN TUBERIAS, D >8 MM SOLDADO 100"
+  },
+  {
+   "codigo": "199102",
+   "um_emb": "u",
+   "um_sbd": "ct",
+   "um_p17": null,
+   "total_emb": 286.7,
+   "total_sbd": 286.7,
+   "desc": "REHABILITACION DE DOMOS Y COLECTORES, INDUSTRIA 10"
+  },
+  {
+   "codigo": "220411",
+   "um_emb": "u",
+   "um_sbd": "cu",
+   "um_p17": "cu",
+   "total_emb": 294.4,
+   "total_sbd": 294.4143,
+   "desc": "SACAR TORNILLOS A VIGA DE MADERA 100"
+  },
+  {
+   "codigo": "220412",
+   "um_emb": "u",
+   "um_sbd": "ct",
+   "um_p17": "ct",
+   "total_emb": 228.47,
+   "total_sbd": 228.4817,
+   "desc": "SACAR TORNILLOS A VIGA DE ACERO 100"
+  },
+  {
+   "codigo": "224111",
+   "um_emb": "m2",
+   "um_sbd": "mm",
+   "um_p17": "mm",
+   "total_emb": 12552.52,
+   "total_sbd": 12552.5211,
+   "desc": "DE 1 LT/M2 (0.26 GL/M2) CON ASFALTO MC-0 1000"
+  },
+  {
+   "codigo": "224211",
+   "um_emb": "m2",
+   "um_sbd": "mm",
+   "um_p17": "mm",
+   "total_emb": 7657.42,
+   "total_sbd": 7657.4207,
+   "desc": "DE 0.60 LT/M2 (0.16 GL/M2) CON ASFALTO RC-0 1000"
+  },
+  {
+   "codigo": "224212",
+   "um_emb": "m2",
+   "um_sbd": "mm",
+   "um_p17": "mm",
+   "total_emb": 7657.42,
+   "total_sbd": 7657.4207,
+   "desc": "DE 0.60 LT./M2 ( 0.16 GL/M2) CON EMULSION ASFALTIC"
+  },
+  {
+   "codigo": "229103",
+   "um_emb": "m2",
+   "um_sbd": "mm",
+   "um_p17": "mm",
+   "total_emb": 7688.92,
+   "total_sbd": 7688.9207,
+   "desc": "CON RIEGOS ASFALTICOS DE ADHERENCIA DE 0.60 LT/M2 "
+  },
+  {
+   "codigo": "229104",
+   "um_emb": "m2",
+   "um_sbd": "mm",
+   "um_p17": "mm",
+   "total_emb": 7688.92,
+   "total_sbd": 7688.9207,
+   "desc": "CON RIEGOS ASFALTICOS DE ADHERENCIA DE 0.60 LT./M2"
+  },
+  {
+   "codigo": "229108",
+   "um_emb": "m2",
+   "um_sbd": "mm",
+   "um_p17": "mm",
+   "total_emb": 12584.02,
+   "total_sbd": 12584.0211,
+   "desc": "CON RIEGO ASFALTICO DE IMPRIMACION, DE 1 LT./M2 (0"
+  },
+  {
+   "codigo": "229183",
+   "um_emb": "m2",
+   "um_sbd": "mm",
+   "um_p17": null,
+   "total_emb": 7706.17,
+   "total_sbd": 7706.1707,
+   "desc": "CON RIEGOS ASFÁTICOS DE ADHERENCIA DE 0.60 LTS/m2 "
+  },
+  {
+   "codigo": "229184",
+   "um_emb": "m2",
+   "um_sbd": "mm",
+   "um_p17": null,
+   "total_emb": 7706.17,
+   "total_sbd": 7706.1707,
+   "desc": "CON RIEGOS ASFÁTICOS DE ADHERENCIA DE 0.60 LTS/m2 "
+  },
+  {
+   "codigo": "229188",
+   "um_emb": "m2",
+   "um_sbd": "mm",
+   "um_p17": null,
+   "total_emb": 12601.27,
+   "total_sbd": 12601.2711,
+   "desc": "CON RIEGO ASFÁTICO DE IMPRIMACIÓN DE 1 lt/m2 (0.26"
+  },
+  {
+   "codigo": "229491",
+   "um_emb": "u",
+   "um_sbd": "dc",
+   "um_p17": "dc",
+   "total_emb": 20.99,
+   "total_sbd": 20.9875,
+   "desc": "BARRENAR EN MADERA DURA 10"
+  },
+  {
+   "codigo": "231111",
+   "um_emb": "m2",
+   "um_sbd": "d2",
+   "um_p17": "d2",
+   "total_emb": 43.06,
+   "total_sbd": 43.055,
+   "desc": "SOBRE MASILLA EN TECHOS 3 MANOS 10"
+  },
+  {
+   "codigo": "231112",
+   "um_emb": "m2",
+   "um_sbd": "d2",
+   "um_p17": "d2",
+   "total_emb": 36.99,
+   "total_sbd": 36.987,
+   "desc": "SOBRE MASILLA EN PAREDES 3 MANOS 10"
+  },
+  {
+   "codigo": "231113",
+   "um_emb": "m2",
+   "um_sbd": "d2",
+   "um_p17": "d2",
+   "total_emb": 56.65,
+   "total_sbd": 56.6513,
+   "desc": "SOBRE MASILLA EN TECHOS Y PAREDES 3 MANOS 10 MECAN"
+  },
+  {
+   "codigo": "231114",
+   "um_emb": "m2",
+   "um_sbd": "d2",
+   "um_p17": "d2",
+   "total_emb": 83.3,
+   "total_sbd": 83.301,
+   "desc": "EN PARED DE HORMIGON Y LADRILLOS EXPUESTOS (3 10 M"
+  },
+  {
+   "codigo": "231121",
+   "um_emb": "m2",
+   "um_sbd": "d2",
+   "um_p17": "d2",
+   "total_emb": 63.88,
+   "total_sbd": 63.8752,
+   "desc": "SOBRE REPELLO LISO O SIMILAR EN TECHOS 3 MANOS 10"
+  },
+  {
+   "codigo": "231122",
+   "um_emb": "m2",
+   "um_sbd": "d2",
+   "um_p17": "d2",
+   "total_emb": 47.45,
+   "total_sbd": 47.4506,
+   "desc": "SOBRE REPELLO LISO O SIMILAR EN PAREDES 3 MANOS 10"
+  },
+  {
+   "codigo": "231123",
+   "um_emb": "m2",
+   "um_sbd": "d2",
+   "um_p17": "d2",
+   "total_emb": 63.08,
+   "total_sbd": 63.0821,
+   "desc": "SOBRE REPELLO LISO O SIMILAR EN TECHOS-PAREDES 3 1"
+  },
+  {
+   "codigo": "231131",
+   "um_emb": "m2",
+   "um_sbd": "d2",
+   "um_p17": "d2",
+   "total_emb": 149.71,
+   "total_sbd": 149.7034,
+   "desc": "SOBRE REPELLO RUSTICO EN TECHOS 3 MANOS 10"
+  },
+  {
+   "codigo": "231132",
+   "um_emb": "m2",
+   "um_sbd": "d2",
+   "um_p17": "d2",
+   "total_emb": 116.68,
+   "total_sbd": 116.6703,
+   "desc": "SOBRE REPELLO RUSTICO EN PAREDES 3 MANOS 10"
+  },
+  {
+   "codigo": "231133",
+   "um_emb": "m2",
+   "um_sbd": "d2",
+   "um_p17": "d2",
+   "total_emb": 101.32,
+   "total_sbd": 101.3227,
+   "desc": "SOBRE REPELLO RUSTICO EN TECHOS-PAREDES 3 MANOS 10"
+  },
+  {
+   "codigo": "231311",
+   "um_emb": "m2",
+   "um_sbd": "d2",
+   "um_p17": "d2",
+   "total_emb": 128.15,
+   "total_sbd": 128.1509,
+   "desc": "A COLOR C/CEMENTO GRIS O BLANCO EN PARED SOBRE 10 "
+  },
+  {
+   "codigo": "231312",
+   "um_emb": "m2",
+   "um_sbd": "d2",
+   "um_p17": "d2",
+   "total_emb": 127.1,
+   "total_sbd": 127.10419999999999,
+   "desc": "A COLOR C/CEMENTO GRIS O BLANCO EN PARED SOBRE 10 "
+  },
+  {
+   "codigo": "231313",
+   "um_emb": "m2",
+   "um_sbd": "d2",
+   "um_p17": "d2",
+   "total_emb": 130.36,
+   "total_sbd": 130.3587,
+   "desc": "A COLOR C/CEMENTO GRIS O BLANCO EN PARED SOBRE 10 "
+  },
+  {
+   "codigo": "231321",
+   "um_emb": "m2",
+   "um_sbd": "d2",
+   "um_p17": "d2",
+   "total_emb": 132.77,
+   "total_sbd": 132.7642,
+   "desc": "A COLOR C/CEMENTO GRIS O BLANCO EN TECHO SOBRE 10 "
+  },
+  {
+   "codigo": "238101",
+   "um_emb": "m2",
+   "um_sbd": "d2",
+   "um_p17": "d2",
+   "total_emb": 84.74,
+   "total_sbd": 84.7371,
+   "desc": "DE CAL AL TEMPLE SIMPLE O PIGMENTADA (1 MANO) 10"
+  },
+  {
+   "codigo": "244201",
+   "um_emb": "u",
+   "um_sbd": "ct",
+   "um_p17": "ct",
+   "total_emb": 54.26,
+   "total_sbd": 54.26,
+   "desc": "CON PESO DE 400-1000 KG/M3 100"
+  },
+  {
+   "codigo": "244202",
+   "um_emb": "u",
+   "um_sbd": "ct",
+   "um_p17": "ct",
+   "total_emb": 67.83,
+   "total_sbd": 67.825,
+   "desc": "CON PESO DE 1001-2000 KG/M3 100"
+  },
+  {
+   "codigo": "244203",
+   "um_emb": "u",
+   "um_sbd": "ct",
+   "um_p17": "ct",
+   "total_emb": 108.52,
+   "total_sbd": 108.52,
+   "desc": "CON PESO DE 2001-2500 KG/M3 100"
+  },
+  {
+   "codigo": "244204",
+   "um_emb": "u",
+   "um_sbd": "ct",
+   "um_p17": "ct",
+   "total_emb": 108.52,
+   "total_sbd": 108.52,
+   "desc": "CON PESO DE 2501-3000 KG/M3 100"
+  },
+  {
+   "codigo": "244205",
+   "um_emb": "u",
+   "um_sbd": "ct",
+   "um_p17": "ct",
+   "total_emb": 230.61,
+   "total_sbd": 230.605,
+   "desc": "EN PIEZAS ESPECIALES CON PESO DE 2501-3000 KG/M3 1"
+  },
+  {
+   "codigo": "274102",
+   "um_emb": "u",
+   "um_sbd": "ct",
+   "um_p17": "ct",
+   "total_emb": 271.04,
+   "total_sbd": 271.0389,
+   "desc": "PESO <=2,0KG, ALTURA HASTA 6ML 100"
+  },
+  {
+   "codigo": "274103",
+   "um_emb": "u",
+   "um_sbd": "ct",
+   "um_p17": "ct",
+   "total_emb": 286.27,
+   "total_sbd": 286.2689,
+   "desc": "PESO <=2,OKG, ALTURA > 6,0ML 100"
+  },
+  {
+   "codigo": "274105",
+   "um_emb": "u",
+   "um_sbd": "ct",
+   "um_p17": "ct",
+   "total_emb": 356.29,
+   "total_sbd": 356.2856,
+   "desc": "PESO 2,1-5,0KG, ALTURA HASTA 6ML 100"
+  },
+  {
+   "codigo": "274106",
+   "um_emb": "u",
+   "um_sbd": "ct",
+   "um_p17": "ct",
+   "total_emb": 386.75,
+   "total_sbd": 386.74559999999997,
+   "desc": "PESO 2,1-5,0KG, ALTURA >6,0ML 100"
+  },
+  {
+   "codigo": "274108",
+   "um_emb": "u",
+   "um_sbd": "ct",
+   "um_p17": "ct",
+   "total_emb": 825.7,
+   "total_sbd": 825.6945,
+   "desc": "PESO 5,1-15,0KG, ALTURA HASTA 6ML 100"
+  },
+  {
+   "codigo": "274109",
+   "um_emb": "u",
+   "um_sbd": "ct",
+   "um_p17": "ct",
+   "total_emb": 895.24,
+   "total_sbd": 895.2445,
+   "desc": "PESO 5,1-15,0KG, ALTURA >6,0ML 100"
+  },
+  {
+   "codigo": "274110",
+   "um_emb": "u",
+   "um_sbd": "ct",
+   "um_p17": "ct",
+   "total_emb": 2994.26,
+   "total_sbd": 2994.2558,
+   "desc": "PESO 15,1-50,0KG, ALTURA =<2,5ML 100"
+  },
+  {
+   "codigo": "274111",
+   "um_emb": "u",
+   "um_sbd": "ct",
+   "um_p17": "ct",
+   "total_emb": 3272.46,
+   "total_sbd": 3272.4557999999997,
+   "desc": "PESO 15,1-50,0KG, ALTURA 2,51-6,0ML 100"
+  },
+  {
+   "codigo": "274112",
+   "um_emb": "u",
+   "um_sbd": "ct",
+   "um_p17": "ct",
+   "total_emb": 3550.66,
+   "total_sbd": 3550.656,
+   "desc": "PESO 15,1-50,0KG, ALTURA >6,0ML 100"
+  },
+  {
+   "codigo": "274113",
+   "um_emb": "u",
+   "um_sbd": "ct",
+   "um_p17": "ct",
+   "total_emb": 5323.33,
+   "total_sbd": 5323.3338,
+   "desc": "PESO 50,1-100KG, ALTURA =<2,5ML 100"
+  },
+  {
+   "codigo": "274114",
+   "um_emb": "u",
+   "um_sbd": "ct",
+   "um_p17": "ct",
+   "total_emb": 5810.19,
+   "total_sbd": 5810.183800000001,
+   "desc": "PESO 50,1-100KG, ALTURA 2,51-6,0ML 100"
+  },
+  {
+   "codigo": "274115",
+   "um_emb": "u",
+   "um_sbd": "ct",
+   "um_p17": "ct",
+   "total_emb": 6297.03,
+   "total_sbd": 6297.0334,
+   "desc": "PESO 50,1-100KG, ALTURA >6,0ML 100"
+  },
+  {
+   "codigo": "274201",
+   "um_emb": "u",
+   "um_sbd": "ct",
+   "um_p17": "ct",
+   "total_emb": 7091.04,
+   "total_sbd": 7091.1189,
+   "desc": "PESO =<2,0KG, ALTURA =<2,5ML 100"
+  },
+  {
+   "codigo": "274202",
+   "um_emb": "u",
+   "um_sbd": "ct",
+   "um_p17": "ct",
+   "total_emb": 8138.16,
+   "total_sbd": 8138.2462,
+   "desc": "PESO =<2,0KG, ALTURA 2,51-6,0ML 100"
+  },
+  {
+   "codigo": "274203",
+   "um_emb": "u",
+   "um_sbd": "ct",
+   "um_p17": "ct",
+   "total_emb": 9658.01,
+   "total_sbd": 9658.1193,
+   "desc": "PESO =<2,0KG, ALTURA >6ML 100"
+  },
+  {
+   "codigo": "274204",
+   "um_emb": "u",
+   "um_sbd": "ct",
+   "um_p17": "ct",
+   "total_emb": 12446.93,
+   "total_sbd": 12447.062600000001,
+   "desc": "PESO 2,1-5,0KG, ALTURA =<2,5ML 100"
+  },
+  {
+   "codigo": "274205",
+   "um_emb": "u",
+   "um_sbd": "ct",
+   "um_p17": "ct",
+   "total_emb": 14368.35,
+   "total_sbd": 14368.5055,
+   "desc": "PESO 2,1-5,0KG, ALTURA 2,51-6ML 100"
+  },
+  {
+   "codigo": "274206",
+   "um_emb": "u",
+   "um_sbd": "ct",
+   "um_p17": "ct",
+   "total_emb": 17077.67,
+   "total_sbd": 17077.8577,
+   "desc": "PESO 2,1-5,0KG, ALTURA >6ML 100"
+  },
+  {
+   "codigo": "274207",
+   "um_emb": "u",
+   "um_sbd": "ct",
+   "um_p17": "ct",
+   "total_emb": 14246.94,
+   "total_sbd": 14247.0985,
+   "desc": "PESO 5,1-15,0KG, ALTURA =<2,5ML 100"
+  },
+  {
+   "codigo": "274208",
+   "um_emb": "u",
+   "um_sbd": "ct",
+   "um_p17": "ct",
+   "total_emb": 16254.77,
+   "total_sbd": 16254.9472,
+   "desc": "PESO 5,1-15,0KG, ALTURA 2,51-6,0ML 100"
+  },
+  {
+   "codigo": "274209",
+   "um_emb": "u",
+   "um_sbd": "ct",
+   "um_p17": "ct",
+   "total_emb": 19523.23,
+   "total_sbd": 19523.4512,
+   "desc": "PESO 5,1-15,0KG, ALTURA >6,0ML 100"
+  },
+  {
+   "codigo": "274210",
+   "um_emb": "u",
+   "um_sbd": "ct",
+   "um_p17": "ct",
+   "total_emb": 29514.86,
+   "total_sbd": 29515.159900000002,
+   "desc": "PESO 15,1-50,0KG, ALTURA =<2,5ML 100"
+  },
+  {
+   "codigo": "274211",
+   "um_emb": "u",
+   "um_sbd": "ct",
+   "um_p17": "ct",
+   "total_emb": 33102.24,
+   "total_sbd": 33102.5797,
+   "desc": "PESO 15,1-50,0KG, ALTURA 2,51-6,0ML 100"
+  },
+  {
+   "codigo": "274212",
+   "um_emb": "u",
+   "um_sbd": "ct",
+   "um_p17": "ct",
+   "total_emb": 37950.26,
+   "total_sbd": 37950.655099999996,
+   "desc": "PESO 15,1-50,0KG, ALTURA >6,0ML 100"
+  },
+  {
+   "codigo": "274213",
+   "um_emb": "u",
+   "um_sbd": "ct",
+   "um_p17": "ct",
+   "total_emb": 55904.3,
+   "total_sbd": 55904.877499999995,
+   "desc": "PESO 50,1-100KG, ALTURA =<2,5ML 100"
+  },
+  {
+   "codigo": "274214",
+   "um_emb": "u",
+   "um_sbd": "ct",
+   "um_p17": "ct",
+   "total_emb": 63151.34,
+   "total_sbd": 63152.0075,
+   "desc": "PESO 50,1-100KG, ALTURA 2,51-6,0ML 100"
+  },
+  {
+   "codigo": "274215",
+   "um_emb": "u",
+   "um_sbd": "ct",
+   "um_p17": "ct",
+   "total_emb": 73411.19,
+   "total_sbd": 73411.969,
+   "desc": "PESO 50,1-100KG, ALTURA >6,0ML 100"
+  },
+  {
+   "codigo": "275101",
+   "um_emb": "u",
+   "um_sbd": "ct",
+   "um_p17": "ct",
+   "total_emb": 397.81,
+   "total_sbd": 397.8129,
+   "desc": "DIAMETRO <1000MM, ALTURA <6ML 100"
+  },
+  {
+   "codigo": "275102",
+   "um_emb": "u",
+   "um_sbd": "ct",
+   "um_p17": "ct",
+   "total_emb": 463.92,
+   "total_sbd": 463.9129,
+   "desc": "DIAMETRO <1000MM, ALTURA 6-12ML 100"
+  },
+  {
+   "codigo": "275103",
+   "um_emb": "u",
+   "um_sbd": "ct",
+   "um_p17": "ct",
+   "total_emb": 516.8,
+   "total_sbd": 516.7929,
+   "desc": "DIAMETRO <1000MM, ALTURA >12ML 100"
+  },
+  {
+   "codigo": "275104",
+   "um_emb": "u",
+   "um_sbd": "ct",
+   "um_p17": "ct",
+   "total_emb": 1001.6,
+   "total_sbd": 1001.5938,
+   "desc": "DIAMETRO 1000-2500MM, ALTURA <6ML 100"
+  },
+  {
+   "codigo": "275105",
+   "um_emb": "u",
+   "um_sbd": "ct",
+   "um_p17": "ct",
+   "total_emb": 1157.72,
+   "total_sbd": 1157.7138,
+   "desc": "DIAMETRO 1000-2500MM, ALTURA 6-12ML 100"
+  },
+  {
+   "codigo": "275106",
+   "um_emb": "u",
+   "um_sbd": "ct",
+   "um_p17": "ct",
+   "total_emb": 1302.13,
+   "total_sbd": 1302.1248,
+   "desc": "DIAMETRO 1000-2500MM, ALTURA >12ML 100"
+  },
+  {
+   "codigo": "275107",
+   "um_emb": "u",
+   "um_sbd": "ct",
+   "um_p17": "ct",
+   "total_emb": 2018.03,
+   "total_sbd": 2018.0315,
+   "desc": "DIAMETRO >2500MM, ALTURA <6ML 100 L ista de Costos"
+  },
+  {
+   "codigo": "275108",
+   "um_emb": "u",
+   "um_sbd": "ct",
+   "um_p17": "ct",
+   "total_emb": 2327.75,
+   "total_sbd": 2327.7516,
+   "desc": "DIAMETRO >2500MM, ALTURA 6-12ML 100"
+  },
+  {
+   "codigo": "275109",
+   "um_emb": "u",
+   "um_sbd": "ct",
+   "um_p17": "ct",
+   "total_emb": 2623.25,
+   "total_sbd": 2623.2446999999997,
+   "desc": "DIAMETRO >2500MM, ALTURA >12ML 100"
+  },
+  {
+   "codigo": "275202",
+   "um_emb": "u",
+   "um_sbd": "ct",
+   "um_p17": "ct",
+   "total_emb": 970.54,
+   "total_sbd": 970.5518000000001,
+   "desc": "LONGITUD <500MM, ALTURA HASTA 12ML 100"
+  },
+  {
+   "codigo": "275203",
+   "um_emb": "u",
+   "um_sbd": "ct",
+   "um_p17": "ct",
+   "total_emb": 1080.94,
+   "total_sbd": 1080.9649,
+   "desc": "LONGITUD <500MM, ALTURA >12ML 100"
+  },
+  {
+   "codigo": "275205",
+   "um_emb": "u",
+   "um_sbd": "ct",
+   "um_p17": "ct",
+   "total_emb": 1164.27,
+   "total_sbd": 1164.2768,
+   "desc": "LONGITUD 500-800MM, ALTURA HASTA 12ML 100"
+  },
+  {
+   "codigo": "275206",
+   "um_emb": "u",
+   "um_sbd": "ct",
+   "um_p17": "ct",
+   "total_emb": 1348.29,
+   "total_sbd": 1348.2987,
+   "desc": "LONGITUD 500-800MM, ALTURA >12ML 100"
+  },
+  {
+   "codigo": "275208",
+   "um_emb": "u",
+   "um_sbd": "ct",
+   "um_p17": "ct",
+   "total_emb": 1420.48,
+   "total_sbd": 1420.4857,
+   "desc": "LONGITUD >800MM, ALTURA HASTA 12ML 100"
+  },
+  {
+   "codigo": "275209",
+   "um_emb": "u",
+   "um_sbd": "ct",
+   "um_p17": "ct",
+   "total_emb": 1604.5,
+   "total_sbd": 1604.5076000000001,
+   "desc": "LONGITUD >800MM, ALTURA >12ML 100"
+  },
+  {
+   "codigo": "321411",
+   "um_emb": "u",
+   "um_sbd": "dc",
+   "um_p17": "dc",
+   "total_emb": 42.98,
+   "total_sbd": 42.971500000000006,
+   "desc": "DE ENVASES NUMERO 1 10"
+  },
+  {
+   "codigo": "321412",
+   "um_emb": "u",
+   "um_sbd": "dc",
+   "um_p17": "dc",
+   "total_emb": 266.05,
+   "total_sbd": 266.055,
+   "desc": "DE ENVASES NUMERO 3 10"
+  },
+  {
+   "codigo": "321413",
+   "um_emb": "u",
+   "um_sbd": "dc",
+   "um_p17": "dc",
+   "total_emb": 480.0,
+   "total_sbd": 480.0057,
+   "desc": "DE ENVASES NUMERO 5 10"
+  },
+  {
+   "codigo": "321511",
+   "um_emb": "u",
+   "um_sbd": "dc",
+   "um_p17": "dc",
+   "total_emb": 40.78,
+   "total_sbd": 40.7715,
+   "desc": "EN ENVASES NUMERO 1 10"
+  },
+  {
+   "codigo": "321512",
+   "um_emb": "u",
+   "um_sbd": "dc",
+   "um_p17": "dc",
+   "total_emb": 242.75,
+   "total_sbd": 242.75920000000002,
+   "desc": "EN ENVASES NUMERO 3 10"
+  },
+  {
+   "codigo": "322112",
+   "um_emb": "m2",
+   "um_sbd": "d2",
+   "um_p17": "d2",
+   "total_emb": 0.96,
+   "total_sbd": 0.9614,
+   "desc": "CON MANGUERAS DE 3/4\" EN CANTEROS 10"
+  },
+  {
+   "codigo": "322113",
+   "um_emb": "u",
+   "um_sbd": "dc",
+   "um_p17": "dc",
+   "total_emb": 6.59,
+   "total_sbd": 6.585,
+   "desc": "CON MANGUERAS DE 3/4\" EN ARBOLES Y PALMAS 10"
+  },
+  {
+   "codigo": "322123",
+   "um_emb": "u",
+   "um_sbd": "dc",
+   "um_p17": "dc",
+   "total_emb": 225.36,
+   "total_sbd": 225.357,
+   "desc": "CON CAMION TANQUE EN ARBOLES Y PALMAS 10"
+  },
+  {
+   "codigo": "322223",
+   "um_emb": "u",
+   "um_sbd": "dc",
+   "um_p17": "dc",
+   "total_emb": 7.02,
+   "total_sbd": 7.0196,
+   "desc": "DE SETOS 10"
+  },
+  {
+   "codigo": "322231",
+   "um_emb": "m2",
+   "um_sbd": "d2",
+   "um_p17": "d2",
+   "total_emb": 5.27,
+   "total_sbd": 5.268,
+   "desc": "DE COBERTURA A TIJERAS 10"
+  },
+  {
+   "codigo": "322232",
+   "um_emb": "m2",
+   "um_sbd": "d2",
+   "um_p17": "d2",
+   "total_emb": 9.57,
+   "total_sbd": 9.5746,
+   "desc": "DE CESPED A TIJERAS 10"
+  },
+  {
+   "codigo": "322410",
+   "um_emb": "m2",
+   "um_sbd": "d2",
+   "um_p17": "d2",
+   "total_emb": 465.04,
+   "total_sbd": 465.0492,
+   "desc": "RECONSTRUCCION DEL CESPED 10"
+  },
+  {
+   "codigo": "322511",
+   "um_emb": "u",
+   "um_sbd": "dc",
+   "um_p17": "dc",
+   "total_emb": 11.09,
+   "total_sbd": 11.0891,
+   "desc": "A ARBOLES Y PALMAS DE 1.00 M DE DIAMETRO 10"
+  },
+  {
+   "codigo": "322512",
+   "um_emb": "u",
+   "um_sbd": "dc",
+   "um_p17": "dc",
+   "total_emb": 10.04,
+   "total_sbd": 10.0355,
+   "desc": "CONSTRUCCION DE CAZUELAS DE 1.00 M DE DIAMETRO 10"
+  },
+  {
+   "codigo": "322521",
+   "um_emb": "u",
+   "um_sbd": "dc",
+   "um_p17": "dc",
+   "total_emb": 5.73,
+   "total_sbd": 5.729,
+   "desc": "APORQUE DE ARBUSTOS DE 0.30 M DE DIAMETRO 10"
+  },
+  {
+   "codigo": "322522",
+   "um_emb": "m2",
+   "um_sbd": "d2",
+   "um_p17": "d2",
+   "total_emb": 4.79,
+   "total_sbd": 4.7939,
+   "desc": "APORQUE DE CANTEROS 10"
+  },
+  {
+   "codigo": "322523",
+   "um_emb": "m2",
+   "um_sbd": "d2",
+   "um_p17": "d2",
+   "total_emb": 27.01,
+   "total_sbd": 27.0117,
+   "desc": "RECONSTRUCCION DE CANTEROS 10"
+  },
+  {
+   "codigo": "322611",
+   "um_emb": "u",
+   "um_sbd": "dc",
+   "um_p17": "dc",
+   "total_emb": 14.8,
+   "total_sbd": 14.803,
+   "desc": "FERTILIZACION DE ARBOLES Y PALMAS 10"
+  },
+  {
+   "codigo": "322612",
+   "um_emb": "u",
+   "um_sbd": "dc",
+   "um_p17": "dc",
+   "total_emb": 9.0,
+   "total_sbd": 8.9951,
+   "desc": "FERTILIZACION DE ARBUSTOS 10"
+  },
+  {
+   "codigo": "322621",
+   "um_emb": "u",
+   "um_sbd": "dc",
+   "um_p17": "dc",
+   "total_emb": 443.38,
+   "total_sbd": 443.3751,
+   "desc": "ABONADO DE ARBOLES Y PALMAS 10"
+  },
+  {
+   "codigo": "322622",
+   "um_emb": "u",
+   "um_sbd": "dc",
+   "um_p17": "dc",
+   "total_emb": 220.5,
+   "total_sbd": 220.50220000000002,
+   "desc": "ABONADO DE ARBUSTOS 10"
+  },
+  {
+   "codigo": "322712",
+   "um_emb": "u",
+   "um_sbd": "dc",
+   "um_p17": "dc",
+   "total_emb": 114.0,
+   "total_sbd": 114.0128,
+   "desc": "DE FUMAGINA EN ARBUSTOS 10"
+  },
+  {
+   "codigo": "322713",
+   "um_emb": "m2",
+   "um_sbd": "d2",
+   "um_p17": "d2",
+   "total_emb": 2.67,
+   "total_sbd": 2.6721,
+   "desc": "DE FUMAGINA EN CANTEROS 10"
+  },
+  {
+   "codigo": "322722",
+   "um_emb": "u",
+   "um_sbd": "dc",
+   "um_p17": "dc",
+   "total_emb": 112.14,
+   "total_sbd": 112.15,
+   "desc": "DE INSECTOS EN ARBUSTOS 10"
+  },
+  {
+   "codigo": "322723",
+   "um_emb": "m2",
+   "um_sbd": "d2",
+   "um_p17": "d2",
+   "total_emb": 2.64,
+   "total_sbd": 2.641,
+   "desc": "DE INSECTOS EN CANTEROS 10"
+  },
+  {
+   "codigo": "322732",
+   "um_emb": "u",
+   "um_sbd": "dc",
+   "um_p17": "dc",
+   "total_emb": 112.22,
+   "total_sbd": 112.2268,
+   "desc": "DE HONGOS EN ARBUSTOS 10"
+  },
+  {
+   "codigo": "322733",
+   "um_emb": "m2",
+   "um_sbd": "d2",
+   "um_p17": "d2",
+   "total_emb": 2.64,
+   "total_sbd": 2.6423,
+   "desc": "DE HONGOS EN CANTEROS 10"
+  },
+  {
+   "codigo": "322751",
+   "um_emb": "u",
+   "um_sbd": "dc",
+   "um_p17": "dc",
+   "total_emb": 280.24,
+   "total_sbd": 280.24809999999997,
+   "desc": "PREVENTIVO EN ARBOLES Y PALMAS 10"
+  },
+  {
+   "codigo": "322752",
+   "um_emb": "u",
+   "um_sbd": "dc",
+   "um_p17": "dc",
+   "total_emb": 112.57,
+   "total_sbd": 112.58080000000001,
+   "desc": "PREVENTIVO EN ARBUSTOS 10"
+  },
+  {
+   "codigo": "322753",
+   "um_emb": "m2",
+   "um_sbd": "d2",
+   "um_p17": "d2",
+   "total_emb": 2.65,
+   "total_sbd": 2.6482,
+   "desc": "PREVENTIVO EN CANTEROS 10"
+  },
+  {
+   "codigo": "322821",
+   "um_emb": "u",
+   "um_sbd": "dc",
+   "um_p17": "dc",
+   "total_emb": 31.41,
+   "total_sbd": 31.4096,
+   "desc": "EXTRACCION DE SETOS HASTA 1.20 M DE ALTURA 10"
+  },
+  {
+   "codigo": "322831",
+   "um_emb": "u",
+   "um_sbd": "ct",
+   "um_p17": "ct",
+   "total_emb": 113.64,
+   "total_sbd": 113.6309,
+   "desc": "DE COBERTURAS EN CANTEROS 100"
+  },
+  {
+   "codigo": "322832",
+   "um_emb": "m2",
+   "um_sbd": "d2",
+   "um_p17": "d2",
+   "total_emb": 296.63,
+   "total_sbd": 296.62789999999995,
+   "desc": "DE CESPED 10"
+  }
+ ]
+}
