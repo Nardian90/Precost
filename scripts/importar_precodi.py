@@ -450,12 +450,18 @@ def importar_precost2025(cur, ver_id, cat_id, stats, adv):
                      a_real(p[3]), a_real(p[4]), a_real(p[5]), total_fuente, a_real(p[6])))
         stats.inc("P", "insertadas")
     # recursos M/O/E + precios por fuente/fecha
-    for tipo, fuente, um_def in (("material", M, None), ("mano_obra", O, "hh"), ("equipo", E, "he")):
+    # Estructura real del extracto (fase3d): M = [desc, um, precio, peso];
+    # O = [desc, tarifa horaria]; E = [desc, costo horario de uso].
+    # CORRECCIÓN III-C: antes se leía v[2] para todos los tipos → las tarifas
+    # de mano de obra y costos de equipo 2025 quedaban en NULL (los materiales
+    # no se veían afectados). El dato de origen siempre estuvo en el extracto.
+    for tipo, fuente, um_def, idx_precio in (
+            ("material", M, None, 2), ("mano_obra", O, "hh", 1), ("equipo", E, "he", 1)):
         tipo_id = cur.execute("SELECT id FROM tipos_recurso WHERE codigo=?", (tipo,)).fetchone()[0]
         for cod, v in sorted(fuente.items()):
             desc = str(v[0]).strip()
             um = str(v[1]).lower() if (tipo == "material" and len(v) > 1) else um_def
-            precio = a_real(v[2]) if len(v) > 2 else None
+            precio = a_real(v[idx_precio]) if len(v) > idx_precio else None
             peso = a_real(v[3]) if (tipo == "material" and len(v) > 3) else None
             cur.execute("""INSERT INTO recursos (version_id, tipo_id, codigo, descripcion, unidad,
                 precio_mn, peso_unidad) VALUES (?,?,?,?,?,?,?)""",
@@ -683,13 +689,24 @@ def purgar_version(ruta_bd, catalogo, version):
         con.close()
         return
     vid = fila[0]
-    orden = ["normas_partida", "componentes_recurso", "precios_recurso", "recursos", "partidas",
+    # CORRECCIÓN III-C: precios_recurso NO tiene columna version_id (referencia
+    # recursos(id)); el borrado genérico por version_id fallaba en silencio y
+    # el DELETE posterior de recursos chocaba con la FK (IntegrityError).
+    # Se borra primero por recurso_id, en el mismo orden FK-seguro.
+    orden = ["normas_partida", "componentes_recurso", "recursos", "partidas",
              "sbd_colecciones_recursos", "sbd_colec_rv", "sbd_normas_recurso", "sbd_normas_rh_extendida",
              "sbd_normas_descriptivas", "sbd_tarifas_transporte", "sbd_tarifas_especiales",
              "sbd_duracion_costo_rv", "sbd_actividades_estimacion", "sbd_macros_rv",
              "sbd_presupuesto_recursos", "sbd_presupuesto_rv", "sbd_obras", "sbd_objetos_obra",
              "sbd_etapas", "sbd_colecciones"]
     borradas = {}
+    try:
+        n = con.execute("""DELETE FROM precios_recurso WHERE recurso_id IN
+                           (SELECT id FROM recursos WHERE version_id=?)""", (vid,)).rowcount
+        if n:
+            borradas["precios_recurso"] = n
+    except sqlite3.OperationalError:
+        pass  # tabla aún no creada (migración no aplicada)
     for t in orden:
         try:
             n = con.execute(f"DELETE FROM {t} WHERE version_id=?", (vid,)).rowcount

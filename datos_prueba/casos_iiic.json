@@ -1,0 +1,393 @@
+{
+ "descripcion": "Fixtures MISIÓN III-C extraídos de bd/precodi.db (valores EXACTOS de la fuente; regenerable con scripts/extraer_casos_iiic.py)",
+ "fuente_sha256_html": "50d3cf28e405201f36c50c3dd5385d7e28fbab3e7e5eee22c74ca0bcfd5cbaa2",
+ "versiones_012141": {
+  "2007-v7.21": {
+   "catalogo": "PRECODI",
+   "version": "2007-v7.21",
+   "costo_total_mn": 8.8881,
+   "unidad": "m3"
+  },
+  "2007-v7.22": {
+   "catalogo": "PRECODI",
+   "version": "2007-v7.22",
+   "costo_total_mn": 8.8881,
+   "unidad": "m3"
+  },
+  "2017-raiz": {
+   "catalogo": "PRECODI",
+   "version": "2017-raiz",
+   "costo_total_mn": 8.8881,
+   "unidad": "m3"
+  },
+  "2011-sbd2008": {
+   "catalogo": "PRECODI",
+   "version": "2011-sbd2008",
+   "costo_total_mn": 9.6902,
+   "unidad": "m3"
+  },
+  "2025-06-06": {
+   "catalogo": "PRECONS_III",
+   "version": "2025-06-06",
+   "costo_total_mn": 123.02,
+   "unidad": "m3"
+  }
+ },
+ "casos": {
+  "partida_012141": {
+   "codigo": "012141",
+   "descripcion": "EN ROCA CUALQUIER SECCION EN PLANTA, HASTA 1.80 M DE PROFUNDIDAD CON DETONADOR ELECTRICO.(CARGA MANUAL)",
+   "unidad": "m3",
+   "costo_mat_mn": 2.629,
+   "costo_mo_mn": 4.6074,
+   "costo_eq_mn": 1.6517,
+   "costo_total_mn": 8.8881,
+   "n_componentes": 9,
+   "por_tipo": {
+    "material": 3,
+    "mano_obra": 2,
+    "equipo": 4,
+    "juego": 0,
+    "semielaborado": 0
+   },
+   "normas": [
+    {
+     "tipo": "material",
+     "codigo_recurso": "3834010001",
+     "coeficiente": 1.2000000476837158,
+     "cod_norma": "S/C",
+     "descripcion": "TECTRON 100 (EMULSION) DIAM. 26-32 MM",
+     "unidad": "kg",
+     "precio_mn": 1.8
+    },
+    {
+     "tipo": "material",
+     "codigo_recurso": "3842030002",
+     "coeficiente": 1.5,
+     "cod_norma": "S/C",
+     "descripcion": "DETONADOR ELECTRICO MICRORETARDO.",
+     "unidad": "u",
+     "precio_mn": 0.27
+    },
+    {
+     "tipo": "material",
+     "codigo_recurso": "3844010002",
+     "coeficiente": 0.800000011920929,
+     "cod_norma": "S/C",
+     "descripcion": "ALAMBRE DUPLEX",
+     "unidad": "ml",
+     "precio_mn": 0.08
+    },
+    {
+     "tipo": "mano_obra",
+     "codigo_recurso": "0000000211",
+     "coeficiente": 2.4000000953674316,
+     "cod_norma": "1309300200",
+     "descripcion": "AYUDANTE DE CONSTRUCCION DEL GRUPO SALARIAL II",
+     "unidad": "hh",
+     "precio_mn": 1.91
+    },
+    {
+     "tipo": "mano_obra",
+     "codigo_recurso": "0000010181",
+     "coeficiente": 0.009600000455975533,
+     "cod_norma": "S/C",
+     "descripcion": "ARTILLERO DEL GRUPO SALARIAL V",
+     "unidad": "hh",
+     "precio_mn": 2.44
+    },
+    {
+     "tipo": "equipo",
+     "codigo_recurso": "0023411907",
+     "coeficiente": 0.16670000553131104,
+     "cod_norma": "S/C",
+     "descripcion": "MARTILLO BARRENADOR DE 26-40 MM DIAMETRO DE BARRENO",
+     "unidad": "he",
+     "precio_mn": 2.943
+    },
+    {
+     "tipo": "equipo",
+     "codigo_recurso": "0023511943",
+     "coeficiente": 0.016699999570846558,
+     "cod_norma": "S/C",
+     "descripcion": "MARTILLO ROMPEDOR DE 1051-1150 GOLPES/MIN (8-12KG/GOLP)",
+     "unidad": "he",
+     "precio_mn": 2.952
+    },
+    {
+     "tipo": "equipo",
+     "codigo_recurso": "0053104003",
+     "coeficiente": 0.009600000455975533,
+     "cod_norma": "S/C",
+     "descripcion": "CAMION PLANCHA 4.1-5.5 TON",
+     "unidad": "he",
+     "precio_mn": 16.36
+    },
+    {
+     "tipo": "equipo",
+     "codigo_recurso": "0063114304",
+     "coeficiente": 0.16670000553131104,
+     "cod_norma": "S/C",
+     "descripcion": "COMPRESOR DE AIRE MOVIL 8-12 M3/MIN",
+     "unidad": "he",
+     "precio_mn": 5.727
+    }
+   ]
+  },
+  "partida_999999_sin_norma": {
+   "codigo": "999999",
+   "descripcion": "SUMINISTROS",
+   "unidad": ".",
+   "costo_mat_mn": 0.0,
+   "costo_mo_mn": 0.0,
+   "costo_eq_mn": 0.0,
+   "costo_total_mn": 0.0
+  },
+  "partida_096231": {
+   "codigo": "096231",
+   "descripcion": "CON POSTE DE TUBOS DE 1.23 M DE ALTO SIN PROTECCION",
+   "unidad": "ml",
+   "costo_mat_mn": 9.3437,
+   "costo_mo_mn": 0.8452,
+   "costo_eq_mn": 0.0,
+   "costo_total_mn": 10.1889,
+   "n_componentes": 8,
+   "por_tipo": {
+    "material": 2,
+    "mano_obra": 4,
+    "equipo": 0,
+    "juego": 1,
+    "semielaborado": 1
+   },
+   "duplicados_reales": [
+    {
+     "tipo": "mano_obra",
+     "codigo": "0000000211",
+     "veces": 2
+    }
+   ],
+   "juego_con_hijos": true,
+   "normas": [
+    {
+     "tipo": "material",
+     "codigo_recurso": "2615100350",
+     "coeficiente": 1.5099999904632568,
+     "cod_norma": "S/C",
+     "descripcion": "ALAMBRE LISO DE ACERO GALVANIZADO 3.5 MM CALIBRE 10",
+     "unidad": "kg",
+     "precio_mn": 0.48
+    },
+    {
+     "tipo": "material",
+     "codigo_recurso": "3094039030",
+     "coeficiente": 0.06499999761581421,
+     "cod_norma": "S/C",
+     "descripcion": "TEJ MALLA GALV ESL/HUE 50 MM ROLLO 15.3X1.2 M CAL 3.4MM",
+     "unidad": "ro",
+     "precio_mn": 62.5
+    },
+    {
+     "tipo": "mano_obra",
+     "codigo_recurso": "0000000211",
+     "coeficiente": 0.039000000804662704,
+     "cod_norma": "1302202600",
+     "descripcion": "AYUDANTE DE CONSTRUCCION DEL GRUPO SALARIAL II",
+     "unidad": "hh",
+     "precio_mn": 1.91
+    },
+    {
+     "tipo": "mano_obra",
+     "codigo_recurso": "0000000211",
+     "coeficiente": 0.15530000627040863,
+     "cod_norma": "1303603700",
+     "descripcion": "AYUDANTE DE CONSTRUCCION DEL GRUPO SALARIAL II",
+     "unidad": "hh",
+     "precio_mn": 1.91
+    },
+    {
+     "tipo": "mano_obra",
+     "codigo_recurso": "0000010083",
+     "coeficiente": 0.15530000627040863,
+     "cod_norma": "1303603700",
+     "descripcion": "ALBANIL DEL GRUPO SALARIAL V",
+     "unidad": "hh",
+     "precio_mn": 2.44
+    },
+    {
+     "tipo": "mano_obra",
+     "codigo_recurso": "0000011513",
+     "coeficiente": 0.039000000804662704,
+     "cod_norma": "1302202600",
+     "descripcion": "CARPINTERO ENCOFRADOR DEL GRUPO SALARIAL V",
+     "unidad": "hh",
+     "precio_mn": 2.44
+    },
+    {
+     "tipo": "juego",
+     "codigo_recurso": "0009996121",
+     "coeficiente": 0.36000001430511475,
+     "cod_norma": "S/C",
+     "descripcion": "POSTE INTER P/CERCA MALLA JG COMPL DE 1.23M ALTO S/PROT",
+     "unidad": "jg",
+     "precio_mn": 6.18
+    },
+    {
+     "tipo": "semielaborado",
+     "codigo_recurso": "0002204322",
+     "coeficiente": 0.05999999865889549,
+     "cod_norma": "S/C",
+     "descripcion": "HORMIGON 150KG/CM2 100% PIED.HEC.EN OBRA C/HORM.ESTAC.",
+     "unidad": "m3",
+     "precio_mn": 38.86
+    }
+   ]
+  },
+  "partida_063611_precio_4dec": {
+   "codigo": "063611",
+   "descripcion": "EN MUELLES Y ESPIGONES",
+   "unidad": "ml",
+   "costo_mat_mn": 94.2644,
+   "costo_mo_mn": 24.0,
+   "costo_eq_mn": 35.3822,
+   "costo_total_mn": 153.6466,
+   "recurso_4dec": {
+    "codigo": "4641011001",
+    "precio_mn": 5191.9199,
+    "coeficiente": 0.013100000098347664
+   },
+   "normas": [
+    {
+     "tipo": "material",
+     "codigo_recurso": "2728110152",
+     "coeficiente": 0.019999999552965164,
+     "cod_norma": "S/C",
+     "descripcion": "PLANCHA DE ACERO LISA GRADO ST-3KP DE 8X1500X4500 MM",
+     "unidad": "u",
+     "precio_mn": 236.1
+    },
+    {
+     "tipo": "material",
+     "codigo_recurso": "3035801733",
+     "coeficiente": 2.4600000381469727,
+     "cod_norma": "S/C",
+     "descripcion": "TORNILLO MAQ ACERO PULIDO CAB/TCA HEXAG DE 30X100 MM",
+     "unidad": "kg",
+     "precio_mn": 3.18
+    },
+    {
+     "tipo": "material",
+     "codigo_recurso": "3133456011",
+     "coeficiente": 1.5,
+     "cod_norma": "S/C",
+     "descripcion": "GRILLETE GALV FORMA LIRA 1\" PASADOR REDONDO OJO COLLAR",
+     "unidad": "u",
+     "precio_mn": 4.45
+    },
+    {
+     "tipo": "material",
+     "codigo_recurso": "3161098012",
+     "coeficiente": 1.0,
+     "cod_norma": "S/C",
+     "descripcion": "ELECTRODOS PARA SOLDAR AC BAJO CARBONO E-7018 3 MM",
+     "unidad": "kg",
+     "precio_mn": 0.8
+    },
+    {
+     "tipo": "material",
+     "codigo_recurso": "3192012029",
+     "coeficiente": 0.003000000026077032,
+     "cod_norma": "S/C",
+     "descripcion": "CADENA ESLABONADA LISA GALVANIZADA ESLABON CORTO DE 1\"",
+     "unidad": "tm",
+     "precio_mn": 2076.8
+    },
+    {
+     "tipo": "material",
+     "codigo_recurso": "4641011001",
+     "coeficiente": 0.013100000098347664,
+     "cod_norma": "S/C",
+     "descripcion": "TRAVIESA DE MADERA TRATADA IMP 180X165X250 MM 260/275",
+     "unidad": "m3",
+     "precio_mn": 5191.9199
+    },
+    {
+     "tipo": "mano_obra",
+     "codigo_recurso": "0000000211",
+     "coeficiente": 5.714300155639648,
+     "cod_norma": "1311300100",
+     "descripcion": "AYUDANTE DE CONSTRUCCION DEL GRUPO SALARIAL II",
+     "unidad": "hh",
+     "precio_mn": 1.91
+    },
+    {
+     "tipo": "mano_obra",
+     "codigo_recurso": "0000011483",
+     "coeficiente": 5.714300155639648,
+     "cod_norma": "1311300100",
+     "descripcion": "CARPINTERO EN BLANCO DEL GRUPO SALARIAL IV",
+     "unidad": "hh",
+     "precio_mn": 2.29
+    },
+    {
+     "tipo": "equipo",
+     "codigo_recurso": "0053104005",
+     "coeficiente": 1.0,
+     "cod_norma": "S/C",
+     "descripcion": "CAMION PLANCHA 7.1-8.5 TON",
+     "unidad": "he",
+     "precio_mn": 22.16
+    },
+    {
+     "tipo": "equipo",
+     "codigo_recurso": "0059905001",
+     "coeficiente": 1.0,
+     "cod_norma": "S/C",
+     "descripcion": "GRUA DE IZAJE SOBRE ESTERAS DE 3-8 TON",
+     "unidad": "he",
+     "precio_mn": 7.45
+    },
+    {
+     "tipo": "equipo",
+     "codigo_recurso": "0180310007",
+     "coeficiente": 1.0,
+     "cod_norma": "S/C",
+     "descripcion": "SOLDADOR ELECTRICO POR MOTOR 60-340 AMPERES C/JORNAL",
+     "unidad": "he",
+     "precio_mn": 3.047
+    },
+    {
+     "tipo": "equipo",
+     "codigo_recurso": "2603031405",
+     "coeficiente": 0.800000011920929,
+     "cod_norma": "S/C",
+     "descripcion": "SOLDADOR AUTOGENO Y EQUIPO OXICORTADOR C/JORNAL",
+     "unidad": "he",
+     "precio_mn": 2.979
+    },
+    {
+     "tipo": "equipo",
+     "codigo_recurso": "5050910001",
+     "coeficiente": 2.0,
+     "cod_norma": "S/C",
+     "descripcion": "BOTES DE REMOS",
+     "unidad": "he",
+     "precio_mn": 0.171
+    }
+   ]
+  },
+  "cruce_012141": {
+   "2007-v7.22": {
+    "total": 9,
+    "resueltos": 9
+   },
+   "2025-06-06": {
+    "total": 9,
+    "resueltos": 9
+   },
+   "2011-sbd2008": {
+    "total": 9,
+    "resueltos": 9
+   }
+  }
+ }
+}
