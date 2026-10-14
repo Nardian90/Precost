@@ -269,8 +269,12 @@
 
   function cargarVersiones() {
     api("/api/versiones").then(function (d) {
-      S.versiones = d.versiones || [];
       var sn = $("pcod3-vn"), sp = $("pcod3-vp");
+      if (!sn || !sp) return;   /* MISIÓN V: cierre de la calculadora mientras
+                                   cargaba — carrera latente de IV: sin guarda,
+                                   la promesa rechazaba con «Cannot set properties
+                                   of null (outerHTML)». Nunca romper PRECOST. */
+      S.versiones = d.versiones || [];
       sn.innerHTML = ""; sp.innerHTML = "";
       var mejor = null;
       S.versiones.forEach(function (v) {
@@ -289,8 +293,9 @@
       sn.onchange = function () { S.versionId = +sn.value; if (S.codigo) consultar(); };
       sp.onchange = function () { S.precioVersionId = +sp.value; if (S.codigo) consultar(); };
     }).catch(function () {
-      $("pcod3-vn").outerHTML = '<span class="pcod3-mini">sin servidor local</span>';
-      $("pcod3-vp").outerHTML = "";
+      var sn2 = $("pcod3-vn"), sp2 = $("pcod3-vp");
+      if (sn2) sn2.outerHTML = '<span class="pcod3-mini">sin servidor local</span>';
+      if (sp2) sp2.outerHTML = "";
       S.modo = "embebido";
     });
   }
