@@ -1,0 +1,614 @@
+{
+ "base": "fidelidad_iv.json",
+ "origen_sha_html": "50d3cf28e405201f36c50c3dd5385d7e28fbab3e7e5eee22c74ca0bcfd5cbaa2",
+ "1_precios": {
+  "mat:exacto": 9278,
+  "mo:dif_real": 3922,
+  "eq:exacto": 8885,
+  "total:dif_real": 5777,
+  "mo:redondeo_2dec": 8762,
+  "eq:dif_real": 3175,
+  "eq:redondeo_2dec": 3852,
+  "total:suma_componentes_redondeados": 9324,
+  "mo:exacto": 3228,
+  "total:redondeo_directo": 811,
+  "mat:redondeo_2dec": 5034,
+  "mat:dif_real": 1600
+ },
+ "1_ejemplos_dif_real": {
+  "mo:dif_real": [
+   {
+    "codigo": "011111",
+    "emb": 26.81,
+    "sbd": 26.8167
+   },
+   {
+    "codigo": "011335",
+    "emb": 2.02,
+    "sbd": 2.0145
+   },
+   {
+    "codigo": "011336",
+    "emb": 3.91,
+    "sbd": 3.903
+   },
+   {
+    "codigo": "012411",
+    "emb": 0.18,
+    "sbd": 0.175
+   },
+   {
+    "codigo": "012465",
+    "emb": 1.54,
+    "sbd": 1.5457
+   },
+   {
+    "codigo": "012642",
+    "emb": 1.66,
+    "sbd": 1.6668
+   },
+   {
+    "codigo": "012651",
+    "emb": 30.27,
+    "sbd": 30.2625
+   },
+   {
+    "codigo": "012653",
+    "emb": 1.73,
+    "sbd": 1.7247
+   }
+  ],
+  "total:dif_real": [
+   {
+    "codigo": "011111",
+    "emb": 26.81,
+    "sbd": 26.8167,
+    "suma_comp_red": 26.82
+   },
+   {
+    "codigo": "011112",
+    "emb": 14.42,
+    "sbd": 14.413699999999999,
+    "suma_comp_red": 14.41
+   },
+   {
+    "codigo": "011321",
+    "emb": 185.63,
+    "sbd": 185.6231,
+    "suma_comp_red": 185.62
+   },
+   {
+    "codigo": "011412",
+    "emb": 4.06,
+    "sbd": 4.0523,
+    "suma_comp_red": 4.05
+   },
+   {
+    "codigo": "012125",
+    "emb": 471.49,
+    "sbd": 471.5038,
+    "suma_comp_red": 471.5
+   },
+   {
+    "codigo": "012134",
+    "emb": 326.59,
+    "sbd": 326.584,
+    "suma_comp_red": 326.58
+   },
+   {
+    "codigo": "012135",
+    "emb": 316.52,
+    "sbd": 316.512,
+    "suma_comp_red": 316.51
+   },
+   {
+    "codigo": "012143",
+    "emb": 1343.41,
+    "sbd": 1343.4491,
+    "suma_comp_red": 1343.45
+   }
+  ],
+  "eq:dif_real": [
+   {
+    "codigo": "011112",
+    "emb": 13.76,
+    "sbd": 13.754
+   },
+   {
+    "codigo": "011321",
+    "emb": 177.59,
+    "sbd": 177.5831
+   },
+   {
+    "codigo": "011412",
+    "emb": 4.06,
+    "sbd": 4.0523
+   },
+   {
+    "codigo": "012125",
+    "emb": 389.2,
+    "sbd": 389.2105
+   },
+   {
+    "codigo": "012131",
+    "emb": 266.16,
+    "sbd": 266.152
+   },
+   {
+    "codigo": "012133",
+    "emb": 278.49,
+    "sbd": 278.4849
+   },
+   {
+    "codigo": "012134",
+    "emb": 266.16,
+    "sbd": 266.152
+   },
+   {
+    "codigo": "012135",
+    "emb": 266.16,
+    "sbd": 266.152
+   }
+  ],
+  "mat:dif_real": [
+   {
+    "codigo": "012451",
+    "emb": 9.37,
+    "sbd": 9.363
+   },
+   {
+    "codigo": "012461",
+    "emb": 21.96,
+    "sbd": 21.954
+   },
+   {
+    "codigo": "012641",
+    "emb": 9.37,
+    "sbd": 9.363
+   },
+   {
+    "codigo": "012642",
+    "emb": 9.37,
+    "sbd": 9.363
+   },
+   {
+    "codigo": "012651",
+    "emb": 21.96,
+    "sbd": 21.954
+   },
+   {
+    "codigo": "012652",
+    "emb": 21.96,
+    "sbd": 21.954
+   },
+   {
+    "codigo": "012914",
+    "emb": 6.45,
+    "sbd": 6.444
+   },
+   {
+    "codigo": "012921",
+    "emb": 10.85,
+    "sbd": 10.8436
+   }
+  ]
+ },
+ "2_pares_unidades": [
+  {
+   "emb": "t",
+   "sbd": "tm",
+   "conteo": 2480,
+   "ejemplos": [
+    "080101",
+    "080112",
+    "080113"
+   ]
+  },
+  {
+   "emb": "m",
+   "sbd": "ml",
+   "conteo": 1687,
+   "ejemplos": [
+    "012311",
+    "012312",
+    "012313"
+   ]
+  },
+  {
+   "emb": "100 m",
+   "sbd": "cm",
+   "conteo": 147,
+   "ejemplos": [
+    "013901",
+    "096411",
+    "163111"
+   ]
+  },
+  {
+   "emb": "100 m2",
+   "sbd": "c2",
+   "conteo": 74,
+   "ejemplos": [
+    "011111",
+    "011112",
+    "011121"
+   ]
+  },
+  {
+   "emb": "u",
+   "sbd": "ct",
+   "conteo": 63,
+   "ejemplos": [
+    "031901",
+    "031902",
+    "031903"
+   ]
+  },
+  {
+   "emb": "100 m3",
+   "sbd": "c3",
+   "conteo": 48,
+   "ejemplos": [
+    "012511",
+    "012512",
+    "012513"
+   ]
+  },
+  {
+   "emb": "m2",
+   "sbd": "d2",
+   "conteo": 28,
+   "ejemplos": [
+    "011152",
+    "011153",
+    "231111"
+   ]
+  },
+  {
+   "emb": "u",
+   "sbd": "cu",
+   "conteo": 26,
+   "ejemplos": [
+    "184111",
+    "184112",
+    "184113"
+   ]
+  },
+  {
+   "emb": "u",
+   "sbd": "dc",
+   "conteo": 23,
+   "ejemplos": [
+    "096911",
+    "229491",
+    "321411"
+   ]
+  },
+  {
+   "emb": "m2",
+   "sbd": "mm",
+   "conteo": 9,
+   "ejemplos": [
+    "224111",
+    "224211",
+    "224212"
+   ]
+  },
+  {
+   "emb": "l",
+   "sbd": "hl",
+   "conteo": 4,
+   "ejemplos": [
+    "017521",
+    "017522",
+    "017523"
+   ]
+  },
+  {
+   "emb": "100 m3",
+   "sbd": "m3",
+   "conteo": 2,
+   "ejemplos": [
+    "016325",
+    "016711"
+   ]
+  }
+ ],
+ "3_descripciones": {
+  "clases": {
+   "exacta": 13619,
+   "diferente": 778,
+   "equivalente_espacios": 738,
+   "contenida_parcial": 673
+  },
+  "artefactos_pdf": {
+   "sufijo_numerico_unidad": 104
+  },
+  "ejemplos": {
+   "diferente": [
+    {
+     "codigo": "011342",
+     "emb": "DE MAS DE 300 HASTA 600 MM DE DIAMETRO (400 MM DIAMETRO PROMEDIO) CON ",
+     "sbd": "DE MAS DE 300 HASTA 600 MM  DE DIAMETRO (400 MM DIAMETRO PROMEDIO) CON"
+    },
+    {
+     "codigo": "012112",
+     "emb": "EN FANGO HASTA 4.00 M2 SECCION EN PLANTA, HASTA 2 .00 M DE PROFUNDIDAD",
+     "sbd": "EN FANGO HASTA 4.00 M2 SECCION EN PLANTA, HASTA 2.00 M DE PROFUNDIDAD "
+    },
+    {
+     "codigo": "012121",
+     "emb": "EN TIERRA HASTA 4 M2 DE SECCION EN PLANTA HASTA 1 .60 M DE PROFUNDIDAD",
+     "sbd": "EN TIERRA HASTA 4 M2 DE SECCION EN PLANTA HASTA 1.60 M DE PROFUNDIDAD "
+    },
+    {
+     "codigo": "012125",
+     "emb": "EN TIERRA HASTA 4 M2 DE SECCION EN PLANTA HASTA 1 .60 M. DE PROFUNDIDA",
+     "sbd": "EN TIERRA HASTA 4 M2  DE SECCION EN PLANTA HASTA 1.60 M. DE PROFUNDIDA"
+    },
+    {
+     "codigo": "012131",
+     "emb": "EN ROCA BLANDA DE 0 A 20 M2 DE SECCION HASTA 1 .80 M PROFUNDIDAD CON C",
+     "sbd": "EN ROCA BLANDA DE 0 A 20 M2 DE SECCION HASTA 1.80 M PROFUNDIDAD CON CO"
+    },
+    {
+     "codigo": "012141",
+     "emb": "EN ROCA CUALQUIER SECCION EN PLANTA, HASTA 1.80 M DE PROFUNDIDAD CON D",
+     "sbd": "EN ROCA CUALQUIER SECCION EN PLANTA, HASTA 1.80 M DE PROFUNDIDAD CON D"
+    },
+    {
+     "codigo": "012243",
+     "emb": "EN ROCA MAS 1.80 M HASTA 5.0 M PROFUND, HASTA 4 .0 M DE ANCHO CON DETO",
+     "sbd": "EN ROCA MAS 1.80 M HASTA 5.0 M PROFUND, HASTA 4.0 M DE ANCHO CON DETON"
+    },
+    {
+     "codigo": "012257",
+     "emb": "BAJO AGUA, EN ROCA CON RETROEXCAVADORA CON MARTILLO HIDRAULICO HASTA 6",
+     "sbd": "BAJO AGUA, EN ROCA CON RETROEXCAVADORA CON MARTILLO HIDRAULICO HASTA 6"
+    },
+    {
+     "codigo": "012278",
+     "emb": "EXCAVACION ROCA DURA COMPACTADO(CON -755-COMMAN D ER CON SABLE 0.50 me",
+     "sbd": "EXCAVACION ROCA DURA COMPACTADO(CON  ZANJEADORA T-755-COMMANDER CON SA"
+    },
+    {
+     "codigo": "012279",
+     "emb": "EXCAVACION ROCA DURA COMPACTADO(CON T-755-COMMA NDER CON SABLE 0.75 me",
+     "sbd": "EXCAVACION ROCA DURA COMPACTADO(CON  ZANJEADORA T-755-COMMANDER CON SA"
+    },
+    {
+     "codigo": "012280",
+     "emb": "EXCAVACION ROCA DURA COMPACTADO( CON -755-COMMAN D ER CON SABLE1.10 me",
+     "sbd": "EXCAVACION ROCA DURA COMPACTADO( CON ZANJEADORA T-755-COMMANDER CON SA"
+    },
+    {
+     "codigo": "012283",
+     "emb": "EXCAVACION ROCA DURA COMPACTADO( CON T-755-COMMA NDER CON SABLE 0.50 m",
+     "sbd": "EXCAVACION ROCA DURA COMPACTADO( CON ZANJEADORA T-755-COMMANDER CON SA"
+    }
+   ],
+   "contenida_parcial": [
+    {
+     "codigo": "012143",
+     "emb": "EN ROCA, CON COMPRESOR Y MARTILLO ROMPEDOR, CUALQUIER SECCION EN PLANT",
+     "sbd": "EN ROCA, CON COMPRESOR Y MARTILLO ROMPEDOR, CUALQUIER SECCION EN PLANT"
+    },
+    {
+     "codigo": "012242",
+     "emb": "EN ROCA HASTA 1.80 M DE PROF, HASTA 4.0 M ANCHO CON DETONADOR ELECTRIC",
+     "sbd": "EN ROCA HASTA 1.80 M DE PROF, HASTA 4.0 M ANCHO CON DETONADOR ELECTRIC"
+    },
+    {
+     "codigo": "012412",
+     "emb": "EN REMOCION DE TIERRA VEGETAL Y MATERIAL INDESEABLE CON TRANSPORTE HOR",
+     "sbd": "EN REMOCION DE TIERRA VEGETAL Y MATERIAL INDESEABLE CON  TRANSPORTE HO"
+    },
+    {
+     "codigo": "012414",
+     "emb": "EN REMOCION DE TIERRA VEGETAL Y MATERIAL INDESEABLE SIN TRANSPORTE HOR",
+     "sbd": "EN REMOCION DE TIERRA VEGETAL Y MATERIAL INDESEABLE SIN TRANSPORTE HOR"
+    },
+    {
+     "codigo": "012433",
+     "emb": "EN TIERRA CON TRANSPORTE HORIZONTAL DE 201 A 2000",
+     "sbd": "EN TIERRA CON TRANSPORTE HORIZONTAL DE 201 A 2000 M"
+    },
+    {
+     "codigo": "012436",
+     "emb": "EN TIERRA SIN TRANSPORTE HORIZONTAL, PARA LA CONST. DE TROCHAS O ACCES",
+     "sbd": "EN TIERRA SIN TRANSPORTE HORIZONTAL, PARA LA CONST. DE TROCHAS O ACCES"
+    },
+    {
+     "codigo": "012454",
+     "emb": "EN ROCA EN APERTURA DE CUNETA EN FORMA DE V CON DETONADOR ELECTRICO (C",
+     "sbd": "EN ROCA EN APERTURA DE CUNETA EN FORMA DE V CON DETONADOR ELECTRICO (C"
+    },
+    {
+     "codigo": "012552",
+     "emb": "EN SUELOS GRUPO V - VII PROFUNDIDAD MAYOR DE 4 M PARA CONDICIONES LIMI",
+     "sbd": "EN SUELOS GRUPO V - VII PROFUNDIDAD MAYOR DE 4 M PARA CONDICIONES LIMI"
+    }
+   ]
+  }
+ },
+ "4_peso": {
+  "clases": {
+   "ambos_sin_peso": 6671,
+   "emb_con_peso_sbd_sin_peso": 7780
+  },
+  "ejemplos": [
+   {
+    "codigo": "012141",
+    "emb": 1.96,
+    "sbd": 0.0,
+    "p17": 0.0
+   },
+   {
+    "codigo": "012142",
+    "emb": 1.96,
+    "sbd": 0.0,
+    "p17": 0.0
+   },
+   {
+    "codigo": "012144",
+    "emb": 1.44,
+    "sbd": 0.0,
+    "p17": 0.0
+   },
+   {
+    "codigo": "012151",
+    "emb": 2.0,
+    "sbd": 0.0,
+    "p17": 0.0
+   },
+   {
+    "codigo": "012152",
+    "emb": 2.0,
+    "sbd": 0.0,
+    "p17": 0.0
+   },
+   {
+    "codigo": "012153",
+    "emb": 1.44,
+    "sbd": 0.0,
+    "p17": 0.0
+   },
+   {
+    "codigo": "012241",
+    "emb": 1.96,
+    "sbd": 0.0,
+    "p17": 0.0
+   },
+   {
+    "codigo": "012242",
+    "emb": 1.96,
+    "sbd": 0.0,
+    "p17": 0.0
+   }
+  ]
+ },
+ "5_equipo_solo_emb": [
+  {
+   "codigo": "0022906009",
+   "registro": [
+    "ZANJEADORA T-55 DE 275 HP",
+    1107.0
+   ]
+  }
+ ],
+ "6_normas_compartidas": {
+  "partidas_compartidas": 15278,
+  "normas_17": 67066,
+  "normas_sbd": 64842,
+  "interseccion": 54758,
+  "clases": {
+   "diferente": 1838,
+   "igual": 52196,
+   "tol_float32": 724
+  },
+  "ejemplos_diferentes": [
+   {
+    "clave": [
+     "438702",
+     "Mano de obra",
+     "0000014912"
+    ],
+    "p17": 0.03999999910593033,
+    "sbd": 0.07999999821186066,
+    "ratio": 2.0
+   },
+   {
+    "clave": [
+     "143412",
+     "Mano de obra",
+     "0000010085"
+    ],
+    "p17": 0.09910000115633011,
+    "sbd": 0.19820000231266022,
+    "ratio": 2.0
+   },
+   {
+    "clave": [
+     "426039",
+     "Mano de obra",
+     "0000015694"
+    ],
+    "p17": 5.949999809265137,
+    "sbd": 11.899999618530273,
+    "ratio": 2.0
+   },
+   {
+    "clave": [
+     "430106",
+     "Mano de obra",
+     "0000012885"
+    ],
+    "p17": 0.833299994468689,
+    "sbd": 1.666599988937378,
+    "ratio": 2.0
+   },
+   {
+    "clave": [
+     "072121",
+     "Mano de obra",
+     "0000011482"
+    ],
+    "p17": 1.4800000190734863,
+    "sbd": 1.4799630641937256,
+    "ratio": 1.0
+   },
+   {
+    "clave": [
+     "080639",
+     "Mano de obra",
+     "0000000211"
+    ],
+    "p17": 2.631700038909912,
+    "sbd": 2.6317200660705566,
+    "ratio": 1.0
+   },
+   {
+    "clave": [
+     "280321",
+     "Mano de obra",
+     "0000015493"
+    ],
+    "p17": 0.7271999716758728,
+    "sbd": 3.635999917984009,
+    "ratio": 5.0
+   },
+   {
+    "clave": [
+     "287119",
+     "Mano de obra",
+     "0000015493"
+    ],
+    "p17": 174.0,
+    "sbd": 348.0,
+    "ratio": 2.0
+   },
+   {
+    "clave": [
+     "066112",
+     "Mano de obra",
+     "0000011513"
+    ],
+    "p17": 0.3319999873638153,
+    "sbd": 0.6639999747276306,
+    "ratio": 2.0
+   },
+   {
+    "clave": [
+     "151223",
+     "Mano de obra",
+     "0000023033"
+    ],
+    "p17": 20.0,
+    "sbd": 12.75,
+    "ratio": 0.6375
+   }
+  ],
+  "solo_en_2017": 12308,
+  "solo_en_2025": 10084
+ }
+}

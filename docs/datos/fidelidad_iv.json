@@ -1,0 +1,1332 @@
+{
+ "A_partidas": {
+  "emb": 15912,
+  "sbd": 16865,
+  "comunes": 15912,
+  "solo_emb": 0,
+  "solo_sbd": 953,
+  "clases_por_campo": {
+   "descripcion:equivalente_formato": 9491,
+   "unidad:dif_unidad": 4591,
+   "total:dif_precio": 6778,
+   "mat:coincidencia_exacta": 14349,
+   "mo:coincidencia_exacta": 12071,
+   "eq:coincidencia_exacta": 12750,
+   "peso:dif_precio": 8100,
+   "unidad:coincidencia_exacta": 11315,
+   "mat:dif_precio": 1563,
+   "descripcion:coincidencia_exacta": 4866,
+   "total:coincidencia_exacta": 9134,
+   "peso:coincidencia_exacta": 7812,
+   "mo:dif_precio": 3841,
+   "eq:dif_precio": 3162,
+   "descripcion:dif_descripcion": 1555,
+   "unidad:equivalente_formato": 6
+  },
+  "ejemplos_diferencias": {
+   "unidad:dif_unidad": [
+    {
+     "codigo": "119613",
+     "emb": "m",
+     "sbd": "ml"
+    },
+    {
+     "codigo": "200525",
+     "emb": "t",
+     "sbd": "tm"
+    },
+    {
+     "codigo": "206301",
+     "emb": "t",
+     "sbd": "tm"
+    },
+    {
+     "codigo": "196303",
+     "emb": "t",
+     "sbd": "tm"
+    },
+    {
+     "codigo": "190952",
+     "emb": "100 m",
+     "sbd": "cm"
+    },
+    {
+     "codigo": "200316",
+     "emb": "t",
+     "sbd": "tm"
+    },
+    {
+     "codigo": "342314",
+     "emb": "m",
+     "sbd": "ml"
+    },
+    {
+     "codigo": "017278",
+     "emb": "m",
+     "sbd": "ml"
+    },
+    {
+     "codigo": "080310",
+     "emb": "t",
+     "sbd": "tm"
+    },
+    {
+     "codigo": "084202",
+     "emb": "t",
+     "sbd": "tm"
+    },
+    {
+     "codigo": "082410",
+     "emb": "t",
+     "sbd": "tm"
+    },
+    {
+     "codigo": "080475",
+     "emb": "t",
+     "sbd": "tm"
+    },
+    {
+     "codigo": "161126",
+     "emb": "m",
+     "sbd": "ml"
+    },
+    {
+     "codigo": "186417",
+     "emb": "m",
+     "sbd": "ml"
+    },
+    {
+     "codigo": "080308",
+     "emb": "t",
+     "sbd": "tm"
+    }
+   ],
+   "total:dif_precio": [
+    {
+     "codigo": "119613",
+     "emb": 53.78,
+     "sbd": 53.7727,
+     "delta": 0.0073
+    },
+    {
+     "codigo": "263114",
+     "emb": 387.31,
+     "sbd": 387.30129999999997,
+     "delta": 0.0087
+    },
+    {
+     "codigo": "144421",
+     "emb": 456.47,
+     "sbd": 457.3922,
+     "delta": -0.9222
+    },
+    {
+     "codigo": "200525",
+     "emb": 1680.11,
+     "sbd": 1680.1239,
+     "delta": -0.0139
+    },
+    {
+     "codigo": "206301",
+     "emb": 2905.09,
+     "sbd": 2905.075,
+     "delta": 0.015
+    },
+    {
+     "codigo": "054371",
+     "emb": 5086.71,
+     "sbd": 5086.7031,
+     "delta": 0.0069
+    },
+    {
+     "codigo": "179852",
+     "emb": 6.79,
+     "sbd": 6.7825,
+     "delta": 0.0075
+    },
+    {
+     "codigo": "295211",
+     "emb": 112.4,
+     "sbd": 112.3887,
+     "delta": 0.0113
+    },
+    {
+     "codigo": "196303",
+     "emb": 613.64,
+     "sbd": 613.6562,
+     "delta": -0.0162
+    },
+    {
+     "codigo": "190952",
+     "emb": 31480.23,
+     "sbd": 31480.133800000003,
+     "delta": 0.0962
+    }
+   ],
+   "peso:dif_precio": [
+    {
+     "codigo": "119613",
+     "emb": 4.57,
+     "sbd": 0.0,
+     "delta": 4.57
+    },
+    {
+     "codigo": "263114",
+     "emb": 5.91,
+     "sbd": 0.0,
+     "delta": 5.91
+    },
+    {
+     "codigo": "144421",
+     "emb": 92.35,
+     "sbd": 0.0,
+     "delta": 92.35
+    },
+    {
+     "codigo": "054371",
+     "emb": 6.17,
+     "sbd": 0.0,
+     "delta": 6.17
+    },
+    {
+     "codigo": "121111",
+     "emb": 3.24,
+     "sbd": 0.0,
+     "delta": 3.24
+    },
+    {
+     "codigo": "295211",
+     "emb": 0.28,
+     "sbd": 0.0,
+     "delta": 0.28
+    },
+    {
+     "codigo": "323172",
+     "emb": 85.28,
+     "sbd": 0.0,
+     "delta": 85.28
+    },
+    {
+     "codigo": "017278",
+     "emb": 115.27,
+     "sbd": 0.0,
+     "delta": 115.27
+    },
+    {
+     "codigo": "139431",
+     "emb": 52.99,
+     "sbd": 0.0,
+     "delta": 52.99
+    },
+    {
+     "codigo": "084202",
+     "emb": 1001.2,
+     "sbd": 0.0,
+     "delta": 1001.2
+    }
+   ],
+   "mat:dif_precio": [
+    {
+     "codigo": "263114",
+     "emb": 276.03,
+     "sbd": 276.0213,
+     "delta": 0.0087
+    },
+    {
+     "codigo": "144421",
+     "emb": 444.11,
+     "sbd": 445.029,
+     "delta": -0.919
+    },
+    {
+     "codigo": "295211",
+     "emb": 12.05,
+     "sbd": 12.0437,
+     "delta": 0.0063
+    },
+    {
+     "codigo": "031232",
+     "emb": 154.54,
+     "sbd": 155.6911,
+     "delta": -1.1511
+    },
+    {
+     "codigo": "167222",
+     "emb": 1030.25,
+     "sbd": 1030.2564,
+     "delta": -0.0064
+    },
+    {
+     "codigo": "012651",
+     "emb": 21.96,
+     "sbd": 21.954,
+     "delta": 0.006
+    },
+    {
+     "codigo": "175121",
+     "emb": 1248.82,
+     "sbd": 1249.1844,
+     "delta": -0.3644
+    },
+    {
+     "codigo": "262111",
+     "emb": 241.53,
+     "sbd": 241.541,
+     "delta": -0.011
+    },
+    {
+     "codigo": "195317",
+     "emb": 49.15,
+     "sbd": 49.1552,
+     "delta": -0.0052
+    },
+    {
+     "codigo": "028133",
+     "emb": 500.76,
+     "sbd": 500.7532,
+     "delta": 0.0068
+    }
+   ],
+   "mo:dif_precio": [
+    {
+     "codigo": "200525",
+     "emb": 601.53,
+     "sbd": 601.5381,
+     "delta": -0.0081
+    },
+    {
+     "codigo": "054371",
+     "emb": 300.02,
+     "sbd": 300.0126,
+     "delta": 0.0074
+    },
+    {
+     "codigo": "179852",
+     "emb": 6.79,
+     "sbd": 6.7825,
+     "delta": 0.0075
+    },
+    {
+     "codigo": "196303",
+     "emb": 127.12,
+     "sbd": 127.1337,
+     "delta": -0.0137
+    },
+    {
+     "codigo": "342108",
+     "emb": 65.86,
+     "sbd": 65.85,
+     "delta": 0.01
+    },
+    {
+     "codigo": "084202",
+     "emb": 380.74,
+     "sbd": 380.7248,
+     "delta": 0.0152
+    },
+    {
+     "codigo": "052249",
+     "emb": 192.47,
+     "sbd": 192.48,
+     "delta": -0.01
+    },
+    {
+     "codigo": "278420",
+     "emb": 1.41,
+     "sbd": 1.4174,
+     "delta": -0.0074
+    },
+    {
+     "codigo": "250321",
+     "emb": 85.03,
+     "sbd": 85.0357,
+     "delta": -0.0057
+    },
+    {
+     "codigo": "052217",
+     "emb": 70.42,
+     "sbd": 70.4094,
+     "delta": 0.0106
+    }
+   ],
+   "eq:dif_precio": [
+    {
+     "codigo": "200525",
+     "emb": 1078.58,
+     "sbd": 1078.5858,
+     "delta": -0.0058
+    },
+    {
+     "codigo": "206301",
+     "emb": 2033.89,
+     "sbd": 2033.871,
+     "delta": 0.019
+    },
+    {
+     "codigo": "190952",
+     "emb": 22402.0,
+     "sbd": 22401.9,
+     "delta": 0.1
+    },
+    {
+     "codigo": "017278",
+     "emb": 370.53,
+     "sbd": 370.5208,
+     "delta": 0.0092
+    },
+    {
+     "codigo": "080310",
+     "emb": 669.0,
+     "sbd": 669.0077,
+     "delta": -0.0077
+    },
+    {
+     "codigo": "084202",
+     "emb": 1951.03,
+     "sbd": 1951.0207,
+     "delta": 0.0093
+    },
+    {
+     "codigo": "287133",
+     "emb": 55106.56,
+     "sbd": 55106.1654,
+     "delta": 0.3946
+    },
+    {
+     "codigo": "082410",
+     "emb": 1525.7,
+     "sbd": 1525.6916,
+     "delta": 0.0084
+    },
+    {
+     "codigo": "100462",
+     "emb": 2439.86,
+     "sbd": 2439.8358,
+     "delta": 0.0242
+    },
+    {
+     "codigo": "080475",
+     "emb": 945.52,
+     "sbd": 945.5119,
+     "delta": 0.0081
+    }
+   ],
+   "descripcion:dif_descripcion": [
+    {
+     "codigo": "121111",
+     "emb": "CON PAPEL PARA TECHO # 55 L ista de Costos de Renglones Cons",
+     "sbd": "CON PAPEL PARA TECHO # 55 "
+    },
+    {
+     "codigo": "200316",
+     "emb": "MOTOR COMBUSTION INTERNA COMPACTO PESO 15.1-20 .0 TM MAG",
+     "sbd": "MOTOR COMBUSTION INTERNA COMPACTO PESO 15.1-20.0 TM MAG "
+    },
+    {
+     "codigo": "163242",
+     "emb": "INSTALACION DE ACCESORIOS ELECTROSOLDABLES DE 90 -110 MM DE ",
+     "sbd": "INSTALACION DE ACCESORIOS ELECTROSOLDABLES DE 90-110 MM DE D"
+    },
+    {
+     "codigo": "323172",
+     "emb": "CON 4 PLANTAS DEL SUBGRUPO S-5 L ista de Costos de Renglones",
+     "sbd": "CON 4 PLANTAS DEL SUBGRUPO S-5 "
+    },
+    {
+     "codigo": "100462",
+     "emb": "PUERTAS EXTERIORES SOBREDIMENSIONADAS L ista de Costos de Re",
+     "sbd": "PUERTAS EXTERIORES SOBREDIMENSIONADAS "
+    },
+    {
+     "codigo": "080475",
+     "emb": "VIGUETA DE CUBIERTA (CORREA O PURLING) PESO 0,11-0 ,2 TM H <",
+     "sbd": "VIGUETA DE CUBIERTA (CORREA O PURLING) PESO 0,11-0,2 TM H <="
+    },
+    {
+     "codigo": "113192",
+     "emb": "MONTAJE DE FALSO TECHO DE LAMAS DE PVC DE 0.10 X 5 .8 SUSPEN",
+     "sbd": "MONTAJE DE FALSO TECHO DE LAMAS DE PVC DE 0.10 X 5.8 SUSPENS"
+    },
+    {
+     "codigo": "129521",
+     "emb": "DE TEJAS ACANALADAS PLASTICAS TIPO PLD DE 2.50X1 .00 M",
+     "sbd": "DE TEJAS ACANALADAS PLASTICAS TIPO PLD DE 2.50X1.00 M "
+    },
+    {
+     "codigo": "341312",
+     "emb": "MANTENIMIENTO A REDUCTOR PRINCIPAL PLANTA SECADERO L ista de",
+     "sbd": "MANTENIMIENTO A REDUCTOR PRINCIPAL PLANTA SECADERO "
+    },
+    {
+     "codigo": "017531",
+     "emb": "DE 0-5 LT/SEG POR LEVANTAMIENTO CON AIRE (INCLUYE 100 INSTA ",
+     "sbd": "DE 0-5 LT/SEG POR LEVANTAMIENTO CON AIRE (INCLUYE INSTA LACI"
+    }
+   ]
+  },
+  "ejemplos_solo_emb": [],
+  "ejemplos_solo_sbd": [
+   "000099999999",
+   "012561",
+   "012562",
+   "012563",
+   "012564",
+   "012571",
+   "012572",
+   "012573",
+   "012574",
+   "013521",
+   "013611",
+   "013612",
+   "016132",
+   "016134",
+   "016136",
+   "016138",
+   "016140",
+   "016142",
+   "016144",
+   "016146",
+   "016152",
+   "016154",
+   "016156",
+   "016172",
+   "016176",
+   "016182",
+   "016184",
+   "016186",
+   "016192",
+   "016194",
+   "016196",
+   "016198",
+   "016201",
+   "016216",
+   "016217",
+   "016218",
+   "016802",
+   "016804",
+   "016806",
+   "054033"
+  ]
+ },
+ "B_materiales": {
+  "emb_registros": 3568,
+  "sbd_registros": 3599,
+  "comunes": 3568,
+  "solo_emb": 0,
+  "solo_sbd": 31,
+  "clases_por_campo": {
+   "descripcion:coincidencia_exacta": 3102,
+   "unidad:dif_unidad": 550,
+   "precio:coincidencia_exacta": 3567,
+   "peso:coincidencia_exacta": 3562,
+   "unidad:coincidencia_exacta": 3018,
+   "descripcion:equivalente_formato": 117,
+   "descripcion:dif_descripcion": 349,
+   "peso:dif_precio": 6,
+   "precio:dif_precio": 1
+  },
+  "ejemplos_solo_emb": [],
+  "ejemplos_solo_sbd": [
+   "0",
+   "2006-10000",
+   "2050222290",
+   "2052978768",
+   "2052978782",
+   "2052978928",
+   "247103CU15",
+   "272220CU13",
+   "272220CU14",
+   "272220CUB7",
+   "272360CUB4",
+   "272360CUB5",
+   "272360CUB8",
+   "272360CUB9",
+   "272362CUB3",
+   "272811CU10",
+   "272811CU11",
+   "272811CU12",
+   "272811CUB6",
+   "2781000001",
+   "303000CUB1",
+   "303000CUB2",
+   "3189703311",
+   "347103CU15",
+   "4018010000",
+   "4572990001",
+   "457901E125",
+   "7837020001",
+   "8110720000",
+   "8710400000",
+   "9410490000"
+  ],
+  "ejemplos_diferencias": {
+   "unidad:dif_unidad": [
+    {
+     "codigo": "3646000003",
+     "emb": "litro",
+     "sbd": "l"
+    },
+    {
+     "codigo": "4491010523",
+     "emb": "caja",
+     "sbd": "cj"
+    },
+    {
+     "codigo": "3035013282",
+     "emb": "u",
+     "sbd": "cu"
+    },
+    {
+     "codigo": "4572060004",
+     "emb": "litro",
+     "sbd": "l"
+    },
+    {
+     "codigo": "4541010002",
+     "emb": "u",
+     "sbd": "mu"
+    },
+    {
+     "codigo": "3472650214",
+     "emb": "litro",
+     "sbd": "l"
+    },
+    {
+     "codigo": "6763149612",
+     "emb": "pie",
+     "sbd": "mp"
+    },
+    {
+     "codigo": "3999452721",
+     "emb": "litro",
+     "sbd": "l"
+    }
+   ],
+   "descripcion:dif_descripcion": [
+    {
+     "codigo": "3035013282",
+     "emb": "TORNILLO ACERO PULIDO CAB HEXAG R/G S/T 1/2X4 1/2\" 100",
+     "sbd": "TORNILLO ACERO PULIDO CAB HEXAG R/G S/T 1/2X4 1/2\""
+    },
+    {
+     "codigo": "4541010002",
+     "emb": "TEJA DE BARRO FRANCESA 1000",
+     "sbd": "TEJA DE BARRO FRANCESA"
+    },
+    {
+     "codigo": "6763149612",
+     "emb": "CABLE COBRE P/ACCES ELECT DE 1 O MAS CONDUCT CT 2/12 1000",
+     "sbd": "CABLE COBRE P/ACCES ELECT DE 1 O MAS CONDUCT CT 2/12"
+    },
+    {
+     "codigo": "3749999854",
+     "emb": "PUERTA PLASTICA DE VAIVEN DE UNA HOJA DE 0.80 X 2.10M CON CR",
+     "sbd": "PUERTA PLASTICA DE VAIVEN DE UNA HOJA DE 0.80  X 2.10M  CON "
+    },
+    {
+     "codigo": "3034511011",
+     "emb": "ARANDELAS DE PRESION GALVANIZADA DE 5/8\" 100",
+     "sbd": "ARANDELAS DE PRESION GALVANIZADA DE 5/8\""
+    },
+    {
+     "codigo": "3034163026",
+     "emb": "TUERCA HEXAGONAL ACERO PULIDO DE 1/4\" ROSCA GRUESA 100",
+     "sbd": "TUERCA HEXAGONAL ACERO PULIDO DE 1/4\" ROSCA GRUESA"
+    },
+    {
+     "codigo": "3034401005",
+     "emb": "ARANDELA DE PRESION DE ACERO DE 1/4\" 1000",
+     "sbd": "ARANDELA DE PRESION DE ACERO DE 1/4\""
+    },
+    {
+     "codigo": "4461510012",
+     "emb": "LOSA DE HORMIGON PREFABRICADO TIPO 9L-B PARA PUENTES DE VIAS",
+     "sbd": "LOSA DE HORMIGON PREFABRICADO TIPO 9L-B PARA PUENTES DE VIAS"
+    }
+   ],
+   "peso:dif_precio": [
+    {
+     "codigo": "3749999481",
+     "emb": "0.19",
+     "sbd": "0.185"
+    },
+    {
+     "codigo": "3781241003",
+     "emb": "0.05",
+     "sbd": "0.045"
+    },
+    {
+     "codigo": "3470000021",
+     "emb": "0.05",
+     "sbd": "0.045"
+    },
+    {
+     "codigo": "2252020019",
+     "emb": "0.89",
+     "sbd": "0.895"
+    },
+    {
+     "codigo": "3470000022",
+     "emb": "0.05",
+     "sbd": "0.045"
+    },
+    {
+     "codigo": "3030000003",
+     "emb": "0.13",
+     "sbd": "0.125"
+    }
+   ],
+   "precio:dif_precio": [
+    {
+     "codigo": "4472020021",
+     "emb": "22298.63",
+     "sbd": "22298.625"
+    }
+   ]
+  }
+ },
+ "C_equipos": {
+  "emb_registros": 671,
+  "sbd_registros": 712,
+  "comunes": 670,
+  "solo_emb": 1,
+  "solo_sbd": 42,
+  "clases_por_campo": {
+   "descripcion:coincidencia_exacta": 580,
+   "costo_horario:coincidencia_exacta": 667,
+   "descripcion:equivalente_formato": 81,
+   "descripcion:dif_descripcion": 9,
+   "costo_horario:dif_precio": 3
+  },
+  "ejemplos_solo_emb": [
+   "0022906009"
+  ],
+  "ejemplos_solo_sbd": [
+   "0000000000",
+   "0022906010",
+   "0022906092",
+   "0022906093",
+   "0022906094",
+   "0022906097",
+   "0022906098",
+   "0042630010",
+   "0042858006",
+   "0042858410",
+   "0047158401",
+   "0047158402",
+   "0047158403",
+   "0047158406",
+   "0047158409",
+   "0047158414",
+   "0047228390",
+   "0047228392",
+   "0047228394",
+   "0047228395",
+   "0047228396",
+   "0047318454",
+   "0047318455",
+   "0047318456",
+   "0047318460",
+   "0047418786",
+   "0047418787",
+   "0050128395",
+   "0050128396",
+   "0050128397",
+   "0059107212",
+   "0059107232",
+   "0059107233",
+   "0059107234",
+   "0059107235",
+   "0059107236",
+   "0059107237",
+   "0059107238",
+   "0059107240",
+   "0059128305"
+  ],
+  "ejemplos_diferencias": {
+   "descripcion:dif_descripcion": [
+    {
+     "codigo": "2603031411",
+     "emb": "MÁQUINA HOT TAP (PARA REALIZAR TRABAJOS DE INTERCONEXIONES Y",
+     "sbd": "MÁQUINA HOT TAP (PARA REALIZAR TRABAJOS DE INTERCONEXIONES Y"
+    },
+    {
+     "codigo": "5032820105",
+     "emb": "PLASSER PARA EL LEVANT, CALZADO, NIVELACIÓN Y ALINEADO DE LA",
+     "sbd": "PLASSER  PARA EL LEVANT, CALZADO, NIVELACIÓN Y ALINEADO DE L"
+    },
+    {
+     "codigo": "5032820117",
+     "emb": "REGULADOR PBR 400 PARA EL PERFILADO, BARRIDO Y REGULADO DEL ",
+     "sbd": "REGULADOR PBR 400 PARA EL PERFILADO, BARRIDO Y REGULADO DEL "
+    },
+    {
+     "codigo": "5032820112",
+     "emb": "REGULADOR SSP 203 PARA EL PERFILADO, BARRIDO Y REGULADO DEL ",
+     "sbd": "REGULADOR SSP 203 PARA EL PERFILADO, BARRIDO Y REGULADO DEL "
+    },
+    {
+     "codigo": "5032820113",
+     "emb": "REGULADOR PBR 400 PARA EL PERFILADO, BARRIDO Y REGULADO DEL ",
+     "sbd": "REGULADOR PBR 400 PARA EL PERFILADO, BARRIDO Y REGULADO DEL "
+    },
+    {
+     "codigo": "7000000015",
+     "emb": "CARRETILLA CON SUS MEDIOS PARA EL MANTENIMIENTO EN LINEAS EN",
+     "sbd": "CARRETILLA CON SUS MEDIOS PARA EL MANTENIMIENTO EN LINEAS EN"
+    },
+    {
+     "codigo": "0042522116",
+     "emb": "CALENTADOR DE ASFALTO DE ARRASTRE DE 451-650 LT`(MOTOR DE 40",
+     "sbd": "CALENTADOR DE ASFALTO DE ARRASTRE DE 451-650 LT`(MOTOR DE 40"
+    },
+    {
+     "codigo": "5032820116",
+     "emb": "REGULADOR SSP 203 PARA EL PERFILADO, BARRIDO Y REGULADO DEL ",
+     "sbd": "REGULADOR SSP 203 PARA EL PERFILADO, BARRIDO Y REGULADO DEL "
+    }
+   ],
+   "costo_horario:dif_precio": [
+    {
+     "codigo": "0059446010",
+     "emb": "337.0",
+     "sbd": "1710.9905"
+    },
+    {
+     "codigo": "0034120005",
+     "emb": "120.96",
+     "sbd": "120.965"
+    },
+    {
+     "codigo": "0047438781",
+     "emb": "177904.06",
+     "sbd": "177904.0663"
+    }
+   ]
+  }
+ },
+ "D_mano_obra": {
+  "emb_registros": 143,
+  "sbd_registros": 412,
+  "comunes": 143,
+  "solo_emb": 0,
+  "solo_sbd": 269,
+  "clases_por_campo": {
+   "descripcion:coincidencia_exacta": 117,
+   "tarifa:coincidencia_exacta": 142,
+   "descripcion:dif_descripcion": 21,
+   "descripcion:equivalente_formato": 5,
+   "tarifa:dif_precio": 1
+  },
+  "ejemplos_solo_emb": [],
+  "ejemplos_solo_sbd": [
+   "0000000000",
+   "0000000241",
+   "0000002101",
+   "0000002111",
+   "0000002631",
+   "0000004053",
+   "0000004054",
+   "0000007204",
+   "0000010083",
+   "0000010084",
+   "0000010087",
+   "0000010142",
+   "0000010143",
+   "0000010192",
+   "0000010292",
+   "0000010361",
+   "0000010365",
+   "0000010921",
+   "0000011384",
+   "0000011479",
+   "0000011480",
+   "0000011481",
+   "0000011492",
+   "0000011493",
+   "0000011514",
+   "0000011614",
+   "0000011642",
+   "0000011652",
+   "0000011662",
+   "0000012863",
+   "0000012864",
+   "0000012875",
+   "0000012884",
+   "0000013032",
+   "0000013632",
+   "0000013633",
+   "0000014913",
+   "0000014915",
+   "0000014941",
+   "0000014942"
+  ],
+  "ejemplos_diferencias": {
+   "descripcion:dif_descripcion": [
+    {
+     "codigo": "0000020883",
+     "emb": "MECÁNICO B INSTALADOR, REPARADOR Y SERVICIOS DE ASCENSORES D",
+     "sbd": "MECÁNICO B INSTALADOR, REPARADOR Y SERVICIOS DE ASCENSORES D"
+    },
+    {
+     "codigo": "0000021322",
+     "emb": "OPERARIO DE MANTENIMIENTO, REPARACIÓN Y CONSTRUCCIÓN DE OBRA",
+     "sbd": "OPERARIO DE MANTENIMIENTO, REPARACIÓN Y CONSTRUCCIÓN DE OBRA"
+    },
+    {
+     "codigo": "0000030113",
+     "emb": "TÉCNICO SUPERIOR EN TECNOLOGÍAS DE LA INFORMACIÓN, LAS COMUN",
+     "sbd": "TÉCNICO SUPERIOR EN TECNOLOGÍAS DE LA INFORMACIÓN, LAS COMUN"
+    },
+    {
+     "codigo": "0000000251",
+     "emb": "OPERARIO GENERAL DE INVESTIGACIONES INGENIERAS APLICADAS A L",
+     "sbd": "OPERARIO GENERAL DE INVESTIGACIONES INGENIERAS APLICADAS A L"
+    },
+    {
+     "codigo": "0000013711",
+     "emb": "OPERARIO PARA LA LIMPIEZA Y RESTAURACIÓN DE FACHADAS Y ELEME",
+     "sbd": "OPERARIO PARA LA LIMPIEZA Y RESTAURACIÓN DE FACHADAS Y ELEME"
+    },
+    {
+     "codigo": "0000020882",
+     "emb": "MECÁNICO A INSTALADOR, REPARADOR Y SERVICIOS DE ASCENSORES D",
+     "sbd": "MECÁNICO A INSTALADOR, REPARADOR Y SERVICIOS DE ASCENSORES D"
+    },
+    {
+     "codigo": "0000025006",
+     "emb": "OPERADOR MAQUINA DE CORTAR LADRILLOS REFRACTARIOS, TERRAZOS ",
+     "sbd": "OPERADOR MAQUINA DE CORTAR LADRILLOS REFRACTARIOS, TERRAZOS "
+    },
+    {
+     "codigo": "0000014914",
+     "emb": "OPERARIO B DE EQUIPOS ELECTRÓNICOS, ELECTROMECÁNICOS Y DE TE",
+     "sbd": "OPERARIO B DE EQUIPOS ELECTRÓNICOS, ELECTROMECÁNICOS Y DE TE"
+    }
+   ],
+   "tarifa:dif_precio": [
+    {
+     "codigo": "0000010182",
+     "emb": "15.22",
+     "sbd": "15.23"
+    }
+   ]
+  }
+ },
+ "E_grupos": {
+  "emb_registros": 1893,
+  "sbd_registros": 2093,
+  "comunes": 1866,
+  "solo_emb": 27,
+  "solo_sbd": 227,
+  "clases_por_campo": {
+   "descripcion:coincidencia_exacta": 1657,
+   "descripcion:dif_descripcion": 178,
+   "descripcion:equivalente_formato": 31
+  },
+  "ejemplos_solo_emb": [
+   "1000",
+   "1250",
+   "1300",
+   "2000",
+   "2100",
+   "2550",
+   "300",
+   "38",
+   "380",
+   "40",
+   "400",
+   "4250",
+   "450",
+   "48",
+   "50",
+   "500",
+   "600",
+   "610",
+   "630",
+   "700",
+   "750",
+   "850",
+   "900",
+   "920",
+   "94",
+   "96",
+   "990"
+  ],
+  "ejemplos_solo_sbd": [
+   "00",
+   "000",
+   "0000",
+   "010",
+   "0100",
+   "0102",
+   "0128",
+   "0147",
+   "0189",
+   "0196",
+   "0356",
+   "0362",
+   "0407",
+   "0475",
+   "0491",
+   "0492",
+   "0495",
+   "0497",
+   "0499",
+   "0500",
+   "0502",
+   "0506",
+   "0517",
+   "0561",
+   "0562",
+   "0573",
+   "0585",
+   "0588",
+   "0702",
+   "0737",
+   "0792",
+   "0800",
+   "0802",
+   "0875",
+   "0890",
+   "0896",
+   "0915",
+   "0932",
+   "0952",
+   "0976"
+  ],
+  "ejemplos_diferencias": {
+   "descripcion:dif_descripcion": [
+    {
+     "codigo": "444",
+     "emb": "MONTAJE DE MASTILES ATIRANTADOS Y CAMBIO DE VIENTOS",
+     "sbd": "MONTAJE DE MASTILES ATIRANTADOS Y CAMBIO DE VIENTO"
+    },
+    {
+     "codigo": "2103",
+     "emb": "EQUIPOS DE REFRIGERACION, COCINA Y MECANICOS AUXILIARES DE C",
+     "sbd": "EQUIPOS DE REFRIGERACION, COCINA Y MECANICOS AUXIL"
+    },
+    {
+     "codigo": "0114",
+     "emb": "PARA LA CONSTRUCCION Y RECONSTRUCCION DRENAJE PARCELARIO",
+     "sbd": "PARA LA CONSTRUCCION Y RECONSTRUCCION DRENAJE PARC"
+    },
+    {
+     "codigo": "175",
+     "emb": "KG/CM2 EN OBRA",
+     "sbd": "COLOCACION"
+    },
+    {
+     "codigo": "278",
+     "emb": "CONST Y ACOP CURVAS,REMATES,TUB HO GALV,PLAST,MET FLEX",
+     "sbd": "CONST Y ACOP CURVAS,REMATES,TUB HO GALV,PLAST,MET "
+    },
+    {
+     "codigo": "2004",
+     "emb": "DESMONTAJE MAQ RECIPR VAP,COMPR,BOMBA Y VENT NO COMPACTO",
+     "sbd": "DESMONTAJE MAQ RECIPR VAP,COMPR,BOMBA Y VENT NO CO"
+    },
+    {
+     "codigo": "05",
+     "emb": "IZAJE DE ELEMENTOS PREFABRICADOS DE HORMIGON Y DE OTROS MATE",
+     "sbd": "IZAJE DE ELEMENTOS PREFABRICADOS DE HORMIGON  Y DE"
+    },
+    {
+     "codigo": "276",
+     "emb": "INSTALACION DE TUBERIAS DE HO GALV EN INSTAL ELECTRICAS",
+     "sbd": "INSTALACION DE TUBERIAS DE HO GALV EN INSTAL ELECT"
+    }
+   ]
+  }
+ },
+ "F_normas": {
+  "p17": 67529,
+  "sbd": 70412,
+  "comunes": 54758,
+  "solo_p17": 12771,
+  "solo_sbd": 15654,
+  "coef_iguales": 48963,
+  "coef_dentro_tol_float32": 242,
+  "coef_diferentes": 5553,
+  "ejemplos_diferentes": [
+   {
+    "clave": [
+     "200241",
+     "Mano de obra",
+     "0000016923"
+    ],
+    "p17": 0.5519999861717224,
+    "sbd": 0.6209999918937683
+   },
+   {
+    "clave": [
+     "204101",
+     "Mano de obra",
+     "0000000211"
+    ],
+    "p17": 2.4809999465942383,
+    "sbd": 80.23300170898438
+   },
+   {
+    "clave": [
+     "437707",
+     "Mano de obra",
+     "0000014912"
+    ],
+    "p17": 0.029999999329447746,
+    "sbd": 0.05999999865889549
+   },
+   {
+    "clave": [
+     "053123",
+     "Mano de obra",
+     "0000000211"
+    ],
+    "p17": 0.2280000001192093,
+    "sbd": 0.2800000011920929
+   },
+   {
+    "clave": [
+     "080557",
+     "Mano de obra",
+     "0000000211"
+    ],
+    "p17": 3.640000104904175,
+    "sbd": 14.619999885559082
+   },
+   {
+    "clave": [
+     "111303",
+     "Mano de obra",
+     "0000000211"
+    ],
+    "p17": 0.7289999723434448,
+    "sbd": 0.8669999837875366
+   },
+   {
+    "clave": [
+     "251225",
+     "Mano de obra",
+     "0000012883"
+    ],
+    "p17": 2.5,
+    "sbd": 0.5
+   },
+   {
+    "clave": [
+     "267101",
+     "Mano de obra",
+     "0000000211"
+    ],
+    "p17": 0.6600000262260437,
+    "sbd": 2.125
+   },
+   {
+    "clave": [
+     "190224",
+     "Mano de obra",
+     "0000000211"
+    ],
+    "p17": 24.052799224853516,
+    "sbd": 5.28000020980835
+   },
+   {
+    "clave": [
+     "052416",
+     "Mano de obra",
+     "0000000211"
+    ],
+    "p17": 0.17800000309944153,
+    "sbd": 1.0
+   }
+  ],
+  "por_tipo": {
+   "Mano de obra": {
+    "comunes": 24632,
+    "solo_2017": 10582,
+    "solo_2025": 11299,
+    "coef_diferentes": 5551
+   },
+   "Juego de trabajo": {
+    "comunes": 341,
+    "solo_2017": 0,
+    "solo_2025": 4,
+    "coef_diferentes": 0
+   },
+   "Material": {
+    "comunes": 17823,
+    "solo_2017": 237,
+    "solo_2025": 782,
+    "coef_diferentes": 1
+   },
+   "Equipo": {
+    "comunes": 10958,
+    "solo_2017": 1950,
+    "solo_2025": 3559,
+    "coef_diferentes": 1
+   },
+   "Semielaborado": {
+    "comunes": 1004,
+    "solo_2017": 2,
+    "solo_2025": 10,
+    "coef_diferentes": 0
+   }
+  }
+ },
+ "G_caso_012141": {
+  "codigo": "012141",
+  "emb": [
+   "EN ROCA CUALQUIER SECCION EN PLANTA, HASTA 1.80 M DE PROFUNDIDAD CON DETONADOR ELECTRICO .(CARGA MANUAL)",
+   "m3",
+   123.02,
+   12.89,
+   30.36,
+   79.77,
+   1.96,
+   "01"
+  ],
+  "sbd": {
+   "desc": "EN ROCA CUALQUIER SECCION EN PLANTA, HASTA 1.80 M DE PROFUNDIDAD CON DETONADOR ELECTRICO.(CARGA MANUAL)",
+   "um": "m3",
+   "cmmn": 12.891,
+   "chmn": 30.3556,
+   "cemn": 79.7666,
+   "total": 123.0132,
+   "peso": 0.0,
+   "hh": 2.4096,
+   "he": 0.3597,
+   "codsubg": "0121"
+  },
+  "precodi_2017": {
+   "codigo": "012141",
+   "descripcion": "EN ROCA CUALQUIER SECCION EN PLANTA, HASTA 1.80 M DE PROFUNDIDAD CON DETONADOR ELECTRICO.(CARGA MANUAL)",
+   "unidad": "m3",
+   "mat": 2.629,
+   "mo": 4.6074,
+   "eq": 1.6517,
+   "total": 8.8881,
+   "peso": 0.0,
+   "hh": 2.4096,
+   "he": 0.3597
+  },
+  "normas_p17": [
+   {
+    "tipo": "Equipo",
+    "recurso": "0023411907",
+    "coef": 0.16670000553131104
+   },
+   {
+    "tipo": "Equipo",
+    "recurso": "0023511943",
+    "coef": 0.016699999570846558
+   },
+   {
+    "tipo": "Equipo",
+    "recurso": "0053104003",
+    "coef": 0.009600000455975533
+   },
+   {
+    "tipo": "Equipo",
+    "recurso": "0063114304",
+    "coef": 0.16670000553131104
+   },
+   {
+    "tipo": "Mano de obra",
+    "recurso": "0000000211",
+    "coef": 2.4000000953674316
+   },
+   {
+    "tipo": "Mano de obra",
+    "recurso": "0000010181",
+    "coef": 0.009600000455975533
+   },
+   {
+    "tipo": "Material",
+    "recurso": "3834010001",
+    "coef": 1.2000000476837158
+   },
+   {
+    "tipo": "Material",
+    "recurso": "3842030002",
+    "coef": 1.5
+   },
+   {
+    "tipo": "Material",
+    "recurso": "3844010002",
+    "coef": 0.800000011920929
+   }
+  ],
+  "normas_sbd": [
+   {
+    "tipo": "Equipo",
+    "recurso": "0023411907",
+    "coef": 0.16670000553131104
+   },
+   {
+    "tipo": "Equipo",
+    "recurso": "0023511943",
+    "coef": 0.016699999570846558
+   },
+   {
+    "tipo": "Equipo",
+    "recurso": "0053104003",
+    "coef": 0.009600000455975533
+   },
+   {
+    "tipo": "Equipo",
+    "recurso": "0063114304",
+    "coef": 0.16670000553131104
+   },
+   {
+    "tipo": "Mano de obra",
+    "recurso": "0000000211",
+    "coef": 2.4000000953674316
+   },
+   {
+    "tipo": "Mano de obra",
+    "recurso": "0000010181",
+    "coef": 0.009600000455975533
+   },
+   {
+    "tipo": "Material",
+    "recurso": "3834010001",
+    "coef": 1.2000000476837158
+   },
+   {
+    "tipo": "Material",
+    "recurso": "3842030002",
+    "coef": 1.5
+   },
+   {
+    "tipo": "Material",
+    "recurso": "3844010002",
+    "coef": 0.800000011920929
+   }
+  ]
+ },
+ "H_patron_x10_sbd2025": {
+  "partidas_con_norma_mo": 16611,
+  "casos_patron_10": 0,
+  "muestras": []
+ },
+ "H_unidades_2017_2025": {
+  "comparadas": 15278,
+  "cambiadas": 1,
+  "equivalentes": 0,
+  "detalle": [
+   {
+    "codigo": "999999",
+    "p17": ".",
+    "sbd": null,
+    "equivalente": false
+   }
+  ]
+ },
+ "H_horas_op_ayu": {
+  "sbd_con_horas_operario": 16861,
+  "sbd_con_horas_ayudante": 0,
+  "emb_tiene_campo": false,
+  "nota": "El campo existe en SBD 2025 (y PRECODI 2017) pero no en el catálogo embebido de PRECOST (no es un defecto de importación: la fuente PDF de PRECOST no lo publica)"
+ }
+}

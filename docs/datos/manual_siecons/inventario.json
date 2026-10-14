@@ -1,0 +1,277 @@
+{
+  "pdf": "/home/z/my-project/work/siecons_extract/payload/App/MANUAL/Manual SIECONS/Manual Básico SIECONS.pdf",
+  "paginas": 54,
+  "total_imagenes": 115,
+  "por_pagina": [
+    {
+      "pagina": 1,
+      "caracteres": 627,
+      "imagenes": 3
+    },
+    {
+      "pagina": 2,
+      "caracteres": 43,
+      "imagenes": 3
+    },
+    {
+      "pagina": 3,
+      "caracteres": 282,
+      "imagenes": 3
+    },
+    {
+      "pagina": 4,
+      "caracteres": 49,
+      "imagenes": 2
+    },
+    {
+      "pagina": 5,
+      "caracteres": 439,
+      "imagenes": 3
+    },
+    {
+      "pagina": 6,
+      "caracteres": 484,
+      "imagenes": 3
+    },
+    {
+      "pagina": 7,
+      "caracteres": 449,
+      "imagenes": 5
+    },
+    {
+      "pagina": 8,
+      "caracteres": 725,
+      "imagenes": 3
+    },
+    {
+      "pagina": 9,
+      "caracteres": 989,
+      "imagenes": 2
+    },
+    {
+      "pagina": 10,
+      "caracteres": 222,
+      "imagenes": 2
+    },
+    {
+      "pagina": 11,
+      "caracteres": 870,
+      "imagenes": 3
+    },
+    {
+      "pagina": 12,
+      "caracteres": 661,
+      "imagenes": 1
+    },
+    {
+      "pagina": 13,
+      "caracteres": 386,
+      "imagenes": 1
+    },
+    {
+      "pagina": 14,
+      "caracteres": 321,
+      "imagenes": 2
+    },
+    {
+      "pagina": 15,
+      "caracteres": 182,
+      "imagenes": 3
+    },
+    {
+      "pagina": 16,
+      "caracteres": 328,
+      "imagenes": 2
+    },
+    {
+      "pagina": 17,
+      "caracteres": 973,
+      "imagenes": 2
+    },
+    {
+      "pagina": 18,
+      "caracteres": 1602,
+      "imagenes": 0
+    },
+    {
+      "pagina": 19,
+      "caracteres": 945,
+      "imagenes": 2
+    },
+    {
+      "pagina": 20,
+      "caracteres": 832,
+      "imagenes": 1
+    },
+    {
+      "pagina": 21,
+      "caracteres": 604,
+      "imagenes": 1
+    },
+    {
+      "pagina": 22,
+      "caracteres": 217,
+      "imagenes": 2
+    },
+    {
+      "pagina": 23,
+      "caracteres": 520,
+      "imagenes": 1
+    },
+    {
+      "pagina": 24,
+      "caracteres": 80,
+      "imagenes": 2
+    },
+    {
+      "pagina": 25,
+      "caracteres": 347,
+      "imagenes": 2
+    },
+    {
+      "pagina": 26,
+      "caracteres": 1066,
+      "imagenes": 1
+    },
+    {
+      "pagina": 27,
+      "caracteres": 857,
+      "imagenes": 2
+    },
+    {
+      "pagina": 28,
+      "caracteres": 1156,
+      "imagenes": 3
+    },
+    {
+      "pagina": 29,
+      "caracteres": 816,
+      "imagenes": 3
+    },
+    {
+      "pagina": 30,
+      "caracteres": 1305,
+      "imagenes": 1
+    },
+    {
+      "pagina": 31,
+      "caracteres": 719,
+      "imagenes": 3
+    },
+    {
+      "pagina": 32,
+      "caracteres": 1458,
+      "imagenes": 2
+    },
+    {
+      "pagina": 33,
+      "caracteres": 1028,
+      "imagenes": 1
+    },
+    {
+      "pagina": 34,
+      "caracteres": 702,
+      "imagenes": 3
+    },
+    {
+      "pagina": 35,
+      "caracteres": 1302,
+      "imagenes": 2
+    },
+    {
+      "pagina": 36,
+      "caracteres": 426,
+      "imagenes": 2
+    },
+    {
+      "pagina": 37,
+      "caracteres": 225,
+      "imagenes": 4
+    },
+    {
+      "pagina": 38,
+      "caracteres": 1186,
+      "imagenes": 1
+    },
+    {
+      "pagina": 39,
+      "caracteres": 793,
+      "imagenes": 2
+    },
+    {
+      "pagina": 40,
+      "caracteres": 1068,
+      "imagenes": 2
+    },
+    {
+      "pagina": 41,
+      "caracteres": 1168,
+      "imagenes": 2
+    },
+    {
+      "pagina": 42,
+      "caracteres": 1354,
+      "imagenes": 1
+    },
+    {
+      "pagina": 43,
+      "caracteres": 1030,
+      "imagenes": 0
+    },
+    {
+      "pagina": 44,
+      "caracteres": 435,
+      "imagenes": 3
+    },
+    {
+      "pagina": 45,
+      "caracteres": 1777,
+      "imagenes": 1
+    },
+    {
+      "pagina": 46,
+      "caracteres": 377,
+      "imagenes": 2
+    },
+    {
+      "pagina": 47,
+      "caracteres": 411,
+      "imagenes": 3
+    },
+    {
+      "pagina": 48,
+      "caracteres": 967,
+      "imagenes": 3
+    },
+    {
+      "pagina": 49,
+      "caracteres": 1082,
+      "imagenes": 1
+    },
+    {
+      "pagina": 50,
+      "caracteres": 535,
+      "imagenes": 2
+    },
+    {
+      "pagina": 51,
+      "caracteres": 359,
+      "imagenes": 4
+    },
+    {
+      "pagina": 52,
+      "caracteres": 1033,
+      "imagenes": 2
+    },
+    {
+      "pagina": 53,
+      "caracteres": 325,
+      "imagenes": 3
+    },
+    {
+      "pagina": 54,
+      "caracteres": 486,
+      "imagenes": 2
+    }
+  ]
+}

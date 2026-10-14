@@ -1,0 +1,1202 @@
+
+===== PÁGINA 1 =====
+Como Identificar los BITs del MS Access 
+MS Access 2003 y 2007 siempre son 32 bits, del 2010 en lo adelante si podemos 
+encontrar 32 y 64 Bits. 
+Como identificar los BITs del MS Access 2010 y 2013 o superior 
+MS Access 2010 
+Abrir el MS Access, damos click en Ayuda y aparecerá en el lado derecho la información sobre el MS 
+Access instalado. 
+      
+ 
+MS Access 2013 ó Superior 
+Abrir el MS Access, damos un click en Abrir otros archivos, la barra Izquierda del Access, damos click 
+en Cuenta, en lado derecho en el Botón Grande “Acerca de Access” y parecerá una ventana con la 
+información sobre el MS Access instalado. 
+ 
+ 
+
+===== PÁGINA 2 =====
+                            
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== PÁGINA 3 =====
+ 
+Antes de ejecutar por primera vez el SIECON la manera de que el programa funcione correctamente, 
+solo es posible si el MS Office está correctamente activado y el MS Access tiene habilitada la opción de 
+permitir ejecutar todas las Macros. 
+ 
+En 2003: 
+ 
+ 
+ 
+ 
+  
+ 
+En 2007: 
+ 
+ 
+
+===== PÁGINA 4 =====
+ 
+ 
+ 
+ 
+ 
+ 
+En 2010, 2013,  2016, 2019, 2021: 
+ 
+
+===== PÁGINA 5 =====
+               
+ 
+ 
+ 
+ 
+Es importante aclarar que el caso del 2016, 2019 y 2021, si no esta correctamente activada la licencia del 
+Office resultará imposible habilitar las Macors. 
+ 
+ 
+ 
+Como Instalar SIECONS: 
+ 
+Después de identificar la versión de MS-Access con que contamos y de cuantos Bits es, seleccionamos 
+el instalador que vamos a utilizar. 
+ 
+Descargar desde nuestras Páginas: 
+ 
+- 
+www.siecons-mr.com 
+- 
+www.siecons.nat.cu 
+ 
+
+===== PÁGINA 6 =====
+ 
+ 
+Mediante click en cualquiera de las etiquetas señaladas con flechas, nos lleva a la página de descarga de 
+la aplicación. 
+ 
+ 
+ 
+ 
+Supongamos que tenemos MS-Access 2013 de 32 Bits, dado que es 32 Bits y superior, descargamos el 
+que está señalado con la flecha. 
+ 
+ 
+ 
+Ejecutamos: SIECONS_10_32Bit_MSA_07 o Superior_2024_01_24_2129.exe, el texto 
+_2024_01_24_2129 indica la fecha en que fue compilada la aplicación y de se concluye cuan 
+actualizada está o no la Aplicación. 
+ 
+ 
+
+===== PÁGINA 7 =====
+    
+ 
+ 
+ la carpeta de instalación se puede buscar  mediante el 
+botón  Examinar o simplemente cambiar o editar el camino de instalación, es importante aclarar que 
+SIECONS como aplicación, NO requiere ser instalado en la Unidad del Sistema Operativo 
+(Comúnmente “C”), lo que es muy buenos ya ayuda que no afectemos la capacidad de la memoria 
+virtual de Windows. 
+ 
+En nuestro ejemplo instalaremos en la Unidad “Z” de nuestra PC. 
+ 
+ 
+    
+ 
+ 
+ 
+
+===== PÁGINA 8 =====
+   Quedando Instalado  
+donde 
+la carpeta Siecons 10\App\Siecons\ contiene la aplicación principal SIECONS_10_07.accde en nuestro 
+caso. 
+ 
+SIECONS es una aplicación desarrollada en MS Access de MS Office, se ejecuta sobre cualquier 
+versión de Access y de Windows, según la versión del Access y los Bits varia la Aplicación: 
+ 
+Access 2003: SIECONS_10_03.mde 
+(Solo Access 2003) 
+ 
+Access 2007 o Sueperio 32 Bits: SIECONS_10_07.accde 
+(2007,2010,2013,2016, 2019,2021 …) de 32 Bits 
+ 
+Access 2010 364Bits: SIECONS_10_10.accde 
+(Solo Access 2010) de 64 Bits 
+ 
+Access 2013 o Sueperio 64 Bits: SIECONS_10_07.accde 
+(2013,2016, 2019,2021 …) de 64 Bits 
+ 
+ 
+ 
+ 
+Quedando en el escritorio el acceso directo a la aplicación: 
+  
+ 
+
+===== PÁGINA 9 =====
+Y en el menú de Windows >> Todas las Aplicaciones  
+ 
+ 
+ 
+ 
+La primera vez que ejecutamos SIECONS, si lo hacemos desde el acceso directo sin ser ejecutado el MS 
+Access como administrador al ejecutarse no se podrán ejecutar los procesos de autenticación y por tanto 
+nos cancelará la ejecución. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Por tanto Ejecutaremos el Access como Administrador: 
+ 
+Ejecutar MS-ACCESS como administrador  
+Es importante aclarar que la instalación y activación del SIECONS ya sea promocional o definitiva solo 
+la puede hacer el administrador principal de la PC (es decir el USUARIO ADMINISTRADOR, no un 
+usuario administrador cualquiera) y esto solo se logra iniciando con el usuario ADMINISTRADOR o 
+ejecutando el MS-Access como Administrador.  
+ 
+El hecho de que usted pertenezca al grupo Administradores para el SIECONS, si no ejecuta el MS-
+Access como administrador no le permitirá autentificar, debe ejecutar el MS Access Como 
+Administrador  y desde el MS Access abrir el SIECONS. 
+
+===== PÁGINA 10 =====
+ 
+ 
+ 
+  podemos seleccionarlos del archivos recientes, si esta 
+entre ellos. 
+ 
+O mediante la opción Abrir otras Archivos explorar e ir la carpeta donde se encuentra la aplicación la 
+seleccionamos y la mandamos a abrir. 
+
+===== PÁGINA 11 =====
+ 
+ 
+ 
+Este paso solo se realizará en la primera ejecución del software. Se podrá ejecutar 
+normalmente desde el acceso directo en el escritorio 
+Aparecerá el dialogo de Autenticación 
+ 
+ 
+ 
+ 
+Si fuese la primera vez que SIECONS se ejecuta en esa PC, podemos escribir la clave “pasion”, así sin 
+acento, esto hará que la aplicación se active por un periodo de prueba de 3 meses, en caso  de que el 
+instalador que estemos utilizando tenga más de 3 meses de creado, no funcionará “pasion”, por tanto se 
+ve enviar un mensaje al grupo de desarrollo del SIECONS para que le evien la claves Promocional  o 
+Libre según sea el caso. 
+ 
+Los Datos a Enviar son los que aparecen en el título de la ventana del dialogo de Autenticación 
+ 
+ 
+ 
+Se envía al 52825833 el Mensaje: 
+Nro de Autenticar: 1191 
+Versión: 10 
+Fecha de Compilación: 24/01/2024 
+Id del Equipo: S7ZBM4L5YFPC 
+ 
+
+===== PÁGINA 12 =====
+Importante:  
+La fecha PC debe ser la correcta. 
+Por Ejemplo si la fecha real del momento en que se solicita la clave es 26/01/2024, entonces la 
+PC debe tener en su reloj 26/01/2024. 
+ 
+ 
+Recibirá de vuelta el mensaje: 
+ 
+Claves SIECONS 
+Datos:  
+Ver.: 10.0 
+Nro.: 1191 
+Fecha: 24/1/2024 
+Claves:  
+Autenticar: 1692248668-6611-8925 
+ 
+Libre: 23986740001-10361-11910/1000001677115071 
+Muchas gracias. 
+ 
+Por supuesto si la licencia es Promocional no incluirá la Clave Libre. 
+ 
+ 
+ 
+ 
+ 
+Se escribe la clave de Autenticidad y en el campo Autorizado a:  Se escribe el Nombre de la Persona o 
+Entidad autorizado a  usar el SIECONS. 
+ 
+ 
+Quedando de esta manera: 
+ 
+
+===== PÁGINA 13 =====
+ 
+ 
+Como se ve donde señala la flecha dice Promocional, si la clave introducida fuera la Libre entonces 
+diría Libre 
+ 
+ 
+ 
+La copia promocional con vida de 3 meses se activa con la palabra pasion (así como está 
+escrita sin el acento), siempre u cuando la instalación tenga menos de 3 meses de creada. 
+ 
+Al abrir SIECONS 
+ 
+Aparecerá el dialogo inicial de PRESENTACIÓN del SIECONS 
+ 
+
+===== PÁGINA 14 =====
+ 
+ 
+En la Cinta de Opciones COMPLEMENTOS tendremos la barra de Útiles de la 
+ 
+ 
+ 
+ 
+ Realizar Copia de Seguridad o Duplicado de la Aplicación SIECONS 
+ 
+ Compactar y Reparar la Aplicación SIECONS 
+ 
+ Crear Salva Cifrada del Estado de Activación 
+ 
+ Acceder a las Opciones de Access 
+ 
+ 
+Conectar la Base de Datos (BD). 
+
+===== PÁGINA 15 =====
+ 
+ 
+ (Disco 
+donde 
+decidió 
+instalar)>> 
+SIECONS 
+10 
+>> 
+BD 
+>> 
+SBD_10 
+>> 
+SBD_10_MICONS_2022 >> SBD_10_MICONS_2022 
+ 
+Esperar a que se conecte la Base de Datos y dar ACEPTAR 
+ 
+
+===== PÁGINA 16 =====
+ 
+Entrar a SIECONS. 
+ 
+ 
+Al hacer click en continuar nos lleva al dialogo de control de usuarios/ 
+ 
+Tecla ENTER dos veces 
+Ya está dentro de SIECONS!!! Bienvenido :) 
+ 
+Después de Iniciar SIECONS 
+ 
+Aparece el ambiente de trabajo del SIECONS, donde encontraremos la Cinta de Opciones 
+COMPLEMENTOS y el PANEL DE CONTROL 
+ 
+ 
+ 
+
+===== PÁGINA 17 =====
+ 
+ 
+En la cinta de opciones COMPLEMENTO aparecerán barras de herramientas con botones propios de 
+la Aplicación SIECONS 
+ 
+Barra Principal siempre disponible. 
+ 
+ 
+ 
+ Accesos directos: Grupos de accesos directos predefinidos o personalizados 
+ Opciones de MS-Access 
+Definir aplicaciones a llamar: Permite incorporar aplicaciones introduciendo el camino 
+(dirección) donde están para luego ser llamadas desde el SIECONS. 
+ Lista de aplicaciones a llamar: Aparece la lista de aplicaciones a llamar definidas 
+anteriormente. 
+ Definir nuevos usuarios: Define usuarios y establece si es administrador o no, o si tiene 
+permiso de escritura o no. Podrás entonces entrar en SIECONS con un usuario y contraseña 
+creado por usted. 
+ Cambiar mi clave: Permite cambiar clave de usuario activo 
+ Lista de usuarios: Es una opciónde seguridad del SIECONS que permite a los 
+administradores  ver la lista de usuarios y otorgarle los permisos de administración y permiso 
+de escritura. 
+
+===== PÁGINA 18 =====
+Normas de consumo: Constituye un núcleo o diálogo concentrado que permite editar, 
+exportar e imprimir fichas o normas de consumo. 
+Calculadora: Evalúa y calcula el precio de una actividad con coeficientes personalizados. 
+ Exportaciones e importaciones generales: Permite exportar obras, renglones consructivos, 
+macroactividades, catálogos y paquetes. 
+ Precisión: Corrige la precisión en la que se desean que los resultadosde los costos de A.C, 
+precio de A.C y las fichas. 
+ Obra y objeto: Abre el diálogo de Obras y Objetos (Ctrl+O) 
+ Informes detallados y consolidados: Contiene todos los informes que se pueden obtener 
+del SIECONS, tanto de Presupuesto como de Certificaciones.  
+ Hacer salva personalizada de la BD, la salva personalizada brinda la opción de eliminar 
+las obras que no nos interesa conservar en la salva. 
+Camino de la salva o copia de seguridad automática: Permite elegir el camino donde se 
+almacenan las copias de seguridad y elegir el formato del nombre de la salva. 
+Acerca del SIECONS. 
+Limpiar todos los precalculos y temporales. 
+ Informes de interés: Puedes marcar los informes que deseas ver. 
+ Establecer fondo blanco o alterno en los detalles de reportes. 
+ Establecer pie de firma para los consolidados 
+ Formato de hoja a utilizar: Carta o personalizado (aparece carta por defecto) 
+ Mostrar u ocultar detalles del proceso. 
+ Anular Cursor de espera 
+ Cierra el formulario activo. 
+ Salir al inicio de sesión del programa. 
+ 
+Crear nuevo usuario. 
+1. Iniciar con el usuario PRIMERA SESIÓN 
+2. Ir al Menú de Complementos y seleccionar 
+ DEFINIR NUEVOS USUARIOS. 
+
+===== PÁGINA 19 =====
+3. Llenar los campos con USUARIO, CONTRASEÑA Y CONFIRMAR CONTRASEÑA, marcar ES 
+ADMINISTRADOR y luego ACEPTAR. 
+ 
+4. Luego en el Manual de Complementos seleccionar 
+ SALIR AL INICIO DE SESIÓN DEL 
+PROGRAMA. 
+5. Se vuelve a iniciar la sesión en SIECONS pero esta vez con el usuario creado introduciendo la 
+contraseña. 
+Como paso opcional, pero recomendado se establece el usuario PRIMERA SESIÓN con 
+permiso de solo lectura siguiendo los pasos a continuación: 
+1. En el Menú Complemento seleccionar 
+LISTA DE USUARIOS 
+2. Quitarla selección de Administrador y Permiso de escritura al usuario PRIMERA SESIÓN.  
+ 
+3. Cerrar 
+ 
+En la Cinta de Opciones COMPLEMENTOS, también encontraremos en algunas ocasiones la Barra 
+de Herramientas de Acciones con los Reportes, esta barra solo estará disponible cuando haya un 
+Reporte en Vista Previa. 
+ 
+ 
+ 
+ Exportar Reporte a MS Word 
+ 
+ Enviar Reporte por Correo como .RTF 
+ 
+ Exportar Directo a MS Excel 
+
+===== PÁGINA 20 =====
+ 
+ Exportar a formatos de Aplicaciones de MS 
+ 
+ 
+ 
+ Exportar Personalizado a MS Excel 
+ 
+ Exportar el Reporte activo a PDF (Si está disponible la opción de imprimir PDF, se recomienda no 
+exportar, sino Imprimir PDF) 
+ 
+ Ocultar o Mostrar Secciones o Agrupamientos del Reporte 
+ 
+ Cerrar todos los Reportes Abiertos 
+ 
+ 
+Cada Botón o Elemento del SIECONS en las Barras de Herramientas ó en los Diálogos, tiene una ayuda 
+que al pasar el cursor por encima se muestra la ayuda flotante sobre el elemento. 
+ 
+Es importante aclarar que en SIECONS no hay necesidad de Guardar, no existen Botones para Guardar, 
+después actualizar los datos, salir de los registros o salir de los diálogos se guardaran automáticamente, 
+lo que garantiza que ante cualquier falla de energía, de la red o del sistema, los datos estarán 
+garantizados. 
+ 
+ 
+
+===== PÁGINA 21 =====
+Panel de Control 
+ 
+ 
+ 
+ 
+ Menú del SIECONS 
+ 
+ Área en que se Mostrará el Objeto o Pto fijado para trabajar 
+ 
+ 
+  
+  Regresar directamente al Menú Principal 
+ 
+ Acceder al Catálogo de Obra 
+ 
+Edita la Estructura de Desagregación de la Obra Fijada 
+ 
+  ó 
+ Activa ó Desactivar la Copia de seguridad automática de la BD 
+ 
+2.1. 
+Crear/Editar Obras y Objetos 
+1. Ir a Obras y Objetos. 
+Se puede acceder de tres maneras diferentes: 
+ 
+Ctrl + O. 
+ 
+Menú Complementos >> 
+  Ir al Catálogo de Obras 
+ 
+Accediendo desde la Pantalla Principal ó Panel de Control en el botón de Ir al Catálogo de 
+Obras. 
+ 
+
+===== PÁGINA 22 =====
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+En la parte inferior del diálogo aparecen los botones asociados a las obras.  
+En la parte de las Obras (Izquierda): 
+ Crear Nueva Obra. 
+ Editar los Datos de la Obra. 
+ Importar Obras y/o Catálogos. 
+
+===== PÁGINA 23 =====
+ Exportar Obras. 
+ Clonar Obras: Clona la Obra con toda la información que contiene. 
+ Eliminar una o varias Obras. 
+ Aplicar Precios Libres o Tasa de Destajo según la Colección que se seleccione.  
+ Mover a otra carpeta. 
+ Unir varias Obras como Nodos en una Nueva Obra (Solo P.A.C.). 
+ Copiar el Contenido de Toda la Obra seleccionada hacia la Obra y Nodos Fijados 
+(Solo P.A.C.). 
+ Muestra la estructura de la Obra. 
+2. Seleccionar CREAR UNA NUEVA OBRA. 
+ 
+3. Crear carpeta donde deseas q se agrupe la obra a crear. 
+
+===== PÁGINA 24 =====
+ 
+ 
+4. Llenar los datos referente a la Obra y cierras. 
+5. Seleccionar la Obra 
+
+===== PÁGINA 25 =====
+ 
+Haciendo Click en el Botón 
+ da acceso al dialogo de Edición de la Estructura de 
+Desagregación de la Obra. 
+ 
+Crear un objeto nuevo (Hermano del seleccionado o hijo de la raiz de la obra). 
+ Crear un objeto nuevo (Hijo del objeto nodo seleccionado). 
+Editar los datos del objeto seleccionado. 
+ Recodificar a partir del Nodo. 
+ Clonar Objeto. 
+
+===== PÁGINA 26 =====
+Importar el Contenido del Nodo Fijado hacia el Nodo Seleccionado (Solo P.A.C.). 
+ Elimina un Objeto y sus descendientes en caso de ser un Nodo a partir de la 
+Selección. 
+ Unir los P.A.C. de varios Objetos en el Fijado (Solo P.A.C.). 
+ Muestra un Reporte con las Informaciones asociadas al Objeto. 
+ Cerrar. 
+6. Se procede a crear Objetos a la Obra. 
+6.1. 
+Se comienza creando un hijo de la raíz de la obra 
+CREAR UN OBJETO NUEVO. Será un 
+Objeto Nodo que se descompone en otros Objetos Detalles a los cuales se le suministrará la 
+información. La estructura de las obras y la descomposición de los objetos de la misma estará 
+en cordinación con los intereses del ususario. 
+ 
+ 
+ 
+Para crear un Objeto Nodo se desmarca  la opción ES DETALLE, esto significará que no se le 
+podrá suministrar información a este objeto por lo que será desagregado en otros Objetos 
+Detalles que se derivan de este.  
+6.2. 
+Luego se comienza a desagregar los Objetos Detalles hijos de Objeto Nodo  
+ CREAR UN 
+OBJETO NUEVO. Es a los Objetos Detalles a los que se les especifican A.C.  
+
+===== PÁGINA 27 =====
+ 
+ 
+Esta vez se deja marcado ES DETALLE. 
+Es posible cambiar el antecesor del cual se deriva un Objeto Detalle luego de creado. Para ello 
+utilizamos el botón 
+EDITAR LOS DATOS DEL OBJETO SELECCIONADO. 
+ 
+ 
+Se cambia por otro Objeto Nodo (solo pueden tener hijos los objetos nodos). Toda la 
+información que se le había especificado al objeto se moverá junto con este sin 
+problemas y sin pérdida de información. 
+2.1.1. Crear Presupuesto de Acciones Constructivas (P.A.C.). 
+Después de definidos los Objetos de la Obra y creada la estructura de desagregación de la 
+misma, se procede a especificar las A.C de cada Objeto con la información correspondiente. 
+1. Fijar el Objeto Detalle que se desea especificar dando doble click sobre él. 
+2. Click derecho en la parte derecha de la Ventana Principal. 
+3. PRESUPUESTO DE ACCIONES CONSTRUCTIVAS. (P.A.C.) 
+ 
+
+===== PÁGINA 28 =====
+ 
+4. Escoger el Tipo de P.A.C ya sea Ejecución Principal o Facilidades Temporales (1) 
+5. Seleccionar la Etapa en la que se está trabajando (2) 
+Es posible añadir Nuevas Etapas que el usuario considere necesarias para su trabajo. (3)  
+6. Escoger el Tipo de A.C. con la cual se va a trabajar ya sea Renglones Constructivos, 
+Macroactividades o Todos. (4) 
+7. Introducir las A.C. del Objeto (5) 
+Al tocar la pestalla 
+ se despliega la lista de todas las A.C. con su código y descripción. 
+Se puede ir escribiendo el código de la A.C. que se desea o si desea que se organice por 
+descripción puede seleccionar  
+. Debe volver a dar en el botón para que se vuelva a 
+organizar por código si así lo desea. 
+Para 
+facilitar la busqueda de las A.C. resulta muy util la herramienta FILTRAR 
+ . Permite 
+cerrar su busqueda por Tipo de Actividad, Colección creadas anteriormente, Sección, 
+Capítulo y Subcapítulo.  
+Ejemplo:  
+ 
+Para aplicar el filtro se puede dar en la tecla ENTER o en el botón APLICAR FILTRO  
+. 
+El botón aparecerá bordeado en azul mientras esté activo el filtro y en FILTRADOS 
+aparecerá el número de coincidencias del filtro. 
+1 
+2 
+3 
+4 
+5 
+
+===== PÁGINA 29 =====
+ 
+ 
+Al desplegar entonces la lista de A.C. encontrará solo aquellas que coincidan con las 
+características introducidas en el filtro. El botón de FILTRO se enmarcará también en rojo mientras 
+esté activo. Para desactivar el filtro puede cerrar la Ventana del Filtro o dar en el botón LIBERAR 
+FILTRO 
+ en la Ventana de Filtro.     
+Puede además aplicar el Filtro escribiendo palabras que recuerde de la actividad que busca. 
+ 
+ 
+ 
+El filtro funcionará de igual forma restringiendo el número de actividades de la lista de A.C. y se 
+puede desactivar de la misma forma. 
+ 
+Luego de introducir la A.C. debe ingresar la cantidad de la actividad (2). La unidad de medida de la 
+actividad se colocará automáticamente según esté establecido en las normas (1).  
+Encontrará además en esta ventana herramientas como:  
+1 
+2 
+
+===== PÁGINA 30 =====
+Detallar otros datos de la actividad (Inicio y Final, Etiqueta o Complejidad laboral). 
+Captar Formatos de Hojas de Datos: Muy util para cuando se quiere copiar información desde 
+Excel. 
+Afectar la etapa en bloque: Despliega una lista de opciones para afectar todas las A.C. de la etapa 
+en la que se está trabajando (Multiplicar por un factor, Aplicar Coeficiente de Complejidad, Aplicar 
+Tarifa Adicional de Condiciones Laborales Anormales, Programar en Bloque, Consolidad A.C. 
+Repetidas, Actualiza el Valor de todas las cantidades formuladas, Deshabilitar el cálculo de todas las 
+Cantidades formuladas, Deshabilitar el Cálculo de todas las cantidades Formuladas, Habilitar el 
+Cálculo de todas las cantidades Formuladas). 
+ Importe de la Etapa al Costo hasta el momento.  
+ Importe del Objeto al Costo hasta el momento 
+ Elimina el presupuesto 
+ Importar de otra Etapa: Permite importar A.C. desde otras etapas del Objeto. 
+Resulta una herramienta muy útil cuando quiere cambiar una o varias A.C. de una etapa a otra sin 
+necesidad de borrarlas y crearlas nuevamente. Simplemente debe: 
+1. 
+Asegurarse de estar en la Etapa correcta hacia donde quiere importar la A.C. 
+2. 
+Click en IMPORTAR DE OTRA ETAPA  
+. 
+3. 
+Escoger la Etapa desde donde se desea importar. 
+ 
+4. 
+Seleccionar A.C. a importar. 
+
+===== PÁGINA 31 =====
+ 
+5. 
+Se presentan dos opciones: 
+a) 
+Mueve el Contenido Marcado de la Etapa Seleccionada a la Etapa Fijada (si no se 
+selecciona alguna se asumen todas). 
+b) 
+Copiar el Contenido Marcado de la Etapa Seleccionada a la Etapa Fijada (si no se 
+selecciona alguna se asumen todas). 
+ Importar, Exportar y otras acciones en Presupuesto: Despliega un grupo de opciones de 
+importación, exportación entre otras.  
+ 
+Entre las opciones se encuentra la importación desde otro Objeto lo que permitirá importar el P.A.C. de 
+otro Objeto lo que agiliza significativamente el trabajo. 
+ 
+Se escoge la Obra, Objeto de Obra y se selecciona la Etapa desde la que se desea importar el P.A.C. 
+y se da click en EJECUTAR IMPORTACIÓN  
+. 
+
+===== PÁGINA 32 =====
+Es importante aclarar que las modificaciones realizadas al P.A.C. importado no afectaran a la Obra u 
+Objeto desde el cual se importó, solo afectarán al Objeto al cual se le está aplicando ese P.A.C. 
+ 
+Ver reportes: Permite ver reportes preliminares del P.A.C. en que se esta trabajando. 
+ 
+Puede escoger los Reportes de Costo Base del P.A.C. que desea ver y luego dar click en VISTA 
+PREVIA DEL REPORTE DE COSTO BASE  
+. Para salir solo debe presionar Esc. 
+2.1.2. Recursos en el P.A.C. 
+Existen varias formas de especificar recursos en SIECONS. A continuación se explicará el 
+procedimiento para hacerlo directamente desde la ventana del P.A.C. 
+Como ya se explicó anteriormente cuando se está elaborando un P.A.C., en la ventana se 
+muestran varios campos de propiedades de cada A.C., entre ellos Código y Descripción, 
+Unidad de Medida (U.M.) y Cantidad. Existe además un cuarto campo que muestra los tipos 
+de recursos primarios que afectan a la A.C., de izquierda a derecha: Materiales (M), Recursos 
+Humanos (H) y Equipos (E).  
+El tipo de 
+recurso que está siendo afectado por recursos primarios en una determinada actividad 
+aparece señalado con una palomita 
+ dentro del cuadro del recurso, mientras que cuando no 
+está siendo afectado aparece en blanco
+. 
+Es posible entonces editar esta información, cambiando los recursos primarios que aparecen 
+por defecto y especificar recursos nuevos que se van a utilizar en la ejecución de la actividad. 
+
+===== PÁGINA 33 =====
+Especificar Recursos Materiales: 
+1. 
+Click en el cuadro referente a los Recursos Materiales para quitar la palomita. 
+ 
+Automáticamente después de quitar la palomita se activará una nueva opción que antes 
+permanecía inactiva: ESPECIFICAR RECURSOS MATERIALES 
+ 
+ 
+ 
+2. 
+Click en ESPECIFICAR RECURSOS MATERIALES 
+. 
+ 
+ 
+(1) Panel Multiventana donde cada opción cambiará a otra ventana similar donde se pueden 
+modificar los diferentes elementos que intervienen en los Recursos Materiales (Materiales, 
+Semielaborados, Juegos, R.H. del Semielaborado, Equipos del Semielaborado y 
+Producciones de Taller). 
+(2) Grupo de opciones, algunas ya resultarán familiares para el usuario pues aparecen en 
+otras ventanas con las mismas funciones. Entre estas opciones se encuentra IR A 
+CATÁLOGO DE MATERIALES  
+, la cual transporta directamente al Catálogo de Materiales 
+y donde se pueden crear nuevos materiales que no aparezcan y se deseen utilizar. Este 
+procedimiento se explica en otros epígrafes. 
+ 
+3. 
+Ir a Cargar Normas. 
+1 
+2 
+
+===== PÁGINA 34 =====
+ 
+Se descargarán todos los Recursos Materiales Primarios que vengan por defecto para la A.C. 
+4. 
+Se procede entonces a especificar los materiales que se van a utilizar en la Obra. 
+ 
+Se puede en esta sección cambiar el tipo de material que se desea utilizar, la cantidad y el 
+precio de estas. Estos cambios se deben realizar respetando siempre la realidad de la Obra. 
+Obsérvese además que hubo una variación en el Panel Multiventana, aparecen ahora (+) en 
+algunos de los elementos. Significa que fueron afectados cuando se cargaron los Materiales 
+Primarios de las normas. Es necesario comprobar si estos elementos están siendo afectados 
+de la manera que se desea.  
+ 
+5. 
+Ir a Semielaborados. 
+ 
+
+===== PÁGINA 35 =====
+En este caso aparece el mortero como un semielaborado, en caso de que el mortero se vaya 
+a realizar en el lugar de la obra y no como semielaborado se debe descomponer para que los 
+materiales que lo componen aparezcan por separado en sus cantidades correctas para 
+presupuestar. 
+6. 
+Seleccionar el semielaborado que se desea descomponer 
+7. 
+Click en DESCOMPONER SEMIELABORADOS SELECCIONADOS  
+. 
+ 
+Aparecerán ahora como Materiales y podrán ser modificados como anteriormente. 
+Se debe revisar ahora los Recursos Humanos del Semielaborado y decidir si se utilizará esta 
+especialidad en la obra u otra para esta función. 
+8. 
+Cerrar ventana al finalizar. 
+ 
+Nótese que ahora aparecerá la Opción sombreada en rojo lo que significa que ha sido 
+especificada. Si se desea borrar todos los materiales especificados y volver a trabajar solo 
+con los primarios como vienen en la norma solo debe volver a poner una palomita dando click 
+en el cuadro referente a Recursos Materiales.  
+Especificar Recursos Humanos: 
+Especificar Equipos: 
+2.1.3. Informes de presupuesto. 
+Una vez elaborado el P.A.C. de la Obra y sus Objetos se pueden obtener informes generales 
+de P.A.C. para la Obra o para un objeto en específico. Para ello se procede de la siguiente 
+forma: 
+1. Ir a Obras y Objetos de Obras (Ctrl+O). 
+
+===== PÁGINA 36 =====
+2. Fijar la Obra  en  dialogo del catálogo de Obras y luego fijar Todos los Objetos dando doble click  
+en 
+, esta acción fijará la obra completa. 
+ 
+ 
+ 
+Mientras que podemos fijar opcionalmente un punto especifico de la obra hiendo al dialogo de 
+estructura de desagregación de la obra de interés y fijando el pto deseado. 
+ 
+ 
+ 
+Click en 
+ nos lleva el diálogo de la estructura de desagregación de la obra de interes 
+ 
+ 
+ 
+
+===== PÁGINA 37 =====
+ 
+ 
+3. Ir al Menú de Complementos y dar click en INFORMES DETALLADOS Y CONSOLIDADOS
+. 
+4. Click en PRESUPUESTO. 
+ 
+ 
+5. Click en PRECALCULAR y esperar. 
+ 
+6. Escoger el Tipo de Informe a ver, en este caso Presupuesto (1). 
+ 
+
+===== PÁGINA 38 =====
+7. Seleccionar el Informe a Mostrar según el interés del usuario (2).   
+Puede Filtrar los Informes a Mostrar activando el Filtro a la Lista de Reportes 
+ 
+Puede además seleccionar el Tipo de P.A.C. y Etapa en la que desea ver los informes. 
+8. Click en PRESENTACIÓN DEL INFORME  
+ 
+Para salir del Informe presionar Esc. 
+Encontrará además en esta ventana herramientas como: 
+ Filtrar Datos para Reportes (Agrupamientos, D.I.P., A.C., Etiqueta, Recursos, Tipos de 
+Recursos Humanos). 
+ Limpiar todos los filtros aplicados a los reportes. 
+ Filtrar Datos para Reportes por la Estructura de Desagregación (Obras y Objetos). 
+Esta última resulta una herramienta muy útil y rápida cuando se desean obtener informes de 
+Objetos específicos y no de toda la Obra. Su procedimiento es muy sencillo y se muestra a 
+continuación: 
+6. 
+Click en Filtrar Datos para Reportes por la Estructura de Desagregación (Obras y Objetos).
+ 
+7. 
+Seleccionar el Objeto en el que se desea trabajar. 
+ 
+8. 
+Por último click en APLICAR EL FILTRO DE ELLOS.
+ 
+2.1.4. Exportar Informes 
+Con la PRESENTACIÓN DEL INFORME abierta se pueden exportar  este a formatos Word, 
+Excel y PDF: 
+9. 
+Ir al Menú de Complementos. 
+
+===== PÁGINA 39 =====
+ 
+ 
+10. Click en la opción de importación que se desea. 
+ExportarReporte a MS-Word. 
+Exportar a MS-Excel. 
+  Exportar el Reporte Activo a PDF. 
+ 
+2.1.5. Exportar informes personalizados de MS-Excel. 
+SIECONS permite además exportar a MS-Excel informes personalizados, a gusto del usuario. 
+Para ello se deben seguir las siguientes indicaciones: 
+1. 
+Ubicados ya en la ventana de informes del SIECONS, se procede a buscar el informe que se 
+desea personalizar (en este ejemplo se utiliza el informe MATERIALES PRIMARIOS 
+CONSOLIDADO SEGÚN P.A.C.) 
+2. 
+Click en PRESENTACIÓN DEL INFORME. 
+3. 
+Con el Informe abierto ir al Menú de Complementos y hacer click en EXPORTAR 
+PERSNALIZADO A MS-EXCEL. 
+ 
+ 
+4. 
+Escribir el nombre dela Nueva Variante de Informe Personalizado que se desea crear en (1) 
+
+===== PÁGINA 40 =====
+ 
+Para crear una nueva variante simplemente se escribe el nombre en (1) y se da ENTER, en 
+caso de ya tener una variante en este campo se sobrescribe y se da ENTER. Las variantes 
+creadas anteriormente no se borrarán por este proceso simplemente cambiara de variante. 
+Para ver las variantes creadas anteriormente solo es necesario hacer Click en la pestaña 
+ y 
+se desplegará la lista de variantes. 
+5. 
+Creada ya la Variante se comienza a agregar los Campos que se desean presentar en el Informe 
+Personalizado.  
+Se escogen en Campos Disponibles (2) y se agregan dando click en PASAR LOS CAMPOS 
+SELECCIONADOS A LA LISTA DE COLUMNAS DE LA TABLA 
+ 
+6. 
+Personalizar Informe. 
+ 
+Resulta importante aclarar que en el orden que aparezcan los Campos en (3) de arriba hacia 
+abajo será el orden en el que se presentarán en la Hoja Excel de derecha a izquierda, por lo que 
+es conveniente organizarlo a gusto del usuario señalando el campo que desea desplazar y 
+utilizando las herramientas de MUEVE EL CAMPO HACIA ARRIBA Y MUEVE EL CAMPO HACIA 
+ABAJO 
+ respectivamente. 
+
+===== PÁGINA 41 =====
+Es posible además cambiar el Título de los Campos (4), para adaptarlos mejor a las columnas de 
+la Hoja Excel, haciendo click sobre el Título y modificándolo. 
+ 
+Otra opción a modificar es la de Agrupar (5), donde es posible elegir entre MÁXIMO, MÍNIMO, 
+PROMEDIO SUMA y VALOR para cada campo.  
+Por ejemplo, en este caso, los campos Código o Descripción s agrupar por su Valor, pero la 
+Cantidad o el Importe conviene agruparlos por la Suma de los Materiales que estén usados más 
+de una vez por lo que se pone SUMA. 
+La forma de ordenar los Campos (6) depende del usuario. 
+Por ejemplo se puede elegir que el campo Descripción se ordene de forma ASCENDENTE. 
+ 
+Además es posible elegir que una columna totalice, es decir, que al final de la columna se realice 
+una sumatoria de todo el campo (7).  
+Por ejemplo se le aplica en este caso a la columna de Importe para que haga una sumatoria del 
+importe total de los materiales. 
+7. 
+Una vez modificada a gusto la Variante se exporta a MS-Excel dando click en EXPORTAR 
+CAMPOS SELECCIONADOS A MS-EXCEL
+. 
+8. 
+Se da nombre a la Hoja Excel creada y se selecciona el lugar donde se desea guardar. 
+9. 
+Click en Guardar. 
+
+===== PÁGINA 42 =====
+En esta ventana de personalización de salidas a Excel puede además encontrar herramientas 
+como: 
+Activa O Desactiva Filtro A La Lista De Campo. 
+ Importar De Otra Variante Personalizada. 
+ Exportar La Variante A Fichero De Intercambio. 
+ Vista Previa De La Tabla A Enviar A MS-Excel Formulario Hoja De Datos. 
+ Eliminar Variante De Exportación. 
+2.2. 
+Fichas de Costos. 
+SIECONS no tiene una Ficha de Costos fija, usted puede crearlas conforme a sus 
+necesidades en dependencia de la Obra en que esté trabajando. Las Fichas de Costos 
+creadas pueden ser reutilizadas en otras Obras, pueden ser exportadas como ficheros 
+externos y compartidos a otros usuarios. Además puede importar la Ficha de Costos 
+Predeterminada por norma si desea trabajar con ella. 
+2.2.1. Crear/Editar Fichas de Costos. 
+Se trabajará la elaboración y edición de Fichas de Costos hasta los Costos Directos de la 
+Obra, pues es hasta esta partida que se trabaja la elaboración de presupuestos a nivel 
+docente.  
+1. Fijar la Obra sobre la que se desea trabajar. 
+2. Fijar Todos los Objetos de la Obra. 
+3. Click derecho en la parte derecha de la pantalla y seleccionar FICHA DE COSTO PRECIO.  
+ 
+Encontrará en esta ventana iconos parecidos a los ya antes trabajados que contendrán 
+funciones parecidas a las anteriores, por lo que resultará intuitivo su uso. Entre estas 
+están: 
+
+===== PÁGINA 43 =====
+ Mueve la Fila y su Familia hacia arriba. 
+ Mueve la Fila y su Familia hacia abajo. 
+ Activa y Desactiva el Filtro. 
+ Mostrar Sub-filas. 
+ Ocultar Sub-filas. 
+ Crear una Nueva Fila (Hermana de la Fila seleccionada o Hija de la raíz de la ficha). 
+ Crear una Nueva Fila (Hija de la Fila seleccionada). 
+ Editar los Datos de la Fila seleccionada. 
+ Clonar la Fila seleccionada. 
+ Recodificar de la Fila seleccionada. 
+ Eliminar una o varias Filas. 
+ Editar las Filas de Fórmulas y de enlace MS-Excel en Hoja de Datos. 
+ Filtrar por Código (Ordenado por descripción de la Fila). 
+ Convertir la Ficha a Porcentual. 
+ Exportar la Ficha de la Obra a un Fichero Externo. 
+ Convertir la Ficha de la Obra en un Modelo de Plantilla. 
+ Importar Modelo de Costo-Precio. 
+ Define la precisión matemática con que se trabaja en el SIECONS. 
+ Recalcula y refresca la Ficha. 
+ Ver Reportes de la Ficha de Costo-Precio de la Obra. 
+4. Crear la Primera Fila COSTO DE MATERIALES dando click en  Crear una Nueva Fila (Hija de la 
+raíz de la ficha)
+. 
+
+===== PÁGINA 44 =====
+ 
+4.1. 
+Se coloca el nombre de la Fila en (1) y se elige el Método de cálculo que puede ser Fórmula, 
+Ficha de Elementos o Vínculo con MS-Excel (2). Para este ejemplo escoge Fórmula.  
+4.2. 
+Se procede a ingresar la Fórmula (3) por la que trabajará la Fila dando click en EDITAR LA 
+FÓRMULA PARA EL CÁLCULO DE LA FILA  
+. 
+ 
+ 
+ 
+4.3. 
+En la Pestalla de Acciones Constructivas señalar COSTO MATERIAL 
+ 
+ 
+4.4. 
+Click en CM_UM (Todo) 
+ 
+
+===== PÁGINA 45 =====
+ 
+CM_UM (Costo Material en la Unidad Monetaria). 
+4.5. 
+Click en ACEPTAR Y FIJAR FÓRMULA EDITADA 
+. 
+4.6. 
+Cerrar ventana Generador de Fórmula y Nuevo Elemento. 
+5. Crear Segunda Fila COSTO DE MANO DE OBRA dando click en  Crear una Nueva Fila (Hermana 
+de la Fila Seleccionada)
+. 
+5.1. 
+Se coloca de igual manera Nombre de la Fila y Método a utilizar. 
+5.2. 
+Se procede a ingresar la Fórmula por la que trabajará la Fila dando click en EDITAR LA 
+FÓRMULA PARA EL CÁLCULO DE LA FILA  
+. 
+5.3. 
+En la Pestalla de Acciones Constructivas señalar COSTO DE MANO DE OBRA DIRECTA 
+5.4. 
+Click en CH_UM (Todo) 
+CH_UM (Costo Humano en la Unidad Monetaria). 
+5.5. 
+Click en ACEPTAR Y FIJAR FÓRMULA EDITADA
+. 
+5.6. 
+Cerrar ventana Generador de Fórmula y Nuevo Elemento. 
+6. Crear Tercera Fila COSTO USO DE EQUIPOS dando click en  Crear una Nueva Fila (Hermana de 
+la Fila Seleccionada)
+. 
+6.1. 
+Se coloca de igual manera Nombre de la Fila y Método a utilizar. 
+6.2. 
+Se procede a ingresar la Fórmula por la que trabajará la Fila dando click en EDITAR LA 
+FÓRMULA PARA EL CÁLCULO DE LA FILA  
+. 
+6.3. 
+En la Pestalla de Acciones Constructivas señalar COSTO DE USO DE EQUIPOS 
+6.4. 
+Click en CE_UM (Todo) 
+CE_UM (Costo Equipos en la Unidad Monetaria). 
+6.5. 
+Click en ACEPTAR Y FIJAR FÓRMULA EDITADA 
+. 
+6.6. 
+Cerrar ventana Generador de Fórmula y Nuevo Elemento. 
+7. Crear Cuarta Fila COSTOS DIRECTOS DE LA OBRA dando click en  Crear una Nueva Fila 
+(Hermana de la Fila Seleccionada) 
+. 
+7.1. 
+Se coloca de igual manera Nombre de la Fila y Método a utilizar. 
+7.2. 
+Se procede a ingresar la Fórmula por la que trabajará la Fila dando click en EDITAR LA 
+FÓRMULA PARA EL CÁLCULO DE LA FILA  
+. 
+7.3. 
+En la Pestaña de Funciones de Filas en la Ficha señalar SUMA DEL VALOR DE VARIAS 
+FILAS. 
+
+===== PÁGINA 46 =====
+ 
+7.4. 
+Señalar todas las Filas dando Click sobre ellas y luego click en INSERTA LOS CÓDIGOS DE 
+LAS FILAS SELECCIONADAS EN LA FÓRMULA EDITADA.  
+ 
+7.5. 
+Click en ACEPTAR Y FIJAR FÓRMULA EDITADA
+. 
+7.6. 
+Cerrar ventana Generador de Fórmula y Nuevo Elemento. 
+8. Para comprobar los cálculos hasta el momento y refrescar la Ficha se da click en Recalcula y 
+refresca la Ficha
+. 
+
+===== PÁGINA 47 =====
+ 
+2.2.2. Informes de Fichas de Costos. 
+1. Click en VER REPORTES DE LA FICHA DE COSTO-PRECIO DE LA OBRA 
+. 
+2. Escoger el Infome que desee ver o imprimir (Por Ejemplo: Ficha Resumen de Costo-Precio del 
+Servicio de Constucción y Montaje)  
+ 
+3. Click en VISTA PREVIA DEL REPORTE 
+. 
+4. Si se desea Imprimir el reporte a formato PDF hacer click en IMPRIMIR. 
+ 
+5. Click en Imprimir a archivo y luego Acpetar. 
+ 
+
+===== PÁGINA 48 =====
+ 
+6. Escoger en el Explorador lugar donde desea guardar el Reporte y nombre del Reporte. 
+2.2.3. Exportar Fichas de Costos a Excel. 
+1. Click en VER REPORTES DE LA FICHA DE COSTO-PRECIO DE LA OBRA
+. 
+2. Escoger EXPORTAR FICHA DE COSTO PRECIO A MS-EXCEL. 
+ 
+3. Click en VISTA PREVIA DEL REPORTE 
+. 
+4. Escoger en el Explorador lugar donde se desea guardar la Exportación y nombe de la Exportación. 
+2.2.4. Exportar Fichas de Costos a Ficheros Externos. 
+1. Click en EXPORTAR LA FICHA DE LA OBRA A UN FICHERO EXTERNO
+. 
+2. Click en CONTINUAR EXPORTACIÓN. 
+ 
+3. Escoger en el Explorador lugar donde se desea guardar la Exportación y nombre de la 
+Exportación. 
+2.2.5. Importar Fichas de Costos. 
+1. Click enIMPORTAR MODELO DE COSTO-PRECIO
+. 
+No debe existir ninguna Fila creada, en caso de q exista dar click en ELIMINAR UNA O 
+VARIAS FILAS 
+ y luego en TODAS. 
+2. Elegir el tipo de importación que desea realizar. 
+Existen 3 casos: 
+ 
+Importar Plantilla Predefinida. 
+
+===== PÁGINA 49 =====
+ 
+Importar Plantilla de Otra Obra. 
+ 
+Importar Fichero Externo. 
+En los dos primeros casos solo debe elegir la Plantilla Predefinida que desea importar o la Obra 
+desde la q desea importar la Ficha y dar click en CONTINUAR IMPORTACIÓN
+. 
+En el tercer caso da click en CONTINUAR IMPORTACIÓN 
+ y escoge en el Explorador el 
+Fichero que desea importar y da click en ABRIR. 
+2.6. 
+Exportación a MS-Project. 
+Esta función resultará de gran utilidad para los estudiantes pues les permitirá introducirse en 
+el vínculo entre ambos softwares, exportando las actividades ya cuantificadas directamente a 
+un archivo MS-Project, desde donde se realizará la programación del cronograma de obra. 
+2.6.1. Habilitar MS-Project para el trabajo con SIECONS. 
+Primeramente se debe condicionar el MS-Project para que pueda trabajar exitosamente junto 
+con SIECONS. 
+1. Abrir MS-Project. 
+2. Click en ABRIR OTROS PROYECTOS. 
+3. Click en OPCIONES. 
+4. Click en CENTRO DE CONFIANZA. 
+5. CONFIGURACIÓN DEL CENTRO DE CONFIANZA. 
+ 
+ 
+6. Click en CONIGURACIÓN DE MACROS y luego HABILITAR TODAS LAS MACROS 
+
+===== PÁGINA 50 =====
+ 
+7. FORMATO HEREDADO y luego click en PEMITIR CARGAR ARCHIVOS CON FORMATOS DE 
+ARCHIVO NO PREDETERMINADOS O HEREDADOS. 
+ 
+8. Click en ACEPTAR y luego en ACEPTAR nuevamente. 
+2.6.2. Exportar Obra a MS-Project. 
+Una vez habilitado el MS-Project es posible exportar exitosamente de SIECONS hacia este. 
+1. Ir a Obras y Objetos de Obras (Ctrl+O). 
+2. Fijar la Obra dando click sobre ella en la parte izquierda de la ventana (Obras) y luego fijar Todos 
+los Objetos dando doble click en TODOS en la parte derecha de la ventana (Objetos). 
+
+===== PÁGINA 51 =====
+ 
+También puede fijar un Objeto en particular y obtener los informes de ese Objeto realizando los 
+mismos pasos. 
+3. Ir al Menú de Complementos y dar click en INFORMES DETALLADOS Y CONSOLIDADOS
+. 
+4. Click en PRESUPUESTO. 
+ 
+5. Click en PRECALCULAR y esperar. 
+ 
+ 
+6. Escoger el informe EXPORTAR TAREAS Y RECURSOS DEL PRSUPUESTO A MS-PROJECT O 
+PRIMAVERA. 
+ 
+
+===== PÁGINA 52 =====
+7. Click en PRESENTACIÓN DEL INFORME  
+. 
+8. Click en USAR ESPECIALIDAD. 
+ 
+9. Click en CONTINUAR LA EXPORTACIÓN A MS-PROJECT. 
+10. Click en LIBRO MS-EXCEL .XLS, (MS-PROJECT 2003 O SUPERIOR). 
+ 
+11.  Escoger en el Explorador el lugar donde quiere guardar el archivo exportado y el nombre del 
+archivo. 
+A partir de este punto podrá organizar el Cronograma de la Obra en el MS-Project. 
+2.6.3. Exportar Cronograma de la Obra de MS-Project a SIECONS. 
+Una vez terminado el Cronograma de la Obra con todos los recursos dispuestos en este, 
+conviene exportar esta información nuevamente al SIECONS, desde donde se continuará la 
+preparación técnica de la obra. 
+Para ello es importante primeramente habilitar el MS-Project para una exportación directa a un 
+formato legible por SIECONS siguiendo las siguientes instrucciones: 
+1. 
+Abrir el documento MS-Project en el cual se ha estado trabajando. 
+2. 
+Ir a ARCHIVOS. 
+3. 
+Ir a OPCIONES. 
+4. 
+Ir a BARRA DE HERRAMIENTAS DE ACCESO RÁPIDO. 
+5. 
+ En COMANDOS DISPONIBLES click en MACROS. 
+ 
+
+===== PÁGINA 53 =====
+ 
+ 
+6. 
+Agregar IMPORTAR DEL SIECONS y EXPORTAR AL SIECONS XLS. 
+ 
+ 
+7. 
+Click en ACEPTAR. 
+Deberán salir cada vez que abra MS-Project los siguientes iconos en la BARRA DE 
+HERRAMIENTAS DE ACCESO RÁPIDO: 
+ 
+ 
+ 
+Una vez concluidos estos procedimientos se procede a exportar a SIECONS. 
+1. 
+Click en EXPORTAR AL SIECONS XLS.  
+
+===== PÁGINA 54 =====
+ 
+2. 
+Elegir el lugar donde se desea guardar el archivo y nombrarlo. 
+3. 
+Fijar en SIECONS todos los Objetos de la Obra programada. 
+4. 
+Click derecho en la parte derecha de la Ventana Principal. 
+5. 
+Ir a SINCRONIZAR FECHAS DEL PRESUPUESTO. 
+6. 
+Click en SINCRONIZAR CON FICHERO FORMATO MS-EXCEL 
+ 
+7. 
+Abrir el archivo XLS guardado en el paso (2) 
+8. 
+Click en SI Y ACEPTAR a las preguntas del SIECONS. 
+9. 
+Listo, ya se puede acceder a solicitar informes del Cronograma de la Obra  

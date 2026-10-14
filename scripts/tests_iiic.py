@@ -32,6 +32,7 @@ forma reproducible con scripts/validar_iiic_navegador.sh (FASE H).
 import hashlib
 import json
 import os
+import re
 import shutil
 import sqlite3
 import subprocess
@@ -333,12 +334,18 @@ class TestDescomposicion(ServidorBase):
     def test_15_conservacion_catalogo_embebido(self):
         # el archivo HTML en disco permanece byte-idéntico
         self.assertEqual(sha256(HTML), SHA_HTML)
-        # el HTML servido inyecta SOLO las dos etiquetas de overlay
+        # el HTML servido inyecta SOLO etiquetas de overlay (aditivas).
+        # III-C: 2 overlays; MISIÓN IV añade calculadora.js (S-80): el
+        # invariante pasa de «exactamente 2» a «todas las etiquetas <script
+        # src> del bloque inyectado apuntan a /overlay/» — nada más se añade.
         with urllib.request.urlopen(f"http://127.0.0.1:{self.puerto}/", timeout=20) as r:
             servido = r.read()
         self.assertIn(b'<script src="/overlay/precodi.js" defer></script>', servido)
         self.assertIn(b'<script src="/overlay/recursos.js" defer></script>', servido)
-        self.assertEqual(servido.count(b"<script src="), 2)
+        self.assertGreaterEqual(servido.count(b"<script src="), 2)
+        for tag in re.findall(rb'<script src="([^"]+)"', servido):
+            self.assertTrue(tag.startswith(b"/overlay/"),
+                            f"etiqueta no aditiva detectada: {tag!r}")
         # el catálogo embebido sigue completo en la BD importada (PRECOST 2025)
         vers = api(self.puerto, "/api/versiones")
         v25 = [v for v in vers["versiones"] if v["version"] == "2025-06-06"][0]
