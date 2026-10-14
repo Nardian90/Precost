@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PoC Fase III-F — PRECOST · Catálogo externo</title>
+<style>
+  :root{
+    --bg:#0d1b2a; --panel:#13263a; --panel2:#0f2033; --line:#22405e;
+    --tx:#e8f1f8; --mut:#8fb0c9; --acc:#4fc3f7; --ok:#66bb6a; --warn:#ffb74d; --pre17:#26c6da; --pre25:#ffa726;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--tx);font:14px/1.5 "Segoe UI",system-ui,sans-serif;padding:18px}
+  header{display:flex;gap:14px;align-items:baseline;flex-wrap:wrap;margin-bottom:14px}
+  h1{font-size:19px;font-weight:600}
+  h1 .pill{font-size:11px;background:#1d3a55;color:var(--acc);border:1px solid var(--line);
+    border-radius:20px;padding:2px 10px;vertical-align:2px;margin-left:8px}
+  .sub{color:var(--mut);font-size:12px}
+  .layout{display:grid;grid-template-columns:1.1fr .9fr;gap:14px}
+  @media(max-width:980px){.layout{grid-template-columns:1fr}}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px}
+  .card h2{font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--mut);margin-bottom:10px}
+  .search{display:flex;gap:8px;margin-bottom:10px}
+  input[type=text]{flex:1;background:var(--panel2);border:1px solid var(--line);color:var(--tx);
+    border-radius:8px;padding:9px 12px;font-size:14px;outline:none}
+  input[type=text]:focus{border-color:var(--acc)}
+  select{background:var(--panel2);border:1px solid var(--line);color:var(--tx);border-radius:8px;padding:9px}
+  button{background:var(--acc);color:#06263a;border:none;border-radius:8px;padding:9px 16px;
+    font-weight:600;cursor:pointer}
+  button:hover{filter:brightness(1.1)}
+  .hint{color:var(--mut);font-size:12px;margin-bottom:8px}
+  ul.res{list-style:none;max-height:430px;overflow:auto}
+  ul.res li{padding:8px 10px;border-bottom:1px solid var(--line);cursor:pointer;border-radius:6px}
+  ul.res li:hover{background:var(--panel2)}
+  ul.res .cod{font-family:ui-monospace,Consolas,monospace;color:var(--acc);font-weight:600;margin-right:8px}
+  ul.res .src{float:right;font-size:11px;border-radius:12px;padding:1px 9px}
+  .src.p17{background:rgba(38,198,218,.15);color:var(--pre17);border:1px solid rgba(38,198,218,.4)}
+  .src.p25{background:rgba(255,167,38,.15);color:var(--pre25);border:1px solid rgba(255,167,38,.4)}
+  .src.amb{background:rgba(102,187,106,.15);color:var(--ok);border:1px solid rgba(102,187,106,.4)}
+  .detail .cod{font-family:ui-monospace,monospace;font-size:22px;color:var(--acc);font-weight:700}
+  .detail h3{margin:4px 0 8px;font-weight:500;font-size:15px}
+  table{width:100%;border-collapse:collapse;margin:8px 0;font-size:13px}
+  th,td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:500;font-size:11px;text-transform:uppercase}
+  td.num,th.num{text-align:right;font-family:ui-monospace,monospace}
+  .kpirow{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0}
+  .kpi{background:var(--panel2);border:1px solid var(--line);border-radius:8px;padding:8px 12px;min-width:96px}
+  .kpi .v{font-size:17px;font-weight:700;font-family:ui-monospace,monospace}
+  .kpi .k{font-size:10.5px;color:var(--mut);text-transform:uppercase;letter-spacing:.05em}
+  .prov{background:var(--panel2);border-left:3px solid var(--acc);border-radius:0 8px 8px 0;
+    padding:8px 12px;font-size:12px;color:var(--mut);margin:10px 0}
+  .prov b{color:var(--tx)}
+  .compare{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:10px 0}
+  .compare .col{background:var(--panel2);border:1px solid var(--line);border-radius:8px;padding:10px}
+  .compare .col .tag{font-size:11px;font-weight:700;margin-bottom:4px}
+  .col.c17 .tag{color:var(--pre17)} .col.c25 .tag{color:var(--pre25)}
+  .note{font-size:12px;color:var(--warn);background:rgba(255,183,77,.08);
+    border:1px solid rgba(255,183,77,.25);border-radius:8px;padding:8px 10px;margin-top:8px}
+  .empty{color:var(--mut);font-style:italic;padding:14px}
+  footer{margin-top:14px;color:var(--mut);font-size:11.5px}
+  .ok-badge{color:var(--ok);font-weight:600}
+</style>
+</head>
+<body>
+<header>
+  <h1>Prueba de concepto — Catálogo externo <span class="pill">Fase III-F</span></h1>
+  <div class="sub">Demostración aislada: PRECOST consultando catálogos externos versionados
+  (PRECODI 2017 · PRECONS III MICONS 2025) sin modificar <code>app/PRECOST-v9.17.html</code>.</div>
+</header>
+
+<div class="layout">
+  <section class="card">
+    <h2>Buscar partida</h2>
+    <div class="search">
+      <input id="q" type="text" placeholder="Código (p. ej. 012141) o texto (p. ej. ROCA)…">
+      <select id="fuente">
+        <option value="todas">Todas las fuentes</option>
+        <option value="PRECODI">PRECODI 2017</option>
+        <option value="PRECONS_III">PRECONS III 2025</option>
+      </select>
+      <button id="btn">Buscar</button>
+    </div>
+    <div class="hint" id="stats">Cargando catálogo externo…</div>
+    <ul class="res" id="res"></ul>
+  </section>
+
+  <section class="card detail" id="detail">
+    <h2>Detalle de partida</h2>
+    <div class="empty">Selecciona una partida del listado para ver su descomposición,
+    precios por componente y procedencia completa.</div>
+  </section>
+</div>
+
+<footer id="foot"></footer>
+
+<script>
+"use strict";
+/* PoC Fase III-F — consulta de catálogo externo versionado.
+   El HTML original de PRECOST no participa ni se modifica: esta página
+   demuestra el patrón de consulta (fetch + render) que la evolución
+   integrará después. Datos: prueba/db/catalogo_export.json (generado desde
+   SQLite con scripts/fase3f_exportar_json.py). */
+
+const $ = s => document.querySelector(s);
+let DB = null;
+
+async function cargar(){
+  const r = await fetch("db/catalogo_export.json");
+  DB = await r.json();
+  const nP = DB.partidas.length, nR = DB.recursos.length, nN = DB.normas.length;
+  $("#stats").textContent =
+    `Catálogo externo cargado: ${nP} partidas · ${nR} recursos · ${nN} normas de consumo · ` +
+    `${DB.catalogos.length} catálogos (${DB.catalogos.map(c=>c.codigo).join(", ")}).`;
+  $("#foot").innerHTML =
+    `Generado: ${new Date(DB.generado).toLocaleString("es-ES")} · Fuentes: ` +
+    DB.versiones.map(v=>`${v.version} (${v.fuente_archivo.split("/").pop()})`).join(" · ");
+  // sugerencias iniciales
+  renderLista(buscar("ROCA", "todas").slice(0, 40));
+}
+
+function buscar(q, fuente){
+  q = q.trim().toUpperCase();
+  const porFuente = p => {
+    const cat = DB.catalogos.find(c=>c.id === verDe(p).catalogo_id);
+    return fuente === "todas" || (cat && cat.codigo === fuente);
+  };
+  let out = DB.partidas.filter(porFuente);
+  if(/^\d+$/.test(q)) out = out.filter(p=>p.codigo.includes(q));
+  else if(q) out = out.filter(p=>p.descripcion.toUpperCase().includes(q));
+  // ordenar: coincidencia exacta de código primero
+  out.sort((a,b)=> (a.codigo===q?-1:b.codigo===q?1:0) || a.codigo.localeCompare(b.codigo));
+  return out;
+}
+
+function verDe(p){ return DB.versiones.find(v=>v.id===p.version_id); }
+function catDe(v){ return DB.catalogos.find(c=>c.id===v.catalogo_id); }
+
+function renderLista(partidas){
+  const ul = $("#res"); ul.innerHTML = "";
+  if(!partidas.length){ ul.innerHTML = `<li class="empty">Sin resultados.</li>`; return; }
+  for(const p of partidas.slice(0,60)){
+    const v = verDe(p), c = catDe(v);
+    const enAmbas = DB.partidas.filter(x=>x.codigo===p.codigo).length > 1;
+    const cls = enAmbas ? "amb" : (c.codigo==="PRECODI" ? "p17" : "p25");
+    const etq = enAmbas ? "2017+2025" : (c.codigo==="PRECODI" ? "2017" : "2025");
+    const li = document.createElement("li");
+    li.innerHTML = `<span class="cod">${p.codigo}</span>${p.descripcion.slice(0,64)}` +
+      `<span class="src ${cls}">${etq}</span>`;
+    li.onclick = ()=>renderDetalle(p.codigo);
+    ul.appendChild(li);
+  }
+}
+
+function renderDetalle(codigo){
+  const box = $("#detail");
+  const ps = DB.partidas.filter(p=>p.codigo===codigo);
+  if(!ps.length) return;
+  let html = "";
+  for(const p of ps){
+    const v = verDe(p), c = catDe(v);
+    const normas = DB.normas.filter(n=>n.version_id===p.version_id && n.codigo_partida===codigo);
+    const enAmbas = ps.length>1;
+    html += `<div style="margin-bottom:14px;${enAmbas?"border-top:1px dashed var(--line);padding-top:10px;":""}">
+      <div class="cod">${p.codigo}</div>
+      <h3>${p.descripcion}</h3>
+      <div class="kpirow">
+        <div class="kpi"><div class="v">${p.unidad}</div><div class="k">Unidad</div></div>
+        <div class="kpi"><div class="v">${fmt(p.costo_total_mn)}</div><div class="k">Total CUP</div></div>
+        <div class="kpi"><div class="v">${fmt(p.costo_mat_mn)}</div><div class="k">Material</div></div>
+        <div class="kpi"><div class="v">${fmt(p.costo_mo_mn)}</div><div class="k">Mano de obra</div></div>
+        <div class="kpi"><div class="v">${fmt(p.costo_eq_mn)}</div><div class="k">Equipo</div></div>
+      </div>`;
+    if(normas.length){
+      const rows = normas.map(n=>{
+        const r = DB.recursos.find(x=>x.version_id===p.version_id &&
+                                       x.tipo===n.tipo && x.codigo===n.codigo_recurso);
+        const importe = r && r.precio_mn!=null && n.coeficiente!=null
+          ? (n.coeficiente*r.precio_mn) : null;
+        return `<tr><td>${n.tipo}</td><td class="num">${n.codigo_recurso}</td>` +
+          `<td>${r?r.descripcion.slice(0,42):"<i>—</i>"}</td>` +
+          `<td class="num">${n.coeficiente.toFixed(4)}</td>` +
+          `<td class="num">${r&&r.precio_mn!=null?r.precio_mn.toFixed(2):"—"}</td>` +
+          `<td class="num">${importe!=null?importe.toFixed(2):"—"}</td></tr>`;
+      }).join("");
+      html += `<table><thead><tr><th>Recurso</th><th class="num">Código</th><th>Descripción</th>
+        <th class="num">Coef.</th><th class="num">Precio</th><th class="num">Importe</th></tr></thead>
+        <tbody>${rows}</tbody></table>`;
+      html += `<div class="prov"><b>Procedencia:</b> ${c.nombre} · versión <b>${v.version}</b> ·
+        fuente: <b>${v.fuente_archivo}</b> · SHA-256: <code>${(v.fuente_sha256||"").slice(0,16)}…</code> ·
+        ${v.fuente_detalle||""}</div>`;
+    } else {
+      html += `<div class="note">Esta fuente no contiene descomposición (coeficientes de consumo)
+        para la partida: solo costos agregados. Las normas de consumo existen en la versión PRECODI 2017
+        — hallazgo clave de la Fase III-D.</div>`;
+      html += `<div class="prov"><b>Procedencia:</b> ${c.nombre} · versión <b>${v.version}</b> ·
+        fecha oficial: <b>${v.fecha_publicacion||"—"}</b> · fuente: <b>${v.fuente_archivo}</b> ·
+        SHA-256: <code>${(v.fuente_sha256||"").slice(0,16)}…</code></div>`;
+    }
+    html += `</div>`;
+  }
+  if(ps.length>1){
+    const a = ps.find(p=>catDe(verDe(p)).codigo==="PRECODI");
+    const b = ps.find(p=>catDe(verDe(p)).codigo==="PRECONS_III");
+    if(a && b && a.costo_total_mn && b.costo_total_mn){
+      const r = b.costo_total_mn/a.costo_total_mn;
+      html += `<div class="compare">
+        <div class="col c17"><div class="tag">PRECODI 2017</div>
+          <b>${fmt(a.costo_total_mn)} CUP/${a.unidad}</b></div>
+        <div class="col c25"><div class="tag">PRECONS III 2025</div>
+          <b>${fmt(b.costo_total_mn)} CUP/${b.unidad}</b></div>
+      </div>
+      <div class="note">Relación de bases de precios 2025/2017 en esta partida:
+        <b>×${r.toFixed(2)}</b> (bases monetarias distintas; no es un conflicto de validez).</div>`;
+    }
+  }
+  box.innerHTML = `<h2>Detalle de partida</h2>` + html;
+}
+
+function fmt(x){ return x==null ? "—" : Number(x).toLocaleString("es-ES",
+  {minimumFractionDigits:2, maximumFractionDigits:2}); }
+
+$("#btn").onclick = ()=>renderLista(buscar($("#q").value, $("#fuente").value));
+$("#q").addEventListener("keydown", e=>{ if(e.key==="Enter") $("#btn").click(); });
+$("#fuente").onchange = ()=>renderLista(buscar($("#q").value, $("#fuente").value));
+cargar().catch(e=>{
+  $("#stats").textContent = "Error cargando db/catalogo_export.json: " + e +
+    " — sirve esta carpeta por HTTP (python3 -m http.server) para permitir fetch().";
+});
+</script>
+</body>
+</html>

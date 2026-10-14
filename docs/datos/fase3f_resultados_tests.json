@@ -1,0 +1,129 @@
+{
+ "generado": "2026-10-14T04:45:06.618887+00:00",
+ "base": "/home/z/my-project/precost/prueba/db/precost_catalogo.db",
+ "total": 24,
+ "pasadas": 24,
+ "fallidas": 0,
+ "resultados": [
+  {
+   "prueba": "Migraciones aplicadas == ['0001','0002']",
+   "estado": "PASS",
+   "detalle": "['0001', '0002']"
+  },
+  {
+   "prueba": "Tablas del esquema presentes",
+   "estado": "PASS",
+   "detalle": "16 tablas"
+  },
+  {
+   "prueba": "Partidas PRECODI == muestra esperada",
+   "estado": "PASS",
+   "detalle": "bd=510 esperado=510 (SG01=470)"
+  },
+  {
+   "prueba": "Partidas PRECONS 2025 (cap. 01) == fuente",
+   "estado": "PASS",
+   "detalle": "bd=615 fuente=615"
+  },
+  {
+   "prueba": "Normas importadas == normas de la muestra en .mdb",
+   "estado": "PASS",
+   "detalle": "bd=2239 mdb=2239"
+  },
+  {
+   "prueba": "Todas las partidas con código de 6 dígitos",
+   "estado": "PASS",
+   "detalle": "malas=0"
+  },
+  {
+   "prueba": "Todos los recursos con código de 10 dígitos",
+   "estado": "PASS",
+   "detalle": "malos=0"
+  },
+  {
+   "prueba": "PRAGMA foreign_key_check vacío",
+   "estado": "PASS",
+   "detalle": "0 violaciones"
+  },
+  {
+   "prueba": "Normas sin recurso huérfano (dentro de la muestra)",
+   "estado": "PASS",
+   "detalle": "huérfanas=0"
+  },
+  {
+   "prueba": "Discrepancias total≠suma == las de la fuente (redondeo del PDF)",
+   "estado": "PASS",
+   "detalle": "bd=['017147'] fuente=['017147']"
+  },
+  {
+   "prueba": "F2 CHMN = Σ(CantRHum×PMN) en la muestra",
+   "estado": "PASS",
+   "detalle": "422/510 exactos (82.7%) + 88 con patrón ×10 documentado + 0 sin explicar"
+  },
+  {
+   "prueba": "F3 CEMN = Σ(CantEquipo×PMN) en la muestra",
+   "estado": "PASS",
+   "detalle": "473/510 exactos (92.7%)"
+  },
+  {
+   "prueba": "F1 CMMN = Σ(CantMat×PMN) en la muestra (sin expandir juegos/semis)",
+   "estado": "PASS",
+   "detalle": "437/510 exactos (85.7%) — las partidas con juegos/semis requieren expansión de componentes"
+  },
+  {
+   "prueba": "Toda partida tiene versión con fuente y hash",
+   "estado": "PASS",
+   "detalle": "sin_fuente=0"
+  },
+  {
+   "prueba": "Todo recurso tiene versión con fuente",
+   "estado": "PASS",
+   "detalle": "sin_fuente=0"
+  },
+  {
+   "prueba": "Importaciones registradas (2)",
+   "estado": "PASS",
+   "detalle": "registros=2"
+  },
+  {
+   "prueba": "PRECOST-v9.17.html sin cambios",
+   "estado": "PASS",
+   "detalle": "50d3cf28e405201f…"
+  },
+  {
+   "prueba": "codigo.mdb sin cambios desde la importación",
+   "estado": "PASS",
+   "detalle": "c4f94962c3e0cde6…"
+  },
+  {
+   "prueba": "Partidas con unidad definida",
+   "estado": "PASS",
+   "detalle": "sin_unidad=0"
+  },
+  {
+   "prueba": "Sin costos negativos",
+   "estado": "PASS",
+   "detalle": "negativos=0"
+  },
+  {
+   "prueba": "Factor de unidad positivo",
+   "estado": "PASS",
+   "detalle": "malos=0"
+  },
+  {
+   "prueba": "Partida 012141 existe con recursos asociados",
+   "estado": "PASS",
+   "detalle": "012141 · EN ROCA CUALQUIER SECCION EN PLANTA, HAS… · 9 recursos"
+  },
+  {
+   "prueba": "Búsqueda por texto ('%ROCA%') funcional",
+   "estado": "PASS",
+   "detalle": "012131 · EN ROCA BLANDA DE 0 A 20 M2 DE SECCION HASTA 1.80 …"
+  },
+  {
+   "prueba": "Descomposición con precios y procedencia recuperable",
+   "estado": "PASS",
+   "detalle": "3+ filas, ejemplo: 0023411907 ×0.16670000553131104 @ 2.94 CUP"
+  }
+ ]
+}

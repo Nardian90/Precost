@@ -1,0 +1,73 @@
+{
+ "descripcion": "Casos de prueba MISIÓN III-B extraídos de codigo.mdb raíz 2017 (valores EXACTOS de la fuente; regenerable con scripts/extraer_caso_prueba.py)",
+ "fuente": {
+  "archivo": "/home/z/my-project/work/recuperacion/analisis/PRECODI/Codigo (PRECODI)/codigo.mdb",
+  "sha256": "c4f94962c3e0cde62bc455262830904b033425f00f1946000dc9eb2869e175bc"
+ },
+ "casos": {
+  "partida_012141": {
+   "descripcion": "EN ROCA CUALQUIER SECCION EN PLANTA, HASTA 1.80 M DE PROFUNDIDAD CON DETONADOR ELECTRICO.(CARGA MANUAL)",
+   "unidad": "m3",
+   "cmmn_almacenado": "2.629",
+   "chmn_almacenado": "4.6074",
+   "cemn_almacenado": "1.6517",
+   "normas_materiales": [
+    {
+     "codigo": "3834010001",
+     "coeficiente_float32": "1.2000000476837158",
+     "coeficiente_decimal": "1.2000000476837158",
+     "pmn_decimal": "1.8"
+    },
+    {
+     "codigo": "3842030002",
+     "coeficiente_float32": "1.5",
+     "coeficiente_decimal": "1.5",
+     "pmn_decimal": "0.27"
+    },
+    {
+     "codigo": "3844010002",
+     "coeficiente_float32": "0.800000011920929",
+     "coeficiente_decimal": "0.800000011920929",
+     "pmn_decimal": "0.08"
+    }
+   ],
+   "suma_esperada_cmmn_decimal": "2.6290",
+   "n_componentes": 3,
+   "tolerancia": 0.00030000000000000003
+  },
+  "partida_multicomponente": {
+   "codigo": "096231",
+   "descripcion": "CON POSTE DE TUBOS DE 1.23 M DE ALTO SIN PROTECCION",
+   "juegos": [
+    {
+     "codigo_recurso": "0009996121",
+     "coeficiente": 0.36000001430511475
+    }
+   ],
+   "semielaborados": [
+    {
+     "codigo_recurso": "0002204322",
+     "coeficiente": 0.05999999865889549
+    }
+   ],
+   "cmmn_almacenado": "9.3437"
+  },
+  "precision_money": {
+   "precio_4_decimales": {
+    "codigo": "2750000001",
+    "pmn_decimal": "101669.1797"
+   },
+   "precio_mayor_1000": {
+    "codigo": "2632215112",
+    "pmn_decimal": "1118"
+   },
+   "nota": "el caso ≥1000 se perdía con el parser antiguo (coma de miles → float() fallaba → None)"
+  },
+  "coeficiente_float32": {
+   "codigo_rv": "012141",
+   "cod_mat": "3834010001",
+   "valor_recuperado": "1.2000000476837158",
+   "nota": "float32 ampliado a float64 sin pérdida"
+  }
+ }
+}

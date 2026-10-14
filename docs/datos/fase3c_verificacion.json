@@ -1,0 +1,572 @@
+{
+ "generado": "2026-10-14T04:32:58.832332+00:00",
+ "base": "Codigo (PRECODI)/codigo.mdb",
+ "rvs_totales": 15351,
+ "formulas": [
+  {
+   "formula": "F1: CMMN = Σ(CantMat×PMN) + Σ(CantJuego×PMN) + Σ(CantSElab×PMN)",
+   "tolerancia": 0.01,
+   "verificables": 14602,
+   "exactos": 13659,
+   "cerca": 225,
+   "lejos": 718,
+   "estado": "PARCIAL",
+   "ejemplos_cerca": [
+    {
+     "detalle": "012141",
+     "calculado": 3.205,
+     "almacenado": 2.63,
+     "dif": 0.575
+    },
+    {
+     "detalle": "012142",
+     "calculado": 3.205,
+     "almacenado": 2.63,
+     "dif": 0.575
+    },
+    {
+     "detalle": "012144",
+     "calculado": 2.7415,
+     "almacenado": 2.17,
+     "dif": 0.5715
+    },
+    {
+     "detalle": "012241",
+     "calculado": 3.205,
+     "almacenado": 2.63,
+     "dif": 0.575
+    }
+   ],
+   "ejemplos_lejos": [
+    {
+     "detalle": "013111",
+     "calculado": 4.9146,
+     "almacenado": 1.87,
+     "dif": 3.0446
+    },
+    {
+     "detalle": "013112",
+     "calculado": 4.9146,
+     "almacenado": 1.87,
+     "dif": 3.0446
+    },
+    {
+     "detalle": "013113",
+     "calculado": 4.9146,
+     "almacenado": 1.87,
+     "dif": 3.0446
+    },
+    {
+     "detalle": "013121",
+     "calculado": 5.737,
+     "almacenado": 2.69,
+     "dif": 3.047
+    }
+   ]
+  },
+  {
+   "formula": "F2: CHMN = Σ(CantRHum×PMN)",
+   "tolerancia": 0.01,
+   "verificables": 15246,
+   "exactos": 14980,
+   "cerca": 262,
+   "lejos": 4,
+   "estado": "VERIFICADA",
+   "ejemplos_cerca": [
+    {
+     "detalle": "011171",
+     "calculado": 0.0975,
+     "almacenado": 0.97,
+     "dif": 0.8725
+    },
+    {
+     "detalle": "012113",
+     "calculado": 0.0478,
+     "almacenado": 0.48,
+     "dif": 0.4322
+    },
+    {
+     "detalle": "012114",
+     "calculado": 0.0298,
+     "almacenado": 0.3,
+     "dif": 0.2702
+    },
+    {
+     "detalle": "012122",
+     "calculado": 0.0579,
+     "almacenado": 0.58,
+     "dif": 0.5221
+    }
+   ],
+   "ejemplos_lejos": [
+    {
+     "detalle": "063139",
+     "calculado": 2.601,
+     "almacenado": 0.0,
+     "dif": 2.601
+    },
+    {
+     "detalle": "072114",
+     "calculado": 7.92,
+     "almacenado": 0.0,
+     "dif": 7.92
+    },
+    {
+     "detalle": "131111",
+     "calculado": 1.412,
+     "almacenado": 0.0,
+     "dif": 1.412
+    },
+    {
+     "detalle": "131211",
+     "calculado": 1.1337,
+     "almacenado": 0.0,
+     "dif": 1.1337
+    }
+   ]
+  },
+  {
+   "formula": "F3: CEMN = Σ(CantEquipo×PMN)",
+   "tolerancia": 0.01,
+   "verificables": 15296,
+   "exactos": 14011,
+   "cerca": 1282,
+   "lejos": 3,
+   "estado": "PARCIAL",
+   "ejemplos_cerca": [
+    {
+     "detalle": "012143",
+     "calculado": 38.3832,
+     "almacenado": 38.37,
+     "dif": 0.0132
+    },
+    {
+     "detalle": "012146",
+     "calculado": 66.4157,
+     "almacenado": 66.39,
+     "dif": 0.0257
+    },
+    {
+     "detalle": "012155",
+     "calculado": 38.1538,
+     "almacenado": 38.14,
+     "dif": 0.0138
+    },
+    {
+     "detalle": "012267",
+     "calculado": 38.0965,
+     "almacenado": 38.08,
+     "dif": 0.0165
+    }
+   ],
+   "ejemplos_lejos": [
+    {
+     "detalle": "274213",
+     "calculado": 175.74,
+     "almacenado": 176.95,
+     "dif": 1.21
+    },
+    {
+     "detalle": "274214",
+     "calculado": 200.68,
+     "almacenado": 202.06,
+     "dif": 1.38
+    },
+    {
+     "detalle": "274215",
+     "calculado": 236.64,
+     "almacenado": 238.27,
+     "dif": 1.63
+    }
+   ]
+  },
+  {
+   "formula": "F4: HORAS HOMBRE = Σ CantRHum",
+   "tolerancia": 0.01,
+   "verificables": 15350,
+   "exactos": 15346,
+   "cerca": 2,
+   "lejos": 2,
+   "estado": "VERIFICADA",
+   "ejemplos_cerca": [
+    {
+     "detalle": "131111",
+     "calculado": 0.5338,
+     "almacenado": 0.0,
+     "dif": 0.5338
+    },
+    {
+     "detalle": "131211",
+     "calculado": 0.4205,
+     "almacenado": 0.0,
+     "dif": 0.4205
+    }
+   ],
+   "ejemplos_lejos": [
+    {
+     "detalle": "063139",
+     "calculado": 1.1408,
+     "almacenado": 0.0,
+     "dif": 1.1408
+    },
+    {
+     "detalle": "072114",
+     "calculado": 3.525,
+     "almacenado": 0.0,
+     "dif": 3.525
+    }
+   ]
+  },
+  {
+   "formula": "F5: HORAS EQUIPO = Σ CantEquipo",
+   "tolerancia": 0.01,
+   "verificables": 15350,
+   "exactos": 15341,
+   "cerca": 7,
+   "lejos": 2,
+   "estado": "VERIFICADA",
+   "ejemplos_cerca": [
+    {
+     "detalle": "012564",
+     "calculado": 0.1392,
+     "almacenado": 0.1913,
+     "dif": 0.0521
+    },
+    {
+     "detalle": "012573",
+     "calculado": 0.17,
+     "almacenado": 0.2337,
+     "dif": 0.0637
+    },
+    {
+     "detalle": "012574",
+     "calculado": 0.1392,
+     "almacenado": 0.1913,
+     "dif": 0.0521
+    },
+    {
+     "detalle": "014421",
+     "calculado": 0.2806,
+     "almacenado": 0.3798,
+     "dif": 0.0992
+    }
+   ],
+   "ejemplos_lejos": [
+    {
+     "detalle": "012528",
+     "calculado": 2.9092,
+     "almacenado": 4.0001,
+     "dif": 1.0909
+    },
+    {
+     "detalle": "012529",
+     "calculado": 3.5554,
+     "almacenado": 4.8887,
+     "dif": 1.3333
+    }
+   ]
+  },
+  {
+   "formula": "F6: CMMLC = Σ(CantMat×PMLC)",
+   "tolerancia": 0.01,
+   "verificables": 15350,
+   "exactos": 15350,
+   "cerca": 0,
+   "lejos": 0,
+   "estado": "VERIFICADA",
+   "ejemplos_cerca": [],
+   "ejemplos_lejos": []
+  },
+  {
+   "formula": "F7: PMN[Juego] = Σ(CantMatJ×PMN[material])",
+   "tolerancia": 0.01,
+   "verificables": 287,
+   "exactos": 266,
+   "cerca": 9,
+   "lejos": 12,
+   "estado": "PARCIAL",
+   "ejemplos_cerca": [
+    {
+     "detalle": "juego 0009991101",
+     "calculado": 104.878,
+     "almacenado": 104.89,
+     "dif": 0.012
+    },
+    {
+     "detalle": "juego 0009991218",
+     "calculado": 72.87,
+     "almacenado": 72.88,
+     "dif": 0.01
+    },
+    {
+     "detalle": "juego 0009991275",
+     "calculado": 79.0194,
+     "almacenado": 79.03,
+     "dif": 0.0106
+    },
+    {
+     "detalle": "juego 0009991282",
+     "calculado": 19.72,
+     "almacenado": 19.46,
+     "dif": 0.26
+    }
+   ],
+   "ejemplos_lejos": [
+    {
+     "detalle": "juego 0009992811",
+     "calculado": 15.052,
+     "almacenado": 10.2,
+     "dif": 4.852
+    },
+    {
+     "detalle": "juego 0009992812",
+     "calculado": 10.149,
+     "almacenado": 5.3,
+     "dif": 4.849
+    },
+    {
+     "detalle": "juego 0009992813",
+     "calculado": 29.3781,
+     "almacenado": 19.66,
+     "dif": 9.7181
+    },
+    {
+     "detalle": "juego 0009992814",
+     "calculado": 42.1021,
+     "almacenado": 21.86,
+     "dif": 20.2421
+    }
+   ]
+  },
+  {
+   "formula": "F8: PMN[Semi] = Σ(mat + rh + eq de Norma Semi*)",
+   "tolerancia": 0.01,
+   "verificables": 186,
+   "exactos": 47,
+   "cerca": 41,
+   "lejos": 98,
+   "estado": "NO VERIFICADA",
+   "ejemplos_cerca": [
+    {
+     "detalle": "semi 0002204024",
+     "calculado": 57.8414,
+     "almacenado": 57.83,
+     "dif": 0.0114
+    },
+    {
+     "detalle": "semi 0002204033",
+     "calculado": 44.4628,
+     "almacenado": 43.48,
+     "dif": 0.9828
+    },
+    {
+     "detalle": "semi 0002204040",
+     "calculado": 42.2846,
+     "almacenado": 41.34,
+     "dif": 0.9446
+    },
+    {
+     "detalle": "semi 0002204054",
+     "calculado": 97.8881,
+     "almacenado": 98.27,
+     "dif": 0.3819
+    }
+   ],
+   "ejemplos_lejos": [
+    {
+     "detalle": "semi 0002204025",
+     "calculado": 115.7865,
+     "almacenado": 96.57,
+     "dif": 19.2165
+    },
+    {
+     "detalle": "semi 0002204030",
+     "calculado": 47.0845,
+     "almacenado": 44.52,
+     "dif": 2.5645
+    },
+    {
+     "detalle": "semi 0002204031",
+     "calculado": 47.0746,
+     "almacenado": 44.51,
+     "dif": 2.5646
+    },
+    {
+     "detalle": "semi 0002204041",
+     "calculado": 27.8637,
+     "almacenado": 29.72,
+     "dif": 1.8563
+    }
+   ]
+  },
+  {
+   "formula": "F9: CMMN == COSTO DE MATERIALES (redundancia)",
+   "tolerancia": 0.005,
+   "verificables": 14918,
+   "exactos": 14914,
+   "cerca": 3,
+   "lejos": 1,
+   "estado": "VERIFICADA",
+   "ejemplos_cerca": [
+    {
+     "detalle": "072114",
+     "calculado": 0.0,
+     "almacenado": 0.58,
+     "dif": 0.58
+    },
+    {
+     "detalle": "131111",
+     "calculado": 0.0,
+     "almacenado": 0.45,
+     "dif": 0.45
+    },
+    {
+     "detalle": "131211",
+     "calculado": 0.0,
+     "almacenado": 0.23,
+     "dif": 0.23
+    }
+   ],
+   "ejemplos_lejos": [
+    {
+     "detalle": "063139",
+     "calculado": 0.0,
+     "almacenado": 7.95,
+     "dif": 7.95
+    }
+   ]
+  },
+  {
+   "formula": "F10: PMN == PrecioU en Nomenclador de Materiales (redundancia)",
+   "tolerancia": 0.005,
+   "verificables": 7580,
+   "exactos": 4763,
+   "cerca": 641,
+   "lejos": 2176,
+   "estado": "NO VERIFICADA",
+   "ejemplos_cerca": [
+    {
+     "detalle": "mat 3033607134",
+     "calculado": 0.0,
+     "almacenado": 1.0,
+     "dif": 1.0
+    },
+    {
+     "detalle": "mat 3033607135",
+     "calculado": 0.0,
+     "almacenado": 0.8,
+     "dif": 0.8
+    },
+    {
+     "detalle": "mat 3033607136",
+     "calculado": 0.0,
+     "almacenado": 0.5,
+     "dif": 0.5
+    },
+    {
+     "detalle": "mat 3033607137",
+     "calculado": 0.0,
+     "almacenado": 0.38,
+     "dif": 0.38
+    }
+   ],
+   "ejemplos_lejos": [
+    {
+     "detalle": "mat S/CÓD. 1",
+     "calculado": 14.09,
+     "almacenado": 74.63,
+     "dif": 60.54
+    },
+    {
+     "detalle": "mat 0000000002",
+     "calculado": 0.0,
+     "almacenado": 16.65,
+     "dif": 16.65
+    },
+    {
+     "detalle": "mat 3033607102",
+     "calculado": 0.0,
+     "almacenado": 180.0,
+     "dif": 180.0
+    },
+    {
+     "detalle": "mat 3033607103",
+     "calculado": 0.0,
+     "almacenado": 210.0,
+     "dif": 210.0
+    }
+   ]
+  },
+  {
+   "formula": "F11: PrecioU = PMN + PMLC",
+   "tolerancia": 0.005,
+   "por_nomenclador": {
+    "Nomenclador de Materiales": {
+     "exactos": 7340,
+     "verificables": 7580
+    },
+    "Nomenclador de Mano de Obra": {
+     "exactos": 248,
+     "verificables": 248
+    },
+    "Nomenclador de Equipos": {
+     "exactos": 396,
+     "verificables": 413
+    },
+    "Nomenclador de Juegos": {
+     "exactos": 325,
+     "verificables": 325
+    },
+    "Nomenclador de Semielaborados": {
+     "exactos": 337,
+     "verificables": 341
+    }
+   },
+   "estado": "VERIFICADA"
+  }
+ ],
+ "pendientes": {
+  "interpretacion_casos_lejos_F1_F8": {
+   "observacion": "Los casos 'lejos' de F1 (718/14602) y F8 (98/186) siguen el patrón de deriva de precios: el costo almacenado fue calculado en una fecha anterior y los precios del nomenclador cambiaron después sin recalcular los costos unitarios almacenados (p.ej. RV 013111: recalculo 4.91 vs almacenado 1.87). La ESTRUCTURA de la fórmula sigue siendo la documentada; lo que varía es la vigencia del dato.",
+   "evidencia": "Las diferencias grandes se concentran en RVs que comparten exactamente el mismo valor almacenado con la misma descomposición (013111/013112/013113 idénticos), coherente con un recálculo por lotes antiguo."
+  },
+  "HORAS OPERARIO / HORAS AYUDANTE": {
+   "hipotesis_probadas": [
+    "Σ CantRHum con 'OPERARIO' en la descripción → 455/15351 (rechazada)",
+    "Σ CantRHum con 'OFICIAL' en la descripción → 171/15351 (rechazada)",
+    "Σ CantRHum con 'AYUDANTE' en la descripción → 3829/15351 (rechazada)"
+   ],
+   "conclusion": "El criterio de separación operario/ayudante no es derivable de los datos; probablemente depende de una clasificación interna de Codigo.exe (quizá la columna Oficial de la RV o una tabla externa). Se deja PENDIENTE hasta obtener evidencia (p.ej. SIECONS ejecutado o documentación del fabricante)."
+  },
+  "PESO de la RV": {
+   "hipotesis_probada": "PESO = Σ(CantMat×PesoU) → 24/6464 (rechazada)",
+   "conclusion": "El peso almacenado no coincide con la suma simple de pesos de materiales; puede excluir ciertos recursos o usar otro criterio. PENDIENTE."
+  },
+  "FACTOR": {
+   "observacion": "FACTOR = 1.0 en 15351/15351 RVs; columna sin uso aparente en esta versión."
+  },
+  "coeficientes de gastos indirectos": {
+   "observacion": "codigo.mdb no contiene porcentajes de gastos indirectos, utilidades ni impuestos: eso pertenece al ámbito de presupuestos (SBD2008/SIECONS), no al nomenclador. Ninguna regla normativa fue inventada."
+  }
+ },
+ "ejemplo_verificado": {
+  "codigo_rv": "012141",
+  "descripcion": "EN ROCA CUALQUIER SECCION EN PLANTA, HASTA 1.80 M DE PROFUNDIDAD CON DETONADOR ELECTRICO.(CARGA MANUAL)",
+  "unidad": "m3",
+  "cmmn_almacenado": 2.63,
+  "cmmn_calculado": 3.205,
+  "chmn_almacenado": 4.61,
+  "chmn_calculado": 4.6074,
+  "cemn_almacenado": 1.65,
+  "cemn_calculado": 1.6516,
+  "hh": 2.4096,
+  "hh_calculado": 2.4096,
+  "desglose": {
+   "mat": 3.205,
+   "jg": 0.0,
+   "se": 0.0,
+   "rh": 4.6074,
+   "eq": 1.6516
+  }
+ }
+}

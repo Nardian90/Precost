@@ -1,0 +1,5141 @@
+{
+ "generado": "2026-10-14T05:20:43.295725+00:00",
+ "base": "sbd2008_815",
+ "total_tablas": 284,
+ "tablas": {
+  "AGIT_Indicad_Hijos_RV": {
+   "filas": 71,
+   "columnas_n": 4,
+   "columnas": [
+    "TipoA",
+    "IdIE1",
+    "Codigo RV",
+    "FactorIFF"
+   ],
+   "categoria": 3,
+   "nota": "módulo empresarial AGIT (contratos, certificaciones, solicitudes) — queda en la base original sin importar"
+  },
+  "AGIT_Indicadores Hijos": {
+   "filas": 244,
+   "columnas_n": 8,
+   "columnas": [
+    "IdIE1_Padre",
+    "IEH_Orden",
+    "IE1",
+    "NivelAGI",
+    "IdIE1",
+    "IdIE1Viejo",
+    "EsDetAGIT",
+    "UM_AGI"
+   ],
+   "categoria": 3,
+   "nota": "módulo empresarial AGIT (contratos, certificaciones, solicitudes) — queda en la base original sin importar"
+  },
+  "AGIT_Orden de Cambio x Contrato": {
+   "filas": 0,
+   "columnas_n": 13,
+   "columnas": [
+    "IdContrato",
+    "NroOrdenCambio",
+    "FechaPresentada",
+    "CausaCambio",
+    "ObservaCambio",
+    "Solicita",
+    "Ejecuta",
+    "ImpOrdenPrevMN",
+    "ImpOrdenPrevMLC",
+    "ImpOrdenRealMN",
+    "ImpOrdenRealMLC",
+    "IdCambio",
+    "IdCambioViejo"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "AGIT_Orden de Cambio x Contrato Detalle": {
+   "filas": 0,
+   "columnas_n": 4,
+   "columnas": [
+    "IdCambio",
+    "IdIE1",
+    "ImpMNIEOrden",
+    "ImpMLCIEOrden"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "AGIT_Plan_Crono x Contrato": {
+   "filas": 0,
+   "columnas_n": 7,
+   "columnas": [
+    "IdPIE",
+    "AñoPlan",
+    "MesPlan",
+    "PlanAFisicoMN",
+    "PlanAFisicoMLC",
+    "PlanAFinanMN",
+    "PlanAFinanMLC"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "AGIT_Presupuesto Limite": {
+   "filas": 0,
+   "columnas_n": 0,
+   "columnas": [],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "AGIT_Presupuesto x Contrato": {
+   "filas": 0,
+   "columnas_n": 9,
+   "columnas": [
+    "IdObra",
+    "IdObjObra",
+    "IdContrato",
+    "IdIE1",
+    "AñoPres",
+    "PresAFMN",
+    "PresAFMLC",
+    "IdPIE",
+    "IdPIEViejo"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "AGIT_Presupuesto x Previsto": {
+   "filas": 0,
+   "columnas_n": 8,
+   "columnas": [
+    "AñoPresPrev",
+    "IdObra",
+    "IdObjObra",
+    "IdIE1",
+    "PresAFMNPrev",
+    "PresAFMLCPrev",
+    "IdPresPrev",
+    "IdPresPrev_Viejo"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "AGIT_RS": {
+   "filas": 0,
+   "columnas_n": 8,
+   "columnas": [
+    "IdCliSum",
+    "IdObra",
+    "CodRS",
+    "FechaRS",
+    "IdCtaBanc",
+    "EsMLC",
+    "IdRS",
+    "IdRSViejo"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "AGIT_RS Composicion": {
+   "filas": 0,
+   "columnas_n": 4,
+   "columnas": [
+    "IdRS",
+    "IdIEGlobal",
+    "ValorRSMN",
+    "ValorRSMLC"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "AGIT_Real x Contrato": {
+   "filas": 0,
+   "columnas_n": 7,
+   "columnas": [
+    "IdPIE",
+    "RealFecha",
+    "FisicoMN",
+    "FisicoMLC",
+    "FinanMN",
+    "FinanMLC",
+    "IdCambio"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "AGIT_Solicitud": {
+   "filas": 0,
+   "columnas_n": 17,
+   "columnas": [
+    "NroSolicitud",
+    "IdSolicitud",
+    "EsMLC",
+    "IdCliSum",
+    "IdOpFinanciera",
+    "FechaSol",
+    "IdCtaBanc",
+    "EleboraSol",
+    "AutorizaSol",
+    "ValorMN",
+    "ValorMLC",
+    "ValorEnLetras",
+    "ObservacionesSol",
+    "IdSolicitudViejo",
+    "TMoneda",
+    "IdIEGlobal",
+    "MyCodigo"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "AGIT_Solicitud Compocición": {
+   "filas": 0,
+   "columnas_n": 7,
+   "columnas": [
+    "IdSolicitud",
+    "IdRecepcion",
+    "DesSolicitud",
+    "IdRS",
+    "ValorMN",
+    "ValorMLC",
+    "IdOpSolicitud"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Actividades de Estimación": {
+   "filas": 671,
+   "columnas_n": 10,
+   "columnas": [
+    "CodGActEst",
+    "ActEst",
+    "UMEst",
+    "PrecEst",
+    "IdActEst",
+    "IdActEstV",
+    "TPesimista",
+    "TEsperado",
+    "TOptimista",
+    "PrecEstMLC"
+   ],
+   "categoria": 2,
+   "nota": "Actividades de estimación con tiempos PERT y precios",
+   "prioritaria": true
+  },
+  "Bancos": {
+   "filas": 3,
+   "columnas_n": 4,
+   "columnas": [
+    "IdBanco",
+    "Banco",
+    "CodBanco",
+    "IdBancoV"
+   ],
+   "categoria": 3,
+   "nota": "entidades bancarias — queda en la base original sin importar"
+  },
+  "Brigadas": {
+   "filas": 22,
+   "columnas_n": 7,
+   "columnas": [
+    "IdEstab",
+    "CodB",
+    "DescB",
+    "IdMunicipio",
+    "JefeBrigada",
+    "CodEstab",
+    "CodBPivo"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "CONSTVAR": {
+   "filas": 1,
+   "columnas_n": 12,
+   "columnas": [
+    "CVALRES",
+    "CCAPINVERT",
+    "CINCENDMAR",
+    "CINCENDTERR",
+    "CPERDMANIP",
+    "CPOTMEDIA",
+    "CACEITMOTOR",
+    "CMANTREPMAR",
+    "CMANTREPTERR",
+    "CUTILIDAD",
+    "COTROSGAST",
+    "IdTecons"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Candado": {
+   "filas": 2,
+   "columnas_n": 18,
+   "columnas": [
+    "IdOrganismo",
+    "IdCliSum",
+    "CodUO",
+    "Abrevia",
+    "CodFamilia",
+    "Suministrador",
+    "CodMat0",
+    "CodEquipo0",
+    "CODIGO RV",
+    "IdEstab",
+    "IdCategoria",
+    "IdTipoFinanciamiento",
+    "IdBanco",
+    "IdCtaBanc",
+    "IdEsp",
+    "CodSub",
+    "IdServTransp",
+    "IdVarSal"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Categorias": {
+   "filas": 4,
+   "columnas_n": 3,
+   "columnas": [
+    "IdCategoria",
+    "Categoria",
+    "IdCategoriaVieja"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Certif Foto": {
+   "filas": 0,
+   "columnas_n": 5,
+   "columnas": [
+    "IdCertif",
+    "CaminoFotoCertif",
+    "TítuloCertifFoto",
+    "ObervCertifFoto",
+    "idFoto"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Certif GGD": {
+   "filas": 0,
+   "columnas_n": 4,
+   "columnas": [
+    "IdCertif",
+    "IdGGD",
+    "ValorGGDMN",
+    "ValorGGDMLC"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Certif OGD": {
+   "filas": 0,
+   "columnas_n": 4,
+   "columnas": [
+    "IdCertif",
+    "IdOGD",
+    "ValorOGDMN",
+    "ValorOGDMLC"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Certif de Gastos Bancarios": {
+   "filas": 3,
+   "columnas_n": 5,
+   "columnas": [
+    "IdCertif",
+    "IdGBanc",
+    "ValorGBanc",
+    "ValorGBancMN",
+    "ValorGBancMLC"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Certif de Imprevistos": {
+   "filas": 3,
+   "columnas_n": 5,
+   "columnas": [
+    "IdCertif",
+    "IdImprevisto",
+    "ValorImprevisto",
+    "ValorImprevistoMN",
+    "ValorImprevistoMLC"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Certif de Otros Gastos": {
+   "filas": 4,
+   "columnas_n": 5,
+   "columnas": [
+    "IdCertif",
+    "IdOtrosG",
+    "ValorOtrosG",
+    "ValorOtrosGMN",
+    "ValorOtrosGMLC"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Certif de OtrosP": {
+   "filas": 0,
+   "columnas_n": 5,
+   "columnas": [
+    "IdCertif",
+    "IdOtrosP",
+    "ValorOtrosP",
+    "ValorOtrosPMN",
+    "ValorOtrosPMLC"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Certif de Seguro": {
+   "filas": 0,
+   "columnas_n": 5,
+   "columnas": [
+    "IdCertif",
+    "IdSeguro",
+    "ValorSeguro",
+    "ValorSeguroMN",
+    "ValorSeguroMLC"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Certif_Cab": {
+   "filas": 664,
+   "columnas_n": 89,
+   "columnas": [
+    "NroCert",
+    "IdObjObra",
+    "FechaE",
+    "FDesde",
+    "FHasta",
+    "Pres_Apellidos",
+    "Pres_Nombre",
+    "IdCertif",
+    "IdCertifViejo",
+    "CodB",
+    "SoloElNodo",
+    "TipoPres",
+    "EsAnexo",
+    "ParcialValorMN",
+    "ParcialValorMLC",
+    "OrigenValorMN",
+    "OrigenValorMLC",
+    "ParcialPtos",
+    "OrigenPtos",
+    "Parcial100",
+    "Origen100",
+    "TranspSum",
+    "FacTemp",
+    "OtrosGC",
+    "GBanc",
+    "Seguro",
+    "Imprevist",
+    "OtrosP",
+    "TranspSumMLC",
+    "FacTempMLC",
+    "OtrosGCMLC",
+    "GBancMLC",
+    "SeguroMLC",
+    "ImprevistMLC",
+    "OtrosPMLC",
+    "ObservCertif",
+    "MAuxC",
+    "CIndC",
+    "CUtilC",
+    "AMatC",
+    "AEquC",
+    "ARHuC",
+    "FGC",
+    "ZIntC",
+    "ZExtC",
+    "PLC",
+    "K909C",
+    "K25C",
+    "KSSC",
+    "KAntC",
+    "KEspC",
+    "ImpCRVMN",
+    "ImpCRVMLC",
+    "ImpOtrosMN",
+    "ImpOtrosMLC",
+    "ImpMinMN",
+    "ImpMinMLC",
+    "ImpTCPMN",
+    "ImpTCPMLC",
+    "ImpCyMMN",
+    "ImpCyMMLC",
+    "OGD_MN",
+    "GGD_MN",
+    "OGD_MLC",
+    "GGD_MLC",
+    "Kogd_C",
+    "Kggd_C",
+    "Elabora",
+    "Elabora_Cargo",
+    "Revisado",
+    "Revisado_Cargo",
+    "Aprobado",
+    "Aprobado_Cargo",
+    "CostoT_C",
+    "CostoTMN_C",
+    "CostoTMLC_C",
+    "Mat_C",
+    "MatMN_C",
+    "MatMLC_C",
+    "RH_C",
+    "RHMN_C",
+    "RHMLC_C",
+    "Eq_C",
+    "EqMN_C",
+    "EqMLC_C",
+    "ServIngMN",
+    "ServIngMLC",
+    "Coef_Sal_C",
+    "IdObraCertif"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Certif_Min_E": {
+   "filas": 0,
+   "columnas_n": 13,
+   "columnas": [
+    "IdCMin",
+    "CodEquipo",
+    "CantEquipo",
+    "PsMN",
+    "PsMLC",
+    "Usos",
+    "Elab",
+    "IdRcCe",
+    "CPO_s",
+    "CPE_s",
+    "CET_s",
+    "CodNorma",
+    "DocRepaldoE"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Certif_Min_J": {
+   "filas": 0,
+   "columnas_n": 8,
+   "columnas": [
+    "IdCMin",
+    "CodJuego",
+    "CantJ",
+    "PsMN",
+    "PsMLC",
+    "Usos",
+    "IdRcCe",
+    "DocRepaldoJ"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Certif_Min_M": {
+   "filas": 0,
+   "columnas_n": 8,
+   "columnas": [
+    "IdCMin",
+    "CodRc",
+    "CantRc",
+    "PsMN",
+    "PsMLC",
+    "Usos",
+    "IdRcCe",
+    "DocRepaldoM"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Certif_Min_RH": {
+   "filas": 0,
+   "columnas_n": 11,
+   "columnas": [
+    "IdCMin",
+    "CodRHum",
+    "CantRHum",
+    "PsMN",
+    "PsMLC",
+    "Usos",
+    "Elab",
+    "IdRcCe",
+    "CodNorma",
+    "HCPO_s",
+    "DocRepaldoH"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Certif_Min_SE": {
+   "filas": 0,
+   "columnas_n": 9,
+   "columnas": [
+    "IdCMin",
+    "CodSemi",
+    "CantSE",
+    "PsMN",
+    "PsMLC",
+    "Usos",
+    "IdRcCe",
+    "CodNorma",
+    "DocRepaldoS"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Certificaciones E": {
+   "filas": 53,
+   "columnas_n": 14,
+   "columnas": [
+    "IdCRV",
+    "CodEquipo",
+    "CantEquipo",
+    "PsMN",
+    "PsMLC",
+    "Usos",
+    "Elab",
+    "IdRcCe",
+    "CPO_s",
+    "CPE_s",
+    "CET_s",
+    "CodNorma",
+    "DocRepaldoE",
+    "Cod_SE_J"
+   ],
+   "categoria": 3,
+   "nota": "certificaciones de obra — queda en la base original sin importar"
+  },
+  "Certificaciones J": {
+   "filas": 0,
+   "columnas_n": 8,
+   "columnas": [
+    "IdCRV",
+    "CodJuego",
+    "CantJ",
+    "PsMN",
+    "PsMLC",
+    "Usos",
+    "IdRcCe",
+    "DocRepaldoJ"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Certificaciones M": {
+   "filas": 8463,
+   "columnas_n": 9,
+   "columnas": [
+    "IdCRV",
+    "CodRc",
+    "CantRc",
+    "PsMN",
+    "PsMLC",
+    "Usos",
+    "IdRcCe",
+    "DocRepaldoM",
+    "Cod_SE_J"
+   ],
+   "categoria": 3,
+   "nota": "certificaciones de obra — queda en la base original sin importar"
+  },
+  "Certificaciones RH": {
+   "filas": 1286,
+   "columnas_n": 12,
+   "columnas": [
+    "IdCRV",
+    "CodRHum",
+    "CantRHum",
+    "PsMN",
+    "PsMLC",
+    "Usos",
+    "Elab",
+    "IdRcCe",
+    "CodNorma",
+    "HCPO_s",
+    "DocRepaldoH",
+    "Cod_SE_J"
+   ],
+   "categoria": 3,
+   "nota": "certificaciones de obra — queda en la base original sin importar"
+  },
+  "Certificaciones RV": {
+   "filas": 7779,
+   "columnas_n": 31,
+   "columnas": [
+    "TipoA",
+    "IdCertif",
+    "IdEtapa",
+    "CODIGO RV",
+    "CantRV",
+    "IdCRV",
+    "ConSum",
+    "IdCRVViejo",
+    "CantRVOrigen",
+    "ConRH",
+    "ConEq",
+    "PLCSMN",
+    "PLCSMLC",
+    "PLSSMN",
+    "PLSSMLC",
+    "CCA_MN_Mat",
+    "CCA_MLC_Mat",
+    "CCA_MN_RH",
+    "CCA_MLC_RH",
+    "CCA_MN_Equ",
+    "CCA_MLC_Equ",
+    "CCE_MN_Mat",
+    "CCE_MLC_Mat",
+    "CCE_MN_RH",
+    "CCE_MLC_RH",
+    "CCE_MN_Equ",
+    "CCE_MLC_Equ",
+    "ObcervaRV",
+    "IdEsp",
+    "Coef_Complegidad_RVC",
+    "kMayorSalario_CRV"
+   ],
+   "categoria": 3,
+   "nota": "certificaciones de obra — queda en la base original sin importar"
+  },
+  "Certificaciones SE": {
+   "filas": 53,
+   "columnas_n": 9,
+   "columnas": [
+    "IdCRV",
+    "CodSemi",
+    "CantSE",
+    "PsMN",
+    "PsMLC",
+    "Usos",
+    "IdRcCe",
+    "CodNorma",
+    "DocRepaldoS"
+   ],
+   "categoria": 3,
+   "nota": "certificaciones de obra — queda en la base original sin importar"
+  },
+  "Certificaciones vs Real": {
+   "filas": 0,
+   "columnas_n": 12,
+   "columnas": [
+    "IdCtrol",
+    "CodigoRV_C",
+    "CantRV_C",
+    "CS_C",
+    "CH_C",
+    "CE_C",
+    "Precio_C",
+    "CodigoRV_R",
+    "CantRV_R",
+    "CS_R",
+    "CH_R",
+    "CE_R"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Certificación Minima": {
+   "filas": 0,
+   "columnas_n": 10,
+   "columnas": [
+    "IdCertif",
+    "IdObjObra",
+    "CantMC",
+    "CantMCOrigen",
+    "VolMC",
+    "VolMCOrigen",
+    "IdCMin",
+    "ConSum",
+    "ConRH",
+    "ConEq"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Certificación Observaciones": {
+   "filas": 0,
+   "columnas_n": 2,
+   "columnas": [
+    "IdCertif",
+    "ObservCertif"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Certificación Otros": {
+   "filas": 0,
+   "columnas_n": 15,
+   "columnas": [
+    "IdCertif",
+    "TranspSum",
+    "FacTemp",
+    "OtrosGC",
+    "GBanc",
+    "Seguro",
+    "Imprevist",
+    "OtrosP",
+    "TranspSumMLC",
+    "FacTempMLC",
+    "OtrosGCMLC",
+    "GBancMLC",
+    "SeguroMLC",
+    "ImprevistMLC",
+    "OtrosPMLC"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Certificación Pacto": {
+   "filas": 0,
+   "columnas_n": 4,
+   "columnas": [
+    "IdCertif",
+    "DescPacto",
+    "ImpPacto",
+    "ImpPactoMLC"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Certificación Ptos": {
+   "filas": 0,
+   "columnas_n": 9,
+   "columnas": [
+    "IdCertif",
+    "ParcialValorMN",
+    "ParcialValorMLC",
+    "OrigenValorMN",
+    "OrigenValorMLC",
+    "ParcialPtos",
+    "OrigenPtos",
+    "Parcial100",
+    "Origen100"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Certificación Transp Equipos": {
+   "filas": 0,
+   "columnas_n": 39,
+   "columnas": [
+    "IdCertif",
+    "CodMat",
+    "Observ",
+    "CantATransp",
+    "IdServTransp",
+    "CapacidadT",
+    "Distancia",
+    "Desde",
+    "Hasta",
+    "IdCoefAprov",
+    "TarifPeaje",
+    "TarifPeajeMN",
+    "EjesTractivos",
+    "RecVacio",
+    "IdCTrans",
+    "CodEquipo",
+    "TiempoC",
+    "RecDesc",
+    "Recargo",
+    "RecargoMLC",
+    "OtroMN",
+    "OtroMLC",
+    "TarifCargaMN",
+    "TarifCargaMLC",
+    "TarifVacioMN",
+    "TarifVacioMLC",
+    "PesoTT",
+    "CapMin",
+    "CoefAprovE",
+    "ObservaTransp",
+    "Ya",
+    "CuantoCabe",
+    "IdCTransViejo",
+    "TipoRcT",
+    "Demora",
+    "T_Demora_MN",
+    "T_Demora_MLC",
+    "TD_AD_MN",
+    "TD_AD_MLC"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Certificación Transp Paq": {
+   "filas": 756,
+   "columnas_n": 6,
+   "columnas": [
+    "IdCTrans",
+    "CodMat",
+    "CantATransp",
+    "PesoTTPaq",
+    "Idxx",
+    "IdPTTT"
+   ],
+   "categoria": 3,
+   "nota": "certificaciones de obra — queda en la base original sin importar"
+  },
+  "Certificación Transp Paq Eq": {
+   "filas": 0,
+   "columnas_n": 6,
+   "columnas": [
+    "IdCTrans",
+    "CodEquipo",
+    "CantATransp",
+    "PesoTTPaq",
+    "Idxx",
+    "IdPTTT"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Certificación Transportación": {
+   "filas": 412,
+   "columnas_n": 39,
+   "columnas": [
+    "IdCertif",
+    "CodMat",
+    "Observ",
+    "CantATransp",
+    "IdServTransp",
+    "CapacidadT",
+    "Distancia",
+    "Desde",
+    "Hasta",
+    "IdCoefAprov",
+    "TarifPeaje",
+    "TarifPeajeMN",
+    "EjesTractivos",
+    "RecVacio",
+    "IdCTrans",
+    "CodEquipo",
+    "TiempoC",
+    "RecDesc",
+    "Recargo",
+    "RecargoMLC",
+    "OtroMN",
+    "OtroMLC",
+    "TarifCargaMN",
+    "TarifCargaMLC",
+    "TarifVacioMN",
+    "TarifVacioMLC",
+    "PesoTT",
+    "CapMin",
+    "CoefAprovE",
+    "ObservaTransp",
+    "Ya",
+    "CuantoCabe",
+    "IdCTransViejo",
+    "TipoRcT",
+    "Demora",
+    "T_Demora_MN",
+    "T_Demora_MLC",
+    "TD_AD_MN",
+    "TD_AD_MLC"
+   ],
+   "categoria": 3,
+   "nota": "certificaciones de obra — queda en la base original sin importar"
+  },
+  "Cheques Emitidos": {
+   "filas": 0,
+   "columnas_n": 14,
+   "columnas": [
+    "NroCheque",
+    "IdCliSum",
+    "ValorMN",
+    "ValorMLC",
+    "EsMLC",
+    "FechaR",
+    "IdCheque",
+    "IdOpFinanciera",
+    "IdChequeV",
+    "FCancelCh",
+    "IdContrato",
+    "IdCtaBanc",
+    "EsAnticipo",
+    "IdSolicitud"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Cheques Recibidos": {
+   "filas": 7,
+   "columnas_n": 11,
+   "columnas": [
+    "NroCheque",
+    "IdCliSum",
+    "ValorMN",
+    "ValorMLC",
+    "EsMLC",
+    "FechaR",
+    "IdCheque",
+    "IdOpFinanciera",
+    "IdChequeV",
+    "FCancelCh",
+    "IdCtaBanc"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Clasif Insumo": {
+   "filas": 10,
+   "columnas_n": 2,
+   "columnas": [
+    "LetraIns",
+    "Clasif_Insumo"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Coef_Complejidad": {
+   "filas": 6,
+   "columnas_n": 2,
+   "columnas": [
+    "Koef_Complejidad",
+    "Desc_Coef_Complejidad"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Coef_Estimulo": {
+   "filas": 11,
+   "columnas_n": 2,
+   "columnas": [
+    "Koef_Estimulo",
+    "Desc_Coef_Estimulo"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Coeficientes de Aprovechamiento del Transporte": {
+   "filas": 9,
+   "columnas_n": 3,
+   "columnas": [
+    "IdCoefAprov",
+    "Clase",
+    "CoefAprov"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "ColecRV": {
+   "filas": 6,
+   "columnas_n": 6,
+   "columnas": [
+    "IdColecRV",
+    "ColecRV",
+    "IdColecRVVieja",
+    "EsPrefecColecRV",
+    "KAntCol",
+    "KEspCol"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "ColecRV Composición": {
+   "filas": 92054,
+   "columnas_n": 9,
+   "columnas": [
+    "IdColecRV",
+    "CodigoRV",
+    "Activa_Col",
+    "LopCS_Col",
+    "LopSS_Col",
+    "Salario_MN_SP_Col",
+    "Salario_MLC_SP_Col",
+    "Salario_MN_CP_Col",
+    "Salario_MLC_CP_Col"
+   ],
+   "categoria": 2,
+   "nota": "Variantes salariales por RV en cada colección",
+   "prioritaria": true
+  },
+  "Colecciones": {
+   "filas": 27,
+   "columnas_n": 5,
+   "columnas": [
+    "IdColec",
+    "Colec",
+    "Tipo",
+    "Suministrador",
+    "IdColecVieja"
+   ],
+   "categoria": 2,
+   "nota": "Cabeceras de colecciones de precios por suministrador",
+   "prioritaria": true
+  },
+  "Colecciones Composición": {
+   "filas": 1570,
+   "columnas_n": 8,
+   "columnas": [
+    "IdColec",
+    "CodigoRec",
+    "PcMN",
+    "PcMLC",
+    "Activa",
+    "CPO_e",
+    "CPE_e",
+    "CET_e"
+   ],
+   "categoria": 2,
+   "nota": "Recursos con precio por colección",
+   "prioritaria": true
+  },
+  "ColumnasXLS": {
+   "filas": 8,
+   "columnas_n": 11,
+   "columnas": [
+    "VarianteXLS",
+    "ReportSQLXLS",
+    "CampoXLS",
+    "TituloXLS",
+    "Orden",
+    "IdGrupBy",
+    "OrdenaPor",
+    "Totalizar",
+    "Ejemplo",
+    "NivelAgrupa",
+    "OcutarDuplicados"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Combustibles y Lubricantes": {
+   "filas": 9,
+   "columnas_n": 9,
+   "columnas": [
+    "IdComb",
+    "Comb",
+    "UM",
+    "Precio",
+    "PMN",
+    "PMLC",
+    "IdCombV",
+    "LetraIns",
+    "IdTipoIns"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Composición de Factura Otros": {
+   "filas": 326,
+   "columnas_n": 4,
+   "columnas": [
+    "IdFactura",
+    "ConceptoFO",
+    "ImpMNFO",
+    "ImpMLCFO"
+   ],
+   "categoria": 3,
+   "nota": "facturación — queda en la base original sin importar"
+  },
+  "Composición de Recepcion Otros": {
+   "filas": 0,
+   "columnas_n": 8,
+   "columnas": [
+    "IdRecepcion",
+    "ConceptoRO",
+    "ImpMNRO",
+    "ImpMLCRO",
+    "IdIE1",
+    "EsCambio",
+    "CausaCambio",
+    "ObservaCambio"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Composición de factura": {
+   "filas": 61,
+   "columnas_n": 2,
+   "columnas": [
+    "IdFactura",
+    "IdCertif"
+   ],
+   "categoria": 3,
+   "nota": "facturación — queda en la base original sin importar"
+  },
+  "Conceptos Gastos": {
+   "filas": 17,
+   "columnas_n": 4,
+   "columnas": [
+    "IdGG",
+    "IdOGD",
+    "OGD_Descrip",
+    "IdOGD_V"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Conceptos OG": {
+   "filas": 0,
+   "columnas_n": 2,
+   "columnas": [
+    "ConceptoOG",
+    "IdOG"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Conceptos Otros Gastos Directos": {
+   "filas": 48,
+   "columnas_n": 7,
+   "columnas": [
+    "IdOGD",
+    "OGD_Descrip",
+    "IdOGD_V",
+    "OGD_Memo",
+    "HojaOGD",
+    "CeldaOGD_MN",
+    "CeldaOGD_MLC"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Conceptos de Gastos Bancarios": {
+   "filas": 20,
+   "columnas_n": 6,
+   "columnas": [
+    "IdGBanc",
+    "GBanc",
+    "IdGBancV",
+    "HojaPI_GB",
+    "CeldaPI_GB_MN",
+    "CeldaPI_GB_MLC"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Conceptos de Gastos Generales Directos": {
+   "filas": 6,
+   "columnas_n": 7,
+   "columnas": [
+    "IdGGD",
+    "GGD_Descrip",
+    "IdGGD_V",
+    "GGD_Memo",
+    "HojaGGD",
+    "CeldaGGD_MN",
+    "CeldaGGD_MLC"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Conceptos de Gastos Generales de Administración": {
+   "filas": 7,
+   "columnas_n": 3,
+   "columnas": [
+    "IdGGA",
+    "GGA_Descrip",
+    "IdGGA_V"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Conceptos de Gastos Indirectos de Producción": {
+   "filas": 3,
+   "columnas_n": 4,
+   "columnas": [
+    "IdGIP",
+    "GIP_Descrip",
+    "IdGIP_V",
+    "GIP_Memo"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Conceptos de Gastos de Distribución y Ventas": {
+   "filas": 7,
+   "columnas_n": 3,
+   "columnas": [
+    "IdGDV",
+    "GDV_Descrip",
+    "IdGDV_V"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Conceptos de Imprevistos": {
+   "filas": 17,
+   "columnas_n": 6,
+   "columnas": [
+    "IdImprevisto",
+    "Imprevisto",
+    "IdImprevistoV",
+    "HojaPI_I",
+    "CeldaPI_I_MN",
+    "CeldaPI_I_MLC"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Conceptos de Otros Gastos": {
+   "filas": 47,
+   "columnas_n": 6,
+   "columnas": [
+    "IdOtrosG",
+    "OtrosG",
+    "IdOtrosGV",
+    "HojaPI_OG",
+    "CeldaPI_OG_MN",
+    "CeldaPI_OG_MLC"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Conceptos de Otros Presupuestos": {
+   "filas": 32,
+   "columnas_n": 6,
+   "columnas": [
+    "IdOtrosP",
+    "OtrosP",
+    "IdOtrosPV",
+    "HojaPI_OP",
+    "CeldaPI_OP_MN",
+    "CeldaPI_OP_MLC"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Conceptos de Pacto": {
+   "filas": 3,
+   "columnas_n": 4,
+   "columnas": [
+    "DescPacto",
+    "HojaPacto",
+    "CeldaPacto_MN",
+    "CeldaPacto_MLC"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Conceptos de Seguro": {
+   "filas": 15,
+   "columnas_n": 6,
+   "columnas": [
+    "IdSeguro",
+    "Seguro",
+    "IdSeguroV",
+    "HojaPI_S",
+    "CeldaPI_S_MN",
+    "CeldaPI_S_MLC"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Consumo Diario de Equipos": {
+   "filas": 1,
+   "columnas_n": 11,
+   "columnas": [
+    "CodB",
+    "IdEstab",
+    "IdObjObra",
+    "CodEquipo",
+    "FechaDia",
+    "Precio",
+    "PrecioMLC",
+    "Documento",
+    "Cantidad",
+    "ObservEq",
+    "CodRV"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Consumo Diario de Materiales": {
+   "filas": 665,
+   "columnas_n": 11,
+   "columnas": [
+    "CodB",
+    "IdEstab",
+    "IdObjObra",
+    "IdMaterial",
+    "FechaDia",
+    "Documento",
+    "Precio",
+    "PrecioMLC",
+    "Cantidad",
+    "CodRV",
+    "IdEtapa"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Consumo Diario de Servicios": {
+   "filas": 0,
+   "columnas_n": 9,
+   "columnas": [
+    "CodB",
+    "IdEstab",
+    "IdObjObra",
+    "Servicio",
+    "FechaDia",
+    "Precio",
+    "PrecioMLC",
+    "Documento",
+    "Cantidad"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Consumo de Aceites Hidra": {
+   "filas": 27,
+   "columnas_n": 4,
+   "columnas": [
+    "PotenciaInf",
+    "PotenciaSup",
+    "Consumo",
+    "LetraIns"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Consumo de Aceites Transm": {
+   "filas": 28,
+   "columnas_n": 4,
+   "columnas": [
+    "PotenciaInf",
+    "PotenciaSup",
+    "Consumo",
+    "LetraIns"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Consumos de Grasa": {
+   "filas": 37,
+   "columnas_n": 7,
+   "columnas": [
+    "Codigo",
+    "CatEquipo",
+    "Menor100",
+    "Entre100y150",
+    "Entre150y200",
+    "Mayor200",
+    "IdCategEqGrasas"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Consumos de los Equipos": {
+   "filas": 2783,
+   "columnas_n": 4,
+   "columnas": [
+    "CodEquipo",
+    "IdComb",
+    "UmCons",
+    "NormaCC"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Consumos de los RH": {
+   "filas": 0,
+   "columnas_n": 3,
+   "columnas": [
+    "CodRHum",
+    "IdInsMO",
+    "NormaCInsMO"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Contratos": {
+   "filas": 0,
+   "columnas_n": 13,
+   "columnas": [
+    "CodContrato",
+    "IdContrato",
+    "Contrato",
+    "IdObra",
+    "FechaFirma",
+    "ImpCtratoMN",
+    "ImpCtratoMLC",
+    "IdCliSum",
+    "IdContratoViejo",
+    "DocContrato",
+    "DuraContrato",
+    "IdTipoContrato",
+    "IdEstadioContrato"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Control Ing": {
+   "filas": 0,
+   "columnas_n": 5,
+   "columnas": [
+    "FechaCtrol",
+    "NroControl",
+    "IdObra",
+    "IdObjObra",
+    "IdCtrol"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Cronograma": {
+   "filas": 11,
+   "columnas_n": 3,
+   "columnas": [
+    "IdPRV",
+    "FechaInicio",
+    "FechaFinal"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Cuentas Bancarias": {
+   "filas": 5,
+   "columnas_n": 8,
+   "columnas": [
+    "IdBanco",
+    "CtaBanc",
+    "EsMLC",
+    "TituloCta",
+    "SaldoInicial",
+    "FechaAp",
+    "IdCtaBanc",
+    "IdCtaBancV"
+   ],
+   "categoria": 3,
+   "nota": "cuentas contables — queda en la base original sin importar"
+  },
+  "DPA Municipios": {
+   "filas": 170,
+   "columnas_n": 4,
+   "columnas": [
+    "IdMunicipio",
+    "Municipio",
+    "IdProvincia",
+    "IdMunicipioV"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "DPA Provincias": {
+   "filas": 15,
+   "columnas_n": 3,
+   "columnas": [
+    "IdProvincia",
+    "Provincia",
+    "IdProvinciaV"
+   ],
+   "categoria": 3,
+   "nota": "provincias (referencia) — queda en la base original sin importar"
+  },
+  "EQUIPO": {
+   "filas": 451,
+   "columnas_n": 28,
+   "columnas": [
+    "IdTecons",
+    "Codigo",
+    "Valor",
+    "VidaUtil",
+    "HorasAnno",
+    "Potencia",
+    "TipoConsComb",
+    "TipoConsGrasa",
+    "VidaNeum",
+    "CapacCarter",
+    "HorasCambio",
+    "CantKwh",
+    "ImpuestoAnual",
+    "GastosPartic",
+    "Terrestre",
+    "TipoComb",
+    "IdCategEqGrasas",
+    "IdCategEqComb",
+    "ImpuestoAnualMN",
+    "GastosParticMN",
+    "ImpuestoAnualMLC",
+    "GastosParticMLC",
+    "IdTipoComb",
+    "IdInsAcTrans",
+    "IdInsAcHidra",
+    "IdInsAcMotor",
+    "IdInsGrasa",
+    "IdEquipo"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Empresas Constructoras": {
+   "filas": 79,
+   "columnas_n": 4,
+   "columnas": [
+    "IdGrupoEmp",
+    "EmpConstructora",
+    "IdEmpConstructora",
+    "IdEmpConstructora_V"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Entrada de Materiales": {
+   "filas": 2,
+   "columnas_n": 8,
+   "columnas": [
+    "IdEstab",
+    "IdObjObra",
+    "IdMaterial",
+    "FechaEntrada",
+    "Documento",
+    "Precio",
+    "PrecioMLC",
+    "Cantidad"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Errores de pegado": {
+   "filas": 4,
+   "columnas_n": 1,
+   "columnas": [
+    "Campo0"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Esp Equipos de la Obra": {
+   "filas": 259,
+   "columnas_n": 11,
+   "columnas": [
+    "IdObra",
+    "CodEquipo",
+    "PMNE",
+    "PMLCE",
+    "PesoU",
+    "CodEsp",
+    "FxEsp",
+    "CPO_E",
+    "CPE_E",
+    "CET_E",
+    "AfectaEsp"
+   ],
+   "categoria": 4,
+   "nota": "específicos por obra: pendiente de interpretar su relación con el modelo"
+  },
+  "Esp Equipos del Cliente": {
+   "filas": 0,
+   "columnas_n": 3,
+   "columnas": [
+    "IdObra",
+    "CodEquipo",
+    "CantEPC"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Esp Juegos de la Obra": {
+   "filas": 0,
+   "columnas_n": 9,
+   "columnas": [
+    "IdObra",
+    "CodJuego",
+    "PMNE",
+    "PMLCE",
+    "PesoU",
+    "Calculado",
+    "CodEsp",
+    "FxEsp",
+    "AfectaEsp"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Esp Materiales de la Obra": {
+   "filas": 0,
+   "columnas_n": 8,
+   "columnas": [
+    "IdObra",
+    "CodMat",
+    "PMNE",
+    "PMLCE",
+    "PesoU",
+    "CodEsp",
+    "FxEsp",
+    "AfectaEsp"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Esp Materiales del Cliente": {
+   "filas": 668,
+   "columnas_n": 3,
+   "columnas": [
+    "IdObra",
+    "CodMat",
+    "CantMPC"
+   ],
+   "categoria": 3,
+   "nota": "clientes — queda en la base original sin importar"
+  },
+  "Esp RH del Cliente": {
+   "filas": 0,
+   "columnas_n": 3,
+   "columnas": [
+    "IdObra",
+    "CodRHum",
+    "CantHPC"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Esp RHum de la Obra": {
+   "filas": 0,
+   "columnas_n": 9,
+   "columnas": [
+    "IdObra",
+    "CodRHum",
+    "PMNE",
+    "PMLCE",
+    "PesoU",
+    "CodEsp",
+    "FxEsp",
+    "HCPO_E",
+    "AfectaEsp"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Esp Semielab de la Obra": {
+   "filas": 145,
+   "columnas_n": 9,
+   "columnas": [
+    "IdObra",
+    "CodSElab",
+    "PMNE",
+    "PMLCE",
+    "PesoU",
+    "Calculado",
+    "CodEsp",
+    "FxEsp",
+    "AfectaEsp"
+   ],
+   "categoria": 4,
+   "nota": "específicos por obra: pendiente de interpretar su relación con el modelo"
+  },
+  "Especialidad": {
+   "filas": 1,
+   "columnas_n": 2,
+   "columnas": [
+    "IdEsp",
+    "Espec"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Establecimientos": {
+   "filas": 1,
+   "columnas_n": 69,
+   "columnas": [
+    "CodOrga",
+    "NombreOrg",
+    "CodRama",
+    "NombreRama",
+    "CodEmp",
+    "CodEst",
+    "Establecimiento",
+    "Direc",
+    "Director",
+    "DTecnico",
+    "DEconomico",
+    "DComercial",
+    "DRHumanos",
+    "DOperaciones",
+    "Contador",
+    "SucMN",
+    "CtaMN",
+    "TituloCtaMN",
+    "SucMLC",
+    "CtaMLC",
+    "TituloCtaMLC",
+    "MyLogo",
+    "Telef",
+    "slogan",
+    "IdEstab",
+    "FTMax",
+    "FTInd",
+    "FTUtil",
+    "AMat",
+    "ARHum",
+    "AEqu",
+    "K909",
+    "K25",
+    "KSS",
+    "KAnt",
+    "KEsp",
+    "PL",
+    "FG",
+    "ZInt",
+    "ZExt",
+    "CAE",
+    "DPA",
+    "FTGD",
+    "GGA_E",
+    "GIP_E",
+    "PBP_E",
+    "NITEst",
+    "GGA_E_MN",
+    "GIP_E_MN",
+    "PBP_E_MN",
+    "GGA_E_MLC",
+    "GIP_E_MLC",
+    "PBP_E_MLC",
+    "KOGD_Est",
+    "KGGD_Est",
+    "ka100_MLC_e",
+    "ko100_MLC_e",
+    "kg100_MLC_e",
+    "kI100_MLC_e",
+    "kU100_MLC_e",
+    "FasePE",
+    "EnPerfec",
+    "kMayorSalarioE",
+    "VarianteEst",
+    "PolinomioEst",
+    "CodMICONS",
+    "CapacInst",
+    "P100UtilCapacInst",
+    "IdVarSalEstab"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Estableciminetos Productivos": {
+   "filas": 4,
+   "columnas_n": 18,
+   "columnas": [
+    "CodEstab",
+    "DescEstaP",
+    "IdProv",
+    "Direc_EP",
+    "Director_EP",
+    "DTecnico_EP",
+    "DEconomico_EP",
+    "DComercial_EP",
+    "DRHumanos_EP",
+    "DOperaciones_EP",
+    "Contador_EP",
+    "SucMN_EP",
+    "CtaMN_EP",
+    "TituloCtaMN_EP",
+    "SucMLC_EP",
+    "CtaMLC_EP",
+    "TituloCtaMLC_EP",
+    "Telef_EP"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Estimaciones": {
+   "filas": 0,
+   "columnas_n": 5,
+   "columnas": [
+    "IdObjObra",
+    "IdActEst",
+    "CantEst",
+    "TiempoEst",
+    "IdEst"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Estimaciones Independientes": {
+   "filas": 0,
+   "columnas_n": 2,
+   "columnas": [
+    "IdObra",
+    "IndEst"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Etapas": {
+   "filas": 63,
+   "columnas_n": 4,
+   "columnas": [
+    "CodEtapa",
+    "Etapa",
+    "IdEtapa",
+    "IdEtapaV"
+   ],
+   "categoria": 2,
+   "nota": "Padre (IdEtapa) de Presupuesto Composición RV",
+   "prioritaria": true
+  },
+  "Explotadores": {
+   "filas": 6,
+   "columnas_n": 3,
+   "columnas": [
+    "IdExplotador",
+    "Explotador",
+    "IdExplotadorViejo"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Facturas Reportadas": {
+   "filas": 113,
+   "columnas_n": 16,
+   "columnas": [
+    "IdFactura",
+    "UEB",
+    "Grupo",
+    "MesReport",
+    "AnoReport",
+    "CyMMN",
+    "CyMMLC",
+    "SumiCliMN",
+    "SumiCliMLC",
+    "OtasPordMN",
+    "OtasPordMLC",
+    "SumiConstMN",
+    "SumiConstMLC",
+    "InsumosMN",
+    "InsumosMLC",
+    "FechaRep"
+   ],
+   "categoria": 3,
+   "nota": "facturación — queda en la base original sin importar"
+  },
+  "Ficha PT": {
+   "filas": 0,
+   "columnas_n": 9,
+   "columnas": [
+    "IdPTF",
+    "GGD_Descrip",
+    "Fila",
+    "SubFila",
+    "G_UM",
+    "G_CUP",
+    "G_CUC",
+    "SeImp",
+    "EsPrecio"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Formula Salario": {
+   "filas": 8,
+   "columnas_n": 9,
+   "columnas": [
+    "NroCol",
+    "T_ColSal",
+    "N_ColSal",
+    "ColSal_MN",
+    "ColSal_MLC",
+    "Es_Tarifa",
+    "Se_Imprime",
+    "IdFormSal",
+    "IdVarSal"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Formulas": {
+   "filas": 12,
+   "columnas_n": 6,
+   "columnas": [
+    "TipoObraF",
+    "AMatF",
+    "ARHumF",
+    "AequF",
+    "AEspF",
+    "AntF"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Gasto Diario de Salario": {
+   "filas": 0,
+   "columnas_n": 9,
+   "columnas": [
+    "CodB",
+    "IdEstab",
+    "IdObjObra",
+    "FechaDia",
+    "SalDirecto",
+    "SalIndirecto",
+    "IdObra",
+    "HDirectos",
+    "HIndirectos"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Gastos Generales Administración x Año": {
+   "filas": 0,
+   "columnas_n": 4,
+   "columnas": [
+    "GGA_Ano",
+    "IdGGA",
+    "GGA_MN",
+    "GGA_MLC"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Gastos Generales Directos de Obra": {
+   "filas": 66,
+   "columnas_n": 4,
+   "columnas": [
+    "IdObra",
+    "IdGGD",
+    "GGD_MN",
+    "GGD_MLC"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Gastos Indirectos de Producción x Año": {
+   "filas": 0,
+   "columnas_n": 4,
+   "columnas": [
+    "GIP_Ano",
+    "IdGIP",
+    "GIP_MN",
+    "GIP_MLC"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Gastos de Distribución y Venta x Año": {
+   "filas": 0,
+   "columnas_n": 4,
+   "columnas": [
+    "GDV_Ano",
+    "IdGDV",
+    "GDV_MN",
+    "GDV_MLC"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Genericos": {
+   "filas": 89,
+   "columnas_n": 3,
+   "columnas": [
+    "Abrevia",
+    "Generico",
+    "IdGenV"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Grupo Conceptos de Gastos No Base": {
+   "filas": 37,
+   "columnas_n": 12,
+   "columnas": [
+    "IdSGCG",
+    "IdGG",
+    "GGD_Descrip",
+    "IdGG_V",
+    "Fila",
+    "SubFila",
+    "F_CG_MN",
+    "F_CG_MLC",
+    "F_CG_UM",
+    "SeImpG",
+    "SeEditaG",
+    "Idx"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Grupos Empresariales": {
+   "filas": 16,
+   "columnas_n": 4,
+   "columnas": [
+    "GrupoEmp",
+    "IdGrupoEmp",
+    "IdOrganismo",
+    "IdGrupoEmp_V"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Grupos de Actividades de Estimación": {
+   "filas": 49,
+   "columnas_n": 2,
+   "columnas": [
+    "CodGActEst",
+    "GActEst"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Grupos de Materiales": {
+   "filas": 34,
+   "columnas_n": 2,
+   "columnas": [
+    "CodFamilia",
+    "Familia"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "IEs Especificados en Anticipo": {
+   "filas": 0,
+   "columnas_n": 4,
+   "columnas": [
+    "IdCheque",
+    "IdIE1",
+    "ValorMNEA",
+    "ValorMLCEA"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Indicadores Fisicos": {
+   "filas": 50,
+   "columnas_n": 4,
+   "columnas": [
+    "OrdenIndFisico",
+    "IndFisico",
+    "UMIndFisico",
+    "IdIndFisico"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Indicadores Fisicos RV": {
+   "filas": 132,
+   "columnas_n": 4,
+   "columnas": [
+    "IdIndFisico",
+    "Codigo RV",
+    "FactorIF",
+    "TipoA"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Indices Consumo de Combustible": {
+   "filas": 5,
+   "columnas_n": 3,
+   "columnas": [
+    "TipoEquipo",
+    "Consumo",
+    "IdIndicesComb"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Indices por Insumo": {
+   "filas": 2764,
+   "columnas_n": 4,
+   "columnas": [
+    "Codigo",
+    "Descripcion",
+    "IiNSUMO",
+    "Indice"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Insumos para la Mano de Obra": {
+   "filas": 1,
+   "columnas_n": 6,
+   "columnas": [
+    "IdInsMO",
+    "InsMO",
+    "UM",
+    "PMN",
+    "PMLC",
+    "IdInsMOV"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Macro Composición Equipo": {
+   "filas": 0,
+   "columnas_n": 13,
+   "columnas": [
+    "IdMRV",
+    "CodEquipo",
+    "CodNorma_M",
+    "CantEquipo",
+    "PsMN",
+    "PsMLC",
+    "Usos",
+    "IdRcM",
+    "CPOm",
+    "CPEm",
+    "CETm",
+    "Elab",
+    "Cod_SE_J"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Macro Composición J": {
+   "filas": 0,
+   "columnas_n": 7,
+   "columnas": [
+    "IdMRV",
+    "CodJuego",
+    "CantJ",
+    "PsMN",
+    "PsMLC",
+    "Usos",
+    "IdRcM"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Macro Composición Mat": {
+   "filas": 0,
+   "columnas_n": 8,
+   "columnas": [
+    "IdMRV",
+    "CodRc",
+    "CantRc",
+    "PsMN",
+    "PsMLC",
+    "Usos",
+    "IdRcM",
+    "Cod_SE_J"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Macro Composición RH": {
+   "filas": 0,
+   "columnas_n": 10,
+   "columnas": [
+    "IdMRV",
+    "CodRHum",
+    "CodNorma_M",
+    "CantRHum",
+    "PsMN",
+    "PsMLC",
+    "Usos",
+    "IdRcM",
+    "Elab",
+    "Cod_SE_J"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Macro Composición SE": {
+   "filas": 0,
+   "columnas_n": 7,
+   "columnas": [
+    "IdMRV",
+    "CodSemi",
+    "CantSE",
+    "PsMN",
+    "PsMLC",
+    "Usos",
+    "IdRcM"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Macros Composicion RV": {
+   "filas": 27,
+   "columnas_n": 11,
+   "columnas": [
+    "CodMacro",
+    "CODIGO RV",
+    "CantRV",
+    "ConSum",
+    "IdMRV",
+    "IdMRVViejo",
+    "ConRH",
+    "ConEqu",
+    "Coef_Complegidad_RVM",
+    "RVPrincipal",
+    "EtiquetaMacro"
+   ],
+   "categoria": 2,
+   "nota": "Agrupaciones macro de RV",
+   "prioritaria": true
+  },
+  "Macros Obra": {
+   "filas": 0,
+   "columnas_n": 10,
+   "columnas": [
+    "IdObra",
+    "IdMacro",
+    "ImpMacroMN",
+    "ImpMacroMLC",
+    "CMMacroMN",
+    "CMMacroMLC",
+    "CHMacroMN",
+    "CHMacroMLC",
+    "CEMacroMN",
+    "CEMacroMLC"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Mat_x_Mat": {
+   "filas": 0,
+   "columnas_n": 2,
+   "columnas": [
+    "CodMat_V",
+    "CodMat_N"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Materiales Indice": {
+   "filas": 10,
+   "columnas_n": 2,
+   "columnas": [
+    "Tipo",
+    "CodigoRec"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Meses": {
+   "filas": 12,
+   "columnas_n": 2,
+   "columnas": [
+    "IdMes",
+    "FMes"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Modelos": {
+   "filas": 2,
+   "columnas_n": 4,
+   "columnas": [
+    "Titulo_Modelo",
+    "Modelo_Mat",
+    "VerBD_Predet",
+    "NoTocar"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Monedas": {
+   "filas": 4,
+   "columnas_n": 2,
+   "columnas": [
+    "EsMLC",
+    "SubMoneda"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "NCLESCALASAL": {
+   "filas": 13,
+   "columnas_n": 13,
+   "columnas": [
+    "Escala",
+    "Retribucion",
+    "PropiaRetribucion",
+    "TarifaBasica",
+    "TarifaPrecons",
+    "PPMN",
+    "IdOrdenG",
+    "PPMLC",
+    "TB_Of_MN",
+    "TB_Of_MLC",
+    "Retribucion_MLC",
+    "TB_P_MN",
+    "TB_P_MLC"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "NCLNEUMATICO": {
+   "filas": 79,
+   "columnas_n": 4,
+   "columnas": [
+    "Codigo",
+    "Descripcion",
+    "PMN_Neu",
+    "PMLC_Neu"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "NCLTIPOEQUIPO": {
+   "filas": 39,
+   "columnas_n": 4,
+   "columnas": [
+    "CatEquipo",
+    "Tipo",
+    "IdCategEqComb",
+    "IdIndicesComb"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "NomFactC": {
+   "filas": 0,
+   "columnas_n": 14,
+   "columnas": [
+    "Fact",
+    "FechaEmitida",
+    "NroDoc",
+    "FechaRecepcion",
+    "IdRecepcion",
+    "IdCliSum",
+    "Descriptivo",
+    "ImpMN",
+    "ImpMLC",
+    "IdRecepcionV",
+    "FCancel",
+    "Inversionista",
+    "Constructor",
+    "IdContrato"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "NomFactV": {
+   "filas": 324,
+   "columnas_n": 26,
+   "columnas": [
+    "Fact",
+    "NroDoc",
+    "FechaEmitida",
+    "IdFactura",
+    "IdCliSum",
+    "Descriptivo",
+    "ImpMN",
+    "ImpMLC",
+    "IdFacturaV",
+    "FCancel",
+    "Inversionista",
+    "Constructor",
+    "IdObra",
+    "CertifCyMMN",
+    "CertifCyMMLC",
+    "CertifIndMN",
+    "CertifIndMLC",
+    "CertifOtrosMN",
+    "CertifOtrosMLC",
+    "FElabora",
+    "FElabora_Cargo",
+    "FRevisado",
+    "FRevisado_Cargo",
+    "FAprobado",
+    "FAprobado_Cargo",
+    "FechaFirma"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Nomenclador de Afectaciones": {
+   "filas": 15,
+   "columnas_n": 3,
+   "columnas": [
+    "Afectación",
+    "IdAfectación",
+    "IdAfectaciónV"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Nomenclador de Equipos": {
+   "filas": 537,
+   "columnas_n": 59,
+   "columnas": [
+    "CodEquipo",
+    "Equipo",
+    "UmRec",
+    "PrecioU",
+    "PesoU",
+    "IdTipoEquipo",
+    "PMN",
+    "PMLC",
+    "IdEstab",
+    "PPMN",
+    "PPMLC",
+    "CPO_N",
+    "CPE_N",
+    "CET_N",
+    "IdE",
+    "NormaHoraria",
+    "Impuesto MN",
+    "Impuesto MLC",
+    "Depreciación MN",
+    "Depreciación MLC",
+    "Seguro MN",
+    "Seguro MLC",
+    "Combustible MN",
+    "Combustible MLC",
+    "Aceite Motor MN",
+    "Aceite Motor MLC",
+    "Aceite Hidráulico MN",
+    "Aceite Hidráulico MLC",
+    "Aceite de Transmición MN",
+    "Aceite de Transmición MLC",
+    "Grasa MN",
+    "Grasa MLC",
+    "Electricidad MN",
+    "Electricidad MLC",
+    "Mtto y Reparación MN",
+    "Mtto y Reparación MLC",
+    "De MyR Piezas de Repuesto MN",
+    "De MyR Piezas de Repuesto MLC",
+    "De MyR Mano de Obra MN",
+    "De MyR Mano de Obra MLC",
+    "Neumáticos MN",
+    "Neumáticos MLC",
+    "Salario MN",
+    "Salario MLC",
+    "Costo Total MN",
+    "Costo Total MLC",
+    "Costo Total",
+    "10%",
+    "Del 10% Otros gastos MN",
+    "Del 10% Otros gastos MLC",
+    "Del 10% Utilidad MN",
+    "Del 10% Utilidad MLC",
+    "Tarifa_Eq",
+    "Tarifa_Eq_MN",
+    "Tarifa_Eq_MLC",
+    "CostoAdq_MN",
+    "CostoAdq_MLC",
+    "CostoDia_MN",
+    "CostoDia_MLC"
+   ],
+   "categoria": 2,
+   "nota": "núcleo con esquema DIFERENTE a la raíz 2017 → requiere adaptación (columnas: CodEquipo, Equipo, UmRec, PrecioU, PesoU, IdTipoEquipo, PMN, PMLC, IdEstab, PPMN, PPMLC, CPO_N, CPE_N, CET_N, IdE, NormaHoraria, Impuesto MN, Impuesto MLC, Depreciación MN, Depreciación MLC, Seguro MN, Seguro MLC, Combustible MN, Combustible MLC, Aceite Motor MN, Aceite Motor MLC, Aceite Hidráulico MN, Aceite Hidráulico MLC, Aceite de Transmición MN, Aceite de Transmición MLC, Grasa MN, Grasa MLC, Electricidad MN, Electricidad MLC, Mtto y Reparación MN, Mtto y Reparación MLC, De MyR Piezas de Repuesto MN, De MyR Piezas de Repuesto MLC, De MyR Mano de Obra MN, De MyR Mano de Obra MLC, Neumáticos MN, Neumáticos MLC, Salario MN, Salario MLC, Costo Total MN, Costo Total MLC, Costo Total, 10%, Del 10% Otros gastos MN, Del 10% Otros gastos MLC, Del 10% Utilidad MN, Del 10% Utilidad MLC, Tarifa_Eq, Tarifa_Eq_MN, Tarifa_Eq_MLC, CostoAdq_MN, CostoAdq_MLC, CostoDia_MN, CostoDia_MLC)"
+  },
+  "Nomenclador de Grupos RV": {
+   "filas": 359,
+   "columnas_n": 4,
+   "columnas": [
+    "TipoA",
+    "CodSobreG",
+    "CodG",
+    "Grupo"
+   ],
+   "categoria": 2,
+   "nota": "núcleo con esquema DIFERENTE a la raíz 2017 → requiere adaptación (columnas: TipoA, CodSobreG, CodG, Grupo)"
+  },
+  "Nomenclador de Juegos": {
+   "filas": 348,
+   "columnas_n": 10,
+   "columnas": [
+    "CodJuego",
+    "Juego",
+    "UmRec",
+    "PrecioU",
+    "PesoU",
+    "PMN",
+    "PMLC",
+    "IdEstab",
+    "UtilJ",
+    "IdJ"
+   ],
+   "categoria": 1,
+   "nota": "esquema idéntico al núcleo de codigo.mdb raíz → importador común"
+  },
+  "Nomenclador de Mano de Obra": {
+   "filas": 261,
+   "columnas_n": 19,
+   "columnas": [
+    "CodRHum",
+    "RHum",
+    "UmRec",
+    "PrecioU",
+    "PesoU",
+    "PMN",
+    "PMLC",
+    "IdEstab",
+    "Grupo",
+    "Especialidad",
+    "AO",
+    "PPMN",
+    "PPMLC",
+    "IdH",
+    "HCPO_N",
+    "TB_MN",
+    "TB_MLC",
+    "TBP_MN",
+    "TBP_MLC"
+   ],
+   "categoria": 2,
+   "nota": "núcleo con esquema DIFERENTE a la raíz 2017 → requiere adaptación (columnas: CodRHum, RHum, UmRec, PrecioU, PesoU, PMN, PMLC, IdEstab, Grupo, Especialidad, AO, PPMN, PPMLC, IdH, HCPO_N, TB_MN, TB_MLC, TBP_MN, TBP_MLC)"
+  },
+  "Nomenclador de Materiales": {
+   "filas": 56158,
+   "columnas_n": 11,
+   "columnas": [
+    "CodMat",
+    "Material",
+    "UmRec",
+    "CodFamilia",
+    "PrecioU",
+    "PesoU",
+    "PMN",
+    "PMLC",
+    "IdEstab",
+    "Suministrador",
+    "IdM"
+   ],
+   "categoria": 1,
+   "nota": "esquema idéntico al núcleo de codigo.mdb raíz → importador común"
+  },
+  "Nomenclador de Provincias": {
+   "filas": 15,
+   "columnas_n": 2,
+   "columnas": [
+    "IdProvincia",
+    "Provincia"
+   ],
+   "categoria": 3,
+   "nota": "provincias (referencia) — queda en la base original sin importar"
+  },
+  "Nomenclador de RV": {
+   "filas": 15359,
+   "columnas_n": 67,
+   "columnas": [
+    "TipoA",
+    "CodSubG",
+    "CODIGO RV",
+    "Desc Rv",
+    "PGRUESA",
+    "FACTOR",
+    "UNIDAD DE MEDIDA",
+    "COSTO DE MATERIALES",
+    "COSTO DE MANO DE OBRA",
+    "COSTO DE EQUIPOS",
+    "PESO",
+    "HORAS HOMBRE",
+    "HORAS EQUIPO",
+    "TIPO",
+    "CEMENTO",
+    "ARIDOS",
+    "ASFALTO",
+    "CARGA",
+    "PREFABRICADO",
+    "HORAS OPERARIO",
+    "HORAS AYUDANTE",
+    "IdActividad1",
+    "CMMN",
+    "CHMN",
+    "CEMN",
+    "CMMLC",
+    "CHMLC",
+    "CEMLC",
+    "IdEstab",
+    "Oficial",
+    "LopCS",
+    "LopSS",
+    "DescCorta",
+    "Res_Aprov",
+    "Fecha_Aprov",
+    "CHMN_Propia",
+    "CEMN_Propia",
+    "CHMLC_Propia",
+    "CEMLC_Propia",
+    "Salario_MN_SP",
+    "Salario_MLC_SP",
+    "Salario_MN_CP",
+    "Salario_MLC_CP",
+    "RendRV_N",
+    "KMacro",
+    "UMDiseno",
+    "CodUO_M",
+    "ObservaMacro",
+    "CodObraM",
+    "ObraM",
+    "FechaM",
+    "VerPrecons",
+    "ElaboradaPor",
+    "RebizadaPor",
+    "AprobadaPor",
+    "CodUEB",
+    "CodGenerico",
+    "Consecutivo",
+    "Coef_Complegidad_Act",
+    "CodEmpConst",
+    "EsUO",
+    "Alcance1",
+    "Alcance2",
+    "EsMin",
+    "DetallesMacro",
+    "FechaAprobado",
+    "FechaEnVigor"
+   ],
+   "categoria": 2,
+   "nota": "núcleo con esquema DIFERENTE a la raíz 2017 → requiere adaptación (columnas: TipoA, CodSubG, CODIGO RV, Desc Rv, PGRUESA, FACTOR, UNIDAD DE MEDIDA, COSTO DE MATERIALES, COSTO DE MANO DE OBRA, COSTO DE EQUIPOS, PESO, HORAS HOMBRE, HORAS EQUIPO, TIPO, CEMENTO, ARIDOS, ASFALTO, CARGA, PREFABRICADO, HORAS OPERARIO, HORAS AYUDANTE, IdActividad1, CMMN, CHMN, CEMN, CMMLC, CHMLC, CEMLC, IdEstab, Oficial, LopCS, LopSS, DescCorta, Res_Aprov, Fecha_Aprov, CHMN_Propia, CEMN_Propia, CHMLC_Propia, CEMLC_Propia, Salario_MN_SP, Salario_MLC_SP, Salario_MN_CP, Salario_MLC_CP, RendRV_N, KMacro, UMDiseno, CodUO_M, ObservaMacro, CodObraM, ObraM, FechaM, VerPrecons, ElaboradaPor, RebizadaPor, AprobadaPor, CodUEB, CodGenerico, Consecutivo, Coef_Complegidad_Act, CodEmpConst, EsUO, Alcance1, Alcance2, EsMin, DetallesMacro, FechaAprobado, FechaEnVigor)"
+  },
+  "Nomenclador de RV Obra_E": {
+   "filas": 257,
+   "columnas_n": 25,
+   "columnas": [
+    "IdObra",
+    "TipoA",
+    "CODIGO RV",
+    "CMat",
+    "CRHum",
+    "CEQU",
+    "CMMN1",
+    "CHMN1",
+    "CEMN1",
+    "CMMLC1",
+    "CHMLC1",
+    "CEMLC1",
+    "IdEstab",
+    "CHMN_Propia_esp",
+    "CEMN_Propia_esp",
+    "CHMLC_Propia_esp",
+    "CEMLC_Propia_esp",
+    "Salario_MN_SP_Esp",
+    "Salario_MLC_SP_Esp",
+    "Salario_MN_CP_Esp",
+    "Salario_MLC_CP_Esp",
+    "CalculadoCG",
+    "LopCS_Esp",
+    "LopSS_Esp",
+    "Coef_Complegidad_Act_E"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Nomenclador de Semielaborados": {
+   "filas": 437,
+   "columnas_n": 12,
+   "columnas": [
+    "CodSElab",
+    "SElab",
+    "UmRec",
+    "PrecioU",
+    "PesoU",
+    "PMN",
+    "PMLC",
+    "IdEstab",
+    "UtilS",
+    "IdS",
+    "PLOP_SE_MN",
+    "PLOP_SE_MLC"
+   ],
+   "categoria": 2,
+   "nota": "núcleo con esquema DIFERENTE a la raíz 2017 → requiere adaptación (columnas: CodSElab, SElab, UmRec, PrecioU, PesoU, PMN, PMLC, IdEstab, UtilS, IdS, PLOP_SE_MN, PLOP_SE_MLC)"
+  },
+  "Nomenclador de SobreGrupos RV": {
+   "filas": 56,
+   "columnas_n": 3,
+   "columnas": [
+    "TipoA",
+    "CodSobreG",
+    "SubreGrupo"
+   ],
+   "categoria": 2,
+   "nota": "núcleo con esquema DIFERENTE a la raíz 2017 → requiere adaptación (columnas: TipoA, CodSobreG, SubreGrupo)"
+  },
+  "Nomenclador de SubGrupos RV": {
+   "filas": 1711,
+   "columnas_n": 4,
+   "columnas": [
+    "TipoA",
+    "CodG",
+    "CodSubG",
+    "SubGrupo"
+   ],
+   "categoria": 2,
+   "nota": "núcleo con esquema DIFERENTE a la raíz 2017 → requiere adaptación (columnas: TipoA, CodG, CodSubG, SubGrupo)"
+  },
+  "Norma Juego Material": {
+   "filas": 2935,
+   "columnas_n": 5,
+   "columnas": [
+    "CodJuego",
+    "CodMat",
+    "CantMatJ",
+    "NormaUsos",
+    "IdNormaJ"
+   ],
+   "categoria": 1,
+   "nota": "esquema idéntico al núcleo de codigo.mdb raíz → importador común"
+  },
+  "Norma Propia de Equipos": {
+   "filas": 0,
+   "columnas_n": 9,
+   "columnas": [
+    "CodigoRV",
+    "CodEquipo",
+    "CodNorma",
+    "CantEquipo",
+    "CantNorma",
+    "UMNorma",
+    "NormaUsos",
+    "DescNorma",
+    "IdNormaP"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Norma Propia de Mano de Obra": {
+   "filas": 0,
+   "columnas_n": 9,
+   "columnas": [
+    "CodigoRV",
+    "CodRHum",
+    "CodNorma",
+    "CantRHum",
+    "CantNorma",
+    "UMNorma",
+    "NormaUsos",
+    "DescNorma",
+    "IdNormaP"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Norma Semi Equipos": {
+   "filas": 120,
+   "columnas_n": 7,
+   "columnas": [
+    "CodSemi",
+    "CodNorma",
+    "CodEquipo",
+    "CantEquipoSE",
+    "NormaUsos",
+    "IdNormaS",
+    "CodigoSNEq"
+   ],
+   "categoria": 2,
+   "nota": "núcleo con esquema DIFERENTE a la raíz 2017 → requiere adaptación (columnas: CodSemi, CodNorma, CodEquipo, CantEquipoSE, NormaUsos, IdNormaS, CodigoSNEq)"
+  },
+  "Norma Semi Material": {
+   "filas": 732,
+   "columnas_n": 5,
+   "columnas": [
+    "CodSemi",
+    "CodMat",
+    "CantMatSE",
+    "NormaUsos",
+    "IdNormaS"
+   ],
+   "categoria": 1,
+   "nota": "esquema idéntico al núcleo de codigo.mdb raíz → importador común"
+  },
+  "Norma Semi RHumanos": {
+   "filas": 142,
+   "columnas_n": 7,
+   "columnas": [
+    "CodSemi",
+    "CodNorma",
+    "CodRHum",
+    "CantRHumSE",
+    "NormaUsos",
+    "IdNormaS",
+    "CodigoSNRH"
+   ],
+   "categoria": 2,
+   "nota": "núcleo con esquema DIFERENTE a la raíz 2017 → requiere adaptación (columnas: CodSemi, CodNorma, CodRHum, CantRHumSE, NormaUsos, IdNormaS, CodigoSNRH)"
+  },
+  "Norma de Equipos": {
+   "filas": 12965,
+   "columnas_n": 18,
+   "columnas": [
+    "CodigoRV",
+    "CodEquipo",
+    "CodNorma",
+    "CantEquipo",
+    "CantNorma",
+    "UMNorma",
+    "NormaUsos",
+    "DescNorma",
+    "IdNorma",
+    "NORMA_PROD",
+    "CodigoNEq",
+    "CodSA",
+    "ElabN",
+    "PMA_MN",
+    "PMA_MLC",
+    "IdMRVx",
+    "Cod_SE_J",
+    "EtiquetaMacro"
+   ],
+   "categoria": 2,
+   "nota": "núcleo con esquema DIFERENTE a la raíz 2017 → requiere adaptación (columnas: CodigoRV, CodEquipo, CodNorma, CantEquipo, CantNorma, UMNorma, NormaUsos, DescNorma, IdNorma, NORMA_PROD, CodigoNEq, CodSA, ElabN, PMA_MN, PMA_MLC, IdMRVx, Cod_SE_J, EtiquetaMacro)"
+  },
+  "Norma de Juegos": {
+   "filas": 341,
+   "columnas_n": 10,
+   "columnas": [
+    "CodigoRV",
+    "CodJuego",
+    "CantJuego",
+    "NormaUsos",
+    "IdNorma",
+    "CodSA",
+    "PMA_MN",
+    "PMA_MLC",
+    "IdMRVx",
+    "EtiquetaMacro"
+   ],
+   "categoria": 2,
+   "nota": "núcleo con esquema DIFERENTE a la raíz 2017 → requiere adaptación (columnas: CodigoRV, CodJuego, CantJuego, NormaUsos, IdNorma, CodSA, PMA_MN, PMA_MLC, IdMRVx, EtiquetaMacro)"
+  },
+  "Norma de Mano de Obra": {
+   "filas": 41712,
+   "columnas_n": 19,
+   "columnas": [
+    "CodigoRV",
+    "CodRHum",
+    "CodNorma",
+    "CantRHum",
+    "CantNorma",
+    "UMNorma",
+    "NormaUsos",
+    "DescNorma",
+    "IdNorma",
+    "NORMA_PROD",
+    "CantHombresNP",
+    "CodigoNRH",
+    "CodSA",
+    "ElabN",
+    "PMA_MN",
+    "PMA_MLC",
+    "IdMRVx",
+    "Cod_SE_J",
+    "EtiquetaMacro"
+   ],
+   "categoria": 2,
+   "nota": "núcleo con esquema DIFERENTE a la raíz 2017 → requiere adaptación (columnas: CodigoRV, CodRHum, CodNorma, CantRHum, CantNorma, UMNorma, NormaUsos, DescNorma, IdNorma, NORMA_PROD, CantHombresNP, CodigoNRH, CodSA, ElabN, PMA_MN, PMA_MLC, IdMRVx, Cod_SE_J, EtiquetaMacro)"
+  },
+  "Norma de Materiales": {
+   "filas": 18059,
+   "columnas_n": 11,
+   "columnas": [
+    "CodigoRV",
+    "CodMat",
+    "CantMat",
+    "NormaUsos",
+    "IdNorma",
+    "CodSA",
+    "PMA_MN",
+    "PMA_MLC",
+    "IdMRVx",
+    "Cod_SE_J",
+    "EtiquetaMacro"
+   ],
+   "categoria": 2,
+   "nota": "núcleo con esquema DIFERENTE a la raíz 2017 → requiere adaptación (columnas: CodigoRV, CodMat, CantMat, NormaUsos, IdNorma, CodSA, PMA_MN, PMA_MLC, IdMRVx, Cod_SE_J, EtiquetaMacro)"
+  },
+  "Norma de Semielaborados": {
+   "filas": 1006,
+   "columnas_n": 10,
+   "columnas": [
+    "CodigoRV",
+    "CodSElab",
+    "CantSElab",
+    "NormaUsos",
+    "IdNorma",
+    "CodSA",
+    "PMA_MN",
+    "PMA_MLC",
+    "IdMRVx",
+    "EtiquetaMacro"
+   ],
+   "categoria": 2,
+   "nota": "núcleo con esquema DIFERENTE a la raíz 2017 → requiere adaptación (columnas: CodigoRV, CodSElab, CantSElab, NormaUsos, IdNorma, CodSA, PMA_MN, PMA_MLC, IdMRVx, EtiquetaMacro)"
+  },
+  "Normas Descriptivas": {
+   "filas": 2361,
+   "columnas_n": 25,
+   "columnas": [
+    "GrupoN",
+    "CODIGO",
+    "DESCRIPC",
+    "ESPECIFIC",
+    "UMEDIDA",
+    "NORMA_Tiempo",
+    "NORMA_PROD",
+    "FT_DESC_1",
+    "CANTIDAD_1",
+    "GRUPO_1",
+    "FT_DESC_2",
+    "CANTIDAD_2",
+    "GRUPO_2",
+    "FT_DESC_3",
+    "CANTIDAD_3",
+    "GRUPO_3",
+    "FT_DESC_4",
+    "CANTIDAD_4",
+    "GRUPO_4",
+    "FT_DESC_5",
+    "CANTIDAD_5",
+    "GRUPO_5",
+    "FT_DESC_6",
+    "CANTIDAD_6",
+    "GRUPO_6"
+   ],
+   "categoria": 2,
+   "nota": "Normas descriptivas con especificación y composición de cuadrillas",
+   "prioritaria": true
+  },
+  "Normas Eq": {
+   "filas": 194,
+   "columnas_n": 9,
+   "columnas": [
+    "CodigoNEq",
+    "CodPNorma",
+    "Norma_Descrip",
+    "UM_Normada",
+    "NormaProd",
+    "Norma_Especif",
+    "Norma_Titulo",
+    "UM_RV",
+    "Fact_UM_RV"
+   ],
+   "categoria": 2,
+   "nota": "Normas de equipos (variante)",
+   "prioritaria": true
+  },
+  "Normas Eq Comp": {
+   "filas": 0,
+   "columnas_n": 6,
+   "columnas": [
+    "CodNorma",
+    "CodPNorma",
+    "CodEquipo",
+    "CantEqAlNormar",
+    "TiempoEqAlNormar",
+    "TiempoUM_EqEnRV"
+   ],
+   "categoria": 2,
+   "nota": "Componentes de normas de equipos (vacía)",
+   "prioritaria": true
+  },
+  "Normas RH": {
+   "filas": 9699,
+   "columnas_n": 9,
+   "columnas": [
+    "CodigoNRH",
+    "CodPNorma",
+    "Norma_Descrip",
+    "UM_Normada",
+    "NormaProd",
+    "Norma_Especif",
+    "Norma_Titulo",
+    "UM_RV",
+    "Fact_UM_RV"
+   ],
+   "categoria": 2,
+   "nota": "Normas de rendimiento de mano de obra (variante RH del núcleo)",
+   "prioritaria": true
+  },
+  "Normas RH Comp": {
+   "filas": 0,
+   "columnas_n": 6,
+   "columnas": [
+    "CodNorma",
+    "CodPNorma",
+    "CodRHum",
+    "CantRHumAlNormar",
+    "TiempoRHumAlNormar",
+    "TiempoUM_RHumEnRV"
+   ],
+   "categoria": 2,
+   "nota": "Componentes de normas RH (vacía)",
+   "prioritaria": true
+  },
+  "Normas RH Extendida": {
+   "filas": 57838,
+   "columnas_n": 8,
+   "columnas": [
+    "TipoEn",
+    "CodigoRV_Ex",
+    "CodSE_Ex",
+    "CodEq_Ex",
+    "CodNS",
+    "CodRHum",
+    "SubRH",
+    "ImpS"
+   ],
+   "categoria": 2,
+   "nota": "Variante extendida de normas RH (57 838 filas)",
+   "prioritaria": true
+  },
+  "Nuestros Clientes y Suministradores": {
+   "filas": 44,
+   "columnas_n": 15,
+   "columnas": [
+    "CODIGO",
+    "NOMBRE",
+    "SUCMN",
+    "CTAMN",
+    "SUCMLC",
+    "CTAMLC",
+    "DIRECC",
+    "TELEFS",
+    "IdCliSum",
+    "IdOrganismo",
+    "IdProvincia",
+    "IdCliSumV",
+    "TituloCtaMNCS",
+    "TituloCtaMLCCS",
+    "NITCS"
+   ],
+   "categoria": 3,
+   "nota": "clientes — queda en la base original sin importar"
+  },
+  "OG x Equipo": {
+   "filas": 0,
+   "columnas_n": 4,
+   "columnas": [
+    "Codigo",
+    "IdOG",
+    "OGMN",
+    "OGMLC"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Objetos de Obra": {
+   "filas": 844,
+   "columnas_n": 90,
+   "columnas": [
+    "IdObra",
+    "CodObj",
+    "ObjObra",
+    "CantObj",
+    "Avrevia",
+    "IdObjV",
+    "Nivel",
+    "IdObjA",
+    "EsDetalle",
+    "EsMin",
+    "ImpObj",
+    "ImpObjMN",
+    "ImpObjMLC",
+    "MatMLC",
+    "RHMLC",
+    "EquMLC",
+    "FechaIObj",
+    "FechaFObj",
+    "UMMin",
+    "CantUMMin",
+    "CodUO",
+    "EsAnexo",
+    "FechaAnexo",
+    "AnexoA",
+    "SolicitadoPor",
+    "CausaAnexo",
+    "ObservAnexo",
+    "UMTe_O",
+    "CantUMTec_O",
+    "UMFin_O",
+    "CantUMFin_O",
+    "MatMN",
+    "RHMN",
+    "EquMN",
+    "MatM",
+    "RHM",
+    "EquM",
+    "IdObjObra",
+    "IdOrden",
+    "Filtro1",
+    "Filtro2",
+    "Filtro3",
+    "Filtro4",
+    "AuxPGA",
+    "EsCP",
+    "PtosBase",
+    "ImpBaseMN",
+    "ImpBaseMLC",
+    "HHObj",
+    "HEObj",
+    "MAuxO",
+    "CIndO",
+    "CUtilO",
+    "AMatO",
+    "AEquO",
+    "ARHuO",
+    "FGO",
+    "ZIntO",
+    "ZExtO",
+    "PLO",
+    "K909O",
+    "K25O",
+    "KSSO",
+    "KAntO",
+    "KEspO",
+    "PWRObj",
+    "IdEstadioObj",
+    "ValorFac_D",
+    "ValorFac_DMN",
+    "ValorFac_DMLC",
+    "ValorTransp_D",
+    "ValorTransp_DMN",
+    "ValorTransp_DMLC",
+    "Kogd_O",
+    "Kggd_O",
+    "Descriptivo_Obj",
+    "HStD",
+    "HStC",
+    "IdConsolidado",
+    "Fijado",
+    "Coef_Complegidad_Obj",
+    "Coef_Sal_Obj",
+    "kMayorSalario_Obj",
+    "ObjModificado",
+    "CodUOGen",
+    "TipoAO",
+    "Destajo_MN_O",
+    "Destajo_MLC_O",
+    "HIds",
+    "ObjCerrado"
+   ],
+   "categoria": 2,
+   "nota": "Padre (IdObjObra) de Presupuesto Composición RV — importación mínima",
+   "prioritaria": true
+  },
+  "Obras": {
+   "filas": 28,
+   "columnas_n": 168,
+   "columnas": [
+    "IdObra",
+    "CodObra",
+    "Obra",
+    "Direccion",
+    "Inv_Nombre",
+    "Inv_Apellidos",
+    "IdEstab",
+    "IdCliSum",
+    "UMTec",
+    "CantUMTec",
+    "UMFin",
+    "CantUMFin",
+    "CodSTObra",
+    "MAux",
+    "CInd",
+    "CUtil",
+    "AMat",
+    "AEqu",
+    "ARHu",
+    "FG",
+    "ZInt",
+    "ZExt",
+    "PL",
+    "P100FT",
+    "P100T",
+    "P100GA",
+    "P100GB",
+    "P100S",
+    "P100I",
+    "P100OP",
+    "P100FTMLC",
+    "P100TMLC",
+    "P100GAMLC",
+    "P100GBMLC",
+    "P100SMLC",
+    "P100IMLC",
+    "P100OPMLC",
+    "DuraDias",
+    "CantObreros",
+    "AuxPGA",
+    "AuxPGB",
+    "AuxPI",
+    "AuxPS",
+    "AuxPO",
+    "K909",
+    "K25",
+    "KSS",
+    "KAnt",
+    "KEsp",
+    "m2",
+    "HabNuevasPlan",
+    "HabRemodeladasPlan",
+    "HabRecuperadasPlan",
+    "IdMunicipio",
+    "ImpObraMN",
+    "ImpObraMLC",
+    "HabNuevasReal",
+    "HabRemodeladasReal",
+    "HabRecuperadasReal",
+    "IdCategoria",
+    "IdTipoFinanciamiento",
+    "FechaPrevistaInicio",
+    "FechaRealInicio",
+    "FechaPrevistaPuetaMarcha",
+    "FechaRealPuetaMarcha",
+    "HabInician",
+    "HabTerminan",
+    "HabContinuan",
+    "IdObraV",
+    "IdEstadioObra",
+    "GGA_Obra",
+    "GIP_Obra",
+    "PBP_Obra",
+    "OGD_Obra_MN",
+    "OGD_Obra_MLC",
+    "OGD_Obra",
+    "GGD_Obra_MN",
+    "GGD_Obra_MLC",
+    "GGD_Obra",
+    "KOGD_Obra",
+    "KOGD_S_M",
+    "KOGD_S_H",
+    "KOGD_S_E",
+    "KGGD_Obra",
+    "KGGD_S_M",
+    "KGGD_S_H",
+    "KGGD_S_E",
+    "Variante",
+    "Polinomio",
+    "KAsigGI_Obra",
+    "KAsigGI_Sobre",
+    "PITotal_MN",
+    "PITotal_MLC",
+    "GI_Obra",
+    "FT_MN",
+    "T_MN",
+    "GA_MN",
+    "GB_MN",
+    "S_MN",
+    "I_MN",
+    "OP_MN",
+    "FT_MLC",
+    "T_MLC",
+    "GA_MLC",
+    "GB_MLC",
+    "S_MLC",
+    "I_MLC",
+    "OP_MLC",
+    "MatMN_Obra",
+    "RHMN_Obra",
+    "EquMN_Obra",
+    "MatMLC_Obra",
+    "RHMLC_Obra",
+    "EquMLC_Obra",
+    "ProyectGeneral",
+    "ContratistaPrincipal",
+    "JefeDeObra",
+    "CyMObra",
+    "CyMObra_MN",
+    "CyMObra_MLC",
+    "FechaFFT",
+    "UsrFFT",
+    "FaseP",
+    "CambioFT",
+    "FTRV_MN",
+    "TTarif_MN",
+    "FTRV_MLC",
+    "TTarif_MLC",
+    "FechaFirma",
+    "GGA_Obra_MN",
+    "GIP_Obra_MN",
+    "PBP_Obra_MN",
+    "GGA_Obra_MLC",
+    "GIP_Obra_MLC",
+    "PBP_Obra_MLC",
+    "IncluirInd",
+    "IdUsrFirmo",
+    "ka100_MLC",
+    "ko100_MLC",
+    "kg100_MLC",
+    "kI100_MLC",
+    "kU100_MLC",
+    "LlaveBloqueo",
+    "UsrBloqueo",
+    "CodEstab",
+    "CostoT_Obra",
+    "CostoTMN_Obra",
+    "CostoTMLC_Obra",
+    "CG",
+    "P100ServIngMN",
+    "P100ServIngMLC",
+    "ServIngMNObra",
+    "ServIngMLCObra",
+    "Coef_Complegidad_Obra",
+    "IdProv",
+    "P100Pacto",
+    "P100PactoMLC",
+    "OPacto",
+    "OPactoMLC",
+    "BaseOp",
+    "Coef_Sal_Obr",
+    "kMayorSalario_Obr",
+    "DuracPrevMeses",
+    "Cant_Homb_Ind",
+    "Cant_Homb_Adm",
+    "Cant_Homb_Tot",
+    "SubVar",
+    "IdVarSalObra"
+   ],
+   "categoria": 2,
+   "nota": "Contexto de Objetos de Obra — importación mínima",
+   "prioritaria": true
+  },
+  "ObrasUsr": {
+   "filas": 0,
+   "columnas_n": 2,
+   "columnas": [
+    "IdUsuario",
+    "IdObra"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Organismos": {
+   "filas": 121,
+   "columnas_n": 4,
+   "columnas": [
+    "IdOrganismo",
+    "Organismo",
+    "IdOrganismoV",
+    "CodOrg"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Origen_Destinos": {
+   "filas": 3,
+   "columnas_n": 3,
+   "columnas": [
+    "OrigDest",
+    "IdOrigDest",
+    "IdOrigDestV"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Otros Gastos Directos de Obra": {
+   "filas": 193,
+   "columnas_n": 4,
+   "columnas": [
+    "IdObra",
+    "IdOGD",
+    "OGD_MN",
+    "OGD_MLC"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Otros Pactos": {
+   "filas": 0,
+   "columnas_n": 5,
+   "columnas": [
+    "IdObjObra",
+    "PresPacto",
+    "ImpPactoPresMN",
+    "ImpPactoPresMLC",
+    "TipoPres"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "PD E": {
+   "filas": 0,
+   "columnas_n": 8,
+   "columnas": [
+    "IdPRV",
+    "CodEquipo",
+    "CantEquipo",
+    "PsMN",
+    "PsMLC",
+    "Usos",
+    "Elab",
+    "IdRcPD"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "PD J": {
+   "filas": 0,
+   "columnas_n": 7,
+   "columnas": [
+    "IdPRV",
+    "CodJuego",
+    "CantJ",
+    "PsMN",
+    "PsMLC",
+    "Usos",
+    "IdRcPD"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "PD M": {
+   "filas": 0,
+   "columnas_n": 7,
+   "columnas": [
+    "IdPRV",
+    "CodRc",
+    "CantRc",
+    "PsMN",
+    "PsMLC",
+    "Usos",
+    "IdRcPD"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "PD RH": {
+   "filas": 0,
+   "columnas_n": 9,
+   "columnas": [
+    "IdPRV",
+    "CodRHum",
+    "CantRHum",
+    "PsMN",
+    "PsMLC",
+    "Usos",
+    "Elab",
+    "IdRcPD",
+    "HCPO_s"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "PD S": {
+   "filas": 0,
+   "columnas_n": 7,
+   "columnas": [
+    "IdPRV",
+    "CodSemi",
+    "CantSE",
+    "PsMN",
+    "PsMLC",
+    "Usos",
+    "IdRcPD"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "PD Valor": {
+   "filas": 0,
+   "columnas_n": 9,
+   "columnas": [
+    "IdObra",
+    "FechaPDV",
+    "ProdMN",
+    "ProdMLC",
+    "CierreMN",
+    "CierreMLC",
+    "EsCierre",
+    "IdPDValor",
+    "IdPDValorViejo"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "PM Ptos": {
+   "filas": 0,
+   "columnas_n": 6,
+   "columnas": [
+    "IdPM",
+    "IdObjPtos",
+    "PMValorMN",
+    "PMlValorMLC",
+    "PMlPtos",
+    "PM100"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Pagos Emitidos": {
+   "filas": 0,
+   "columnas_n": 6,
+   "columnas": [
+    "IdCheque",
+    "IdRecepcion",
+    "IdIE1",
+    "ValorMN",
+    "ValorMLC",
+    "FechaPago"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Pagos Recibidos": {
+   "filas": 0,
+   "columnas_n": 5,
+   "columnas": [
+    "IdCheque",
+    "IdFactura",
+    "ValorMN",
+    "ValorMLC",
+    "FechaPago"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Paquete T Eq Pres": {
+   "filas": 0,
+   "columnas_n": 6,
+   "columnas": [
+    "IdPTrans",
+    "CodEquipo",
+    "CantATransp",
+    "PesoTTPaq",
+    "Idxx",
+    "IdPTTT"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Paquete de Transporte": {
+   "filas": 1946,
+   "columnas_n": 6,
+   "columnas": [
+    "IdPTrans",
+    "CodMat",
+    "CantATransp",
+    "PesoTTPaq",
+    "Idxx",
+    "IdPTTT"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "PivoTablas_Relación": {
+   "filas": 0,
+   "columnas_n": 5,
+   "columnas": [
+    "NTabla",
+    "NCampo",
+    "NRel",
+    "NTablaP",
+    "NCampoX"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Plan Anual": {
+   "filas": 0,
+   "columnas_n": 6,
+   "columnas": [
+    "CodB",
+    "IdActividad",
+    "IdEstab",
+    "Ano",
+    "Cantidad",
+    "IdIndFisico"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Plantilla Obra Tipica": {
+   "filas": 8,
+   "columnas_n": 59,
+   "columnas": [
+    "IdPlantilla",
+    "CodObj",
+    "ObjObra",
+    "CantObj",
+    "Avrevia",
+    "IdObjV",
+    "Nivel",
+    "IdObjA",
+    "EsDetalle",
+    "EsMin",
+    "ImpObj",
+    "MatMLC",
+    "RHMLC",
+    "EquMLC",
+    "FechaIObj",
+    "FechaFObj",
+    "UMMin",
+    "CantUMMin",
+    "CodUO",
+    "EsAnexo",
+    "FechaAnexo",
+    "AnexoA",
+    "SolicitadoPor",
+    "CausaAnexo",
+    "ObservAnexo",
+    "UMTe_O",
+    "CantUMTec_O",
+    "UMFin_O",
+    "CantUMFin_O",
+    "MatMN",
+    "RHMN",
+    "EquMN",
+    "MatM",
+    "RHM",
+    "EquM",
+    "IdObjObra",
+    "IdOrden",
+    "Filtro1",
+    "Filtro2",
+    "Filtro3",
+    "Filtro4",
+    "AuxPGA",
+    "ImpObjMLC",
+    "EsCP",
+    "PtosBase",
+    "ImpBaseMN",
+    "ImpBaseMLC",
+    "HHObj",
+    "HEObj",
+    "MAuxO",
+    "CIndO",
+    "CUtilO",
+    "AMatO",
+    "AEquO",
+    "ARHuO",
+    "FGO",
+    "ZIntO",
+    "ZExtO",
+    "PLO"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Plantillas": {
+   "filas": 1,
+   "columnas_n": 3,
+   "columnas": [
+    "NombrePlantilla",
+    "IdPlantilla",
+    "NoBorraro"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Presupuesto Composición Equipo": {
+   "filas": 125,
+   "columnas_n": 14,
+   "columnas": [
+    "IdPRV",
+    "CodEquipo",
+    "CantEquipo",
+    "PsMN",
+    "PsMLC",
+    "Usos",
+    "Elab",
+    "Modificado",
+    "IdRcPR",
+    "CPO_s",
+    "CPE_s",
+    "CET_s",
+    "CodNorma",
+    "Cod_SE_J"
+   ],
+   "categoria": 2,
+   "nota": "Equipos de las partidas presupuestadas",
+   "prioritaria": true
+  },
+  "Presupuesto Composición J": {
+   "filas": 0,
+   "columnas_n": 8,
+   "columnas": [
+    "IdPRV",
+    "CodJuego",
+    "CantJ",
+    "PsMN",
+    "PsMLC",
+    "Usos",
+    "Modificado",
+    "IdRcPR"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Presupuesto Composición Mat": {
+   "filas": 15893,
+   "columnas_n": 9,
+   "columnas": [
+    "IdPRV",
+    "CodRc",
+    "CantRc",
+    "PsMN",
+    "PsMLC",
+    "Usos",
+    "Modificado",
+    "IdRcPR",
+    "Cod_SE_J"
+   ],
+   "categoria": 2,
+   "nota": "Materiales de las partidas presupuestadas",
+   "prioritaria": true
+  },
+  "Presupuesto Composición RH": {
+   "filas": 2718,
+   "columnas_n": 12,
+   "columnas": [
+    "IdPRV",
+    "CodRHum",
+    "CantRHum",
+    "PsMN",
+    "PsMLC",
+    "Usos",
+    "Elab",
+    "Modificado",
+    "IdRcPR",
+    "CodNorma",
+    "HCPO_s",
+    "Cod_SE_J"
+   ],
+   "categoria": 2,
+   "nota": "Mano de obra de las partidas presupuestadas",
+   "prioritaria": true
+  },
+  "Presupuesto Composición RV": {
+   "filas": 16816,
+   "columnas_n": 48,
+   "columnas": [
+    "TipoA",
+    "TipoPres",
+    "IdObjObra",
+    "IdEtapa",
+    "CODIGO RV",
+    "CantRV",
+    "IdPRV",
+    "ConSum",
+    "IdPRVViejo",
+    "FechaInicio",
+    "FechaFinal",
+    "ConRH",
+    "ConEq",
+    "PLCSMN",
+    "PLCSMLC",
+    "PLSSMN",
+    "PLSSMLC",
+    "Modificado",
+    "CPA_MN_Mat",
+    "CPA_MLC_Mat",
+    "CPA_MN_RH",
+    "CPA_MLC_RH",
+    "CPA_MN_Equ",
+    "CPA_MLC_Equ",
+    "CPE_MN_Mat",
+    "CPE_MLC_Mat",
+    "CPE_MN_RH",
+    "CPE_MLC_RH",
+    "CPE_MN_Equ",
+    "CPE_MLC_Equ",
+    "HHombre",
+    "HEquipo",
+    "Dura",
+    "IdSincro",
+    "CodBloque",
+    "DescBloque",
+    "ObcervaRV",
+    "IdEsp",
+    "CodBP",
+    "Coef_Complegidad_RVP",
+    "RendRV_P",
+    "IdLP",
+    "IdLP_A",
+    "IdLP_S",
+    "IdPProy",
+    "kMayorSalario_PRV",
+    "IdLProyVieja",
+    "Predecesora"
+   ],
+   "categoria": 2,
+   "nota": "Partidas presupuestadas de obras existentes en la base",
+   "prioritaria": true
+  },
+  "Presupuesto Composición SE": {
+   "filas": 80,
+   "columnas_n": 8,
+   "columnas": [
+    "IdPRV",
+    "CodSemi",
+    "CantSE",
+    "PsMN",
+    "PsMLC",
+    "Usos",
+    "Modificado",
+    "IdRcPR"
+   ],
+   "categoria": 2,
+   "nota": "Semielaborados de las partidas presupuestadas",
+   "prioritaria": true
+  },
+  "Presupuesto Memoria": {
+   "filas": 1,
+   "columnas_n": 4,
+   "columnas": [
+    "TipoPres",
+    "IdObjObra",
+    "IdEtapa",
+    "Memoria"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Presupuesto de Facilidades": {
+   "filas": 1,
+   "columnas_n": 5,
+   "columnas": [
+    "TipoPres",
+    "IdObjObra",
+    "ValorFac",
+    "ValorFacMN",
+    "ValorFacMLC"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Presupuesto de Gastos Bancarios": {
+   "filas": 22,
+   "columnas_n": 6,
+   "columnas": [
+    "TipoPres",
+    "IdObjObra",
+    "IdGBanc",
+    "ValorGBanc",
+    "ValorGBancMN",
+    "ValorGBancMLC"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Presupuesto de Imprevistos": {
+   "filas": 22,
+   "columnas_n": 6,
+   "columnas": [
+    "TipoPres",
+    "IdObjObra",
+    "IdImprevisto",
+    "ValorImprevisto",
+    "ValorImprevistoMN",
+    "ValorImprevistoMLC"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Presupuesto de Otros Gastos": {
+   "filas": 37,
+   "columnas_n": 6,
+   "columnas": [
+    "TipoPres",
+    "IdObjObra",
+    "IdOtrosG",
+    "ValorOtrosG",
+    "ValorOtrosGMN",
+    "ValorOtrosGMLC"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Presupuesto de Otros P": {
+   "filas": 17,
+   "columnas_n": 6,
+   "columnas": [
+    "TipoPres",
+    "IdObjObra",
+    "IdOtrosP",
+    "ValorOtrosP",
+    "ValorOtrosPMN",
+    "ValorOtrosPMLC"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Presupuesto de Seguro": {
+   "filas": 1,
+   "columnas_n": 6,
+   "columnas": [
+    "TipoPres",
+    "IdObjObra",
+    "IdSeguro",
+    "ValorSeguro",
+    "ValorSeguroMN",
+    "ValorSeguroMLC"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Presupuesto de Transp Equipos": {
+   "filas": 0,
+   "columnas_n": 40,
+   "columnas": [
+    "TipoPres",
+    "IdObjObra",
+    "CodMat",
+    "Observ",
+    "CantATransp",
+    "IdServTransp",
+    "CapacidadT",
+    "Distancia",
+    "Desde",
+    "Hasta",
+    "IdCoefAprov",
+    "TarifPeaje",
+    "TarifPeajeMN",
+    "EjesTractivos",
+    "RecVacio",
+    "IdPTrans",
+    "CodEquipo",
+    "TiempoC",
+    "RecDesc",
+    "Recargo",
+    "RecargoMLC",
+    "OtroMN",
+    "OtroMLC",
+    "IdPTransViejo",
+    "TarifCargaMN",
+    "TarifCargaMLC",
+    "TarifVacioMN",
+    "TarifVacioMLC",
+    "PesoTT",
+    "CapMin",
+    "CoefAprovE",
+    "ObservaTransp",
+    "Ya",
+    "CuantoCabe",
+    "TipoRcT",
+    "Demora",
+    "T_Demora_MN",
+    "T_Demora_MLC",
+    "TD_AD_MN",
+    "TD_AD_MLC"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Presupuesto de Transportación": {
+   "filas": 71,
+   "columnas_n": 40,
+   "columnas": [
+    "TipoPres",
+    "IdObjObra",
+    "CodMat",
+    "Observ",
+    "CantATransp",
+    "IdServTransp",
+    "CapacidadT",
+    "Distancia",
+    "Desde",
+    "Hasta",
+    "IdCoefAprov",
+    "TarifPeaje",
+    "TarifPeajeMN",
+    "EjesTractivos",
+    "RecVacio",
+    "IdPTrans",
+    "CodEquipo",
+    "TiempoC",
+    "RecDesc",
+    "Recargo",
+    "RecargoMLC",
+    "OtroMN",
+    "OtroMLC",
+    "IdPTransViejo",
+    "TarifCargaMN",
+    "TarifCargaMLC",
+    "TarifVacioMN",
+    "TarifVacioMLC",
+    "PesoTT",
+    "CapMin",
+    "CoefAprovE",
+    "ObservaTransp",
+    "Ya",
+    "CuantoCabe",
+    "TipoRcT",
+    "Demora",
+    "T_Demora_MN",
+    "T_Demora_MLC",
+    "TD_AD_MN",
+    "TD_AD_MLC"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Presupuesto de Transportación por Acuerdo": {
+   "filas": 1,
+   "columnas_n": 5,
+   "columnas": [
+    "TipoPres",
+    "IdObjObra",
+    "ValorFac",
+    "ValorFacMN",
+    "ValorFacMLC"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Presupuesto vs Presupuestista": {
+   "filas": 2,
+   "columnas_n": 5,
+   "columnas": [
+    "TipoPres",
+    "IdObjObra",
+    "Pres_Nombre",
+    "Pres_Apellidos",
+    "Observacion"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Producción Real": {
+   "filas": 0,
+   "columnas_n": 7,
+   "columnas": [
+    "CodB",
+    "IdObjObra",
+    "IdEstab",
+    "FechaDia",
+    "IdPD",
+    "IdPDViejo",
+    "ObservPD"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Producción Real Diaria": {
+   "filas": 0,
+   "columnas_n": 29,
+   "columnas": [
+    "TipoA",
+    "IdPD",
+    "IdEtapa",
+    "IdActividad",
+    "Cantidad",
+    "Plan",
+    "IdPRV",
+    "ConSum",
+    "ConRH",
+    "ConEq",
+    "IdPRVViejo",
+    "PLCSMN",
+    "PLCSMLC",
+    "PLSSMN",
+    "PLSSMLC",
+    "CDA_MN_Mat",
+    "CDA_MLC_Mat",
+    "CDA_MN_RH",
+    "CDA_MLC_RH",
+    "CDA_MN_Equ",
+    "CDA_MLC_Equ",
+    "CDE_MN_Mat",
+    "CDE_MLC_Mat",
+    "CDE_MN_RH",
+    "CDE_MLC_RH",
+    "CDE_MN_Equ",
+    "CDE_MLC_Equ",
+    "IdEsp",
+    "Coef_Complegidad_RVD"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Producción Real Diaria Min": {
+   "filas": 0,
+   "columnas_n": 4,
+   "columnas": [
+    "IdPD",
+    "IdMinima",
+    "CantidadMin",
+    "PlanMin"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Prog E": {
+   "filas": 0,
+   "columnas_n": 8,
+   "columnas": [
+    "IdPRV",
+    "CodEquipo",
+    "CantEquipo",
+    "PsMN",
+    "PsMLC",
+    "Usos",
+    "Elab",
+    "IdRcPM"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Prog J": {
+   "filas": 0,
+   "columnas_n": 7,
+   "columnas": [
+    "IdPRV",
+    "CodJuego",
+    "CantJ",
+    "PsMN",
+    "PsMLC",
+    "Usos",
+    "IdRcPM"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Prog M": {
+   "filas": 0,
+   "columnas_n": 7,
+   "columnas": [
+    "IdPRV",
+    "CodRc",
+    "CantRc",
+    "PsMN",
+    "PsMLC",
+    "Usos",
+    "IdRcPM"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Prog Mensual Desglose": {
+   "filas": 0,
+   "columnas_n": 3,
+   "columnas": [
+    "IdPRV",
+    "FechaPDRV",
+    "CantPDRV"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Prog RH": {
+   "filas": 0,
+   "columnas_n": 8,
+   "columnas": [
+    "IdPRV",
+    "CodRHum",
+    "CantRHum",
+    "PsMN",
+    "PsMLC",
+    "Usos",
+    "Elab",
+    "IdRcPM"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Prog S": {
+   "filas": 0,
+   "columnas_n": 7,
+   "columnas": [
+    "IdPRV",
+    "CodSemi",
+    "CantSE",
+    "PsMN",
+    "PsMLC",
+    "Usos",
+    "IdRcPM"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "ProgT E": {
+   "filas": 0,
+   "columnas_n": 8,
+   "columnas": [
+    "IdPRV",
+    "CodEquipo",
+    "CantEquipo",
+    "PsMN",
+    "PsMLC",
+    "Usos",
+    "Elab",
+    "IdRcPT"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "ProgT J": {
+   "filas": 0,
+   "columnas_n": 7,
+   "columnas": [
+    "IdPRV",
+    "CodJuego",
+    "CantJ",
+    "PsMN",
+    "PsMLC",
+    "Usos",
+    "IdRcPT"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "ProgT M": {
+   "filas": 0,
+   "columnas_n": 7,
+   "columnas": [
+    "IdPRV",
+    "CodRc",
+    "CantRc",
+    "PsMN",
+    "PsMLC",
+    "Usos",
+    "IdRcPT"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "ProgT RH": {
+   "filas": 0,
+   "columnas_n": 8,
+   "columnas": [
+    "IdPRV",
+    "CodRHum",
+    "CantRHum",
+    "PsMN",
+    "PsMLC",
+    "Usos",
+    "Elab",
+    "IdRcPT"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "ProgT S": {
+   "filas": 0,
+   "columnas_n": 7,
+   "columnas": [
+    "IdPRV",
+    "CodSemi",
+    "CantSE",
+    "PsMN",
+    "PsMLC",
+    "Usos",
+    "IdRcPT"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Programa Mensual": {
+   "filas": 0,
+   "columnas_n": 34,
+   "columnas": [
+    "TipoA",
+    "IdPM",
+    "IdEtapa",
+    "IdActividad",
+    "Cantidad",
+    "Sem1",
+    "Sem2",
+    "Sem3",
+    "Sem4",
+    "IdPRV",
+    "ConSum",
+    "ConRH",
+    "ConEq",
+    "IdPRVViejo",
+    "PLCSMN",
+    "PLCSMLC",
+    "PLSSMN",
+    "PLSSMLC",
+    "CMA_MN_Mat",
+    "CMA_MLC_Mat",
+    "CMA_MN_RH",
+    "CMA_MLC_RH",
+    "CMA_MN_Equ",
+    "CMA_MLC_Equ",
+    "CME_MN_Mat",
+    "CME_MLC_Mat",
+    "CME_MN_RH",
+    "CME_MLC_RH",
+    "CME_MN_Equ",
+    "CME_MLC_Equ",
+    "FInicoPMP",
+    "FFinalPMP",
+    "IdEsp",
+    "Coef_Complegidad_RVM"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Programa Mensual Cab": {
+   "filas": 0,
+   "columnas_n": 8,
+   "columnas": [
+    "CodB",
+    "IdObjObra",
+    "IdEstab",
+    "Ano",
+    "IdMes",
+    "ObservaProgMensual",
+    "IdPM",
+    "IdPMViejo"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Programa Mnesual por Minimas": {
+   "filas": 0,
+   "columnas_n": 3,
+   "columnas": [
+    "IdPM",
+    "IdMinima",
+    "Cantidad"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Programa Trimestral": {
+   "filas": 0,
+   "columnas_n": 29,
+   "columnas": [
+    "TipoA",
+    "IdPT",
+    "IdEtapa",
+    "IdActividad",
+    "Cantidad",
+    "Mes1",
+    "Mes2",
+    "Mes3",
+    "IdPRV",
+    "ConSum",
+    "ConRH",
+    "ConEq",
+    "IdPRVViejo",
+    "PLCSMN",
+    "PLCSMLC",
+    "PLSSMN",
+    "PLSSMLC",
+    "CTA_MN_Mat",
+    "CTA_MLC_Mat",
+    "CTA_MN_RH",
+    "CTA_MLC_RH",
+    "CTA_MN_Equ",
+    "CTA_MLC_Equ",
+    "CTE_MN_Mat",
+    "CTE_MLC_Mat",
+    "CTE_MN_RH",
+    "CTE_MLC_RH",
+    "CTE_MN_Equ",
+    "CTE_MLC_Equ"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Programa Trimestral Cab": {
+   "filas": 0,
+   "columnas_n": 8,
+   "columnas": [
+    "CodB",
+    "IdObjObra",
+    "IdEstab",
+    "Ano",
+    "Trimestre",
+    "ObservProgTrimestral",
+    "IdPT",
+    "IdPTViejo"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Programa Trimestral Minimas": {
+   "filas": 0,
+   "columnas_n": 3,
+   "columnas": [
+    "IdPT",
+    "IdMinima",
+    "Cantidad"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Programación de Comb y Lub": {
+   "filas": 0,
+   "columnas_n": 3,
+   "columnas": [
+    "IdPM",
+    "IdComb",
+    "Cantidad"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Programación de Equipos": {
+   "filas": 0,
+   "columnas_n": 9,
+   "columnas": [
+    "IdPM",
+    "IdEquipo",
+    "IdActividad",
+    "Cantidad",
+    "Sem1",
+    "Sem2",
+    "Sem3",
+    "Sem4",
+    "Sem5"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Programación de Izaje": {
+   "filas": 0,
+   "columnas_n": 10,
+   "columnas": [
+    "IdPM",
+    "IdActividad",
+    "IdIzaje",
+    "Peso",
+    "Cantidad",
+    "Sem1",
+    "Sem2",
+    "Sem3",
+    "Sem4",
+    "Sem5"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Programación de Prefabricados": {
+   "filas": 0,
+   "columnas_n": 8,
+   "columnas": [
+    "IdPM",
+    "IdPrefab",
+    "Cantidad",
+    "Sem1",
+    "Sem2",
+    "Sem3",
+    "Sem4",
+    "Sem5"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "RLCCOEFDESEQUIPO": {
+   "filas": 219,
+   "columnas_n": 9,
+   "columnas": [
+    "CodigoEquipo",
+    "MV",
+    "CV",
+    "PV",
+    "CA",
+    "VM",
+    "PN",
+    "SV",
+    "Otro"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "RLCEQUIPOMLC": {
+   "filas": 445,
+   "columnas_n": 17,
+   "columnas": [
+    "CODIGOEQUIPO",
+    "OTROSGASTMLC",
+    "UTILIDADMLC",
+    "MANTREPMLC",
+    "COMBUSTIBLEMLC",
+    "ACMOTORMLC",
+    "ACTRANSMICMLC",
+    "ACHIDRAULMLC",
+    "GRASASMLC",
+    "NEUMATMLC",
+    "ELECTRMLC",
+    "SEGUROSMLC",
+    "INTERESMLC",
+    "DEPRECMLC",
+    "SALARIOMLC",
+    "IMPUESTMLC",
+    "GASTPARTMLC"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "RLCNEUMEQUIPO": {
+   "filas": 461,
+   "columnas_n": 3,
+   "columnas": [
+    "CodigoEquipo",
+    "CodigoNeum",
+    "Cantidad"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "RLCOPEREQUIPO": {
+   "filas": 509,
+   "columnas_n": 4,
+   "columnas": [
+    "CodigoEquipo",
+    "Escala",
+    "Cantidad",
+    "CodRHum"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Recursos Referencia": {
+   "filas": 0,
+   "columnas_n": 4,
+   "columnas": [
+    "CodMat",
+    "RMN",
+    "RMLC",
+    "IdObra"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Renglon": {
+   "filas": 1,
+   "columnas_n": 1,
+   "columnas": [
+    "Codigo"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Reporte de Gasto": {
+   "filas": 0,
+   "columnas_n": 8,
+   "columnas": [
+    "CodB",
+    "IdEstab",
+    "IdObjObra",
+    "FechaDia",
+    "TipoDoc",
+    "NroDoc",
+    "IdRG",
+    "IdRGViejo"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Reporte de Producción al Despacho": {
+   "filas": 9,
+   "columnas_n": 18,
+   "columnas": [
+    "Provincia",
+    "Entidad",
+    "Cliente",
+    "UEB",
+    "Grupo",
+    "Obra",
+    "MesReport",
+    "AnoReport",
+    "CyMMN",
+    "CyMMLC",
+    "SumiCliMN",
+    "SumiCliMLC",
+    "OtasPordMN",
+    "OtasPordMLC",
+    "SumiConstMN",
+    "SumiConstMLC",
+    "InsumosMN",
+    "InsumosMLC"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "SQLXLS": {
+   "filas": 0,
+   "columnas_n": 3,
+   "columnas": [
+    "NombreSQLXLS",
+    "StringSQLXLS",
+    "ReportSQLXLS"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Servios_AD_TD": {
+   "filas": 10,
+   "columnas_n": 3,
+   "columnas": [
+    "TipoAD_TD",
+    "IdTipo_AD_TD",
+    "IdTipo_AD_TD_V"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Sobre Grupo Conceptos de Gastos": {
+   "filas": 14,
+   "columnas_n": 13,
+   "columnas": [
+    "IdSGCG",
+    "Fila",
+    "SGCG_Descrip",
+    "F_SGCG_MN",
+    "F_SGCG_MLC",
+    "F_SGCG_UM",
+    "SeImp",
+    "SeEdita",
+    "IdSGCG_V",
+    "Idx",
+    "EsRes",
+    "SubFila",
+    "EsPrecio"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Sub Servios_AD_TD": {
+   "filas": 4,
+   "columnas_n": 3,
+   "columnas": [
+    "SubServAD_TD",
+    "IdSubServ_AD_TD",
+    "IdSubServ_AD_TD_V"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "SubMinimas": {
+   "filas": 0,
+   "columnas_n": 3,
+   "columnas": [
+    "IdMinima",
+    "SubMinnima",
+    "FracMin"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "SubTipos de Obras": {
+   "filas": 83,
+   "columnas_n": 3,
+   "columnas": [
+    "CodSTObra",
+    "CodTObra",
+    "STObra"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Tarifas de Demora": {
+   "filas": 2,
+   "columnas_n": 4,
+   "columnas": [
+    "DescTarifaDemora",
+    "T_Demora_MN",
+    "T_Demora_MLC",
+    "IdT_Demora"
+   ],
+   "categoria": 2,
+   "nota": "Tarifas de demora de transporte",
+   "prioritaria": true
+  },
+  "Tarifas de Recorrido Vacio": {
+   "filas": 1,
+   "columnas_n": 6,
+   "columnas": [
+    "DD",
+    "AA",
+    "TarfRecVac",
+    "IdTarfRecVac",
+    "IdTarfRecVacV",
+    "TarfRecVacMLC"
+   ],
+   "categoria": 2,
+   "nota": "Tarifas de recorrido en vacío",
+   "prioritaria": true
+  },
+  "Tarifas de T": {
+   "filas": 22510,
+   "columnas_n": 5,
+   "columnas": [
+    "IdOrigDest",
+    "IdServTransp",
+    "Distancia",
+    "Tarifa",
+    "TarifaMLC"
+   ],
+   "categoria": 2,
+   "nota": "Tarifas de transporte origen-destino × servicio × distancia",
+   "prioritaria": true
+  },
+  "Tarifas_AD_TD": {
+   "filas": 40,
+   "columnas_n": 4,
+   "columnas": [
+    "IdTipo_AD_TD",
+    "IdSubServ_AD_TD",
+    "Tarifa_AD_TD_MN",
+    "Tarifa_AD_TD_MLC"
+   ],
+   "categoria": 2,
+   "nota": "Tarifas adicionales/descargas (tipo × sub_servicio)",
+   "prioritaria": true
+  },
+  "Tipo Insumos": {
+   "filas": 11,
+   "columnas_n": 7,
+   "columnas": [
+    "Codigo",
+    "Descripcion",
+    "PMN",
+    "PMLC",
+    "CoefConvers",
+    "IdTipoIns",
+    "LetraIns"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Tipo de Operaciones Finacieras": {
+   "filas": 18,
+   "columnas_n": 3,
+   "columnas": [
+    "IdOpFinanciera",
+    "OpFinaciera",
+    "IdOpFinancieraV"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Tipos de Contratos": {
+   "filas": 3,
+   "columnas_n": 2,
+   "columnas": [
+    "IdTipoContrato",
+    "TipoContrato"
+   ],
+   "categoria": 3,
+   "nota": "gestión de contratos — queda en la base original sin importar"
+  },
+  "Tipos de Equipos": {
+   "filas": 3,
+   "columnas_n": 2,
+   "columnas": [
+    "IdTipoEquipo",
+    "TipoEquipo"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Tipos de Finaciamiento": {
+   "filas": 2,
+   "columnas_n": 3,
+   "columnas": [
+    "IdTipoFinanciamiento",
+    "TipoFinanciamiento",
+    "IdTipoFinanciamientoViejo"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Tipos de Obras": {
+   "filas": 19,
+   "columnas_n": 2,
+   "columnas": [
+    "CodTObra",
+    "TObra"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Tipos de Presupuesto": {
+   "filas": 10,
+   "columnas_n": 3,
+   "columnas": [
+    "TipoPres",
+    "DescTipoPres",
+    "Limite"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Tipos de Recursos": {
+   "filas": 5,
+   "columnas_n": 2,
+   "columnas": [
+    "Tipo",
+    "DescTipo"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Tipos de Servicio de Transporte": {
+   "filas": 64,
+   "columnas_n": 14,
+   "columnas": [
+    "IdOrigDest",
+    "ServTransp",
+    "IdServTransp",
+    "IdServTranspV",
+    "TU_MN",
+    "TTUMN_D",
+    "TU_MLC",
+    "TTUMLC_D",
+    "BaseCalculo",
+    "STActivo",
+    "TipoTarifa",
+    "EsTU",
+    "TRV_MN",
+    "TRV_MLC"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Todos": {
+   "filas": 1,
+   "columnas_n": 3,
+   "columnas": [
+    "IdCero",
+    "DTodo",
+    "StTodos"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Trazas": {
+   "filas": 0,
+   "columnas_n": 4,
+   "columnas": [
+    "UsrLoguin",
+    "MomentoAcción",
+    "AccionEjec",
+    "TipoAcción"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "UEB_Constructoras": {
+   "filas": 562,
+   "columnas_n": 4,
+   "columnas": [
+    "IdEmp",
+    "UEB_Constructora",
+    "CódigoUEB",
+    "IdBrigaoUEB"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Unidades de Obra": {
+   "filas": 2,
+   "columnas_n": 8,
+   "columnas": [
+    "TipoA",
+    "CodEmpConst",
+    "CodSubG",
+    "CodUO",
+    "UO",
+    "UM_UO",
+    "Coef_Complegidad_UO",
+    "IdUObraV"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Usr Activos": {
+   "filas": 0,
+   "columnas_n": 1,
+   "columnas": [
+    "IdUsr"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Variantes": {
+   "filas": 1,
+   "columnas_n": 5,
+   "columnas": [
+    "IdUsr",
+    "Login",
+    "Clave",
+    "Admin",
+    "Escribe"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Variantes Salariales": {
+   "filas": 1,
+   "columnas_n": 6,
+   "columnas": [
+    "NombreVarianteSal",
+    "IdVarSal",
+    "PolTrifa_MN",
+    "PolTrifa_MLC",
+    "SubSQL_Salario",
+    "IdVarSalV"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "VerBD": {
+   "filas": 1,
+   "columnas_n": 4,
+   "columnas": [
+    "NroVer",
+    "Variante",
+    "TituloBD",
+    "FechaBD"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "Via Negativa": {
+   "filas": 0,
+   "columnas_n": 6,
+   "columnas": [
+    "IdPD",
+    "IdAfectación",
+    "HHombre",
+    "HEquipo",
+    "Responsable",
+    "ViaNegativa"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Via Negativa Establecimiento": {
+   "filas": 0,
+   "columnas_n": 6,
+   "columnas": [
+    "CodB",
+    "IdEstab",
+    "FechaDia",
+    "ViaNegEst",
+    "HHombre",
+    "HEquipo"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "Via Negativa Obra": {
+   "filas": 0,
+   "columnas_n": 6,
+   "columnas": [
+    "IdPDValor",
+    "IdAfectación",
+    "HHombre",
+    "HEquipo",
+    "Responsable",
+    "ViaNegativa"
+   ],
+   "categoria": 4,
+   "nota": "tabla vacía: sin datos no hay semántica verificable"
+  },
+  "ddddd": {
+   "filas": 325,
+   "columnas_n": 41,
+   "columnas": [
+    "Código",
+    "Descripción",
+    "Impuesto MN",
+    "Impuesto MLC",
+    "Depreciación MN",
+    "Depreciación MLC",
+    "Seguro MN",
+    "Seguro MLC",
+    "Combustible MN",
+    "Combustible MLC",
+    "Aceite Motor MN",
+    "Aceite Motor MLC",
+    "Aceite Hidráulico MN",
+    "Aceite Hidráulico MLC",
+    "Aceite de Transmición MN",
+    "Aceite de Transmición MLC",
+    "Grasa MN",
+    "Grasa MLC",
+    "Electricidad MN",
+    "Electricidad MLC",
+    "Mtto y Reparación MN",
+    "Mtto y Reparación MLC",
+    "De MyR Piezas de Repuesto MN",
+    "De MyR Piezas de Repuesto MLC",
+    "De MyR Mano de Obra MN",
+    "De MyR Mano de Obra MLC",
+    "Neumáticos MN",
+    "Neumáticos MLC",
+    "Salario MN",
+    "Salario MLC",
+    "Costo Total MN",
+    "Costo Total MLC",
+    "Costo Total",
+    "10%",
+    "Del 10% Otros gastos MN",
+    "Del 10% Otros gastos MLC",
+    "Del 10% Utilidad MN",
+    "Del 10% Utilidad MLC",
+    "Tarifa",
+    "Tarifa MN",
+    "Tarifa MLC"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "destajo": {
+   "filas": 11283,
+   "columnas_n": 4,
+   "columnas": [
+    "CódigoRV",
+    "MO",
+    "CP",
+    "SP"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "tc Costo con Norma Precons Equipo": {
+   "filas": 6485,
+   "columnas_n": 8,
+   "columnas": [
+    "CodigoRV",
+    "HorasEquipoP",
+    "CostoEquipoTyNP",
+    "CostoEquipoTyNPMN",
+    "CostoEquipoTyNPMLC",
+    "CostoEquipoTPrecons",
+    "CostoEquipoTPreconsMN",
+    "CostoEquipoTPreconsMLC"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  },
+  "tc Duración y Costo con Norma Precons MO": {
+   "filas": 15236,
+   "columnas_n": 9,
+   "columnas": [
+    "CodigoRV",
+    "HorasHombreP",
+    "DuraciónP",
+    "CostoTyNP",
+    "CostoTyNPMN",
+    "CostoTyNPMLC",
+    "CostoTPrecons",
+    "CostoTPreconsMN",
+    "CostoTPreconsMLC"
+   ],
+   "categoria": 2,
+   "nota": "Duración y costo por RV con norma PRECONS de mano de obra",
+   "prioritaria": true
+  },
+  "tempDesgaste": {
+   "filas": 5,
+   "columnas_n": 16,
+   "columnas": [
+    "MVDescripcion",
+    "MVCoeficiente",
+    "CVDescripcion",
+    "CVCoeficiente",
+    "PVDescripcion",
+    "PVCoeficiente",
+    "VMDescripcion",
+    "VMCoeficiente",
+    "SVDescripcion",
+    "SVCoeficiente",
+    "CADescripcion",
+    "CACoeficiente",
+    "PNDescripcion",
+    "PNCoeficiente",
+    "OtroDescripcion",
+    "OtroCoeficiente"
+   ],
+   "categoria": 4,
+   "nota": "sin patrón reconocido ni semántica verificada en esta fase"
+  }
+ },
+ "resumen": {
+  "categoria_1_integrable_directamente": 4,
+  "categoria_2_integrable_transformacion": 38,
+  "categoria_3_documental_referencia": 19,
+  "categoria_4_pendiente": 223,
+  "filas_por_categoria": {
+   "1": 60173,
+   "2": 331862,
+   "3": 20370,
+   "4": 32683
+  }
+ }
+}

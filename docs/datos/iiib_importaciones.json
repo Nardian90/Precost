@@ -1,0 +1,187 @@
+{
+ "generado": "2026-10-14T06:26:38.258022+00:00",
+ "versiones": [
+  {
+   "id": 1,
+   "catalogo_id": 1,
+   "version": "2007-v7.21",
+   "fecha_publicacion": null,
+   "fecha_importacion": "2026-10-14 05:39:06",
+   "fuente_archivo": "/home/z/my-project/work/recuperacion/analisis/PRECODI/Codigo (PRECODI)/7.21/codigo.mdb",
+   "fuente_sha256": "8b94cebfa131751ebb18c2b692d4bcceeff1b54d9e7202b014a8815ac638e375",
+   "fuente_detalle": "codigo.mdb v7.21 (Jet 3, carpeta 7.21)",
+   "estado": "importada",
+   "catalogo": "PRECODI",
+   "importaciones": [
+    {
+     "id": 1,
+     "version_id": 1,
+     "iniciada_en": "2026-10-14T05:39:06.339638+00:00",
+     "finalizada_en": "2026-10-14T05:39:12.841096+00:00",
+     "script": "importar_precodi.py",
+     "filas_por_tabla": "{\"Nomenclador de SobreGrupos RV\": {\"insertadas\": 40}, \"Nomenclador de Grupos RV\": {\"insertadas\": 320}, \"Nomenclador de SubGrupos RV\": {\"insertadas\": 1518}, \"Nomenclador de Materiales\": {\"insertadas\": 3228}, \"Nomenclador de Mano de Obra\": {\"insertadas\": 243}, \"Nomenclador de Equipos\": {\"insertadas\": 411}, \"Nomenclador de Juegos\": {\"insertadas\": 315}, \"Nomenclador de Semielaborados\": {\"insertadas\": 138}, \"Nomenclador de RV\": {\"insertadas\": 15347}, \"Norma de Materiales\": {\"insertadas\": 18058}, \"Norma de Mano de Obra\": {\"insertadas\": 41651}, \"Norma de Equipos\": {\"insertadas\": 12908}, \"Norma de Juegos\": {\"insertadas\": 341}, \"Norma de Semielaborados\": {\"insertadas\": 1004}, \"Norma Juego Material\": {\"insertadas\": 2934}, \"Norma Semi Material\": {\"insertadas\": 486}, \"Norma Semi RHumanos\": {\"insertadas\": 139}, \"Norma Semi Equipos\": {\"insertadas\": 115}}",
+     "advertencias": "[]",
+     "resultado": "ok"
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "catalogo_id": 1,
+   "version": "2007-v7.22",
+   "fecha_publicacion": null,
+   "fecha_importacion": "2026-10-14 05:39:13",
+   "fuente_archivo": "/home/z/my-project/work/recuperacion/analisis/PRECODI/Codigo (PRECODI)/7.22/codigo.mdb",
+   "fuente_sha256": "d6719a4250f94d1d7ca71afea18764032e642b8398dc1ac8d607473d06f2a1f7",
+   "fuente_detalle": "codigo.mdb v7.22 (Jet 4, carpeta 7.22)",
+   "estado": "importada",
+   "catalogo": "PRECODI",
+   "importaciones": [
+    {
+     "id": 2,
+     "version_id": 2,
+     "iniciada_en": "2026-10-14T05:39:12.884632+00:00",
+     "finalizada_en": "2026-10-14T05:39:19.765945+00:00",
+     "script": "importar_precodi.py",
+     "filas_por_tabla": "{\"Nomenclador de SobreGrupos RV\": {\"ya_existentes\": 40}, \"Nomenclador de Grupos RV\": {\"ya_existentes\": 320}, \"Nomenclador de SubGrupos RV\": {\"ya_existentes\": 1518}, \"Nomenclador de Materiales\": {\"insertadas\": 7769}, \"Nomenclador de Mano de Obra\": {\"insertadas\": 248}, \"Nomenclador de Equipos\": {\"insertadas\": 414, \"omitidas_invalidas\": 1}, \"_controles\": {\"_ej_Nomenclador de Equipos_fila con código nulo/vacío (omitida)\": 1}, \"Nomenclador de Juegos\": {\"insertadas\": 328}, \"Nomenclador de Semielaborados\": {\"insertadas\": 353}, \"Nomenclador de RV\": {\"insertadas\": 15351}, \"Norma de Materiales\": {\"insertadas\": 18060}, \"Norma de Mano de Obra\": {\"insertadas\": 41662}, \"Norma de Equipos\": {\"insertadas\": 12909}, \"Norma de Juegos\": {\"insertadas\": 341}, \"Norma de Semielaborados\": {\"insertadas\": 1006}, \"Norma Juego Material\": {\"insertadas\": 2936}, \"Norma Semi Material\": {\"insertadas\": 681}, \"Norma Semi RHumanos\": {\"insertadas\": 149}, \"Norma Semi Equipos\": {\"insertadas\": 120}}",
+     "advertencias": "[\"tabla opcional 'Actividades de Estimación' presente en esta base (se procesa en SBD)\", \"Nomenclador de Equipos: fila con código nulo/vacío (omitida)\"]",
+     "resultado": "ok_con_advertencias"
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "catalogo_id": 1,
+   "version": "2007-v7.21-Preambulos",
+   "fecha_publicacion": null,
+   "fecha_importacion": "2026-10-14 05:39:26",
+   "fuente_archivo": "Codigo (PRECODI)/Preambulos/codigo.mdb",
+   "fuente_sha256": "8b94cebfa131751ebb18c2b692d4bcceeff1b54d9e7202b014a8815ac638e375",
+   "fuente_detalle": "REFERENCIA: contenido byte-idéntico a la versión 2007-v7.21 (mismo SHA-256); 0 filas propias para no duplicar registros",
+   "estado": "retirada",
+   "catalogo": "PRECODI",
+   "importaciones": [
+    {
+     "id": 4,
+     "version_id": 4,
+     "iniciada_en": "2026-10-14T05:39:26.822438+00:00",
+     "finalizada_en": "2026-10-14T05:39:26.865492+00:00",
+     "script": "importar_precodi.py",
+     "filas_por_tabla": "{}",
+     "advertencias": "[\"Archivo duplicado exacto de la versión 2007-v7.21 (SHA-256 idéntico): se registra como referencia retirada, sin filas propias\"]",
+     "resultado": "ok_con_advertencias"
+    }
+   ]
+  },
+  {
+   "id": 6,
+   "catalogo_id": 1,
+   "version": "2011-sbd2008",
+   "fecha_publicacion": null,
+   "fecha_importacion": "2026-10-14 05:47:52",
+   "fuente_archivo": "/home/z/my-project/work/recuperacion/analisis/PRECODI/Codigo (PRECODI)/8.15/SBD2008_815.mdb",
+   "fuente_sha256": "3a9a50a2ef8fea84e85017514de308b01b321b2dac4132cc8c0f98a1baa54bee",
+   "fuente_detalle": "SBD2008_815.mdb (base empresarial, núcleo PRECODI ampliado)",
+   "estado": "importada",
+   "catalogo": "PRECODI",
+   "importaciones": [
+    {
+     "id": 6,
+     "version_id": 6,
+     "iniciada_en": "2026-10-14T05:47:50.745245+00:00",
+     "finalizada_en": "2026-10-14T05:48:19.821580+00:00",
+     "script": "importar_precodi.py",
+     "filas_por_tabla": "{\"Nomenclador de SobreGrupos RV\": {\"ya_existentes\": 44, \"duplicadas_omitidas\": 12, \"duplicados_detectados\": 12}, \"Nomenclador de Grupos RV\": {\"ya_existentes\": 327, \"conflictos_descripcion_entre_versiones\": 1, \"duplicadas_omitidas\": 32, \"duplicados_detectados\": 32}, \"_controles\": {\"_ej_Nomenclador de Grupos RV_grupo '#' con descripción distinta a la \": 1, \"_ej_Nomenclador de SubGrupos RV_grupo '#' con descripción distinta a la \": 9, \"_ej_Nomenclador de Equipos_fila con código nulo/vacío (omitida)\": 1}, \"Nomenclador de SubGrupos RV\": {\"ya_existentes\": 1599, \"conflictos_descripcion_entre_versiones\": 9, \"duplicadas_omitidas\": 112, \"duplicados_detectados\": 112}, \"Nomenclador de Materiales\": {\"insertadas\": 56158}, \"Nomenclador de Mano de Obra\": {\"insertadas\": 261}, \"Nomenclador de Equipos\": {\"insertadas\": 536, \"omitidas_invalidas\": 1}, \"Nomenclador de Juegos\": {\"insertadas\": 348}, \"Nomenclador de Semielaborados\": {\"insertadas\": 437}, \"Nomenclador de RV\": {\"insertadas\": 15359}, \"Norma de Materiales\": {\"insertadas\": 18059}, \"Norma de Mano de Obra\": {\"insertadas\": 41699, \"duplicadas_omitidas\": 13}, \"Norma de Equipos\": {\"insertadas\": 12942, \"duplicadas_omitidas\": 23}, \"Norma de Juegos\": {\"insertadas\": 341}, \"Norma de Semielaborados\": {\"insertadas\": 1006}, \"Norma Juego Material\": {\"insertadas\": 2935}, \"Norma Semi Material\": {\"insertadas\": 732}, \"Norma Semi RHumanos\": {\"insertadas\": 142}, \"Norma Semi Equipos\": {\"insertadas\": 120}, \"Colecciones\": {\"insertadas\": 27}, \"Colecciones Composición\": {\"insertadas\": 1570}, \"ColecRV Composición\": {\"insertadas\": 92054}, \"Normas RH\": {\"insertadas\": 9699}, \"Normas Eq\": {\"insertadas\": 194}, \"Normas RH Extendida\": {\"insertadas\": 57838}, \"Normas Descriptivas\": {\"insertadas\": 2360, \"duplicadas_omitidas\": 1}, \"Tarifas de T\": {\"insertadas\": 22510}, \"Tarifas_AD_TD\": {\"insertadas\": 40}, \"Tarifas de Demora\": {\"insertadas\": 2}, \"Tarifas de Recorrido Vacio\": {\"insertadas\": 1}, \"tc Duración y Costo con Norma Precons MO\": {\"sin_relacion_partida\": 4, \"insertadas\": 15236, \"codigo_partida_exacto\": 15232, \"codigo_prefijo6_partida\": 0}, \"Actividades de Estimación\": {\"insertadas\": 671}, \"Macros Composicion RV\": {\"insertadas\": 27}, \"Obras\": {\"insertadas\": 28}, \"Objetos de Obra\": {\"insertadas\": 844}, \"Etapas\": {\"insertadas\": 63}, \"Presupuesto Composición RV\": {\"insertadas\": 16816, \"id_obj_obra_en_objetos\": 16816, \"id_etapa_en_etapas\": 16816, \"codigo_rv_en_partidas\": 16816}, \"Presupuesto Composición Mat\": {\"insertadas\": 15893, \"huérfanas_idprv\": 0, \"huérfanas_recurso\": 7, \"reclasificadas_por_datos\": 0}, \"Presupuesto Composición RH\": {\"insertadas\": 2718, \"huérfanas_idprv\": 0, \"huérfanas_recurso\": 0, \"reclasificadas_por_datos\": 0}, \"Presupuesto Composición Equipo\": {\"insertadas\": 125, \"huérfanas_idprv\": 0, \"huérfanas_recurso\": 0, \"reclasificadas_por_datos\": 0}, \"Presupuesto Composición SE\": {\"insertadas\": 80, \"huérfanas_idprv\": 0, \"huérfanas_recurso\": 0, \"reclasificadas_por_datos\": 0}}",
+     "advertencias": "[\"tabla opcional 'Actividades de Estimación' presente en esta base (se procesa en SBD)\", \"Nomenclador de SobreGrupos RV: código duplicado '02' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SobreGrupos RV: código duplicado '03' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SobreGrupos RV: código duplicado '04' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SobreGrupos RV: código duplicado '05' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SobreGrupos RV: código duplicado '06' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SobreGrupos RV: código duplicado '07' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SobreGrupos RV: código duplicado '08' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SobreGrupos RV: código duplicado '09' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SobreGrupos RV: código duplicado '10' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SobreGrupos RV: código duplicado '11' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de Grupos RV: grupo '028' con descripción distinta a la de otra versión (se conserva la primera: 'xxxxx 0280' ≠ 'X')\", \"Nomenclador de Grupos RV: código duplicado '012' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de Grupos RV: código duplicado '031' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de Grupos RV: código duplicado '033' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de Grupos RV: código duplicado '035' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de Grupos RV: código duplicado '041' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de Grupos RV: código duplicado '042' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de Grupos RV: código duplicado '043' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de Grupos RV: código duplicado '051' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de Grupos RV: código duplicado '061' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de Grupos RV: código duplicado '062' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de Grupos RV: código duplicado '063' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de Grupos RV: código duplicado '071' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de Grupos RV: código duplicado '072' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de Grupos RV: código duplicado '074' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de Grupos RV: código duplicado '076' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de Grupos RV: código duplicado '081' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de Grupos RV: código duplicado '082' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de Grupos RV: código duplicado '084' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de Grupos RV: código duplicado '085' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de Grupos RV: código duplicado '086' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de Grupos RV: código duplicado '087' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de Grupos RV: código duplicado '091' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de Grupos RV: código duplicado '092' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de Grupos RV: código duplicado '093' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de Grupos RV: código duplicado '094' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de Grupos RV: código duplicado '095' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de Grupos RV: código duplicado '096' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de Grupos RV: código duplicado '111' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de Grupos RV: código duplicado '112' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de Grupos RV: código duplicado '113' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: grupo '0281' con descripción distinta a la de otra versión (se conserva la primera: 'xxxxx 0281' ≠ 'X1')\", \"Nomenclador de SubGrupos RV: grupo '0282' con descripción distinta a la de otra versión (se conserva la primera: 'xxxxx 0282' ≠ 'X3')\", \"Nomenclador de SubGrupos RV: grupo '0702' con descripción distinta a la de otra versión (se conserva la primera: 'DE MARCOS ó PREMARCOS' ≠ 'DE MARCOS Ó PREMARCOS')\", \"Nomenclador de SubGrupos RV: código duplicado '0111' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0113' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0114' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0121' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0122' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0123' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0124' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0125' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0126' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0127' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0311' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0312' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0313' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0314' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0315' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0316' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0331' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0332' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0333' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0334' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0351' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0411' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0412' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0413' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0414' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0415' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0416' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0417' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0418' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0421' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0423' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0425' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0427' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0428' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0429' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0431' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0434' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0435' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0438' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0511' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0512' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0513' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0514' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0516' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0611' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0612' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0613' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0614' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0615' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0621' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0631' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0632' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0634' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0711' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0721' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0722' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0723' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0741' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0742' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0743' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0745' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0746' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0761' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0811' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0812' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0821' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0822' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0823' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0824' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0841' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0842' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0843' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0844' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0845' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0846' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0851' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0852' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0853' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0861' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0871' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0911' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0912' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0913' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0921' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0923' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0931' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0941' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0942' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0943' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0951' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0961' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0962' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '0964' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '1111' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '1112' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '1113' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '1114' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '1115' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '1116' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '1117' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '1119' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '1121' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '1122' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '1123' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '1124' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '1125' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '1126' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '1131' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '1132' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '1139' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de SubGrupos RV: código duplicado '9999' con contenido distinto (se conserva la primera aparición)\", \"Nomenclador de Equipos: fila con código nulo/vacío (omitida)\", \"Nomenclador de RV sin columna CodSobreG (SBD): capítulo derivado del prefijo del código de partida, verificado contra grupos de nivel 1\", \"Norma de Mano de Obra: coeficiente conflictivo para 000001210001/0000000211 (se conserva el primero)\", \"Norma de Mano de Obra: coeficiente conflictivo para 000001210001/0000000211 (se conserva el primero)\", \"Norma de Mano de Obra: coeficiente conflictivo para 000001230002/0000000211 (se conserva el primero)\", \"Norma de Mano de Obra: coeficiente conflictivo para 000001230002/0000000211 (se conserva el primero)\", \"Norma de Mano de Obra: coeficiente conflictivo para 000001230002/0000000211 (se conserva el primero)\", \"Norma de Mano de Obra: coeficiente conflictivo para 000001230002/0000000211 (se conserva el primero)\", \"Norma de Mano de Obra: coeficiente conflictivo para 000001230002/0000000211 (se conserva el primero)\", \"Norma de Mano de Obra: coeficiente conflictivo para 000001230002/0000018422 (se conserva el primero)\", \"Norma de Mano de Obra: coeficiente conflictivo para 000001230003/0000000211 (se conserva el primero)\", \"Norma de Mano de Obra: coeficiente conflictivo para 000001230003/0000000211 (se conserva el primero)\", \"Norma de Mano de Obra: coeficiente conflictivo para 000001230005/0000000211 (se conserva el primero)\", \"Norma de Mano de Obra: coeficiente conflictivo para 000001230005/0000018422 (se conserva el primero)\", \"Norma de Mano de Obra: coeficiente conflictivo para 000001230005/0000018422 (se conserva el primero)\", \"Norma de Equipos: coeficiente conflictivo para 000001210001/0022005448 (se conserva el primero)\", \"Norma de Equipos: coeficiente conflictivo para 000001210001/0022414008 (se conserva el primero)\", \"Norma de Equipos: coeficiente conflictivo para 000001210001/0022005448 (se conserva el primero)\", \"Norma de Equipos: coeficiente conflictivo para 000001230002/0022414008 (se conserva el primero)\", \"Norma de Equipos: coeficiente conflictivo para 000001230002/0022005448 (se conserva el primero)\", \"Norma de Equipos: coeficiente conflictivo para 000001230002/0024204420 (se conserva el primero)\", \"Norma de Equipos: coeficiente conflictivo para 000001230002/0022005436 (se conserva el primero)\", \"Norma de Equipos: coeficiente conflictivo para 000001230002/0022005448 (se conserva el primero)\", \"Norma de Equipos: coeficiente conflictivo para 000001230002/0053204006 (se conserva el primero)\", \"Norma de Equipos: coeficiente conflictivo para 000001230002/0024204400 (se conserva el primero)\", \"Norma de Equipos: coeficiente conflictivo para 000001230002/0024204400 (se conserva el primero)\", \"Norma de Equipos: coeficiente conflictivo para 000001230002/0025422357 (se conserva el primero)\", \"Norma de Equipos: coeficiente conflictivo para 000001230002/0054814007 (se conserva el primero)\", \"Norma de Equipos: coeficiente conflictivo para 000001230002/0024204400 (se conserva el primero)\", \"Norma de Equipos: coeficiente conflictivo para 000001230003/0022005448 (se conserva el primero)\", \"Norma de Equipos: coeficiente conflictivo para 000001230003/0053204006 (se conserva el primero)\", \"Norma de Equipos: coeficiente conflictivo para 000001230003/0024204400 (se conserva el primero)\", \"Norma de Equipos: coeficiente conflictivo para 000001230005/0022005448 (se conserva el primero)\", \"Norma de Equipos: coeficiente conflictivo para 000001230005/0053204006 (se conserva el primero)\", \"Norma de Equipos: coeficiente conflictivo para 000001230005/0024204400 (se conserva el primero)\", \"Norma de Equipos: coeficiente conflictivo para 000001230005/0022005448 (se conserva el primero)\", \"Norma de Equipos: coeficiente conflictivo para 000001230005/0024204400 (se conserva el primero)\", \"Norma de Equipos: coeficiente conflictivo para 000001230005/0024204400 (se conserva el primero)\", \"Presupuesto Composición Mat: 7 recursos con código ausente en los nomencladores importados (filas preservadas con su código; ver docs/DICCIONARIO_PRECODI.md)\"]",
+     "resultado": "ok_con_advertencias"
+    }
+   ]
+  },
+  {
+   "id": 7,
+   "catalogo_id": 2,
+   "version": "2025-06-06",
+   "fecha_publicacion": "2025-06-06",
+   "fecha_importacion": "2026-10-14 06:24:03",
+   "fuente_archivo": "PRECOST-v9.17.html (const DB)",
+   "fuente_sha256": "50d3cf28e405201f36c50c3dd5385d7e28fbab3e7e5eee22c74ca0bcfd5cbaa2",
+   "fuente_detalle": "PRECONS III MICONS 2025 (const DB de PRECOST v9.17)",
+   "estado": "importada",
+   "catalogo": "PRECONS_III",
+   "importaciones": [
+    {
+     "id": 7,
+     "version_id": 7,
+     "iniciada_en": "2026-10-14T06:24:03.893324+00:00",
+     "finalizada_en": "2026-10-14T06:24:04.139741+00:00",
+     "script": "importar_precodi.py",
+     "filas_por_tabla": "{\"G\": {\"insertadas\": 1893}, \"_controles\": {\"_ej_G_grupo '#' sin padre '#' (importado sin p\": 32}, \"P\": {\"insertadas\": 15912, \"total_no_coincide_componentes\": 31}, \"M\": {\"insertadas\": 3568}, \"O\": {\"insertadas\": 143}, \"E\": {\"insertadas\": 671}}",
+     "advertencias": "[\"G: grupo '2810' sin padre '281' (importado sin padre)\", \"G: grupo '2811' sin padre '281' (importado sin padre)\", \"G: grupo '2812' sin padre '281' (importado sin padre)\"]",
+     "resultado": "ok_con_advertencias"
+    }
+   ]
+  },
+  {
+   "id": 8,
+   "catalogo_id": 1,
+   "version": "2017-raiz",
+   "fecha_publicacion": null,
+   "fecha_importacion": "2026-10-14 06:26:31",
+   "fuente_archivo": "/home/z/my-project/work/recuperacion/analisis/PRECODI/Codigo (PRECODI)/codigo.mdb",
+   "fuente_sha256": "c4f94962c3e0cde62bc455262830904b033425f00f1946000dc9eb2869e175bc",
+   "fuente_detalle": "codigo.mdb raíz 2017 (canónico, junto a Codigo.exe)",
+   "estado": "importada",
+   "catalogo": "PRECODI",
+   "importaciones": [
+    {
+     "id": 8,
+     "version_id": 8,
+     "iniciada_en": "2026-10-14T06:26:31.169072+00:00",
+     "finalizada_en": "2026-10-14T06:26:38.202804+00:00",
+     "script": "importar_precodi.py",
+     "filas_por_tabla": "{\"Nomenclador de SobreGrupos RV\": {\"ya_existentes\": 40}, \"Nomenclador de Grupos RV\": {\"ya_existentes\": 320}, \"Nomenclador de SubGrupos RV\": {\"ya_existentes\": 1518}, \"Nomenclador de Materiales\": {\"insertadas\": 7769}, \"Nomenclador de Mano de Obra\": {\"insertadas\": 248}, \"Nomenclador de Equipos\": {\"insertadas\": 414, \"omitidas_invalidas\": 1}, \"_controles\": {\"_ej_Nomenclador de Equipos_fila con código nulo/vacío (omitida)\": 1}, \"Nomenclador de Juegos\": {\"insertadas\": 328}, \"Nomenclador de Semielaborados\": {\"insertadas\": 353}, \"Nomenclador de RV\": {\"insertadas\": 15351}, \"Norma de Materiales\": {\"insertadas\": 18060}, \"Norma de Mano de Obra\": {\"insertadas\": 41662}, \"Norma de Equipos\": {\"insertadas\": 12909}, \"Norma de Juegos\": {\"insertadas\": 341}, \"Norma de Semielaborados\": {\"insertadas\": 1006}, \"Norma Juego Material\": {\"insertadas\": 2936}, \"Norma Semi Material\": {\"insertadas\": 681}, \"Norma Semi RHumanos\": {\"insertadas\": 149}, \"Norma Semi Equipos\": {\"insertadas\": 120}, \"Norma Juego Material1\": {\"fuente\": 2936, \"insertadas\": 0, \"nota\": \"duplicado exacto de Norma Juego Material\"}}",
+     "advertencias": "[\"Detectado intento de importación anterior incompleto para esta versión: se purga la cáscara sin filas y se reintenta desde cero\", \"tabla opcional 'Actividades de Estimación' presente en esta base (se procesa en SBD)\", \"tabla opcional 'Norma Juego Material1' presente en esta base (verificada como duplicada)\", \"Nomenclador de Equipos: fila con código nulo/vacío (omitida)\", \"Norma Juego Material1: copia EXACTA de Norma Juego Material (2936 filas idénticas) → no se reimporta (verificado con datos)\"]",
+     "resultado": "ok_con_advertencias"
+    }
+   ]
+  }
+ ],
+ "conteos": {
+  "PRECODI/2007-v7.21": {
+   "partidas": 15347,
+   "recursos": 4335,
+   "normas_partida": 73962,
+   "componentes_recurso": 3674,
+   "grupos": 1970
+  },
+  "PRECODI/2007-v7.22": {
+   "partidas": 15351,
+   "recursos": 9112,
+   "normas_partida": 73978,
+   "componentes_recurso": 3886,
+   "grupos": 1970
+  },
+  "PRECODI/2007-v7.21-Preambulos": {
+   "grupos": 1970
+  },
+  "PRECODI/2011-sbd2008": {
+   "partidas": 15359,
+   "recursos": 57740,
+   "normas_partida": 74047,
+   "componentes_recurso": 3929,
+   "grupos": 1970
+  },
+  "PRECONS_III/2025-06-06": {
+   "partidas": 15912,
+   "recursos": 4382,
+   "grupos": 1893
+  },
+  "PRECODI/2017-raiz": {
+   "partidas": 15351,
+   "recursos": 9112,
+   "normas_partida": 73978,
+   "componentes_recurso": 3886,
+   "grupos": 1970
+  }
+ }
+}

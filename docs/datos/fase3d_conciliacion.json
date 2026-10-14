@@ -1,0 +1,356 @@
+{
+ "generado": "2026-10-14T04:36:50.005923+00:00",
+ "fuentes": {
+  "precost": {
+   "nombre": "PRECONS III MICONS 2025",
+   "publicada": "06/06/25",
+   "fuente": "LISTA-DE-MATERIALES.pdf, LISTA-DE-TARIFAS-HORARIAS-DE-MANO-DE-OBRA.pdf, LISTA-DE-COSTOS-HORARIOS-DE-USO-DE-EQUIPOS.pdf, SECCION-01..45.pdf",
+   "origen": "embebido en app/PRECOST-v9.17.html (const DB), extraído sin modificar"
+  },
+  "precodi": {
+   "nombre": "codigo.mdb (raíz, junto a Codigo.exe)",
+   "formato": "Jet 4 (Access 2000), mtime 2017",
+   "origen": "AUXILIAR_PRECODI.rar (Google Drive 2), extraído a copia de análisis"
+  }
+ },
+ "partidas": {
+  "precost_total": 15912,
+  "precodi_total": 15351,
+  "coincidencia_exacta_codigo": 14451,
+  "solo_precost": 1461,
+  "solo_precodi": 900,
+  "cobertura_precost_sobre_precodi": 0.9414,
+  "cobertura_precodi_sobre_precost": 0.9082,
+  "descripcion": {
+   "iguales": 13462,
+   "parecidas(jaccard>=0.6)": 870,
+   "distintas": 119,
+   "ejemplos_conflicto": [
+    {
+     "codigo": "012552",
+     "precost": "EN SUELOS GRUPO V - VII PROFUNDIDAD MAYOR DE 4 M PARA CONDICIONES LIMI",
+     "precodi": "EN SUELOS GRUPO V - VII PROFUNDIDAD MAYOR DE 4 M PARA CONDICIONES LIMI",
+     "similitud": 0.33
+    },
+    {
+     "codigo": "015312",
+     "precost": "DE ARENA Y GRAVA, COLOCACION MECANIZADA",
+     "precodi": "DE ARENA Y GRAVA,COLOCACION MECANIZADA ",
+     "similitud": 0.57
+    },
+    {
+     "codigo": "016171",
+     "precost": "POR CARRETERA (VELOCIDAD 30-40 KM/H ) HASTA 1 KM DE DISTANCIA, CON CAM",
+     "precodi": "POR CARRETERA (VELOCIDAD  30-40 KM/H ) HASTA 1 KM DE DISTANCIA, CON CA",
+     "similitud": 0.59
+    },
+    {
+     "codigo": "019901",
+     "precost": "CARGA DE ESCOMBROS MANUAL EN OBRAS VIALES",
+     "precodi": "CARGA DE ESCOMBROS MANUAL",
+     "similitud": 0.57
+    },
+    {
+     "codigo": "019902",
+     "precost": "CARGA DE ESCOMBROS MECANIZADA EN OBRAS VIALES",
+     "precodi": "CARGA DE ESCOMBROS MECANIZADA",
+     "similitud": 0.57
+    },
+    {
+     "codigo": "039903",
+     "precost": "COLOCACION DE ANCLAJES PESADOS HASTA 0.50 M DE PROFUNDIDAD (MEDIANTE T",
+     "precodi": "COLOCACION DE ANCLAJES PESADOS HASTA 0.50 M DE PROFUNDI  DAD (MEDIANTE",
+     "similitud": 0.56
+    },
+    {
+     "codigo": "047122",
+     "precost": "BARRENADO HORIZONTAL (MEDIANTE TECNICA DE ACCESO CON CUERDAS)",
+     "precodi": "BARRENADO HORIZONTAL (MEDIANTE TECNICA DE ALPINISMO) ",
+     "similitud": 0.56
+    },
+    {
+     "codigo": "051911",
+     "precost": "HASTA 0.1 TON, ALTURA HASTA 6 M",
+     "precodi": "HASTA 0.1 TON,ALTURA HASTA 6 M ",
+     "similitud": 0.57
+    }
+   ]
+  },
+  "unidad": {
+   "iguales": 9926,
+   "equivalentes_por_abreviatura": 4377,
+   "distintas_o_cambio_de_unidad": 148,
+   "detalle_pares_distintos": {
+    "'u'↔'ct'": 60,
+    "'m2'↔'d2'": 28,
+    "'u'↔'cu'": 26,
+    "'u'↔'dc'": 23,
+    "'m2'↔'mm'": 6,
+    "'l'↔'hl'": 4,
+    "'100 m3'↔'m3'": 1
+   },
+   "nota": "Equivalencias aplicadas (verificadas por frecuencia dominante): t↔tm, m↔ml, 100 m↔cm, 100 m2↔c2, 100 m3↔c3. Los pares restantes (u↔ct, u↔cu, u↔dc, m2↔d2, m2↔mm, l↔hl) corresponden a partidas cuya unidad cambió en PRECONS III 2025 (p.ej. de cientos o decenas a unidades simples): quedan como verificación semántica pendiente.",
+   "ejemplos_conflicto": [
+    {
+     "codigo": "011152",
+     "precost": "m2",
+     "precodi": "d2"
+    },
+    {
+     "codigo": "011153",
+     "precost": "m2",
+     "precodi": "d2"
+    },
+    {
+     "codigo": "016711",
+     "precost": "100 m3",
+     "precodi": "m3"
+    },
+    {
+     "codigo": "017521",
+     "precost": "l",
+     "precodi": "hl"
+    },
+    {
+     "codigo": "017522",
+     "precost": "l",
+     "precodi": "hl"
+    },
+    {
+     "codigo": "017523",
+     "precost": "l",
+     "precodi": "hl"
+    },
+    {
+     "codigo": "017531",
+     "precost": "l",
+     "precodi": "hl"
+    },
+    {
+     "codigo": "031901",
+     "precost": "u",
+     "precodi": "ct"
+    }
+   ]
+  },
+  "precios": {
+   "nota": "Bases de precios distintas (PRECODI 2017 MN vs PRECONS III MICONS 2025): no son conflictos de validez; se documenta el cambio de base.",
+   "ratio_total_2025_2017": {
+    "n": 14407,
+    "mediana": 11.13,
+    "p10": 5.81,
+    "p90": 31.24
+   },
+   "partidas_con_componente_mat_ambos": 7441,
+   "partidas_con_componente_mo_ambos": 14256,
+   "partidas_con_componente_eq_ambos": 6181
+  },
+  "capitulos_precost": {
+   "19": 1099,
+   "42": 1076,
+   "34": 885,
+   "08": 813,
+   "18": 736,
+   "11": 708,
+   "13": 668,
+   "01": 615,
+   "17": 601,
+   "05": 521,
+   "27": 510,
+   "20": 495,
+   "03": 490,
+   "43": 478,
+   "28": 472,
+   "21": 430,
+   "23": 427,
+   "16": 390,
+   "24": 364,
+   "09": 342,
+   "44": 307,
+   "14": 271,
+   "33": 258,
+   "12": 245,
+   "26": 241,
+   "06": 238,
+   "22": 237,
+   "07": 227,
+   "04": 217,
+   "15": 215,
+   "31": 210,
+   "10": 189,
+   "25": 187,
+   "29": 179,
+   "02": 172,
+   "32": 161,
+   "30": 157,
+   "45": 81
+  },
+  "sobregrupos_precodi": {
+   "42": 1074,
+   "19": 1020,
+   "34": 885,
+   "35": 787,
+   "11": 689,
+   "08": 673,
+   "13": 628,
+   "18": 613,
+   "05": 509,
+   "27": 497,
+   "17": 482,
+   "43": 477,
+   "01": 470,
+   "28": 457,
+   "20": 440,
+   "21": 431,
+   "23": 419,
+   "03": 411,
+   "24": 353,
+   "16": 316,
+   "44": 307,
+   "09": 283,
+   "33": 275,
+   "14": 230,
+   "06": 228,
+   "12": 215,
+   "26": 215,
+   "07": 212,
+   "15": 208,
+   "04": 193,
+   "22": 187,
+   "29": 178,
+   "31": 164,
+   "02": 163,
+   "32": 161,
+   "30": 153,
+   "25": 149,
+   "10": 117,
+   "45": 81,
+   "99": 1
+  },
+  "ejemplos_solo_precost": [
+   "011122",
+   "011341",
+   "011342",
+   "011343",
+   "011344",
+   "012164",
+   "012165",
+   "012234",
+   "012257",
+   "012272",
+   "012275",
+   "012276",
+   "012278",
+   "012279",
+   "012280"
+  ],
+  "ejemplos_solo_precodi": [
+   "012561",
+   "012562",
+   "012563",
+   "012564",
+   "012571",
+   "012572",
+   "012573",
+   "012574",
+   "013521",
+   "013611",
+   "013612",
+   "016142",
+   "016144",
+   "016146",
+   "016152"
+  ]
+ },
+ "materiales": {
+  "precost_total": 3568,
+  "precodi_total": 7769,
+  "coincidencia_exacta": 3241,
+  "solo_precost": 327,
+  "solo_precodi": 4528,
+  "descripcion": {
+   "iguales": 3019,
+   "parecidas": 176,
+   "distintas": 46,
+   "ejemplos_conflicto": [
+    {
+     "codigo": "3749999916",
+     "precost": "CONJUNTO VENTANA PLASTICA FORMADA POR 4 VENTANAS MIAMI C/DOB",
+     "precodi": "CONJUNTO VENTANA PLASTICA FORMADA POR 4 VENTANAS MIAMI C/DOB"
+    },
+    {
+     "codigo": "4491010804",
+     "precost": "REVESTIMIENTO BLANCO MATE 25 X 40 CM.",
+     "precodi": "LOSA COLOR MADERA (GRESS)"
+    },
+    {
+     "codigo": "3749999854",
+     "precost": "PUERTA PLASTICA DE VAIVEN DE UNA HOJA DE 0.80 X 2.10M CON CR",
+     "precodi": "PUERTA PLASTICA DE VAIVEN DE UNA HOJA DE 0.80  X 2.10M  CON "
+    },
+    {
+     "codigo": "4472010004",
+     "precost": "BLOQUE HORMIGON 400 X 200 X 200 MM TECNOLOGIA CUBANA. 1000",
+     "precodi": "BLOQUE HORM  400X150X200 MM"
+    },
+    {
+     "codigo": "3366010004",
+     "precost": "GAS REFRIGERANTE R-22",
+     "precodi": "Gas licuado en cilindro"
+    }
+   ]
+  }
+ },
+ "mano_obra": {
+  "precost_total": 143,
+  "precodi_total": 248,
+  "coincidencia_exacta": 125,
+  "solo_precost": 18,
+  "solo_precodi": 123
+ },
+ "equipos": {
+  "precost_total": 671,
+  "precodi_total": 415,
+  "coincidencia_exacta": 376,
+  "solo_precost": 295,
+  "solo_precodi": 39
+ },
+ "grupos": {
+  "precost_total": 1893,
+  "distribucion_longitudes": {
+   "2": 45,
+   "3": 331,
+   "4": 1517
+  },
+  "hipotesis_estructura": "2 dígitos=SobreGrupo, 3=Grupo, 4=SubGrupo (verificada abajo)",
+  "sobregrupos": {
+   "precost": 45,
+   "precodi": 40,
+   "coincidencia_codigo": 39,
+   "descripcion_igual": 19
+  },
+  "grupos": {
+   "precost": 331,
+   "precodi": 320,
+   "coincidencia_codigo": 305,
+   "descripcion_igual": 268
+  },
+  "subgrupos": {
+   "precost": 1517,
+   "precodi": 1518,
+   "coincidencia_codigo": 1429,
+   "descripcion_igual": 1312
+  },
+  "otros": {
+   "cantidad": 0,
+   "ejemplos": {}
+  }
+ },
+ "descomposiciones": {
+  "rvs_precodi_con_norma": 15350,
+  "codigos_compartidos": 14451,
+  "compartidos_con_norma_precodi": 14451,
+  "precost_tiene_descomposicion": false,
+  "nota": "El catálogo embebido PRECOST solo almacena costos agregados por partida (mat/mo/eq/total/peso) y precios unitarios de recursos: NO contiene descomposiciones (coeficientes de consumo). Las normas de consumo existen únicamente en PRECODI — oportunidad clave de integración."
+ }
+}

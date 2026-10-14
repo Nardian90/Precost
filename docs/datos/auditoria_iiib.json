@@ -1,0 +1,133 @@
+{
+ "fase": "III-B · Fase 1 — auditoría previa",
+ "generado": "2026-10-14T05:15:43.846014+00:00",
+ "git": {
+  "rama": "evolucion",
+  "commits": [
+   "ce43a5b Fase III: ingeniería de datos PRECODI y plan de integración PRECOST",
+   "67a8af3 Fases I-II: inventario estático PRECOST (arquitectura, catálogo 22187 registros, motores propios, IA) + informe de entorno/instalación SIECONS con proceso oficial del fabricante",
+   "1db420e Baseline: PRECOST v9.17 original (intacto) + hashes de activos SIECONS11/PRECODI"
+  ],
+  "tag_v917": "1db420ef71a1a29bc75bb27f77e802549ecca283",
+  "tag_apunta_a_commit_baseline": true,
+  "arbol_limpio": false
+ },
+ "html_original": {
+  "sha256": "50d3cf28e405201f36c50c3dd5385d7e28fbab3e7e5eee22c74ca0bcfd5cbaa2",
+  "esperado": "50d3cf28e405201f36c50c3dd5385d7e28fbab3e7e5eee22c74ca0bcfd5cbaa2",
+  "intacto": true
+ },
+ "bases_mdb": {
+  "codigo_721": {
+   "existe": true,
+   "sha256_recalculado": "8b94cebfa131751ebb18c2b692d4bcceeff1b54d9e7202b014a8815ac638e375",
+   "sha256_inventario_fase3a": "8b94cebfa131751ebb18c2b692d4bcceeff1b54d9e7202b014a8815ac638e375",
+   "coincide": true,
+   "tamano_bytes": 30242816
+  },
+  "codigo_722": {
+   "existe": true,
+   "sha256_recalculado": "d6719a4250f94d1d7ca71afea18764032e642b8398dc1ac8d607473d06f2a1f7",
+   "sha256_inventario_fase3a": "d6719a4250f94d1d7ca71afea18764032e642b8398dc1ac8d607473d06f2a1f7",
+   "coincide": true,
+   "tamano_bytes": 42119168
+  },
+  "codigo_raiz": {
+   "existe": true,
+   "sha256_recalculado": "c4f94962c3e0cde62bc455262830904b033425f00f1946000dc9eb2869e175bc",
+   "sha256_inventario_fase3a": "c4f94962c3e0cde62bc455262830904b033425f00f1946000dc9eb2869e175bc",
+   "coincide": true,
+   "tamano_bytes": 42119168
+  },
+  "codigo_preambulos": {
+   "existe": true,
+   "sha256_recalculado": "8b94cebfa131751ebb18c2b692d4bcceeff1b54d9e7202b014a8815ac638e375",
+   "sha256_inventario_fase3a": "8b94cebfa131751ebb18c2b692d4bcceeff1b54d9e7202b014a8815ac638e375",
+   "coincide": true,
+   "tamano_bytes": 30242816
+  },
+  "sbd2008_815": {
+   "existe": true,
+   "sha256_recalculado": "3a9a50a2ef8fea84e85017514de308b01b321b2dac4132cc8c0f98a1baa54bee",
+   "sha256_inventario_fase3a": "3a9a50a2ef8fea84e85017514de308b01b321b2dac4132cc8c0f98a1baa54bee",
+   "coincide": true,
+   "tamano_bytes": 106500096
+  },
+  "duplicados_exactos": {
+   "preambulos_igual_a_721": true
+  }
+ },
+ "migracion_0002": {
+  "tablas_creadas": [
+   "proyectos",
+   "presupuestos",
+   "capitulos_presupuesto",
+   "partidas_presupuesto"
+  ],
+  "fk_referencian_a": [
+   "capitulos_presupuesto",
+   "partidas",
+   "presupuestos",
+   "proyectos",
+   "versiones_catalogo"
+  ],
+  "entidades_proyecto_presupuesto": true
+ },
+ "tipos_money_float32": {
+  "codigo_721": {
+   "CHMN": {
+    "tipo_python": "int",
+    "valor_crudo": "1001"
+   },
+   "CEMN": {
+    "tipo_python": "int",
+    "valor_crudo": "5726"
+   },
+   "CantMat": {
+    "tipo_python": "float",
+    "valor_crudo": "1.2000000476837158",
+    "nota": "Float32: 1.2 se recupera como float64 exacto del binario float32"
+   }
+  },
+  "codigo_raiz": {
+   "CHMN": {
+    "tipo_python": "str",
+    "valor_crudo": "0.10"
+   },
+   "CEMN": {
+    "tipo_python": "str",
+    "valor_crudo": "0.57"
+   },
+   "CantMat": {
+    "tipo_python": "float",
+    "valor_crudo": "1.2000000476837158",
+    "nota": "Float32: 1.2 se recupera como float64 exacto del binario float32"
+   }
+  },
+  "interpretacion": {
+   "codigo_721": "Money sin propiedad Format → access_parser devuelve el ENTERO ESCALADO (CHMN=40683 ⇒ valor real 4.0683). PrecioU=PMN+PMLC se cumple a cualquier escala.",
+   "codigo_raiz": "Money CON propiedad Format → access_parser devuelve STRING formateado a 2 decimales ('4.07'), con PÉRDIDA de los decimales 3-4 ('4.0683'→'4.07') y con separador de miles para valores ≥1000 ('1,234.57' → float() fallaría).",
+   "conclusion": "El importador común DEBE parchear parse_money_type para obtener el Decimal exacto /10000 del entero escalado, independiente del Format de cada columna."
+  }
+ },
+ "importador_poc_anterior": {
+  "archivo": "scripts/fase3f_importar_poc.py",
+  "existe": true,
+  "alcance": "muestra (510 partidas + 2239 normas + 276 recursos), no importación completa",
+  "divide_money_entre_10000": false,
+  "manja_separador_miles": false,
+  "idempotente_por_version": true,
+  "verifica_integridad_originales": true,
+  "defectos": [
+   "Con codigo.mdb 7.21/7.22 (Money=int escalado) almacenaría precios ×10000 erróneos; solo funcionó con la raíz 2017 porque access_parser devolvía strings formateadas.",
+   "En la raíz 2017, valores Money ≥1000 llegan como '1,234.57' con coma → float() lanza excepción → f() devuelve None → el valor se pierde silenciosamente.",
+   "En la raíz 2017 los strings formateados pierden los decimales 3-4 (4.0683→'4.07')."
+  ],
+  "reutilizable": [
+   "Mapa tablas PRECODI → entidades del esquema 0001 (grupos/partidas/recursos/normas/componentes).",
+   "Patrón idempotente por (catálogo, versión) y registro en importaciones.",
+   "Verificación de integridad SHA-256 de originales antes y después.",
+   "norm_um() para factor de unidad ('100 m2' → factor 100)."
+  ]
+ }
+}

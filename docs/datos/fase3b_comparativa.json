@@ -1,0 +1,2763 @@
+{
+ "bases": {
+  "codigo_721": "codigo.mdb v7.21 (carpeta 7.21)",
+  "codigo_722": "codigo.mdb v7.22 (carpeta 7.22)",
+  "codigo_raiz": "codigo.mdb raíz (junto a Codigo.exe)",
+  "codigo_preambulos": "codigo.mdb (carpeta Preambulos)",
+  "sbd2008_815": "SBD2008_815.mdb (carpeta 8.15)"
+ },
+ "tablas": {
+  "AGIT_Indicad_Hijos_RV": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 4
+   }
+  },
+  "AGIT_Indicadores Hijos": {
+   "codigo_721": {
+    "n_cols": 5
+   },
+   "codigo_722": {
+    "n_cols": 5
+   },
+   "codigo_raiz": {
+    "n_cols": 5
+   },
+   "codigo_preambulos": {
+    "n_cols": 5
+   },
+   "sbd2008_815": {
+    "n_cols": 8
+   }
+  },
+  "AGIT_Orden de Cambio x Contrato": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 13
+   }
+  },
+  "AGIT_Orden de Cambio x Contrato Detalle": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 4
+   }
+  },
+  "AGIT_Plan_Crono x Contrato": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 7
+   }
+  },
+  "AGIT_Presupuesto Limite": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 0
+   }
+  },
+  "AGIT_Presupuesto x Contrato": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 9
+   }
+  },
+  "AGIT_Presupuesto x Previsto": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 8
+   }
+  },
+  "AGIT_RS": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 8
+   }
+  },
+  "AGIT_RS Composicion": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 4
+   }
+  },
+  "AGIT_Real x Contrato": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 7
+   }
+  },
+  "AGIT_Solicitud": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 17
+   }
+  },
+  "AGIT_Solicitud Compocición": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 7
+   }
+  },
+  "Actividades de Estimación": {
+   "codigo_721": null,
+   "codigo_722": {
+    "n_cols": 10
+   },
+   "codigo_raiz": {
+    "n_cols": 10
+   },
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 10
+   }
+  },
+  "Bancos": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 4
+   }
+  },
+  "Brigadas": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 7
+   }
+  },
+  "CONSTVAR": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 12
+   }
+  },
+  "Candado": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 18
+   }
+  },
+  "Categorias": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 3
+   }
+  },
+  "Certif Foto": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 5
+   }
+  },
+  "Certif GGD": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 4
+   }
+  },
+  "Certif OGD": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 4
+   }
+  },
+  "Certif de Gastos Bancarios": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 5
+   }
+  },
+  "Certif de Imprevistos": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 5
+   }
+  },
+  "Certif de Otros Gastos": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 5
+   }
+  },
+  "Certif de OtrosP": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 5
+   }
+  },
+  "Certif de Seguro": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 5
+   }
+  },
+  "Certif_Cab": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 89
+   }
+  },
+  "Certif_Min_E": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 13
+   }
+  },
+  "Certif_Min_J": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 8
+   }
+  },
+  "Certif_Min_M": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 8
+   }
+  },
+  "Certif_Min_RH": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 11
+   }
+  },
+  "Certif_Min_SE": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 9
+   }
+  },
+  "Certificaciones E": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 14
+   }
+  },
+  "Certificaciones J": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 8
+   }
+  },
+  "Certificaciones M": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 9
+   }
+  },
+  "Certificaciones RH": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 12
+   }
+  },
+  "Certificaciones RV": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 31
+   }
+  },
+  "Certificaciones SE": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 9
+   }
+  },
+  "Certificaciones vs Real": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 12
+   }
+  },
+  "Certificación Minima": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 10
+   }
+  },
+  "Certificación Observaciones": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 2
+   }
+  },
+  "Certificación Otros": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 15
+   }
+  },
+  "Certificación Pacto": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 4
+   }
+  },
+  "Certificación Ptos": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 9
+   }
+  },
+  "Certificación Transp Equipos": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 39
+   }
+  },
+  "Certificación Transp Paq": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 6
+   }
+  },
+  "Certificación Transp Paq Eq": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 6
+   }
+  },
+  "Certificación Transportación": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 39
+   }
+  },
+  "Cheques Emitidos": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 14
+   }
+  },
+  "Cheques Recibidos": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 11
+   }
+  },
+  "Clasif Insumo": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 2
+   }
+  },
+  "Coef_Complejidad": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 2
+   }
+  },
+  "Coef_Estimulo": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 2
+   }
+  },
+  "Coeficientes de Aprovechamiento del Transporte": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 3
+   }
+  },
+  "ColecRV": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 6
+   }
+  },
+  "ColecRV Composición": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 9
+   }
+  },
+  "Colecciones": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 5
+   }
+  },
+  "Colecciones Composición": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 8
+   }
+  },
+  "ColumnasXLS": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 11
+   }
+  },
+  "Combustibles y Lubricantes": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 9
+   }
+  },
+  "Composición de Factura Otros": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 4
+   }
+  },
+  "Composición de Recepcion Otros": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 8
+   }
+  },
+  "Composición de factura": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 2
+   }
+  },
+  "Conceptos Gastos": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 4
+   }
+  },
+  "Conceptos OG": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 2
+   }
+  },
+  "Conceptos Otros Gastos Directos": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 7
+   }
+  },
+  "Conceptos de Gastos Bancarios": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 6
+   }
+  },
+  "Conceptos de Gastos Generales Directos": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 7
+   }
+  },
+  "Conceptos de Gastos Generales de Administración": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 3
+   }
+  },
+  "Conceptos de Gastos Indirectos de Producción": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 4
+   }
+  },
+  "Conceptos de Gastos de Distribución y Ventas": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 3
+   }
+  },
+  "Conceptos de Imprevistos": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 6
+   }
+  },
+  "Conceptos de Otros Gastos": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 6
+   }
+  },
+  "Conceptos de Otros Presupuestos": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 6
+   }
+  },
+  "Conceptos de Pacto": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 4
+   }
+  },
+  "Conceptos de Seguro": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 6
+   }
+  },
+  "Consumo Diario de Equipos": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 11
+   }
+  },
+  "Consumo Diario de Materiales": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 11
+   }
+  },
+  "Consumo Diario de Servicios": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 9
+   }
+  },
+  "Consumo de Aceites Hidra": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 4
+   }
+  },
+  "Consumo de Aceites Transm": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 4
+   }
+  },
+  "Consumos de Grasa": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 7
+   }
+  },
+  "Consumos de los Equipos": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 4
+   }
+  },
+  "Consumos de los RH": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 3
+   }
+  },
+  "Contratos": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 13
+   }
+  },
+  "Control Ing": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 5
+   }
+  },
+  "Cronograma": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 3
+   }
+  },
+  "Cuentas Bancarias": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 8
+   }
+  },
+  "DPA Municipios": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 4
+   }
+  },
+  "DPA Provincias": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 3
+   }
+  },
+  "EQUIPO": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 28
+   }
+  },
+  "Empresas Constructoras": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 4
+   }
+  },
+  "Entrada de Materiales": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 8
+   }
+  },
+  "Errores de pegado": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 1
+   }
+  },
+  "Esp Equipos de la Obra": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 11
+   }
+  },
+  "Esp Equipos del Cliente": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 3
+   }
+  },
+  "Esp Juegos de la Obra": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 9
+   }
+  },
+  "Esp Materiales de la Obra": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 8
+   }
+  },
+  "Esp Materiales del Cliente": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 3
+   }
+  },
+  "Esp RH del Cliente": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 3
+   }
+  },
+  "Esp RHum de la Obra": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 9
+   }
+  },
+  "Esp Semielab de la Obra": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 9
+   }
+  },
+  "Especialidad": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 2
+   }
+  },
+  "Establecimientos": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 69
+   }
+  },
+  "Estableciminetos Productivos": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 18
+   }
+  },
+  "Estimaciones": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 5
+   }
+  },
+  "Estimaciones Independientes": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 2
+   }
+  },
+  "Etapas": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 4
+   }
+  },
+  "Explotadores": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 3
+   }
+  },
+  "Facturas Reportadas": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 16
+   }
+  },
+  "Ficha PT": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 9
+   }
+  },
+  "Formula Salario": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 9
+   }
+  },
+  "Formulas": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 6
+   }
+  },
+  "Gasto Diario de Salario": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 9
+   }
+  },
+  "Gastos Generales Administración x Año": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 4
+   }
+  },
+  "Gastos Generales Directos de Obra": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 4
+   }
+  },
+  "Gastos Indirectos de Producción x Año": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 4
+   }
+  },
+  "Gastos de Distribución y Venta x Año": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 4
+   }
+  },
+  "Genericos": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 3
+   }
+  },
+  "Grupo Conceptos de Gastos No Base": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 12
+   }
+  },
+  "Grupos Empresariales": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 4
+   }
+  },
+  "Grupos de Actividades de Estimación": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 2
+   }
+  },
+  "Grupos de Materiales": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 2
+   }
+  },
+  "HojaCalculo": {
+   "codigo_721": {
+    "n_cols": 5
+   },
+   "codigo_722": {
+    "n_cols": 5
+   },
+   "codigo_raiz": {
+    "n_cols": 5
+   },
+   "codigo_preambulos": {
+    "n_cols": 5
+   },
+   "sbd2008_815": null
+  },
+  "IEs Especificados en Anticipo": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 4
+   }
+  },
+  "Indicadores Fisicos": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 4
+   }
+  },
+  "Indicadores Fisicos RV": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 4
+   }
+  },
+  "Indices Consumo de Combustible": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 3
+   }
+  },
+  "Indices por Insumo": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 4
+   }
+  },
+  "Insumos para la Mano de Obra": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 6
+   }
+  },
+  "Macro Composición Equipo": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 13
+   }
+  },
+  "Macro Composición J": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 7
+   }
+  },
+  "Macro Composición Mat": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 8
+   }
+  },
+  "Macro Composición RH": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 10
+   }
+  },
+  "Macro Composición SE": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 7
+   }
+  },
+  "Macros Composicion RV": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 11
+   }
+  },
+  "Macros Obra": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 10
+   }
+  },
+  "Mat_x_Mat": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 2
+   }
+  },
+  "Materiales Indice": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 2
+   }
+  },
+  "Meses": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 2
+   }
+  },
+  "Modelos": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 4
+   }
+  },
+  "Monedas": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 2
+   }
+  },
+  "NCLESCALASAL": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 13
+   }
+  },
+  "NCLNEUMATICO": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 4
+   }
+  },
+  "NCLTIPOEQUIPO": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 4
+   }
+  },
+  "NomFactC": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 14
+   }
+  },
+  "NomFactV": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 26
+   }
+  },
+  "Nomenclador de Afectaciones": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 3
+   }
+  },
+  "Nomenclador de Equipos": {
+   "codigo_721": {
+    "n_cols": 16
+   },
+   "codigo_722": {
+    "n_cols": 16
+   },
+   "codigo_raiz": {
+    "n_cols": 16
+   },
+   "codigo_preambulos": {
+    "n_cols": 16
+   },
+   "sbd2008_815": {
+    "n_cols": 59
+   }
+  },
+  "Nomenclador de Grupos RV": {
+   "codigo_721": {
+    "n_cols": 4
+   },
+   "codigo_722": {
+    "n_cols": 4
+   },
+   "codigo_raiz": {
+    "n_cols": 4
+   },
+   "codigo_preambulos": {
+    "n_cols": 4
+   },
+   "sbd2008_815": {
+    "n_cols": 4
+   }
+  },
+  "Nomenclador de Juegos": {
+   "codigo_721": {
+    "n_cols": 10
+   },
+   "codigo_722": {
+    "n_cols": 10
+   },
+   "codigo_raiz": {
+    "n_cols": 10
+   },
+   "codigo_preambulos": {
+    "n_cols": 10
+   },
+   "sbd2008_815": {
+    "n_cols": 10
+   }
+  },
+  "Nomenclador de Mano de Obra": {
+   "codigo_721": {
+    "n_cols": 15
+   },
+   "codigo_722": {
+    "n_cols": 15
+   },
+   "codigo_raiz": {
+    "n_cols": 15
+   },
+   "codigo_preambulos": {
+    "n_cols": 15
+   },
+   "sbd2008_815": {
+    "n_cols": 19
+   }
+  },
+  "Nomenclador de Materiales": {
+   "codigo_721": {
+    "n_cols": 11
+   },
+   "codigo_722": {
+    "n_cols": 11
+   },
+   "codigo_raiz": {
+    "n_cols": 11
+   },
+   "codigo_preambulos": {
+    "n_cols": 11
+   },
+   "sbd2008_815": {
+    "n_cols": 11
+   }
+  },
+  "Nomenclador de Provincias": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 2
+   }
+  },
+  "Nomenclador de RV": {
+   "codigo_721": {
+    "n_cols": 40
+   },
+   "codigo_722": {
+    "n_cols": 40
+   },
+   "codigo_raiz": {
+    "n_cols": 40
+   },
+   "codigo_preambulos": {
+    "n_cols": 40
+   },
+   "sbd2008_815": {
+    "n_cols": 67
+   }
+  },
+  "Nomenclador de RV Obra_E": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 25
+   }
+  },
+  "Nomenclador de Semielaborados": {
+   "codigo_721": {
+    "n_cols": 10
+   },
+   "codigo_722": {
+    "n_cols": 10
+   },
+   "codigo_raiz": {
+    "n_cols": 10
+   },
+   "codigo_preambulos": {
+    "n_cols": 10
+   },
+   "sbd2008_815": {
+    "n_cols": 12
+   }
+  },
+  "Nomenclador de SobreGrupos RV": {
+   "codigo_721": {
+    "n_cols": 3
+   },
+   "codigo_722": {
+    "n_cols": 3
+   },
+   "codigo_raiz": {
+    "n_cols": 3
+   },
+   "codigo_preambulos": {
+    "n_cols": 3
+   },
+   "sbd2008_815": {
+    "n_cols": 3
+   }
+  },
+  "Nomenclador de SubGrupos RV": {
+   "codigo_721": {
+    "n_cols": 5
+   },
+   "codigo_722": {
+    "n_cols": 5
+   },
+   "codigo_raiz": {
+    "n_cols": 5
+   },
+   "codigo_preambulos": {
+    "n_cols": 5
+   },
+   "sbd2008_815": {
+    "n_cols": 4
+   }
+  },
+  "Norma Juego Material": {
+   "codigo_721": {
+    "n_cols": 5
+   },
+   "codigo_722": {
+    "n_cols": 5
+   },
+   "codigo_raiz": {
+    "n_cols": 5
+   },
+   "codigo_preambulos": {
+    "n_cols": 5
+   },
+   "sbd2008_815": {
+    "n_cols": 5
+   }
+  },
+  "Norma Juego Material1": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": {
+    "n_cols": 5
+   },
+   "codigo_preambulos": null,
+   "sbd2008_815": null
+  },
+  "Norma Propia de Equipos": {
+   "codigo_721": {
+    "n_cols": 9
+   },
+   "codigo_722": {
+    "n_cols": 9
+   },
+   "codigo_raiz": {
+    "n_cols": 9
+   },
+   "codigo_preambulos": {
+    "n_cols": 9
+   },
+   "sbd2008_815": {
+    "n_cols": 9
+   }
+  },
+  "Norma Propia de Mano de Obra": {
+   "codigo_721": {
+    "n_cols": 9
+   },
+   "codigo_722": {
+    "n_cols": 9
+   },
+   "codigo_raiz": {
+    "n_cols": 9
+   },
+   "codigo_preambulos": {
+    "n_cols": 9
+   },
+   "sbd2008_815": {
+    "n_cols": 9
+   }
+  },
+  "Norma Semi Equipos": {
+   "codigo_721": {
+    "n_cols": 6
+   },
+   "codigo_722": {
+    "n_cols": 6
+   },
+   "codigo_raiz": {
+    "n_cols": 6
+   },
+   "codigo_preambulos": {
+    "n_cols": 6
+   },
+   "sbd2008_815": {
+    "n_cols": 7
+   }
+  },
+  "Norma Semi Material": {
+   "codigo_721": {
+    "n_cols": 5
+   },
+   "codigo_722": {
+    "n_cols": 5
+   },
+   "codigo_raiz": {
+    "n_cols": 5
+   },
+   "codigo_preambulos": {
+    "n_cols": 5
+   },
+   "sbd2008_815": {
+    "n_cols": 5
+   }
+  },
+  "Norma Semi RHumanos": {
+   "codigo_721": {
+    "n_cols": 6
+   },
+   "codigo_722": {
+    "n_cols": 6
+   },
+   "codigo_raiz": {
+    "n_cols": 6
+   },
+   "codigo_preambulos": {
+    "n_cols": 6
+   },
+   "sbd2008_815": {
+    "n_cols": 7
+   }
+  },
+  "Norma de Equipos": {
+   "codigo_721": {
+    "n_cols": 9
+   },
+   "codigo_722": {
+    "n_cols": 9
+   },
+   "codigo_raiz": {
+    "n_cols": 9
+   },
+   "codigo_preambulos": {
+    "n_cols": 9
+   },
+   "sbd2008_815": {
+    "n_cols": 18
+   }
+  },
+  "Norma de Juegos": {
+   "codigo_721": {
+    "n_cols": 5
+   },
+   "codigo_722": {
+    "n_cols": 5
+   },
+   "codigo_raiz": {
+    "n_cols": 5
+   },
+   "codigo_preambulos": {
+    "n_cols": 5
+   },
+   "sbd2008_815": {
+    "n_cols": 10
+   }
+  },
+  "Norma de Mano de Obra": {
+   "codigo_721": {
+    "n_cols": 9
+   },
+   "codigo_722": {
+    "n_cols": 9
+   },
+   "codigo_raiz": {
+    "n_cols": 9
+   },
+   "codigo_preambulos": {
+    "n_cols": 9
+   },
+   "sbd2008_815": {
+    "n_cols": 19
+   }
+  },
+  "Norma de Materiales": {
+   "codigo_721": {
+    "n_cols": 5
+   },
+   "codigo_722": {
+    "n_cols": 5
+   },
+   "codigo_raiz": {
+    "n_cols": 5
+   },
+   "codigo_preambulos": {
+    "n_cols": 5
+   },
+   "sbd2008_815": {
+    "n_cols": 11
+   }
+  },
+  "Norma de Semielaborados": {
+   "codigo_721": {
+    "n_cols": 5
+   },
+   "codigo_722": {
+    "n_cols": 5
+   },
+   "codigo_raiz": {
+    "n_cols": 5
+   },
+   "codigo_preambulos": {
+    "n_cols": 5
+   },
+   "sbd2008_815": {
+    "n_cols": 10
+   }
+  },
+  "Normas Descriptivas": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 25
+   }
+  },
+  "Normas Eq": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 9
+   }
+  },
+  "Normas Eq Comp": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 6
+   }
+  },
+  "Normas RH": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 9
+   }
+  },
+  "Normas RH Comp": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 6
+   }
+  },
+  "Normas RH Extendida": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 8
+   }
+  },
+  "Nuestros Clientes y Suministradores": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 15
+   }
+  },
+  "OG x Equipo": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 4
+   }
+  },
+  "Objetos de Obra": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 90
+   }
+  },
+  "Obras": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 168
+   }
+  },
+  "ObrasUsr": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 2
+   }
+  },
+  "Organismos": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 4
+   }
+  },
+  "Origen_Destinos": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 3
+   }
+  },
+  "Otros Gastos Directos de Obra": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 4
+   }
+  },
+  "Otros Pactos": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 5
+   }
+  },
+  "PD E": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 8
+   }
+  },
+  "PD J": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 7
+   }
+  },
+  "PD M": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 7
+   }
+  },
+  "PD RH": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 9
+   }
+  },
+  "PD S": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 7
+   }
+  },
+  "PD Valor": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 9
+   }
+  },
+  "PM Ptos": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 6
+   }
+  },
+  "Pagos Emitidos": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 6
+   }
+  },
+  "Pagos Recibidos": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 5
+   }
+  },
+  "Paquete T Eq Pres": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 6
+   }
+  },
+  "Paquete de Transporte": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 6
+   }
+  },
+  "PivoTablas_Relación": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 5
+   }
+  },
+  "Plan Anual": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 6
+   }
+  },
+  "Plantilla Obra Tipica": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 59
+   }
+  },
+  "Plantillas": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 3
+   }
+  },
+  "Presupuesto Composición Equipo": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 14
+   }
+  },
+  "Presupuesto Composición J": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 8
+   }
+  },
+  "Presupuesto Composición Mat": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 9
+   }
+  },
+  "Presupuesto Composición RH": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 12
+   }
+  },
+  "Presupuesto Composición RV": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 48
+   }
+  },
+  "Presupuesto Composición SE": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 8
+   }
+  },
+  "Presupuesto Memoria": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 4
+   }
+  },
+  "Presupuesto de Facilidades": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 5
+   }
+  },
+  "Presupuesto de Gastos Bancarios": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 6
+   }
+  },
+  "Presupuesto de Imprevistos": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 6
+   }
+  },
+  "Presupuesto de Otros Gastos": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 6
+   }
+  },
+  "Presupuesto de Otros P": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 6
+   }
+  },
+  "Presupuesto de Seguro": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 6
+   }
+  },
+  "Presupuesto de Transp Equipos": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 40
+   }
+  },
+  "Presupuesto de Transportación": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 40
+   }
+  },
+  "Presupuesto de Transportación por Acuerdo": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 5
+   }
+  },
+  "Presupuesto vs Presupuestista": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 5
+   }
+  },
+  "Producción Real": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 7
+   }
+  },
+  "Producción Real Diaria": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 29
+   }
+  },
+  "Producción Real Diaria Min": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 4
+   }
+  },
+  "Prog E": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 8
+   }
+  },
+  "Prog J": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 7
+   }
+  },
+  "Prog M": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 7
+   }
+  },
+  "Prog Mensual Desglose": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 3
+   }
+  },
+  "Prog RH": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 8
+   }
+  },
+  "Prog S": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 7
+   }
+  },
+  "ProgT E": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 8
+   }
+  },
+  "ProgT J": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 7
+   }
+  },
+  "ProgT M": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 7
+   }
+  },
+  "ProgT RH": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 8
+   }
+  },
+  "ProgT S": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 7
+   }
+  },
+  "Programa Mensual": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 34
+   }
+  },
+  "Programa Mensual Cab": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 8
+   }
+  },
+  "Programa Mnesual por Minimas": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 3
+   }
+  },
+  "Programa Trimestral": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 29
+   }
+  },
+  "Programa Trimestral Cab": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 8
+   }
+  },
+  "Programa Trimestral Minimas": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 3
+   }
+  },
+  "Programación de Comb y Lub": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 3
+   }
+  },
+  "Programación de Equipos": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 9
+   }
+  },
+  "Programación de Izaje": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 10
+   }
+  },
+  "Programación de Prefabricados": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 8
+   }
+  },
+  "RLCCOEFDESEQUIPO": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 9
+   }
+  },
+  "RLCEQUIPOMLC": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 17
+   }
+  },
+  "RLCNEUMEQUIPO": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 3
+   }
+  },
+  "RLCOPEREQUIPO": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 4
+   }
+  },
+  "Recursos Referencia": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 4
+   }
+  },
+  "Renglon": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 1
+   }
+  },
+  "Reporte de Gasto": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 8
+   }
+  },
+  "Reporte de Producción al Despacho": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 18
+   }
+  },
+  "SQLXLS": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 3
+   }
+  },
+  "Servios_AD_TD": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 3
+   }
+  },
+  "Sobre Grupo Conceptos de Gastos": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 13
+   }
+  },
+  "Sub Servios_AD_TD": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 3
+   }
+  },
+  "SubMinimas": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 3
+   }
+  },
+  "SubTipos de Obras": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 3
+   }
+  },
+  "Tarifas de Demora": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 4
+   }
+  },
+  "Tarifas de Recorrido Vacio": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 6
+   }
+  },
+  "Tarifas de T": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 5
+   }
+  },
+  "Tarifas_AD_TD": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 4
+   }
+  },
+  "Tipo Insumos": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 7
+   }
+  },
+  "Tipo de Operaciones Finacieras": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 3
+   }
+  },
+  "Tipos de Contratos": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 2
+   }
+  },
+  "Tipos de Equipos": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 2
+   }
+  },
+  "Tipos de Finaciamiento": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 3
+   }
+  },
+  "Tipos de Obras": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 2
+   }
+  },
+  "Tipos de Presupuesto": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 3
+   }
+  },
+  "Tipos de Recursos": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 2
+   }
+  },
+  "Tipos de Servicio de Transporte": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 14
+   }
+  },
+  "Todos": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 3
+   }
+  },
+  "Trazas": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 4
+   }
+  },
+  "UEB_Constructoras": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 4
+   }
+  },
+  "Unidades de Obra": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 8
+   }
+  },
+  "Usr Activos": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 1
+   }
+  },
+  "Variantes": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 5
+   }
+  },
+  "Variantes Salariales": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 6
+   }
+  },
+  "VerBD": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 4
+   }
+  },
+  "Via Negativa": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 6
+   }
+  },
+  "Via Negativa Establecimiento": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 6
+   }
+  },
+  "Via Negativa Obra": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 6
+   }
+  },
+  "ddddd": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 41
+   }
+  },
+  "destajo": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 4
+   }
+  },
+  "tc Costo con Norma Precons Equipo": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 8
+   }
+  },
+  "tc Duración y Costo con Norma Precons MO": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 9
+   }
+  },
+  "tempDesgaste": {
+   "codigo_721": null,
+   "codigo_722": null,
+   "codigo_raiz": null,
+   "codigo_preambulos": null,
+   "sbd2008_815": {
+    "n_cols": 16
+   }
+  }
+ }
+}

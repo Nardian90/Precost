@@ -1,0 +1,1709 @@
+{
+ "generado": "2026-10-14T04:27:13.271270+00:00",
+ "base": "codigo.mdb raíz (2017)",
+ "tablas": {
+  "AGIT_Indicadores Hijos": {
+   "finalidad": "Indicadores económicos de construcción (AGIT) desglosados por grupos de salario; catálogo de indicadores para análisis.",
+   "filas": 122,
+   "pk": [
+    "IE1"
+   ],
+   "columnas": {
+    "IdIE1": {
+     "n": 122,
+     "nulos": 0,
+     "distintos": 122
+    },
+    "IdIE1Viejo": {
+     "n": 122,
+     "nulos": 122,
+     "distintos": 0
+    },
+    "IdIE0": {
+     "n": 122,
+     "nulos": 0,
+     "distintos": 13
+    },
+    "IEH_Orden": {
+     "n": 122,
+     "nulos": 0,
+     "distintos": 19
+    },
+    "IE1": {
+     "n": 122,
+     "nulos": 0,
+     "distintos": 122
+    }
+   },
+   "pk_duplicadas": 0,
+   "pk_nulas": 0
+  },
+  "Actividades de Estimación": {
+   "finalidad": "Catálogo de actividades de estimación con precio por unidad y tiempos (pesimista/esperado/optimista), para estimaciones rápidas.",
+   "filas": 671,
+   "pk": [
+    "CodGActEst",
+    "ActEst"
+   ],
+   "columnas": {
+    "PrecEst": {
+     "n": 671,
+     "nulos": 0,
+     "distintos": 560
+    },
+    "IdActEst": {
+     "n": 671,
+     "nulos": 0,
+     "distintos": 671
+    },
+    "IdActEstV": {
+     "n": 671,
+     "nulos": 671,
+     "distintos": 0
+    },
+    "TPesimista": {
+     "n": 671,
+     "nulos": 0,
+     "distintos": 1
+    },
+    "TEsperado": {
+     "n": 671,
+     "nulos": 0,
+     "distintos": 1
+    },
+    "TOptimista": {
+     "n": 671,
+     "nulos": 0,
+     "distintos": 1
+    },
+    "PrecEstMLC": {
+     "n": 671,
+     "nulos": 0,
+     "distintos": 1
+    },
+    "CodGActEst": {
+     "n": 671,
+     "nulos": 0,
+     "distintos": 48
+    },
+    "ActEst": {
+     "n": 671,
+     "nulos": 0,
+     "distintos": 639
+    },
+    "UMEst": {
+     "n": 671,
+     "nulos": 0,
+     "distintos": 32
+    }
+   },
+   "pk_duplicadas": 0,
+   "pk_nulas": 0
+  },
+  "HojaCalculo": {
+   "finalidad": "Tabla de trabajo temporal (borrador) que la aplicación Codigo.exe usa para armar descomposiciones; no es un nomenclador.",
+   "filas": 4,
+   "pk": [],
+   "columnas": {
+    "CantMat": {
+     "n": 4,
+     "nulos": 0,
+     "distintos": 3
+    },
+    "CodMat": {
+     "n": 4,
+     "nulos": 0,
+     "distintos": 4
+    },
+    "Material": {
+     "n": 4,
+     "nulos": 0,
+     "distintos": 4
+    },
+    "UmRec": {
+     "n": 4,
+     "nulos": 0,
+     "distintos": 2
+    },
+    "Tipo": {
+     "n": 4,
+     "nulos": 0,
+     "distintos": 2
+    }
+   }
+  },
+  "Nomenclador de Equipos": {
+   "finalidad": "Nomenclador maestro de equipos de construcción: código, descripción, unidad (HE), precio/tarifa MN y MLC.",
+   "filas": 415,
+   "pk": [
+    "CodEquipo"
+   ],
+   "columnas": {
+    "PrecioU": {
+     "n": 415,
+     "nulos": 0,
+     "distintos": 385
+    },
+    "PesoU": {
+     "n": 415,
+     "nulos": 0,
+     "distintos": 1
+    },
+    "IdTipoEquipo": {
+     "n": 415,
+     "nulos": 0,
+     "distintos": 3
+    },
+    "PMN": {
+     "n": 415,
+     "nulos": 0,
+     "distintos": 386
+    },
+    "PMLC": {
+     "n": 415,
+     "nulos": 0,
+     "distintos": 194
+    },
+    "IdEstab": {
+     "n": 415,
+     "nulos": 0,
+     "distintos": 1
+    },
+    "PPMN": {
+     "n": 415,
+     "nulos": 0,
+     "distintos": 2
+    },
+    "PPMLC": {
+     "n": 415,
+     "nulos": 0,
+     "distintos": 1
+    },
+    "CPO_N": {
+     "n": 415,
+     "nulos": 0,
+     "distintos": 1
+    },
+    "CPE_N": {
+     "n": 415,
+     "nulos": 0,
+     "distintos": 1
+    },
+    "CET_N": {
+     "n": 415,
+     "nulos": 0,
+     "distintos": 1
+    },
+    "IdE": {
+     "n": 415,
+     "nulos": 0,
+     "distintos": 415
+    },
+    "NormaHoraria": {
+     "n": 415,
+     "nulos": 411,
+     "distintos": 1
+    },
+    "CodEquipo": {
+     "n": 415,
+     "nulos": 1,
+     "distintos": 415
+    },
+    "Equipo": {
+     "n": 415,
+     "nulos": 1,
+     "distintos": 412
+    },
+    "UmRec": {
+     "n": 415,
+     "nulos": 1,
+     "distintos": 4
+    }
+   },
+   "pk_duplicadas": 0,
+   "pk_nulas": 1
+  },
+  "Nomenclador de Grupos RV": {
+   "finalidad": "Segundo nivel de la jerarquía de renglones de variante (grupo dentro de sobregrupo).",
+   "filas": 320,
+   "pk": [
+    "CodSobreG",
+    "CodG"
+   ],
+   "columnas": {
+    "IdGrupo": {
+     "n": 320,
+     "nulos": 0,
+     "distintos": 320
+    },
+    "CodSobreG": {
+     "n": 320,
+     "nulos": 0,
+     "distintos": 40
+    },
+    "CodG": {
+     "n": 320,
+     "nulos": 0,
+     "distintos": 320
+    },
+    "Grupo": {
+     "n": 320,
+     "nulos": 0,
+     "distintos": 262
+    }
+   },
+   "pk_duplicadas": 0,
+   "pk_nulas": 0
+  },
+  "Nomenclador de Juegos": {
+   "finalidad": "Nomenclador de juegos de trabajo (paquetes de materiales que se instalan conjuntamente, p.ej. juegos de tuberías); precio por juego.",
+   "filas": 328,
+   "pk": [
+    "CodJuego"
+   ],
+   "columnas": {
+    "PrecioU": {
+     "n": 328,
+     "nulos": 0,
+     "distintos": 292
+    },
+    "PesoU": {
+     "n": 328,
+     "nulos": 0,
+     "distintos": 281
+    },
+    "PMN": {
+     "n": 328,
+     "nulos": 0,
+     "distintos": 291
+    },
+    "PMLC": {
+     "n": 328,
+     "nulos": 0,
+     "distintos": 4
+    },
+    "IdEstab": {
+     "n": 328,
+     "nulos": 0,
+     "distintos": 1
+    },
+    "UtilJ": {
+     "n": 328,
+     "nulos": 0,
+     "distintos": 1
+    },
+    "IdJ": {
+     "n": 328,
+     "nulos": 0,
+     "distintos": 328
+    },
+    "CodJuego": {
+     "n": 328,
+     "nulos": 0,
+     "distintos": 328
+    },
+    "Juego": {
+     "n": 328,
+     "nulos": 0,
+     "distintos": 325
+    },
+    "UmRec": {
+     "n": 328,
+     "nulos": 0,
+     "distintos": 4
+    }
+   },
+   "pk_duplicadas": 0,
+   "pk_nulas": 0
+  },
+  "Nomenclador de Mano de Obra": {
+   "finalidad": "Nomenclador maestro de mano de obra por categoría/oficio: código, descripción, unidad (hh), salario/hora MN y MLC, grupo salarial.",
+   "filas": 248,
+   "pk": [
+    "CodRHum"
+   ],
+   "columnas": {
+    "PrecioU": {
+     "n": 248,
+     "nulos": 0,
+     "distintos": 11
+    },
+    "PesoU": {
+     "n": 248,
+     "nulos": 0,
+     "distintos": 1
+    },
+    "PMN": {
+     "n": 248,
+     "nulos": 0,
+     "distintos": 11
+    },
+    "PMLC": {
+     "n": 248,
+     "nulos": 0,
+     "distintos": 1
+    },
+    "IdEstab": {
+     "n": 248,
+     "nulos": 0,
+     "distintos": 1
+    },
+    "PPMN": {
+     "n": 248,
+     "nulos": 0,
+     "distintos": 1
+    },
+    "PPMLC": {
+     "n": 248,
+     "nulos": 0,
+     "distintos": 1
+    },
+    "IdH": {
+     "n": 248,
+     "nulos": 0,
+     "distintos": 248
+    },
+    "HCPO_N": {
+     "n": 248,
+     "nulos": 0,
+     "distintos": 1
+    },
+    "CodRHum": {
+     "n": 248,
+     "nulos": 0,
+     "distintos": 248
+    },
+    "RHum": {
+     "n": 248,
+     "nulos": 0,
+     "distintos": 244
+    },
+    "UmRec": {
+     "n": 248,
+     "nulos": 0,
+     "distintos": 2
+    },
+    "Grupo": {
+     "n": 248,
+     "nulos": 0,
+     "distintos": 10
+    },
+    "Especialidad": {
+     "n": 248,
+     "nulos": 247,
+     "distintos": 1
+    },
+    "AO": {
+     "n": 248,
+     "nulos": 248,
+     "distintos": 0
+    }
+   },
+   "pk_duplicadas": 0,
+   "pk_nulas": 0
+  },
+  "Nomenclador de Materiales": {
+   "finalidad": "Nomenclador maestro de materiales: código, descripción, unidad, familia, precio unitario MN/MLC, peso, suministrador.",
+   "filas": 7769,
+   "pk": [
+    "CodMat"
+   ],
+   "columnas": {
+    "PrecioU": {
+     "n": 7769,
+     "nulos": 0,
+     "distintos": 3351
+    },
+    "PesoU": {
+     "n": 7769,
+     "nulos": 0,
+     "distintos": 849
+    },
+    "PMN": {
+     "n": 7769,
+     "nulos": 0,
+     "distintos": 2951
+    },
+    "PMLC": {
+     "n": 7769,
+     "nulos": 0,
+     "distintos": 1391
+    },
+    "IdEstab": {
+     "n": 7769,
+     "nulos": 0,
+     "distintos": 1
+    },
+    "IdM": {
+     "n": 7769,
+     "nulos": 0,
+     "distintos": 7769
+    },
+    "CodMat": {
+     "n": 7769,
+     "nulos": 0,
+     "distintos": 7769
+    },
+    "Material": {
+     "n": 7769,
+     "nulos": 0,
+     "distintos": 7513
+    },
+    "UmRec": {
+     "n": 7769,
+     "nulos": 0,
+     "distintos": 104
+    },
+    "CodFamilia": {
+     "n": 7769,
+     "nulos": 1660,
+     "distintos": 9
+    },
+    "Suministrador": {
+     "n": 7769,
+     "nulos": 1239,
+     "distintos": 4
+    }
+   },
+   "pk_duplicadas": 0,
+   "pk_nulas": 0
+  },
+  "Nomenclador de RV": {
+   "finalidad": "Nomenclador central de renglones de variante (partidas de presupuesto): código, descripción, unidad de medida, costos unitarios desglosados (materiales/mano de obra/equipos, MN y MLC), horas hombre/equipo e indicadores de consumo (cemento, áridos, asfalto, carga, prefabricado).",
+   "filas": 15351,
+   "pk": [
+    "CodSobreG",
+    "CodG",
+    "CodSubG",
+    "CODIGO RV"
+   ],
+   "columnas": {
+    "FACTOR": {
+     "n": 15351,
+     "nulos": 0,
+     "distintos": 1
+    },
+    "COSTO DE MATERIALES": {
+     "n": 15351,
+     "nulos": 0,
+     "distintos": 2691
+    },
+    "COSTO DE MANO DE OBRA": {
+     "n": 15351,
+     "nulos": 0,
+     "distintos": 5191
+    },
+    "COSTO DE EQUIPOS": {
+     "n": 15351,
+     "nulos": 0,
+     "distintos": 3692
+    },
+    "PESO": {
+     "n": 15351,
+     "nulos": 0,
+     "distintos": 1
+    },
+    "HORAS HOMBRE": {
+     "n": 15351,
+     "nulos": 0,
+     "distintos": 5505
+    },
+    "HORAS EQUIPO": {
+     "n": 15351,
+     "nulos": 0,
+     "distintos": 2451
+    },
+    "CEMENTO": {
+     "n": 15351,
+     "nulos": 0,
+     "distintos": 1
+    },
+    "ARIDOS": {
+     "n": 15351,
+     "nulos": 0,
+     "distintos": 1
+    },
+    "ASFALTO": {
+     "n": 15351,
+     "nulos": 0,
+     "distintos": 1
+    },
+    "CARGA": {
+     "n": 15351,
+     "nulos": 0,
+     "distintos": 1
+    },
+    "PREFABRICADO": {
+     "n": 15351,
+     "nulos": 0,
+     "distintos": 1
+    },
+    "HORAS OPERARIO": {
+     "n": 15351,
+     "nulos": 0,
+     "distintos": 4806
+    },
+    "HORAS AYUDANTE": {
+     "n": 15351,
+     "nulos": 0,
+     "distintos": 1
+    },
+    "IdActividad1": {
+     "n": 15351,
+     "nulos": 0,
+     "distintos": 15351
+    },
+    "CMMN": {
+     "n": 15351,
+     "nulos": 0,
+     "distintos": 2691
+    },
+    "CHMN": {
+     "n": 15351,
+     "nulos": 0,
+     "distintos": 5191
+    },
+    "CEMN": {
+     "n": 15351,
+     "nulos": 0,
+     "distintos": 3469
+    },
+    "CMMLC": {
+     "n": 15351,
+     "nulos": 0,
+     "distintos": 1
+    },
+    "CHMLC": {
+     "n": 15351,
+     "nulos": 0,
+     "distintos": 1
+    },
+    "CEMLC": {
+     "n": 15351,
+     "nulos": 0,
+     "distintos": 1884
+    },
+    "IdEstab": {
+     "n": 15351,
+     "nulos": 0,
+     "distintos": 1
+    },
+    "Oficial": {
+     "n": 15351,
+     "nulos": 0,
+     "distintos": 2
+    },
+    "LopCS": {
+     "n": 15351,
+     "nulos": 0,
+     "distintos": 1
+    },
+    "LopSS": {
+     "n": 15351,
+     "nulos": 0,
+     "distintos": 1
+    },
+    "Fecha_Aprov": {
+     "n": 15351,
+     "nulos": 15351,
+     "distintos": 0
+    },
+    "CHMN_Propia": {
+     "n": 15351,
+     "nulos": 15347,
+     "distintos": 1
+    },
+    "CEMN_Propia": {
+     "n": 15351,
+     "nulos": 15347,
+     "distintos": 1
+    },
+    "CHMLC_Propia": {
+     "n": 15351,
+     "nulos": 15347,
+     "distintos": 1
+    },
+    "CEMLC_Propia": {
+     "n": 15351,
+     "nulos": 15347,
+     "distintos": 1
+    },
+    "CodSobreG": {
+     "n": 15351,
+     "nulos": 0,
+     "distintos": 40
+    },
+    "CodG": {
+     "n": 15351,
+     "nulos": 0,
+     "distintos": 320
+    },
+    "CodSubG": {
+     "n": 15351,
+     "nulos": 0,
+     "distintos": 1518
+    },
+    "CODIGO RV": {
+     "n": 15351,
+     "nulos": 0,
+     "distintos": 15351
+    },
+    "Desc Rv": {
+     "n": 15351,
+     "nulos": 0,
+     "distintos": 13749
+    },
+    "PGRUESA": {
+     "n": 15351,
+     "nulos": 15350,
+     "distintos": 1
+    },
+    "UNIDAD DE MEDIDA": {
+     "n": 15351,
+     "nulos": 0,
+     "distintos": 36
+    },
+    "TIPO": {
+     "n": 15351,
+     "nulos": 15351,
+     "distintos": 0
+    },
+    "DescCorta": {
+     "n": 15351,
+     "nulos": 15351,
+     "distintos": 0
+    },
+    "Res_Aprov": {
+     "n": 15351,
+     "nulos": 15351,
+     "distintos": 0
+    }
+   },
+   "pk_duplicadas": 0,
+   "pk_nulas": 0
+  },
+  "Nomenclador de Semielaborados": {
+   "finalidad": "Nomenclador de productos semielaborados (p.ej. repello monocapa) con precio unitario; se descomponen en recursos vía Norma Semi*.",
+   "filas": 353,
+   "pk": [
+    "CodSElab"
+   ],
+   "columnas": {
+    "PrecioU": {
+     "n": 353,
+     "nulos": 0,
+     "distintos": 314
+    },
+    "PesoU": {
+     "n": 353,
+     "nulos": 0,
+     "distintos": 154
+    },
+    "PMN": {
+     "n": 353,
+     "nulos": 0,
+     "distintos": 317
+    },
+    "PMLC": {
+     "n": 353,
+     "nulos": 0,
+     "distintos": 61
+    },
+    "IdEstab": {
+     "n": 353,
+     "nulos": 0,
+     "distintos": 1
+    },
+    "UtilS": {
+     "n": 353,
+     "nulos": 0,
+     "distintos": 1
+    },
+    "IdS": {
+     "n": 353,
+     "nulos": 0,
+     "distintos": 353
+    },
+    "CodSElab": {
+     "n": 353,
+     "nulos": 0,
+     "distintos": 353
+    },
+    "SElab": {
+     "n": 353,
+     "nulos": 0,
+     "distintos": 350
+    },
+    "UmRec": {
+     "n": 353,
+     "nulos": 0,
+     "distintos": 22
+    }
+   },
+   "pk_duplicadas": 0,
+   "pk_nulas": 0
+  },
+  "Nomenclador de SobreGrupos RV": {
+   "finalidad": "Primer nivel de la jerarquía de renglones de variante (capítulos).",
+   "filas": 40,
+   "pk": [
+    "CodSobreG"
+   ],
+   "columnas": {
+    "IdSobreGrupo": {
+     "n": 40,
+     "nulos": 0,
+     "distintos": 40
+    },
+    "CodSobreG": {
+     "n": 40,
+     "nulos": 0,
+     "distintos": 40
+    },
+    "SubreGrupo": {
+     "n": 40,
+     "nulos": 0,
+     "distintos": 40
+    }
+   },
+   "pk_duplicadas": 0,
+   "pk_nulas": 0
+  },
+  "Nomenclador de SubGrupos RV": {
+   "finalidad": "Tercer nivel de la jerarquía de renglones de variante (subgrupos).",
+   "filas": 1518,
+   "pk": [
+    "CodSobreG",
+    "CodG",
+    "CodSubG"
+   ],
+   "columnas": {
+    "IdSubGrupo": {
+     "n": 1518,
+     "nulos": 0,
+     "distintos": 1518
+    },
+    "CodSobreG": {
+     "n": 1518,
+     "nulos": 0,
+     "distintos": 40
+    },
+    "CodG": {
+     "n": 1518,
+     "nulos": 0,
+     "distintos": 320
+    },
+    "CodSubG": {
+     "n": 1518,
+     "nulos": 0,
+     "distintos": 1518
+    },
+    "SubGrupo": {
+     "n": 1518,
+     "nulos": 0,
+     "distintos": 1292
+    }
+   },
+   "pk_duplicadas": 0,
+   "pk_nulas": 0
+  },
+  "Norma Juego Material": {
+   "finalidad": "Descomposición de cada juego de trabajo en sus materiales componentes (coeficiente de consumo CantMatJ por unidad de juego).",
+   "filas": 2936,
+   "pk": [
+    "CodJuego",
+    "CodMat"
+   ],
+   "columnas": {
+    "CantMatJ": {
+     "n": 2936,
+     "nulos": 0,
+     "distintos": 119
+    },
+    "NormaUsos": {
+     "n": 2936,
+     "nulos": 0,
+     "distintos": 1
+    },
+    "IdNormaJ": {
+     "n": 2936,
+     "nulos": 0,
+     "distintos": 2936
+    },
+    "CodJuego": {
+     "n": 2936,
+     "nulos": 0,
+     "distintos": 316
+    },
+    "CodMat": {
+     "n": 2936,
+     "nulos": 0,
+     "distintos": 619
+    }
+   },
+   "pk_duplicadas": 0,
+   "pk_nulas": 0
+  },
+  "Norma Propia de Equipos": {
+   "finalidad": "Normas de equipos definidas por el usuario (vacía en las copias analizadas).",
+   "filas": 0,
+   "pk": [
+    "CodigoRV",
+    "CodEquipo",
+    "CodNorma"
+   ],
+   "columnas": {
+    "CodigoRV": {
+     "n": 0,
+     "nulos": 0,
+     "distintos": 0
+    },
+    "CodEquipo": {
+     "n": 0,
+     "nulos": 0,
+     "distintos": 0
+    },
+    "CodNorma": {
+     "n": 0,
+     "nulos": 0,
+     "distintos": 0
+    },
+    "CantEquipo": {
+     "n": 0,
+     "nulos": 0,
+     "distintos": 0
+    },
+    "CantNorma": {
+     "n": 0,
+     "nulos": 0,
+     "distintos": 0
+    },
+    "UMNorma": {
+     "n": 0,
+     "nulos": 0,
+     "distintos": 0
+    },
+    "NormaUsos": {
+     "n": 0,
+     "nulos": 0,
+     "distintos": 0
+    },
+    "DescNorma": {
+     "n": 0,
+     "nulos": 0,
+     "distintos": 0
+    },
+    "IdNormaP": {
+     "n": 0,
+     "nulos": 0,
+     "distintos": 0
+    }
+   },
+   "pk_duplicadas": 0,
+   "pk_nulas": 0
+  },
+  "Norma Propia de Mano de Obra": {
+   "finalidad": "Normas de mano de obra definidas por el usuario (vacía en las copias analizadas).",
+   "filas": 0,
+   "pk": [
+    "CodigoRV",
+    "CodRHum",
+    "CodNorma"
+   ],
+   "columnas": {
+    "CodigoRV": {
+     "n": 0,
+     "nulos": 0,
+     "distintos": 0
+    },
+    "CodRHum": {
+     "n": 0,
+     "nulos": 0,
+     "distintos": 0
+    },
+    "CodNorma": {
+     "n": 0,
+     "nulos": 0,
+     "distintos": 0
+    },
+    "CantRHum": {
+     "n": 0,
+     "nulos": 0,
+     "distintos": 0
+    },
+    "CantNorma": {
+     "n": 0,
+     "nulos": 0,
+     "distintos": 0
+    },
+    "UMNorma": {
+     "n": 0,
+     "nulos": 0,
+     "distintos": 0
+    },
+    "NormaUsos": {
+     "n": 0,
+     "nulos": 0,
+     "distintos": 0
+    },
+    "DescNorma": {
+     "n": 0,
+     "nulos": 0,
+     "distintos": 0
+    },
+    "IdNormaP": {
+     "n": 0,
+     "nulos": 0,
+     "distintos": 0
+    }
+   },
+   "pk_duplicadas": 0,
+   "pk_nulas": 0
+  },
+  "Norma Semi Equipos": {
+   "finalidad": "Descomposición de semielaborados en equipos.",
+   "filas": 120,
+   "pk": [
+    "CodSemi",
+    "CodNorma",
+    "CodEquipo"
+   ],
+   "columnas": {
+    "CantEquipoSE": {
+     "n": 120,
+     "nulos": 0,
+     "distintos": 48
+    },
+    "NormaUsos": {
+     "n": 120,
+     "nulos": 0,
+     "distintos": 1
+    },
+    "IdNormaS": {
+     "n": 120,
+     "nulos": 0,
+     "distintos": 120
+    },
+    "CodSemi": {
+     "n": 120,
+     "nulos": 0,
+     "distintos": 93
+    },
+    "CodNorma": {
+     "n": 120,
+     "nulos": 0,
+     "distintos": 1
+    },
+    "CodEquipo": {
+     "n": 120,
+     "nulos": 0,
+     "distintos": 22
+    }
+   },
+   "pk_duplicadas": 0,
+   "pk_nulas": 0
+  },
+  "Norma Semi Material": {
+   "finalidad": "Descomposición de semielaborados en materiales.",
+   "filas": 681,
+   "pk": [
+    "CodSemi",
+    "CodMat"
+   ],
+   "columnas": {
+    "CantMatSE": {
+     "n": 681,
+     "nulos": 0,
+     "distintos": 297
+    },
+    "NormaUsos": {
+     "n": 681,
+     "nulos": 0,
+     "distintos": 4
+    },
+    "IdNormaS": {
+     "n": 681,
+     "nulos": 0,
+     "distintos": 681
+    },
+    "CodSemi": {
+     "n": 681,
+     "nulos": 0,
+     "distintos": 194
+    },
+    "CodMat": {
+     "n": 681,
+     "nulos": 0,
+     "distintos": 129
+    }
+   },
+   "pk_duplicadas": 0,
+   "pk_nulas": 0
+  },
+  "Norma Semi RHumanos": {
+   "finalidad": "Descomposición de semielaborados en mano de obra.",
+   "filas": 149,
+   "pk": [
+    "CodSemi",
+    "CodNorma",
+    "CodRHum"
+   ],
+   "columnas": {
+    "CantRHumSE": {
+     "n": 149,
+     "nulos": 0,
+     "distintos": 62
+    },
+    "NormaUsos": {
+     "n": 149,
+     "nulos": 0,
+     "distintos": 1
+    },
+    "IdNormaS": {
+     "n": 149,
+     "nulos": 0,
+     "distintos": 149
+    },
+    "CodSemi": {
+     "n": 149,
+     "nulos": 0,
+     "distintos": 117
+    },
+    "CodNorma": {
+     "n": 149,
+     "nulos": 0,
+     "distintos": 9
+    },
+    "CodRHum": {
+     "n": 149,
+     "nulos": 0,
+     "distintos": 17
+    }
+   },
+   "pk_duplicadas": 0,
+   "pk_nulas": 0
+  },
+  "Norma de Equipos": {
+   "finalidad": "Norma de consumo de equipos por renglón de variante: coeficiente CantEquipo por unidad de RV (con código de norma compleja opcional).",
+   "filas": 12909,
+   "pk": [
+    "CodigoRV",
+    "CodEquipo",
+    "CodNorma"
+   ],
+   "columnas": {
+    "CantEquipo": {
+     "n": 12909,
+     "nulos": 0,
+     "distintos": 2457
+    },
+    "CantNorma": {
+     "n": 12909,
+     "nulos": 0,
+     "distintos": 13
+    },
+    "NormaUsos": {
+     "n": 12909,
+     "nulos": 0,
+     "distintos": 1
+    },
+    "IdNorma": {
+     "n": 12909,
+     "nulos": 0,
+     "distintos": 12909
+    },
+    "CodigoRV": {
+     "n": 12909,
+     "nulos": 0,
+     "distintos": 6481
+    },
+    "CodEquipo": {
+     "n": 12909,
+     "nulos": 0,
+     "distintos": 307
+    },
+    "CodNorma": {
+     "n": 12909,
+     "nulos": 0,
+     "distintos": 194
+    },
+    "UMNorma": {
+     "n": 12909,
+     "nulos": 12909,
+     "distintos": 0
+    },
+    "DescNorma": {
+     "n": 12909,
+     "nulos": 12909,
+     "distintos": 0
+    }
+   },
+   "pk_duplicadas": 0,
+   "pk_nulas": 0
+  },
+  "Norma de Juegos": {
+   "finalidad": "Norma de consumo de juegos de trabajo por renglón de variante.",
+   "filas": 341,
+   "pk": [
+    "CodigoRV",
+    "CodJuego"
+   ],
+   "columnas": {
+    "CantJuego": {
+     "n": 341,
+     "nulos": 0,
+     "distintos": 3
+    },
+    "NormaUsos": {
+     "n": 341,
+     "nulos": 0,
+     "distintos": 1
+    },
+    "IdNorma": {
+     "n": 341,
+     "nulos": 0,
+     "distintos": 341
+    },
+    "CodigoRV": {
+     "n": 341,
+     "nulos": 0,
+     "distintos": 341
+    },
+    "CodJuego": {
+     "n": 341,
+     "nulos": 0,
+     "distintos": 307
+    }
+   },
+   "pk_duplicadas": 0,
+   "pk_nulas": 0
+  },
+  "Norma de Mano de Obra": {
+   "finalidad": "Norma de consumo de mano de obra por renglón de variante: coeficiente CantRHum (hh por unidad de RV), con norma compleja opcional.",
+   "filas": 41662,
+   "pk": [
+    "CodigoRV",
+    "CodRHum",
+    "CodNorma"
+   ],
+   "columnas": {
+    "CantRHum": {
+     "n": 41662,
+     "nulos": 0,
+     "distintos": 7488
+    },
+    "CantNorma": {
+     "n": 41662,
+     "nulos": 41662,
+     "distintos": 0
+    },
+    "NormaUsos": {
+     "n": 41662,
+     "nulos": 0,
+     "distintos": 1
+    },
+    "IdNorma": {
+     "n": 41662,
+     "nulos": 0,
+     "distintos": 41662
+    },
+    "CodigoRV": {
+     "n": 41662,
+     "nulos": 0,
+     "distintos": 15215
+    },
+    "CodRHum": {
+     "n": 41662,
+     "nulos": 0,
+     "distintos": 191
+    },
+    "CodNorma": {
+     "n": 41662,
+     "nulos": 0,
+     "distintos": 9066
+    },
+    "UMNorma": {
+     "n": 41662,
+     "nulos": 41662,
+     "distintos": 0
+    },
+    "DescNorma": {
+     "n": 41662,
+     "nulos": 41662,
+     "distintos": 0
+    }
+   },
+   "pk_duplicadas": 0,
+   "pk_nulas": 0
+  },
+  "Norma de Materiales": {
+   "finalidad": "Norma de consumo de materiales por renglón de variante: coeficiente CantMat por unidad de RV.",
+   "filas": 18060,
+   "pk": [
+    "CodigoRV",
+    "CodMat"
+   ],
+   "columnas": {
+    "CantMat": {
+     "n": 18060,
+     "nulos": 0,
+     "distintos": 1766
+    },
+    "NormaUsos": {
+     "n": 18060,
+     "nulos": 0,
+     "distintos": 32
+    },
+    "IdNorma": {
+     "n": 18060,
+     "nulos": 0,
+     "distintos": 18060
+    },
+    "CodigoRV": {
+     "n": 18060,
+     "nulos": 0,
+     "distintos": 7659
+    },
+    "CodMat": {
+     "n": 18060,
+     "nulos": 0,
+     "distintos": 2184
+    }
+   },
+   "pk_duplicadas": 0,
+   "pk_nulas": 0
+  },
+  "Norma de Semielaborados": {
+   "finalidad": "Norma de consumo de semielaborados por renglón de variante.",
+   "filas": 1006,
+   "pk": [
+    "CodigoRV",
+    "CodSElab"
+   ],
+   "columnas": {
+    "CantSElab": {
+     "n": 1006,
+     "nulos": 0,
+     "distintos": 188
+    },
+    "NormaUsos": {
+     "n": 1006,
+     "nulos": 0,
+     "distintos": 2
+    },
+    "IdNorma": {
+     "n": 1006,
+     "nulos": 0,
+     "distintos": 1006
+    },
+    "CodigoRV": {
+     "n": 1006,
+     "nulos": 0,
+     "distintos": 977
+    },
+    "CodSElab": {
+     "n": 1006,
+     "nulos": 0,
+     "distintos": 56
+    }
+   },
+   "pk_duplicadas": 0,
+   "pk_nulas": 0
+  }
+ },
+ "dominios": {
+  "Nomenclador de Materiales.UmRec": [
+   [
+    "u",
+    3778
+   ],
+   [
+    "U",
+    1298
+   ],
+   [
+    "ml",
+    471
+   ],
+   [
+    "kg",
+    241
+   ],
+   [
+    "tm",
+    238
+   ],
+   [
+    "m2",
+    204
+   ],
+   [
+    "m",
+    186
+   ],
+   [
+    "m3",
+    165
+   ],
+   [
+    "cu",
+    131
+   ],
+   [
+    "lt",
+    116
+   ],
+   [
+    "mu",
+    95
+   ],
+   [
+    "M3",
+    81
+   ],
+   [
+    "ML",
+    77
+   ],
+   [
+    "M2",
+    75
+   ],
+   [
+    "l",
+    73
+   ],
+   [
+    "t",
+    46
+   ],
+   [
+    "M",
+    46
+   ],
+   [
+    "TN",
+    43
+   ],
+   [
+    "gl",
+    31
+   ],
+   [
+    "lts",
+    27
+   ],
+   [
+    "ro",
+    26
+   ],
+   [
+    "100u",
+    17
+   ],
+   [
+    "Rollo",
+    16
+   ],
+   [
+    "tn",
+    16
+   ],
+   [
+    "LT",
+    12
+   ],
+   [
+    "jg",
+    11
+   ],
+   [
+    "TON",
+    11
+   ],
+   [
+    "R",
+    11
+   ],
+   [
+    "sc",
+    10
+   ],
+   [
+    "100 u",
+    10
+   ]
+  ],
+  "Nomenclador de Mano de Obra.UmRec": [
+   [
+    "hh",
+    243
+   ],
+   [
+    "h/hombre",
+    5
+   ]
+  ],
+  "Nomenclador de Equipos.UmRec": [
+   [
+    "he",
+    412
+   ],
+   [
+    "HE",
+    1
+   ],
+   [
+    "HH",
+    1
+   ],
+   [
+    "",
+    1
+   ]
+  ],
+  "Nomenclador de Juegos.UmRec": [
+   [
+    "jg",
+    317
+   ],
+   [
+    "m2",
+    4
+   ],
+   [
+    "U",
+    4
+   ],
+   [
+    "u",
+    3
+   ]
+  ],
+  "Nomenclador de Semielaborados.UmRec": [
+   [
+    "m3",
+    171
+   ],
+   [
+    "M3",
+    87
+   ],
+   [
+    "u",
+    35
+   ],
+   [
+    "U",
+    19
+   ],
+   [
+    "m2",
+    8
+   ],
+   [
+    "hl",
+    7
+   ],
+   [
+    "ml",
+    6
+   ],
+   [
+    "M2",
+    4
+   ],
+   [
+    "KG",
+    2
+   ],
+   [
+    "tn",
+    2
+   ],
+   [
+    "Kg",
+    1
+   ],
+   [
+    "HH",
+    1
+   ],
+   [
+    "127.9",
+    1
+   ],
+   [
+    "m3             ",
+    1
+   ],
+   [
+    "lt",
+    1
+   ],
+   [
+    "jg",
+    1
+   ],
+   [
+    "kg",
+    1
+   ],
+   [
+    "am",
+    1
+   ],
+   [
+    "mu",
+    1
+   ],
+   [
+    "T",
+    1
+   ],
+   [
+    "M",
+    1
+   ],
+   [
+    "M.",
+    1
+   ]
+  ],
+  "Nomenclador de RV.UNIDAD DE MEDIDA": [
+   [
+    "u",
+    7036
+   ],
+   [
+    "m2",
+    2757
+   ],
+   [
+    "tm",
+    2473
+   ],
+   [
+    "ml",
+    1667
+   ],
+   [
+    "m3",
+    385
+   ],
+   [
+    "m",
+    361
+   ],
+   [
+    "cm",
+    148
+   ],
+   [
+    "U",
+    78
+   ],
+   [
+    "ct",
+    75
+   ],
+   [
+    "c2",
+    73
+   ],
+   [
+    "km",
+    73
+   ],
+   [
+    "c3",
+    33
+   ],
+   [
+    "d2",
+    28
+   ],
+   [
+    "cu",
+    26
+   ],
+   [
+    "dc",
+    23
+   ],
+   [
+    "t",
+    22
+   ],
+   [
+    "kg",
+    19
+   ],
+   [
+    "pr",
+    10
+   ],
+   [
+    "M3",
+    9
+   ],
+   [
+    "ck",
+    8
+   ],
+   [
+    "pa",
+    7
+   ],
+   [
+    "mm",
+    6
+   ],
+   [
+    "hl",
+    5
+   ],
+   [
+    "m4",
+    4
+   ],
+   [
+    "m5",
+    4
+   ],
+   [
+    "m1",
+    4
+   ],
+   [
+    "c1",
+    3
+   ],
+   [
+    "jg",
+    3
+   ],
+   [
+    "c7",
+    2
+   ],
+   [
+    "um",
+    2
+   ]
+  ],
+  "Nomenclador de RV.TIPO": []
+ },
+ "unicidad_codigo_rv": {
+  "filas": 15351,
+  "codigos_distintos": 15351,
+  "duplicados": 0,
+  "longitudes": {
+   "6": 15351
+  }
+ },
+ "estructura_codigo_rv": {
+  "analizados": 15351,
+  "prefijo_sobregrupo_coincide": 15351
+ }
+}
