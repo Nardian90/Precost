@@ -135,6 +135,8 @@ class Manejador(BaseHTTPRequestHandler):
                 return self._api_descomposicion(con, m.group(1), q)
             if ruta == "/api/normas_disponibles":
                 return self._api_normas_disponibles(con, q)
+            if ruta == "/api/recursos":
+                return self._api_recursos(con, q)
             if ruta == "/api/stats":
                 return self._api_stats(con)
             self._json({"error": "endpoint desconocido"}, 404)
@@ -294,6 +296,97 @@ class Manejador(BaseHTTPRequestHandler):
             return None
         return sorted(con_normas, key=lambda f: f["version"], reverse=True)[0]["id"]
 
+    @staticmethod
+    def _version_recursos_defecto(con):
+        """MISIÓN V — versión por defecto para búsquedas de recursos del
+        nomenclador (endpoint /api/recursos). Orden documentado: la versión de
+        normas por defecto SI tiene nomenclador; si no, la de importación más
+        reciente que sí tenga recursos. Con la BD completa: PRECODI 2017-raíz;
+        solo con la base 2025: PRECONS_III 2025-06-06 (documentado en el
+        INFORME_FASE_V: regeneración parcial tras pérdida de fuentes)."""
+        vn = Manejador._version_normas_defecto(con)
+        if vn is not None and con.execute(
+                "SELECT COUNT(*) FROM recursos WHERE version_id=?", (vn,)).fetchone()[0] > 0:
+            return vn
+        fila = con.execute("""
+            SELECT vc.id FROM versiones_catalogo vc
+            WHERE (SELECT COUNT(*) FROM recursos WHERE version_id=vc.id) > 0
+            ORDER BY vc.fecha_importacion DESC, vc.id DESC LIMIT 1""").fetchone()
+        return fila[0] if fila else None
+
+    def _api_recursos(self, con, q):
+        """MISIÓN V (S-052/S-050) — búsqueda del NOMENCLADOR de recursos para
+        «añadir recurso propio» a la especificación de un A.C. del presupuesto.
+
+        SOLO LECTURA y 100 % aditivo: no modifica los endpoints de III-B/III-C
+        ni sus contratos. Parámetros:
+          q=            texto (código o descripción, LIKE, sin distinguir mayúsculas)
+          tipo=         material | mano_obra | equipo | juego | semielaborado
+          version_id=   versión del nomenclador (default: _version_recursos_defecto)
+          limit=        máx. 200
+        Respuesta: cada recurso con tipo, código, descripción, um, precio_mn
+        (null → aviso explícito «sin precio», nunca se inventa) y versiones
+        donde el mismo código existe como otro tipo (ambigüedad, estilo III-C)."""
+        texto = (q.get("q", [""])[0] or "").strip()
+        tipo = (q.get("tipo", [""])[0] or "").strip()
+        version_id = q.get("version_id", [None])[0]
+        try:
+            limite = min(int(q.get("limit", [30])[0]), 200)
+        except ValueError:
+            limite = 30
+        if version_id is None:
+            version_id = self._version_recursos_defecto(con)
+            if version_id is None:
+                return self._json({"error": "ninguna versión con recursos en la BD"}, 404)
+        version_id = int(version_id)
+
+        tipo_id = None
+        if tipo:
+            f = con.execute("SELECT id FROM tipos_recurso WHERE codigo=?", (tipo,)).fetchone()
+            if not f:
+                tipos = [dict(r) for r in con.execute(
+                    "SELECT codigo, nombre FROM tipos_recurso ORDER BY id")]
+                return self._json({"error": "tipo desconocido", "tipos_validos": tipos}, 400)
+            tipo_id = f[0]
+
+        sql = """SELECT r.tipo_id, tr.codigo AS tipo, tr.nombre AS tipo_nombre,
+                        r.codigo, r.descripcion, r.unidad, r.precio_mn, r.precio_mlc
+                 FROM recursos r JOIN tipos_recurso tr ON tr.id = r.tipo_id
+                 WHERE r.version_id = ?"""
+        params = [version_id]
+        if tipo_id:
+            sql += " AND r.tipo_id = ?"
+            params.append(tipo_id)
+        if texto:
+            sql += " AND (r.codigo LIKE ? OR r.descripcion LIKE ? COLLATE NOCASE)"
+            params += [f"%{texto}%", f"%{texto}%"]
+        sql += " ORDER BY tr.id, r.codigo LIMIT ?"
+        params.append(limite)
+
+        resultados = []
+        for r in con.execute(sql, params).fetchall():
+            r = dict(r)
+            r["sin_precio"] = r["precio_mn"] is None
+            # ambigüedad: el mismo código existe como OTRO tipo en esta versión
+            # (estilo III-C: advertir, nunca descartar en silencio)
+            otros = [x[0] for x in con.execute(
+                """SELECT tr2.codigo FROM recursos r2 JOIN tipos_recurso tr2 ON tr2.id=r2.tipo_id
+                   WHERE r2.version_id=? AND r2.codigo=? AND r2.tipo_id != ? LIMIT 3""",
+                (version_id, r["codigo"], r["tipo_id"]))]
+            r["mismo_codigo_otro_tipo"] = otros
+            resultados.append(r)
+
+        ver = con.execute("""SELECT vc.version, vc.fecha_importacion, c.codigo AS catalogo
+                              FROM versiones_catalogo vc JOIN catalogos c ON c.id=vc.catalogo_id
+                              WHERE vc.id=?""", (version_id,)).fetchone()
+        self._json({
+            "q": texto, "tipo": tipo or None, "n": len(resultados),
+            "version_id": version_id,
+            "version": {"catalogo": ver["catalogo"], "version": ver["version"]} if ver else None,
+            "resultados": resultados,
+            "html_original_intacto": self._html_intacto(),
+        })
+
     def _api_descomposicion(self, con, codigo, q):
         """MISIÓN III-C — payload de la descomposición para la pestaña Recursos.
 
@@ -312,6 +405,15 @@ class Manejador(BaseHTTPRequestHandler):
         version_id = q.get("version_id", [None])[0]
         if version_id is None:
             version_id = self._version_normas_defecto(con)
+            if version_id is None:
+                # MISIÓN V: degradación honesta cuando la BD no tiene normas
+                # (regeneración parcial documentada). Con la BD completa el
+                # comportamiento es idéntico al de III-C (resuelve 2017-raíz).
+                return self._json({
+                    "error": "ninguna versión con normas disponible en la BD "
+                             "(solo PRECOST 2025, sin normas de composición: "
+                             "regeneración parcial, ver INFORME_FASE_V)",
+                    "codigo": codigo}, 404)
         version_id = int(version_id)
         precio_version_id = int(q.get("precio_version_id", [version_id])[0])
 
@@ -525,6 +627,12 @@ class Manejador(BaseHTTPRequestHandler):
         version_id = q.get("version_id", [None])[0]
         if version_id is None:
             version_id = self._version_normas_defecto(con)
+            if version_id is None:
+                # MISIÓN V: degradación honesta (BD sin normas, ver arriba)
+                return self._json({
+                    "error": "ninguna versión con normas disponible en la BD "
+                             "(regeneración parcial, ver INFORME_FASE_V)",
+                    "codigos": {}}, 400)
         version_id = int(version_id)
         ph = ",".join(["?"] * len(codigos))
         filas = con.execute(f"""
