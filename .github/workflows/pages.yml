@@ -1,0 +1,90 @@
+# ============================================================================
+# MISIÓN VI — Versión estática de PRECOST para GitHub Pages.
+#
+# Genera el artefacto público desde el código fuente (scripts/construir_web.py)
+# sin duplicar manualmente el HTML original, y lo despliega en Pages.
+# El build FALLA si el SHA-256 del HTML protegido no coincide (protección CI).
+#
+# Permisos mínimos: contents:read para construir; pages:write + id-token:write
+# SOLO en el job de despliegue (y únicamente en pushes a main).
+# ============================================================================
+name: "PRECOST — Versión estática para GitHub Pages"
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "app/**"
+      - "scripts/construir_web.py"
+      - ".github/workflows/pages.yml"
+  pull_request:
+    paths:
+      - "app/**"
+      - "scripts/construir_web.py"
+      - ".github/workflows/pages.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: "pages-${{ github.ref }}"
+  cancel-in-progress: false
+
+jobs:
+  construir:
+    name: Construir artefacto estático
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Construir dist/ (verifica SHA-256 del HTML protegido)
+        run: python3 scripts/construir_web.py --salida dist
+
+      - name: Doble verificación del original tras el build
+        run: |
+          ESPERADO="50d3cf28e405201f36c50c3dd5385d7e28fbab3e7e5eee22c74ca0bcfd5cbaa2"
+          REAL="$(sha256sum app/PRECOST-v9.17.html | cut -d' ' -f1)"
+          echo "SHA-256 del original: $REAL"
+          if [ "$REAL" != "$ESPERADO" ]; then
+            echo "::error::El HTML original protegido ha cambiado; build detenido."
+            exit 1
+          fi
+
+      - name: Auditar contenido del artefacto (sin BD ni archivos privados)
+        run: |
+          echo "Contenido de dist/:"
+          find dist -type f -printf "%p  %s bytes\n" | sort
+          if find dist -type f \( -name "*.db" -o -name "*.sqlite*" -o -name "*.mdb" \
+               -o -name "*.env" -o -name "*.rar" -o -name "*.zip" -o -name "*.exe" \) | grep -q .; then
+            echo "::error::El artefacto contiene archivos no permitidos."
+            exit 1
+          fi
+
+      - name: Subir artefacto para Pages (solo en main)
+        if: github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  desplegar:
+    name: Desplegar en GitHub Pages
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    needs: construir
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.despliegue.outputs.page_url }}
+    steps:
+      - name: Desplegar
+        id: despliegue
+        uses: actions/deploy-pages@v4
