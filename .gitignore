@@ -7,3 +7,6 @@ prueba/db/*.json
 # Base importada MISIÓN III-B: regenerable con scripts/importar_precodi.py
 bd/*.db
 __pycache__/
+# MISIÓN VI: artefacto estático para Pages — lo genera scripts/construir_web.py
+# (el workflow de Actions lo reconstruye desde el código fuente en cada deploy)
+dist/
