@@ -66,33 +66,38 @@ Análisis de la arquitectura para alojamiento estático:
 
 | Elemento | Resultado |
 |---|---|
-| Rama publicada | `docs/publicacion-github-pages` |
-| PR creado | Ver §7 (enlaces finales) |
-| Commits | Ver §7 |
-| Workflow de Pages | Ver §7 (estado de la ejecución) |
-| URL pública | <https://nardian90.github.io/Precost/> |
-| Verificación funcional de la URL pública | Ver §6 |
-| SHA-256 del original antes/después | `50d3cf28…5cbaa2` en ambos casos (idéntico) |
+| Rama de trabajo publicada | `docs/publicacion-github-pages` (4 commits atómicos) |
+| PR por API | **Bloqueado por el ámbito del token** (sin `Pull requests:write`, igual que en Misión V). Aplicada la alternativa autorizada expresamente por el propietario («haces el pr **o commit al main**»): integración por **fast-forward directo a `main`** (sin fuerza, sin sobrescribir commits remotos) |
+| Commits en `main` | `496f855` (constructor estático) · `8bca5c9` (workflow Pages) · `64998af` (README) · `b6fc95b` (pre-validación + informe) — `main`: `dba6604 → b6fc95b` |
+| Workflow de Pages | Run **#38679982017** — **completed / success** (<https://github.com/Nardian90/Precost/actions/runs/38679982017>) |
+| URL pública | <https://nardian90.github.io/Precost/> — **HTTP 200, 7.244.982 bytes** (original + inyección) |
+| Overlays servidos | `/Precost/overlay/recursos.js` → 200 · `/Precost/overlay/calculadora.js` → 200 |
+| Verificación funcional de la URL pública | `prevalidar_web_estatica.sh https://nardian90.github.io/Precost` → **10/10 ✓** (evidencias: `docs/datos/vi_pages_01_inicio.png`, `vi_pages_02_recursos_degradacion.png`) |
+| SHA-256 del original antes/después | `50d3cf28e405201f36c50c3dd5385d7e28fbab3e7e5eee22c74ca0bcfd5cbaa2` **idéntico** (el build lo verifica dos veces; el workflow vuelve a verificarlo en CI) |
 
-## 6. Validación final de la URL pública (FASE G)
+## 6. Validación final de la URL pública (FASE G) — ejecutada y superada
 
-Comprobaciones ejecutadas contra la URL desplegada (resultados en la sección de enlaces finales):
+Comprobaciones ejecutadas contra `https://nardian90.github.io/Precost/` el 2026-10-15:
 
-1. Respuesta HTTP 200 con el tamaño esperado (original + inyección).
-2. `overlay/recursos.js` y `overlay/calculadora.js` servidos correctamente bajo `/Precost/`.
-3. Carga en navegador real: título PRECOST v9.17, overlays ejecutados, catálogo embebido activo, localStorage operativo.
-4. Aviso honesto de capa local no disponible en la pestaña Recursos (degradación sin backend).
-5. 0 errores críticos de consola.
-6. `app/PRECOST-v9.17.html` del repositorio sin cambios (tag y hash verificados).
+1. ✅ Respuesta HTTP 200 con el tamaño exacto esperado (7.244.982 bytes = original + inyección).
+2. ✅ `overlay/recursos.js` y `overlay/calculadora.js` servidos correctamente bajo `/Precost/` (rutas relativas funcionando en Pages).
+3. ✅ Carga en navegador real: título «PRECOST v9.17 — Presupuestación inteligente · Excel/PDF/Word», overlays ejecutados, catálogo embebido activo (>10.000 partidas), localStorage operativo.
+4. ✅ Aviso honesto de capa local no disponible en la pestaña Recursos (degradación sin backend, tal como está diseñada).
+5. ✅ Presupuesto de prueba creado y persistido en localStorage de la página pública.
+6. ✅ 0 errores de consola.
+7. ✅ `app/PRECOST-v9.17.html` del repositorio sin cambios (hash verificado; tag `v9.17-original` intacto).
+8. ✅ Árbol de trabajo limpio tras la publicación (sin cambios sin confirmar).
 
 ## 7. Enlaces verificables finales
 
 - Repositorio: <https://github.com/Nardian90/Precost>
-- README: <https://github.com/Nardian90/Precost/blob/main/README.md>
-- Workflow Pages: <https://github.com/Nardian90/Precost/actions/workflows/pages.yml>
+- README (renderizado en `main`): <https://github.com/Nardian90/Precost/blob/main/README.md>
+- Commits de la misión: [`496f855`](https://github.com/Nardian90/Precost/commit/496f855) · [`8bca5c9`](https://github.com/Nardian90/Precost/commit/8bca5c9) · [`64998af`](https://github.com/Nardian90/Precost/commit/64998af) · [`b6fc95b`](https://github.com/Nardian90/Precost/commit/b6fc95b)
+- Workflow de Pages (run #38679982017, success): <https://github.com/Nardian90/Precost/actions/runs/38679982017>
 - URL pública (Pages): <https://nardian90.github.io/Precost/>
 - Matriz de paridad: <https://github.com/Nardian90/Precost/blob/main/docs/MATRIZ_PARIDAD_SIECONS_PRECOST.md>
 - Informes: [IV](INFORME_FASE_IV.md) · [V](INFORME_FASE_V.md) · [VI](INFORME_FASE_VI.md)
+- Evidencias del despliegue: [inicio](datos/vi_pages_01_inicio.png) · [Recursos con degradación honesta](datos/vi_pages_02_recursos_degradacion.png)
 
 ## 8. Funciones disponibles en Pages frente a ejecución local
 

@@ -10,19 +10,22 @@
 #   (python3 -m http.server 8877 --bind 127.0.0.1 &)
 # ============================================================================
 set -u
-BASE="http://127.0.0.1:8877/dist"
+# Uso: prevalidar_web_estatica.sh [URL_BASE]
+#   Sin argumento: valida el artefacto local (requiere servidor en 8877).
+#   Con URL: valida cualquier despliegue (p. ej. https://nardian90.github.io/Precost).
+BASE="${1:-http://127.0.0.1:8877/dist}"
 FALLOS=0
 ok(){ echo "  ✓ $1"; }
 mal(){ echo "  ✗ $1"; FALLOS=$((FALLOS+1)); }
 
-echo "=== MISIÓN VI — Pre-validación estática bajo subdirectorio ==="
+echo "=== MISIÓN VI — Pre-validación estática ($BASE) ==="
 
 # 1) Cargar la página
 agent-browser open "$BASE/" >/dev/null 2>&1 || { echo "  ✗ no se pudo abrir $BASE"; exit 1; }
 agent-browser wait --load networkidle >/dev/null 2>&1
 sleep 2
 TIT=$(agent-browser get title 2>/dev/null)
-[[ "$TIT" == *PRECOST* ]] && ok "carga bajo /dist/ (título: $TIT)" || mal "título inesperado: $TIT"
+[[ "$TIT" == *PRECOST* ]] && ok "carga correcta (título: $TIT)" || mal "título inesperado: $TIT"
 
 # 2) Overlays cargados (rutas relativas)
 N1=$(agent-browser eval "document.querySelectorAll('script[src=\"overlay/recursos.js\"]').length" 2>/dev/null)
