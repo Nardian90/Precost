@@ -35,7 +35,8 @@ los que exigen UI real se validan además en scripts/validar_v_navegador.sh):
       (edicionDe/flagsDe) presentes en el código].
   N13 S-080 Calculadora sigue operativa y coexisten los overlays (la carrera
       latente de IV se repara en esta misión: guardas de DOM).
-  N14 Los overlays no interfieren entre sí: inyección exactamente 3 etiquetas
+  N14 Los overlays no interfieren entre sí: inyección exactamente 4 etiquetas
+      (MISIÓN VII añadió respaldo.js, S-005; antes 3)
       aditivas, cada overlay idempotente con marcador propio.
   N15 El HTML original permanece byte-idéntico (SHA-256 de referencia).
 
@@ -130,12 +131,15 @@ class TestInfraestructura(ServidorBase):
                              capture_output=True, text=True).stdout.strip()
         self.assertEqual(out, "", f"HTML modificado: {out}")
 
-    def test_n14_inyeccion_exactamente_tres_overlays(self):
+    def test_n14_inyeccion_exactamente_cuatro_overlays(self):
+        # MISIÓN VII: el contrato creció de 3 a 4 overlays con respaldo.js
+        # (S-005); el conteo exacto sigue verificando que la inyección es
+        # aditiva y completa — ni más ni menos que los overlays existentes.
         with urllib.request.urlopen(BASE + "/", timeout=20) as r:
             cuerpo = r.read()
-        for nombre in (b"precodi.js", b"recursos.js", b"calculadora.js"):
+        for nombre in (b"precodi.js", b"recursos.js", b"calculadora.js", b"respaldo.js"):
             self.assertIn(b'<script src="/overlay/' + nombre + b'" defer>', cuerpo)
-        self.assertEqual(cuerpo.count(b'<script src="/overlay/'), 3)
+        self.assertEqual(cuerpo.count(b'<script src="/overlay/'), 4)
         for tag in re.findall(rb'<script src="([^"]+)"', cuerpo):
             self.assertTrue(tag.startswith(b"/overlay/"), f"etiqueta no aditiva: {tag!r}")
         self.assertTrue(cuerpo.rstrip().endswith(b"</html>"))
@@ -143,7 +147,8 @@ class TestInfraestructura(ServidorBase):
     def test_n14_overlays_idempotentes_marca_propia(self):
         for fich, marca in (("precodi.js", b"__pcodOverlay"),
                             ("recursos.js", b"__pcodRecursos"),
-                            ("calculadora.js", b"__pcodCalc")):
+                            ("calculadora.js", b"__pcodCalc"),
+                            ("respaldo.js", b"__pcodRespaldo")):
             with open(os.path.join(REPO, "app", "overlay", fich), "rb") as f:
                 cuerpo = f.read()
             self.assertIn(marca, cuerpo, f"idempotente ausente en {fich}")

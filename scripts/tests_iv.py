@@ -6,8 +6,9 @@ Cubre la implementación de Fase D (overlay calculadora.js, S-80 del manual
 SIECONS) y la protección del proyecto:
 
   T1  Integridad del HTML original (SHA-256) — el archivo en disco no cambia.
-  T2  Los tres overlays existen y el servidor los sirve con el tipo correcto.
-  T3  La inyección incluye las tres etiquetas y solo añade (diff aditivo).
+  T2  Los cuatro overlays existen y el servidor los sirve con el tipo correcto
+      (MISIÓN VII añadió respaldo.js, S-005).
+  T3  La inyección incluye las cuatro etiquetas y solo añade (diff aditivo).
   T4  calculadora.js: sintaxis válida (node --check) y guardas de seguridad
       (idempotente; no escribe p3pro.budgets; clave propia p3pro.calcHist).
   T5  El endpoint de descomposición (III-C) que consume la calculadora
@@ -118,15 +119,18 @@ class TestOverlays(ServidorBase):
         with urllib.request.urlopen(BASE + "/overlay/calculadora.js") as r:
             self.assertIn("javascript", r.headers.get("Content-Type", ""))
 
-    def test_t3_inyeccion_tres_etiquetas(self):
+    def test_t3_inyeccion_cuatro_etiquetas(self):
         status, cuerpo = self.get("/")
         self.assertEqual(status, 200)
-        for nombre in (b"precodi.js", b"recursos.js", b"calculadora.js"):
+        # MISIÓN VII: el contrato creció de 3 a 4 overlays con respaldo.js
+        # (S-005); el conteo exacto sigue verificando que la inyección es
+        # aditiva y completa — ni más ni menos que los overlays existentes.
+        for nombre in (b"precodi.js", b"recursos.js", b"calculadora.js", b"respaldo.js"):
             self.assertIn(b'<script src="/overlay/' + nombre + b'" defer>',
                           cuerpo, f"falta la etiqueta de {nombre!r}")
         # la inyección es SOLO añadidura al final (el original termina en </html>)
         self.assertTrue(cuerpo.rstrip().endswith(b"</html>"))
-        self.assertEqual(cuerpo.count(b'<script src="/overlay/'), 3)
+        self.assertEqual(cuerpo.count(b'<script src="/overlay/'), 4)
 
 
 class TestCalculadoraJS(unittest.TestCase):
