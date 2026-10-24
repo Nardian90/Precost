@@ -32,6 +32,7 @@ Este repositorio preserva ese original **byte a byte** (verificado por SHA-256 e
 - Cálculo de precios unitarios con descomposición por capítulos/subcapítulos.
 - Exportaciones: **Excel (XLSX)**, **PDF**, **Word (resumen ejecutivo, OOXML)** y **JSON**.
 - Importación de presupuestos **JSON con validación** (`importJSONValidated`).
+- **S-005 — Respaldo y restauración completa** (botón «Respaldo» abajo-izquierda o Alt+B): exporta TODOS los datos del usuario (presupuestos, plantillas, casos importados, historial, configuración y tema) a un archivo JSON portable, y lo restaura con validación estricta y confirmación. Funciona igual en la web estática y en local.
 - Funciona 100 % offline abriendo el archivo directamente en el navegador.
 
 ### Operativas con servidor local (`scripts/servidor_precodi.py`)
@@ -118,8 +119,10 @@ app/overlay/precodi.js     ← overlay III-B: botón flotante de búsqueda del c
 app/overlay/recursos.js    ← overlay III-C + Misión V: pestaña Recursos (descomposiciones,
                              snapshots, S-050 M/H/E, S-052 edición por presupuesto)
 app/overlay/calculadora.js ← overlay IV: calculadora S-080 (Alt+C, modo embebido sin servidor)
+app/overlay/respaldo.js    ← overlay VII: respaldo/restauración completa S-005 (Alt+B,
+                             100 % cliente — funciona igual en Pages y en local)
 scripts/servidor_precodi.py← servidor local 127.0.0.1:8765, SOLO LECTURA: sirve el HTML
-                             original inyectando las 3 etiquetas <script> EN MEMORIA
+                             original inyectando las 4 etiquetas <script> EN MEMORIA
                              (el archivo en disco nunca cambia) + API /api/*
 bd/precodi.db              ← SQLite (gitignore). Solo el importador escribe; el servidor
                              abre en modo=ro. Regenerable (§D).
@@ -133,7 +136,7 @@ docs/                      ← informes por misión, matriz de paridad, dicciona
 
 Puntos clave del diseño:
 
-1. **El original nunca se modifica.** Toda la evolución es aditiva: overlays independientes (IIFE con guardas idempotentes) que se inyectan al vuelo. El punto de restauración es el tag `v9.17-original`.
+1. **El original nunca se modifica.** Toda la evolución es aditiva: overlays independientes (IIFE con guardas idempotentes) que se inyectan al vuelo (4 overlays: catálogo, recursos, calculadora y respaldo). El punto de restauración es el tag `v9.17-original`.
 2. **El servidor es de solo lectura** (`sqlite3 mode=ro`): ninguna función de la aplicación escribe en la BD; las ediciones de recursos viajan únicamente dentro del propio presupuesto en `localStorage` (`it.edicionRecursos`), con aislamiento verificado entre presupuestos.
 3. **La versión estática de Pages** se genera desde el código fuente con `scripts/construir_web.py` (mismo mecanismo de inyección que el servidor, con rutas relativas); el HTML original en disco permanece intacto y el build falla si su hash cambia.
 
@@ -147,12 +150,14 @@ Puntos clave del diseño:
 
 ## G. Pruebas y calidad
 
-Resultados reales de la ejecución más reciente (**2026-10-15**, rama `main` tras fusionar Misión V; BD con solo PRECOST 2025):
+Resultados reales de la ejecución más reciente (**2026-10-24**, rama `main` con Misión VII; BD con solo PRECOST 2025):
 
 | Prueba / suite | Comando real | Resultado | Observaciones |
 |---|---|---|---|
-| Misión V — suite S-050/S-052 y API | `python3 scripts/tests_v.py` | **28/28 OK** | Búsqueda nomenclador, edición, precisión, aislamiento, persistencia, BD intacta |
+| Misión V — suite S-050/S-052 y API | `python3 scripts/tests_v.py` | **28/28 OK** | Búsqueda nomenclador, edición, precisión, aislamiento, persistencia, BD intacta (N14 actualizado al contrato de 4 overlays) |
 | Misión V — validación navegador E2E | `bash scripts/validar_v_navegador.sh` | **23 ✓ · 0 ✗ · 3 ⏸** | ⏸ = pasos 17/18/18b (requieren normas PRECODI, pendientes de datos) |
+| Misión VII — suite respaldo S-005 | `python3 scripts/tests_vii.py` | **15/15 OK** | Integridad del original, guardas del overlay, servidor e inyección, artefacto estático, 100 % sin red |
+| Misión VII — validación navegador E2E | `bash scripts/validar_vii_navegador.sh` | **21/21 ✓** (servidor local y estático) | Round-trip bit a bit, catástrofe+recuperación, rechazos sin escrituras parciales, 0 errores de consola |
 | Misión IV — suite regresión | `python3 scripts/tests_iv.py` | **15/19** | 4 fallos por BD sin normas (degradación honesta verificada; sin regresión de código) |
 | Misión III-B — suite importación | `python3 scripts/tests_iiib.py` | **3/21** | Requiere fuentes `.mdb` 2007 (perdidas); sin regresión de código |
 | Misión III-C — suite descomposiciones | `python3 scripts/tests_iiic.py` | **0/21** | El arnés exige versiones PRECODI con normas (ausentes); pendiente de datos |
@@ -172,6 +177,7 @@ Qué funciona en la versión estática y qué no:
 | Función | Pages (estático) | Local (con servidor) |
 |---|---|---|
 | Núcleo PRECOST completo (presupuestos, catálogo embebido, exportaciones XLSX/PDF/Word/JSON) | ✅ | ✅ |
+| **Respaldo/restauración completa S-005** (botón «Respaldo» / Alt+B) | ✅ | ✅ |
 | Pestaña Recursos: snapshots guardados, indicadores M/H/E, especificación manual, edición S-052 | ✅ | ✅ |
 | Calculadora S-080 (modo embebido/manual) | ✅ | ✅ |
 | Consulta de descomposiciones del catálogo PRECODI (no guardadas aún) | ❌ | ✅ |
@@ -187,6 +193,8 @@ python3 scripts/construir_web.py            # genera dist/ (verifica SHA-256 del
 python3 -m http.server 8877 --bind 127.0.0.1 &   # raíz del repo
 bash scripts/prevalidar_web_estatica.sh     # 10 comprobaciones bajo /dist/
 ```
+
+> **Cambio de dispositivo o de navegador:** use el botón «Respaldo» (Alt+B) para exportar todos sus datos a un archivo JSON y restaúrelo en el otro navegador. Es la vía segura para no perder presupuestos al cambiar de equipo, porque los datos viven en el `localStorage` de cada navegador.
 
 ## I. Seguridad y limitaciones
 

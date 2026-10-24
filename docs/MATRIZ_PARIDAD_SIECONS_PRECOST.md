@@ -25,7 +25,7 @@ Prioridades: **P0** integridad · **P1** núcleo presupuestario · **P2** produc
 | S-002 | Activación/promocional («pasion», claves) | págs. 11–13 | ausente (by design) | sin licencia | PRECOST no usa licencias (ventaja) | P3 | — | N/A | — |
 | S-003 | Conexión a la base de datos (SBD) | págs. 14–15 | existente (mejorado) | `servidor_precodi.py` + catálogo embebido | PRECOST integra la consulta local y degrada sin servidor | P1 | — | abrir app sin servidor → snapshot + aviso (III-B ya probado) | probado |
 | S-004 | Control de usuarios (usuario/clave, admin, escritura) | págs. 16, 18–19 | ausente | — | multiusuario con permisos | P3 | — | crear usuario, restringir lectura, iniciar sesión | pendiente |
-| S-005 | Copia de seguridad/duplicado de la aplicación | pág. 14 | parcial | exportar/importar presupuesto (p3pro.budgets) | no hay salva del catálogo/config | P2 | — | exportar y restaurar datos de usuario | pendiente |
+| S-005 | Copia de seguridad/duplicado de la aplicación | pág. 14 | existente (mejorado) | overlay `app/overlay/respaldo.js` (MISIÓN VII): exportación portable JSON de TODAS las claves `p3pro.*` + restauración validada con confirmación; Alt+B | mejor que SIECONS: portable entre navegadores/dispositivos | P2 | — | exportar y restaurar datos de usuario: `bash scripts/validar_vii_navegador.sh` (21/21) | probado |
 | S-006 | Compactar y reparar | pág. 14 | no comparable | — | N/A (sin Access) | P3 | — | N/A | — |
 | S-007 | Salva cifrada del estado de activación | pág. 14 | no comparable | — | N/A | P3 | — | N/A | — |
 | S-008 | Barra de útiles en cinta COMPLEMENTOS | págs. 16–20 | existente (diferente) | navegación de 13 vistas | paradigma web propio | P2 | — | acceso a todas las funciones desde menú | probado |
