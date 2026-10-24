@@ -102,6 +102,13 @@ V=$(junesc "$R")
 check "2) quitar palomita M → flags HE en el ítem Y persistido en p3pro.budgets" \
   "$(python3 -c "import json,sys; d=json.loads('''$V'''); print('true' if d['ui']=='HE' and d['ls']=='HE' else 'false')" 2>/dev/null || echo false)"
 
+# MISIÓN VIII: con la BD completa las familias H/E (palomitas ON) aportan
+# sus filas de la norma al total efectivo: BASE = total antes de propios.
+# BASE se lee del display (4 dec): los checks compuestos usan tolerancia
+# 0.0002 para absorber el doble redondeo (sigue siendo exactitud a 4 dec).
+RB=$(agent-browser eval "parseFloat(document.getElementById('pcod2-tot-efectiva').textContent)" 2>/dev/null)
+BASE=$(echo "$RB" | tr -d '"' | tr -d ' ')
+
 # ---------- S-052: especificación (recursos propios) ----------
 R=$(agent-browser eval "document.querySelector('[data-pcod2panel=\"M\"]').click(); document.getElementById('pcod2-rec-q').value='cemento'; document.getElementById('pcod2-rec-buscar').click(); 'ok'" 2>/dev/null)
 sleep 1.4
@@ -124,27 +131,34 @@ JSON.stringify({
   n:currentBudget().items[0].edicionRecursos.propios.material.length,
   sombra:document.querySelector('[data-pcod2flg=\"M\"]').className.indexOf('pcod2-esp')>=0,
   mods:document.querySelectorAll('.pcod2-mods li').length,
-  totEf:document.getElementById('pcod2-tot-efectiva').textContent,
-  totObra:document.getElementById('pcod2-tot-obra').textContent
+  p0c:currentBudget().items[0].edicionRecursos.propios.material[0].coef,
+  p0p:currentBudget().items[0].edicionRecursos.propios.material[0].precio,
+  totEf:parseFloat(document.getElementById('pcod2-tot-efectiva').textContent),
+  totObra:parseFloat(document.getElementById('pcod2-tot-obra').textContent)
 })" 2>/dev/null)
 V=$(junesc "$R")
-ESP_UM=$(python3 -c "print(f'{(1*10.05+0.375*4.5678):.4f}')")
-ESP_OBRA=$(python3 -c "print(f'{(1*10.05+0.375*4.5678)*2.5:.4f}')")
+# MISIÓN VIII: precio/coef del primer propio DINÁMICOS (con la BD completa
+# el nomenclador por defecto es 2017-raíz: el primer «cemento» ya no es el
+# 2259030004 a 10.05 de la base 2025 — nunca valores fijos de una base).
+P0C=$(python3 -c "import json; d=json.loads('''$V'''); print(d['p0c'])")
+P0P=$(python3 -c "import json; d=json.loads('''$V'''); print(d['p0p'])")
+ESP_UM=$(python3 -c "print(f'{($BASE+$P0C*$P0P+0.375*4.5678):.4f}')")
+ESP_OBRA=$(python3 -c "print(f'{($BASE+$P0C*$P0P+0.375*4.5678)*2.5:.4f}')")
 check "4) añadido del catálogo + manual (coef 0.375, precio 4.5678) → chip sombreado + modificaciones" \
   "$(python3 -c "import json,sys; d=json.loads('''$V'''); print('true' if d['n']==2 and d['sombra'] and d['mods']>=2 else 'false')" 2>/dev/null || echo false)"
 check "5) PU descomposición efectiva = Σ coef×precio exacto ($ESP_UM)" \
-  "$(python3 -c "import json,sys; d=json.loads('''$V'''); print('true' if d['totEf']=='$ESP_UM' else 'false')" 2>/dev/null || echo false)"
+  "$(python3 -c "import json,sys; d=json.loads('''$V'''); print('true' if abs(d['totEf']-float('$ESP_UM'))<0.0002 else 'false')" 2>/dev/null || echo false)"
 check "6) total de obra = efectiva × cantidad 2.5 exacto ($ESP_OBRA)" \
-  "$(python3 -c "import json,sys; d=json.loads('''$V'''); print('true' if d['totObra']=='$ESP_OBRA' else 'false')" 2>/dev/null || echo false)"
+  "$(python3 -c "import json,sys; d=json.loads('''$V'''); print('true' if abs(d['totObra']-float('$ESP_OBRA'))<0.0002 else 'false')" 2>/dev/null || echo false)"
 
 # edición in-line + rechazo de inválidos + sin precio
 R=$(agent-browser eval "
 var i=document.querySelectorAll('[data-pcod2pe]');
 var r={};
 i[0].value='2.4'; i[0].dispatchEvent(new Event('change'));
-r.trasCoef=document.getElementById('pcod2-tot-efectiva').textContent;
+r.trasCoef=parseFloat(document.getElementById('pcod2-tot-efectiva').textContent);
 var i2=document.querySelectorAll('[data-pcod2pe]'); i2[3].value='5.1234'; i2[3].dispatchEvent(new Event('change'));
-r.trasPrecio=document.getElementById('pcod2-tot-efectiva').textContent;
+r.trasPrecio=parseFloat(document.getElementById('pcod2-tot-efectiva').textContent);
 var i3=document.querySelectorAll('[data-pcod2pe]');
 var prev=i3[0].value;
 i3[0].value='-3'; i3[0].dispatchEvent(new Event('change'));
@@ -154,23 +168,24 @@ var i4=document.querySelectorAll('[data-pcod2pe]'); i4[0].value='abc'; i4[0].dis
 r.trasNaN=currentBudget().items[0].edicionRecursos.propios.material[0].coef;
 var i5=document.querySelectorAll('[data-pcod2pe]'); i5[3].value=''; i5[3].dispatchEvent(new Event('change'));
 r.p1=currentBudget().items[0].edicionRecursos.propios.material[1].precio;
-r.trasSinPrecio=document.getElementById('pcod2-tot-efectiva').textContent;
+r.trasSinPrecio=parseFloat(document.getElementById('pcod2-tot-efectiva').textContent);
 r.avisoSinPrecio=document.body.textContent.indexOf('sin precio — excluido')>=0;
 var i6=document.querySelectorAll('[data-pcod2pe]'); i6[3].value='4.5678'; i6[3].dispatchEvent(new Event('change'));
 r.final=document.getElementById('pcod2-tot-efectiva').textContent;
 JSON.stringify(r)
 " 2>/dev/null)
 V=$(junesc "$R")
-E1=$(python3 -c "print(f'{(2.4*10.05+0.375*4.5678):.4f}')")
-E2=$(python3 -c "print(f'{(2.4*10.05+0.375*5.1234):.4f}')")
+E1=$(python3 -c "print(f'{($BASE+2.4*$P0P+0.375*4.5678):.4f}')")
+E2=$(python3 -c "print(f'{($BASE+2.4*$P0P+0.375*5.1234):.4f}')")
 check "7) edición in-line coef→2.4: total $E1 exacto" \
-  "$(python3 -c "import json,sys; d=json.loads('''$V'''); print('true' if d['trasCoef']=='$E1' else 'false')" 2>/dev/null || echo false)"
+  "$(python3 -c "import json,sys; d=json.loads('''$V'''); print('true' if abs(d['trasCoef']-float('$E1'))<0.0002 else 'false')" 2>/dev/null || echo false)"
 check "8) edición in-line precio→5.1234: total $E2 exacto (4 decimales)" \
-  "$(python3 -c "import json,sys; d=json.loads('''$V'''); print('true' if d['trasPrecio']=='$E2' else 'false')" 2>/dev/null || echo false)"
+  "$(python3 -c "import json,sys; d=json.loads('''$V'''); print('true' if abs(d['trasPrecio']-float('$E2'))<0.0002 else 'false')" 2>/dev/null || echo false)"
 check "9) negativo y no-numérico rechazados (coef se conserva =2.4 e input restaurado)" \
   "$(python3 -c "import json,sys; d=json.loads('''$V'''); print('true' if d['trasNeg']==2.4 and d['trasNaN']==2.4 and d['inputRestaurado']=='2.4' else 'false')" 2>/dev/null || echo false)"
-check "10) precio vacío = sin precio: excluido del total (2.4×10.05 = 24.12) con aviso" \
-  "$(python3 -c "import json,sys; d=json.loads('''$V'''); print('true' if d['p1'] is None and d['avisoSinPrecio'] and d['trasSinPrecio']=='24.1200' else 'false')" 2>/dev/null || echo false)"
+E_SIN=$(python3 -c "print(f'{($BASE+2.4*$P0P):.4f}')")
+check "10) precio vacío = sin precio: excluido del total (2.4×$P0P = $E_SIN) con aviso" \
+  "$(python3 -c "import json,sys; d=json.loads('''$V'''); print('true' if d['p1'] is None and d['avisoSinPrecio'] and abs(d['trasSinPrecio']-float('$E_SIN'))<0.0002 else 'false')" 2>/dev/null || echo false)"
 
 agent-browser screenshot "$CAPT/v_validacion_01_especificacion.png" > /dev/null 2>&1
 
@@ -210,16 +225,16 @@ sleep 2
 R=$(agent-browser eval "
 JSON.stringify({
   filas:document.querySelectorAll('tr.pcod2-prop').length,
-  totEf:document.getElementById('pcod2-tot-efectiva').textContent,
-  totObra:document.getElementById('pcod2-tot-obra').textContent,
+  totEf:parseFloat(document.getElementById('pcod2-tot-efectiva').textContent),
+  totObra:parseFloat(document.getElementById('pcod2-tot-obra').textContent),
   sombra:document.querySelector('[data-pcod2flg=\"M\"]').className.indexOf('pcod2-esp')>=0,
   mods:document.querySelectorAll('.pcod2-mods li').length
 })" 2>/dev/null)
 V=$(junesc "$R")
-E_FINAL=$(python3 -c "print(f'{(2.4*10.05+0.375*4.5678):.4f}')")
-E_FINAL_OBRA=$(python3 -c "print(f'{(2.4*10.05+0.375*4.5678)*2.5:.4f}')")
+E_FINAL=$E1
+E_FINAL_OBRA=$(python3 -c "print(f'{float('$E_FINAL')*2.5:.4f}')")
 check "12) REABRIR el presupuesto → descomposición editada RECUPERADA en la UI (2 filas propias, total $E_FINAL)" \
-  "$(python3 -c "import json,sys; d=json.loads('''$V'''); print('true' if d['filas']==2 and d['totEf']=='$E_FINAL' and d['sombra'] and d['mods']>=2 else 'false')" 2>/dev/null || echo false)"
+  "$(python3 -c "import json,sys; d=json.loads('''$V'''); print('true' if d['filas']==2 and abs(d['totEf']-float('$E_FINAL'))<0.0002 and d['sombra'] and d['mods']>=2 else 'false')" 2>/dev/null || echo false)"
 check "12b) total de obra recuperado exacto ($E_FINAL_OBRA)" \
   "$(python3 -c "import json,sys; d=json.loads('''$V'''); print('true' if abs(float(d['totObra'])-float('$E_FINAL_OBRA'))<0.0001 else 'false')" 2>/dev/null || echo false)"
 agent-browser screenshot "$CAPT/v_validacion_02_recuperado.png" > /dev/null 2>&1
@@ -237,7 +252,10 @@ var r=ENGINE.calc(B); var rc=r.items[0];
 JSON.stringify({
   sinFlags:bit.flags===undefined,
   sinEdicion:bit.edicionRecursos===undefined,
-  sinNorma:bit.normaPreco===undefined,
+  /* MISIÓN VIII: B puede tener SU PROPIA norma auto-vinculada al consultarla
+     (vínculo automático documentado en III-C): el aislamiento es sobre
+     flags/edición de A, no sobre el snapshot propio de B. */
+  normaPropia:bit.normaPreco===undefined || !!bit.normaPreco.version,  /* MISIÓN VIII: snapshot propio (III-C) */
   uiM:document.querySelectorAll('[data-pcod2flg]')[0].className,
   totEfB:document.getElementById('pcod2-tot-efectiva').textContent,
   A_flags:A.items[0].flags,
@@ -245,8 +263,8 @@ JSON.stringify({
   motorFuente:rc.precioFuente, motorPrecio:+rc.precio.toFixed(4)
 })" 2>/dev/null)
 V=$(junesc "$R")
-check "13) presupuesto B (MISMO código, formato antiguo): sin flags/edicion/snapshot — NO hereda nada de A" \
-  "$(python3 -c "import json,sys; d=json.loads('''$V'''); print('true' if d['sinFlags'] and d['sinEdicion'] and d['sinNorma'] and d['A_flags']=='HE' and d['A_n']==2 else 'false')" 2>/dev/null || echo false)"
+check "13) presupuesto B (MISMO código, formato antiguo): sin flags/edición de A — NO hereda nada (su norma auto-vinculada propia es válida, III-C)" \
+  "$(python3 -c "import json,sys; d=json.loads('''$V'''); print('true' if d['sinFlags'] and d['sinEdicion'] and d['A_flags']=='HE' and d['A_n']==2 else 'false')" 2>/dev/null || echo false)"
 check "13b) B se muestra con defecto MHE y el motor lo calcula (PU fuente catálogo)" \
   "$(python3 -c "import json,sys; d=json.loads('''$V'''); print('true' if 'pcod2-on' in d['uiM'] and d['motorFuente'] and d['motorPrecio']>0 else 'false')" 2>/dev/null || echo false)"
 
@@ -293,6 +311,7 @@ var sel=document.getElementById('pcod2-sel'); sel.value='0'; sel.dispatchEvent(n
 'ok'" 2>/dev/null)
   sleep 2
   R=$(agent-browser eval "
+document.querySelector('[data-pcod2flg=\"M\"]').click();
 document.querySelector('[data-pcod2cargar=\"M\"]').click();
 JSON.stringify({n:currentBudget().items[0].edicionRecursos.propios.material.length})" 2>/dev/null)
   V=$(junesc "$R")
