@@ -65,7 +65,12 @@ La arquitectura creció de 3 a 4 overlays aditivos. Los contratos exactos se act
 
 ## 7. Validación final de la URL pública (tras el despliegue)
 
-*(Se completará con los resultados reales una vez ejecutado el despliegue: validación `validar_vii_navegador.sh` contra `https://nardian90.github.io/Precost/` y verificación del SHA-256 del original en el repositorio.)*
+Ejecutada contra `https://nardian90.github.io/Precost/` el 2026-10-24, tras el workflow **#40054929557** (`completed / success`, commit `e73ebf5`):
+
+- URL pública: **HTTP 200, 7.245.032 bytes** (original + inyección de 3 etiquetas relativas); `overlay/respaldo.js` servido con 200.
+- `bash scripts/validar_vii_navegador.sh https://nardian90.github.io/Precost` → **21/21 ✓**: botón y panel operativos, Alt+B/Esc, exportación correcta, catástrofe simulada y recuperación **bit a bit**, 4 rechazos sin escrituras parciales, 0 errores de consola.
+- SHA-256 del original en el repositorio remoto (`main`): `50d3cf28e405201f36c50c3dd5385d7e28fbab3e7e5eee22c74ca0bcfd5cbaa2` — **idéntico** (además verificado por el CI en el build).
+- Evidencias: `docs/datos/vii_pages_respaldo_publico.png`, `vii_pages_panel_publico.png`.
 
 ## 8. Qué funciona hoy en la web (estado honesto)
 
