@@ -173,10 +173,13 @@ class TestArtefactoEstatico(unittest.TestCase):
 
     def test_v5_inyeccion_relativa(self):
         html = open(os.path.join(DIST, "index.html"), "rb").read()
-        for nombre in (b"recursos.js", b"calculadora.js", b"respaldo.js"):
+        # MISIÓN VIII: los CINCO overlays van en el artefacto público con rutas
+        # relativas (estatico.js primero: capa de datos; precodi.js ahora tiene
+        # .catch + fallback a dist/data — antes se excluía, ver README §H).
+        for nombre in (b"estatico.js", b"recursos.js", b"calculadora.js",
+                       b"respaldo.js", b"precodi.js"):
             self.assertIn(b'<script src="overlay/' + nombre + b'" defer>', html)
-        # precodi.js sigue EXCLUIDO del artefacto público (por diseño, ver README §H)
-        self.assertNotIn(b'overlay/precodi.js', html)
+        self.assertEqual(html.count(b'<script src="overlay/'), 5)
 
     def test_v6_sin_archivos_privados(self):
         prohibidos = [".db", ".sqlite", ".mdb", ".env", ".rar", ".zip", ".exe"]
