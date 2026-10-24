@@ -6,6 +6,13 @@
  * modifica. No toca el catálogo embebido, ni las vistas existentes, ni el
  * contrato PRECOST-AI-JSON: solo añade un botón flotante y un panel propio
  * con estilos prefijados (.pcod-) consultando la API local /api/*.
+ *
+ * MISIÓN VIII — paridad «literal» en la web: cuando la API local no está
+ * disponible (GitHub Pages) y existe la capa de datos embebidos
+ * (window.__pcodEstatico, overlay estatico.js), las MISMAS consultas se
+ * resuelven desde dist/data/*.json con idénticas formas de respuesta. Cada
+ * fetch tiene .catch: nunca queda una búsqueda colgada (razón por la que
+ * este overlay antes se excluía del artefacto estático — ya no).
  * ==========================================================================*/
 (function () {
   "use strict";
@@ -84,6 +91,14 @@
   var selVer = panel.querySelector("#pcod-ver");
   var verInfo = panel.querySelector("#pcod-verinfo");
   var input = panel.querySelector("#pcod-q");
+  var fuente = "servidor";                       // MISIÓN VIII: servidor | web
+
+  function etiquetaFuente() {
+    var s = panel.querySelector(".pcod-h small");
+    if (s) s.textContent = fuente === "web"
+      ? "catálogo PRECODI · datos embebidos (web)"
+      : "catálogo importado · SQLite local";
+  }
 
   fab.addEventListener("click", function () {
     panel.classList.toggle("pcod-open");
@@ -100,22 +115,39 @@
 
   /* ------------------------------------------------------------------- datos */
   var versiones = [];
+  function conVersiones(d) {
+    versiones = d.versiones || [];
+    selVer.innerHTML = "";
+    versiones.forEach(function (v) {
+      if (v.partidas === 0) return;                    // referencias sin filas propias
+      var o = document.createElement("option");
+      o.value = v.id;
+      o.textContent = v.catalogo + " · " + v.version;
+      selVer.appendChild(o);
+    });
+    // por defecto: la última versión PRECODI con normas
+    var conNormas = versiones.filter(function (v) { return v.normas > 0; });
+    if (conNormas.length) selVer.value = String(conNormas[conNormas.length - 1].id);
+    selVer.dispatchEvent(new Event("change"));
+    cont.innerHTML = '<div class="pcod-dim">Escriba un código o texto para buscar en el catálogo' +
+      (fuente === "web" ? " (datos PRECODI embebidos: sin servidor)." : " importado.") + "</div>";
+  }
   function cargarVersiones() {
     fetch("/api/versiones").then(function (r) { return r.json(); }).then(function (d) {
-      versiones = d.versiones || [];
-      selVer.innerHTML = "";
-      versiones.forEach(function (v) {
-        if (v.partidas === 0) return;                    // referencias sin filas propias
-        var o = document.createElement("option");
-        o.value = v.id;
-        o.textContent = v.catalogo + " · " + v.version;
-        selVer.appendChild(o);
-      });
-      // por defecto: la última versión PRECODI con normas
-      var conNormas = versiones.filter(function (v) { return v.normas > 0; });
-      if (conNormas.length) selVer.value = String(conNormas[conNormas.length - 1].id);
-      selVer.dispatchEvent(new Event("change"));
-      cont.innerHTML = '<div class="pcod-dim">Escriba un código o texto para buscar en el catálogo importado.</div>';
+      fuente = "servidor"; etiquetaFuente(); conVersiones(d);
+    }).catch(function () {
+      /* MISIÓN VIII: sin servidor local → datos embebidos de la web */
+      if (window.__pcodEstatico) {
+        window.__pcodEstatico.versiones().then(function (d) {
+          fuente = "web"; etiquetaFuente(); conVersiones(d);
+        }).catch(function (e) {
+          cont.innerHTML = '<div class="pcod-dim">Catálogo PRECODI no disponible: ' +
+            "inicie el servidor local o publique los datos embebidos (dist/data).</div>";
+        });
+      } else {
+        cont.innerHTML = '<div class="pcod-dim">Capa local PRECODI no disponible ' +
+          "(inicie scripts/servidor_precodi.py).</div>";
+      }
     });
   }
   function versionActual() {
@@ -127,29 +159,60 @@
     var q = input.value.trim();
     if (!q) return;
     cont.innerHTML = '<div class="pcod-dim">Buscando…</div>';
-    fetch("/api/partidas?q=" + encodeURIComponent(q) + (selVer.value ? "&version_id=" + selVer.value : "") + "&limit=60")
+    var ver = selVer.value ? parseInt(selVer.value, 10) : null;
+    fetch("/api/partidas?q=" + encodeURIComponent(q) + (ver != null ? "&version_id=" + ver : "") + "&limit=60")
       .then(function (r) { return r.json(); })
-      .then(function (d) {
-        if (!d.resultados.length) { cont.innerHTML = '<div class="pcod-dim">Sin resultados para «' + q + '».</div>'; return; }
-        var html = '<table class="pcod-res">' + d.resultados.map(function (p) {
-          return "<tr data-cod='" + p.codigo + "'><td class='pcod-cod'>" + p.codigo +
-            "</td><td>" + esc(p.descripcion) + ' <span class="pcod-dim">(' + esc(p.unidad || "") + ")</span></td>" +
-            "<td class='pcod-num'>" + (p.costo_total_mn == null ? "—" : p.costo_total_mn.toFixed(2)) + "</td></tr>";
-        }).join("") + "</table>";
-        cont.innerHTML = html + '<div class="pcod-dim">' + d.n + ' resultado(s) — costo MN de la versión seleccionada</div>';
-        [].forEach.call(cont.querySelectorAll("tr[data-cod]"), function (tr) {
-          tr.addEventListener("click", function () { detalle(tr.getAttribute("data-cod")); });
-        });
+      .then(function (d) { conResultados(q, d); })
+      .catch(function () {
+        /* MISIÓN VIII: fallback a los datos embebidos (misma forma de respuesta) */
+        if (window.__pcodEstatico) {
+          window.__pcodEstatico.partidas(q, ver, 60).then(function (d) { conResultados(q, d); })
+            .catch(function (e) {
+              cont.innerHTML = '<div class="pcod-dim">Error en la búsqueda: ' +
+                String(e && e.message || e) + "</div>";
+            });
+        } else {
+          cont.innerHTML = '<div class="pcod-dim">Capa local PRECODI no disponible.</div>';
+        }
       });
+  }
+
+  function conResultados(q, d) {
+    if (!d.resultados.length) { cont.innerHTML = '<div class="pcod-dim">Sin resultados para «' + q + '».</div>'; return; }
+    var html = '<table class="pcod-res">' + d.resultados.map(function (p) {
+      return "<tr data-cod='" + p.codigo + "'><td class='pcod-cod'>" + p.codigo +
+        "</td><td>" + esc(p.descripcion) + ' <span class="pcod-dim">(' + esc(p.unidad || "") + ")</span></td>" +
+        "<td class='pcod-num'>" + (p.costo_total_mn == null ? "—" : p.costo_total_mn.toFixed(2)) + "</td></tr>";
+    }).join("") + "</table>";
+    cont.innerHTML = html + '<div class="pcod-dim">' + d.n + ' resultado(s) — costo MN de la versión seleccionada' +
+      (fuente === "web" ? " · datos embebidos" : "") + "</div>";
+    [].forEach.call(cont.querySelectorAll("tr[data-cod]"), function (tr) {
+      tr.addEventListener("click", function () { detalle(tr.getAttribute("data-cod")); });
+    });
   }
 
   function detalle(codigo) {
     cont.innerHTML = '<div class="pcod-dim">Cargando ' + codigo + '…</div>';
-    fetch("/api/partida/" + codigo + (selVer.value ? "?version_id=" + selVer.value : ""))
+    var ver = selVer.value ? parseInt(selVer.value, 10) : null;
+    fetch("/api/partida/" + codigo + (ver != null ? "?version_id=" + ver : ""))
       .then(function (r) { return r.json(); })
       .then(function (d) {
         if (d.error) { cont.innerHTML = '<div class="pcod-dim">' + esc(d.error) + "</div>"; return; }
         renderDetalle(d);
+      })
+      .catch(function () {
+        /* MISIÓN VIII: fallback a los datos embebidos (misma forma de respuesta) */
+        if (window.__pcodEstatico) {
+          window.__pcodEstatico.partida(codigo, ver).then(function (d) {
+            if (d.error) { cont.innerHTML = '<div class="pcod-dim">' + esc(d.error) + "</div>"; return; }
+            renderDetalle(d);
+          }).catch(function (e) {
+            cont.innerHTML = '<div class="pcod-dim">Error al cargar la partida: ' +
+              String(e && e.message || e) + "</div>";
+          });
+        } else {
+          cont.innerHTML = '<div class="pcod-dim">Capa local PRECODI no disponible.</div>';
+        }
       });
   }
 

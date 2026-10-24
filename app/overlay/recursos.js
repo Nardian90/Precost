@@ -123,6 +123,7 @@
     data: null,               // última respuesta de /api/descomposicion (o snapshot offline)
     offline: false,           // true = renderizado desde snapshot sin servidor
     servidorOk: null,
+    estatico: false,          // MISIÓN VIII: true = datos embebidos de la web (dist/data)
     versiones: [],            // catálogo de versiones (API)
     filtros: {},              // {tipo: bool}
     expandidos: {},           // {"tipo|codigo": bool} filas de detalle / juegos
@@ -543,6 +544,22 @@
       else S.busqRec = { letra: letra, q: q, tipo: tipoSel, resultados: d.resultados || [], version: d.version };
       renderSiEditor2();
     }).catch(function (e) {
+      /* MISIÓN VIII: modo web → nomenclador desde los datos embebidos
+         (misma forma de respuesta que /api/recursos). */
+      if (S.estatico && window.__pcodEstatico) {
+        window.__pcodEstatico.recursos(String(q).trim(), tipoSel, vId || null, 25)
+          .then(function (d) {
+            if (d.error) { S.busqRec = { letra: letra, q: q, tipo: tipoSel, resultados: [], error: d.error }; }
+            else S.busqRec = { letra: letra, q: q, tipo: tipoSel, resultados: d.resultados || [], version: d.version };
+            renderSiEditor2();
+          })
+          .catch(function (e2) {
+            S.busqRec = { letra: letra, q: q, tipo: tipoSel, resultados: [],
+                          error: "sin datos embebidos del nomenclador (" + String(e2 && e2.message || e2) + ")" };
+            renderSiEditor2();
+          });
+        return;
+      }
       S.busqRec = { letra: letra, q: q, tipo: tipoSel, resultados: [], error: "sin conexión con la capa local (/api/recursos)" };
       renderSiEditor2();
     });
@@ -903,7 +920,7 @@
         esc(S.q || "") + '">';
       h += '<button class="btn sm" id="pcod2-buscar">Buscar</button>';
     }
-    if (S.servidorOk) {
+    if (S.servidorOk || S.estatico) {   /* MISIÓN VIII: también en modo web */
       h += '<select id="pcod2-ver" title="Versión del catálogo PRECODI (normas)">';
       S.versiones.forEach(function (v) {
         if (!v.normas) return;
@@ -924,12 +941,22 @@
 
     /* --- aviso de servidor no disponible --- */
     if (S.servidorOk === false) {
+      if (S.estatico) {
+        /* MISIÓN VIII: web pública con datos PRECODI embebidos — NO es una
+           degradación: catálogo, normas, nomenclador y comparación de
+           versiones funcionan igual que con el servidor local. */
+        h += '<div class="pcod2-box pcod2-warnbox"><b>Modo web — datos PRECODI embebidos (MISIÓN VIII).</b> ' +
+          "Consultas del catálogo, normas y nomenclador servidas desde los datos publicados " +
+          "(<code>dist/data</code>) sin servidor local. La especificación (S-050) y la edición " +
+          "de cantidad/precio (S-052) funcionan igual: los cambios viven SOLO en este presupuesto.</div>";
+      } else {
       var haySnapshot = S.itemIdx != null && b && b.items[S.itemIdx] && b.items[S.itemIdx].normaPreco;
       h += '<div class="pcod2-box pcod2-warnbox"><b>Capa local PRECODI no disponible.</b> ' +
         (haySnapshot
           ? "Se muestra la descomposición vinculada a este presupuesto (snapshot guardado; no se pueden consultar otras partidas del catálogo hasta que se inicie <code>scripts/servidor_precodi.py</code>)."
           : "Para consultar descomposiciones del catálogo PRECODI, inicie el servidor local: <code>python3 scripts/servidor_precodi.py</code>. Las descomposiciones ya vinculadas a partidas del presupuesto se muestran desde su snapshot guardado.") +
         '</div>';
+      }
     }
 
     /* --- aviso MISIÓN V: BD sin normas (regeneración parcial) --- */
@@ -1269,7 +1296,17 @@
           S.resultadosBusqueda = d.resultados || [];
           render(b, r);
         })
-        .catch(function () { S.resultadosBusqueda = []; render(b, r); });
+        .catch(function () {
+          /* MISIÓN VIII: modo web → búsqueda de partidas desde los datos
+             embebidos (misma forma de respuesta que /api/partidas). */
+          if (S.estatico && window.__pcodEstatico) {
+            window.__pcodEstatico.partidas(t, S.versionId, 25)
+              .then(function (d) { S.resultadosBusqueda = d.resultados || []; render(b, r); })
+              .catch(function () { S.resultadosBusqueda = []; render(b, r); });
+            return;
+          }
+          S.resultadosBusqueda = []; render(b, r);
+        });
     }
     if (bBuscar) bBuscar.addEventListener("click", buscarCatalogo);
     if (q) q.addEventListener("keydown", function (e) { if (e.key === "Enter") buscarCatalogo(); });
@@ -1461,37 +1498,74 @@
   }
 
   /* ================================================================ DATOS */
+  function aplicarVersionDefecto() {
+    if (!S.versionId) {
+      /* preferencia documentada: 2017-raíz > 2011-sbd2008 > 2007-v7.22 > v7.21 */
+      var conNormas = S.versiones.filter(function (v) { return v.normas > 0; });
+      var orden = ["2017-raiz", "2011-sbd2008", "2007-v7.22", "2007-v7.21"];
+      var elegida = null;
+      for (var i = 0; i < orden.length && !elegida; i++) {
+        conNormas.forEach(function (v) { if (v.version === orden[i] && !elegida) elegida = v; });
+      }
+      if (!elegida && conNormas.length) elegida = conNormas[conNormas.length - 1];
+      S.versionId = elegida ? elegida.id : null;
+      S.precioVersionId = S.versionId;
+      /* MISIÓN V: BD sin versiones con normas (regeneración parcial tras la
+         pérdida de fuentes): degradación honesta — las descomposiciones se
+         piden sin version_id (el servidor responde 404 controlado) y los
+         recursos propios se buscan en el nomenclador disponible (2025). */
+      S.sinNormas = !elegida;
+    }
+  }
   function sondearServidor(b, r) {
     api("/api/versiones").then(function (d) {
       S.servidorOk = true;
+      S.estatico = false;
       S.versiones = d.versiones || [];
-      if (!S.versionId) {
-        /* preferencia documentada: 2017-raíz > 2011-sbd2008 > 2007-v7.22 > v7.21 */
-        var conNormas = S.versiones.filter(function (v) { return v.normas > 0; });
-        var orden = ["2017-raiz", "2011-sbd2008", "2007-v7.22", "2007-v7.21"];
-        var elegida = null;
-        for (var i = 0; i < orden.length && !elegida; i++) {
-          conNormas.forEach(function (v) { if (v.version === orden[i] && !elegida) elegida = v; });
-        }
-        if (!elegida && conNormas.length) elegida = conNormas[conNormas.length - 1];
-        S.versionId = elegida ? elegida.id : null;
-        S.precioVersionId = S.versionId;
-        /* MISIÓN V: BD sin versiones con normas (regeneración parcial tras la
-           pérdida de fuentes): degradación honesta — las descomposiciones se
-           piden sin version_id (el servidor responde 404 controlado) y los
-           recursos propios se buscan en el nomenclador disponible (2025). */
-        S.sinNormas = !elegida;
-      }
+      aplicarVersionDefecto();
       render(b, r);
     }).catch(function () {
-      S.servidorOk = false;
-      render(b, r);
+      /* MISIÓN VIII: sin servidor local → capa de datos embebidos de la web
+         (overlay estatico.js + dist/data): MISMAS versiones, normas y
+         nomenclador que el servidor local. Si tampoco existe, degradación
+         honesta a snapshot como antes. */
+      if (window.__pcodEstatico) {
+        window.__pcodEstatico.versiones().then(function (d) {
+          S.servidorOk = false;
+          S.estatico = true;
+          S.versiones = d.versiones || [];
+          aplicarVersionDefecto();
+          render(b, r);
+        }).catch(function () {
+          S.servidorOk = false;
+          render(b, r);
+        });
+      } else {
+        S.servidorOk = false;
+        render(b, r);
+      }
     });
   }
 
   function cargar(b) {
     if (!S.codigo) return;
-    /* sin servidor: degradar a snapshot si existe */
+    /* MISIÓN VIII: modo web (sin servidor, con datos embebidos) → la
+       descomposición se resuelve desde la capa estática con la MISMA forma
+       de respuesta y el mismo post-proceso (vínculo al presupuesto incluido). */
+    if (S.servidorOk === false && S.estatico && window.__pcodEstatico) {
+      S.offline = false;
+      window.__pcodEstatico.descomposicion(
+        S.codigo, S.versionId,
+        S.precioVersionId != null ? S.precioVersionId : S.versionId)
+        .then(function (d) { procesarDescomposicion(d, b); })
+        .catch(function (e) {
+          S.data = (S.itemIdx != null && b && b.items[S.itemIdx]) ? b.items[S.itemIdx].normaPreco : null;
+          S.offline = true;
+          renderSiEditor();
+        });
+      return;
+    }
+    /* sin servidor ni datos embebidos: degradar a snapshot si existe */
     if (S.servidorOk === false) {
       S.data = (S.itemIdx != null && b && b.items[S.itemIdx]) ? b.items[S.itemIdx].normaPreco : null;
       S.offline = true;
@@ -1505,22 +1579,28 @@
     if (S.precioVersionId && S.precioVersionId !== S.versionId) qs.push("precio_version_id=" + S.precioVersionId);
     if (qs.length) url += "?" + qs.join("&");
     S.offline = false;
-    api(url).then(function (d) {
-      if (d.error) { S.data = d; renderSiEditor(); return; }
-      S.data = d;
-      /* vínculo automático la primera vez que se consulta una partida del
-         presupuesto (persistencia por defecto; inmutable salvo acción explícita) */
-      if (S.itemIdx != null && b && b.items[S.itemIdx] && !b.items[S.itemIdx].normaPreco) {
-        vincular(b, null);
-      } else {
+    api(url).then(function (d) { procesarDescomposicion(d, b); })
+      .catch(function (e) {
+        S.servidorOk = false;
+        S.data = (S.itemIdx != null && b && b.items[S.itemIdx]) ? b.items[S.itemIdx].normaPreco : null;
+        S.offline = true;
         renderSiEditor();
-      }
-    }).catch(function (e) {
-      S.servidorOk = false;
-      S.data = (S.itemIdx != null && b && b.items[S.itemIdx]) ? b.items[S.itemIdx].normaPreco : null;
-      S.offline = true;
+      });
+  }
+
+  /* MISIÓN VIII: post-proceso común de la descomposición (API local y capa
+     estática comparten el MISMO camino: error explícito, vínculo automático
+     al presupuesto la primera vez, render). */
+  function procesarDescomposicion(d, b) {
+    if (d.error) { S.data = d; renderSiEditor(); return; }
+    S.data = d;
+    /* vínculo automático la primera vez que se consulta una partida del
+       presupuesto (persistencia por defecto; inmutable salvo acción explícita) */
+    if (S.itemIdx != null && b && b.items[S.itemIdx] && !b.items[S.itemIdx].normaPreco) {
+      vincular(b, null);
+    } else {
       renderSiEditor();
-    });
+    }
   }
 
   function renderSiEditor() {
