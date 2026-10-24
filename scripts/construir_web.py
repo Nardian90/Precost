@@ -43,14 +43,16 @@ import sys
 SHA_ORIGINAL = "50d3cf28e405201f36c50c3dd5385d7e28fbab3e7e5eee22c74ca0bcfd5cbaa2"
 
 # Overlays incluidos en la versión estática (degradación offline diseñada).
-OVERLAYS_WEB = ["recursos.js", "calculadora.js"]
+# VII: respaldo.js (S-005) es 100 % cliente — funciona igual en Pages y local.
+OVERLAYS_WEB = ["recursos.js", "calculadora.js", "respaldo.js"]
 # Overlay excluido: 100 % dependiente del servidor local (ver docstring).
 OVERLAYS_EXCLUIDOS = ["precodi.js"]
 
 # Inyección idéntica a la de scripts/servidor_precodi.py (rfind </body>),
 # pero con rutas RELATIVAS para funcionar bajo /Precost/ de GitHub Pages.
 PLANTILLA_INYECCION = (b'\n<script src="overlay/recursos.js" defer></script>\n'
-                       b'<script src="overlay/calculadora.js" defer></script>\n')
+                       b'<script src="overlay/calculadora.js" defer></script>\n'
+                       b'<script src="overlay/respaldo.js" defer></script>\n')
 
 
 def sha256_de(ruta):

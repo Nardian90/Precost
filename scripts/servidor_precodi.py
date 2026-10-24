@@ -41,14 +41,17 @@ HTML = os.path.join(REPO, "app", "PRECOST-v9.17.html")
 OVERLAY = os.path.join(REPO, "app", "overlay", "precodi.js")
 OVERLAY_RECURSOS = os.path.join(REPO, "app", "overlay", "recursos.js")
 OVERLAY_CALCULADORA = os.path.join(REPO, "app", "overlay", "calculadora.js")
+OVERLAY_RESPALDO = os.path.join(REPO, "app", "overlay", "respaldo.js")
 BD_DEFECTO = os.path.join(REPO, "bd", "precodi.db")
 SHA_HTML = "50d3cf28e405201f36c50c3dd5385d7e28fbab3e7e5eee22c74ca0bcfd5cbaa2"
 
 # IV: tres overlays aditivos — catálogo (III-B), descomposiciones (III-C) y
 # calculadora de costos de actividad (IV, S-80 del manual SIECONS)
+# VII: cuarto overlay aditivo — respaldo/restauración completa (S-005)
 INYECCION = (b'\n<script src="/overlay/precodi.js" defer></script>\n'
              b'<script src="/overlay/recursos.js" defer></script>\n'
-             b'<script src="/overlay/calculadora.js" defer></script>\n')
+             b'<script src="/overlay/calculadora.js" defer></script>\n'
+             b'<script src="/overlay/respaldo.js" defer></script>\n')
 
 
 def conectar_ro(ruta_bd):
@@ -86,6 +89,8 @@ class Manejador(BaseHTTPRequestHandler):
                 return self._servir_archivo(OVERLAY_RECURSOS, "application/javascript; charset=utf-8")
             if u.path == "/overlay/calculadora.js":
                 return self._servir_archivo(OVERLAY_CALCULADORA, "application/javascript; charset=utf-8")
+            if u.path == "/overlay/respaldo.js":
+                return self._servir_archivo(OVERLAY_RESPALDO, "application/javascript; charset=utf-8")
             if u.path.startswith("/api/"):
                 return self._api(u.path, parse_qs(u.query))
             self._json({"error": "no encontrado", "ruta": u.path}, 404)

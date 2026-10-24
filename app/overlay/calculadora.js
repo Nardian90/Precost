@@ -188,6 +188,10 @@
     b.textContent = "🧮 Calculadora";
     b.addEventListener("click", abrir);
     document.body.appendChild(b);
+    /* MISIÓN VII: coexistencia visual — si el botón del catálogo PRECODI
+       (precodi.js, abajo-derecha) ya está en la página, apilar encima en
+       lugar de solaparse (ambos botones quedan visibles y accesibles). */
+    if (document.querySelector(".pcod-fab")) b.style.bottom = "58px";
   }
 
   function abrir() {
