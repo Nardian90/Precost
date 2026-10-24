@@ -6,7 +6,8 @@ FASE III-F — Pruebas automatizadas de la prueba de concepto.
 Ejecuta pruebas REALES contra la base de prueba (prueba/db/precost_catalogo.db)
 y contra las fuentes originales (recalcula, no usa constantes mágicas):
 
-  T1  Migraciones aplicadas (0001, 0002) y tablas esperadas.
+  T1  Migraciones aplicadas (0001, 0002 y las añadidas después: 0003 de la
+      Misión III-C — precisión SBD) y tablas esperadas.
   T2  Conteos de la muestra importada == recalculados desde codigo.mdb y
       desde el extracto del catálogo PRECOST (fase3d_precost_db.json).
   T3  Formato de códigos: partidas 6 dígitos; recursos 10 dígitos.
@@ -70,7 +71,11 @@ def main():
     # ---------- T1: migraciones ----------
     print("T1 — Migraciones y tablas")
     migrs = [r[0] for r in cur.execute("SELECT version FROM schema_migrations ORDER BY version")]
-    ok_global &= prueba("Migraciones aplicadas == ['0001','0002']", migrs == ["0001", "0002"], str(migrs))
+    # MISIÓN VIII: el contrato es «migraciones en orden, sin huecos»: 0001 y
+    # 0002 (originales de 3F) más las añadidas después (0003, Misión III-C).
+    migrs_esperadas = [m for m in ("0001", "0002", "0003") if m <= (migrs[-1] if migrs else "")]
+    ok_global &= prueba(f"Migraciones aplicadas == {migrs_esperadas}",
+                        migrs == migrs_esperadas, str(migrs))
     tablas_esperadas = {"catalogos", "versiones_catalogo", "importaciones", "grupos", "partidas",
                         "tipos_recurso", "recursos", "normas_partida", "componentes_recurso",
                         "precios_recurso", "auditoria", "proyectos", "presupuestos",

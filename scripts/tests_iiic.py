@@ -417,7 +417,12 @@ class TestDescomposicion(ServidorBase):
     def test_bd_no_modificada_por_las_pruebas(self):
         """Toda la suite se ejecuta contra la BD en modo solo-lectura."""
         con = sqlite3.connect(f"file:{BD}?mode=ro", uri=True)
-        n = con.execute("SELECT COUNT(*) FROM normas_partida WHERE version_id=3").fetchone()[0]
+        # MISIÓN VIII: el id se resuelve POR VERSIÓN (la numeración depende del
+        # orden de importación; nunca ids literales).
+        vid_raiz = con.execute(
+            "SELECT id FROM versiones_catalogo WHERE version='2017-raiz'").fetchone()[0]
+        n = con.execute("SELECT COUNT(*) FROM normas_partida WHERE version_id=?",
+                        (vid_raiz,)).fetchone()[0]
         con.close()
         self.assertEqual(n, 73978)   # recuento documentado en la auditoría
 
@@ -433,9 +438,12 @@ class TestReferenciasInexistentes(ServidorBase):
         cls.bd_prueba = os.path.join(cls.tmp, "copia.db")
         shutil.copy2(BD, cls.bd_prueba)
         con = sqlite3.connect(cls.bd_prueba)
-        # eliminar el recurso 3834010001 (material de 012141) del nomenclador v3
-        con.execute("""DELETE FROM recursos WHERE version_id=3 AND tipo_id=1
-                       AND codigo='3834010001'""")
+        # eliminar el recurso 3834010001 (material de 012141) del nomenclador
+        # de 2017-raiz (MISIÓN VIII: vid resuelto por versión, no id literal)
+        vid_raiz = con.execute(
+            "SELECT id FROM versiones_catalogo WHERE version='2017-raiz'").fetchone()[0]
+        con.execute("""DELETE FROM recursos WHERE version_id=? AND tipo_id=1
+                       AND codigo='3834010001'""", (vid_raiz,))
         con.commit()
         con.close()
         cls.iniciar_servidor(cls.bd_prueba, 8794)
@@ -462,7 +470,10 @@ class TestReferenciasInexistentes(ServidorBase):
         """La BD real nunca se tocó (copia efímera)."""
         self.assertNotEqual(self.bd_prueba, BD)
         con = sqlite3.connect(f"file:{BD}?mode=ro", uri=True)
-        n = con.execute("SELECT COUNT(*) FROM recursos WHERE version_id=3 AND codigo='3834010001'").fetchone()[0]
+        # MISIÓN VIII: vid resuelto por versión (2017-raiz), nunca id literal
+        n = con.execute("""SELECT COUNT(*) FROM recursos WHERE version_id=
+                           (SELECT id FROM versiones_catalogo WHERE version='2017-raiz')
+                           AND codigo='3834010001'""").fetchone()[0]
         con.close()
         self.assertEqual(n, 1)
 

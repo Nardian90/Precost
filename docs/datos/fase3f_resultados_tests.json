@@ -1,19 +1,19 @@
 {
- "generado": "2026-10-14T04:45:06.618887+00:00",
+ "generado": "2026-10-24T03:10:30.850022+00:00",
  "base": "/home/z/my-project/precost/prueba/db/precost_catalogo.db",
  "total": 24,
  "pasadas": 24,
  "fallidas": 0,
  "resultados": [
   {
-   "prueba": "Migraciones aplicadas == ['0001','0002']",
+   "prueba": "Migraciones aplicadas == ['0001', '0002', '0003']",
    "estado": "PASS",
-   "detalle": "['0001', '0002']"
+   "detalle": "['0001', '0002', '0003']"
   },
   {
    "prueba": "Tablas del esquema presentes",
    "estado": "PASS",
-   "detalle": "16 tablas"
+   "detalle": "32 tablas"
   },
   {
    "prueba": "Partidas PRECODI == muestra esperada",

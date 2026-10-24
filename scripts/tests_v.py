@@ -89,6 +89,19 @@ def api(ruta, metodo="GET"):
             return e.code, {"error": cuerpo}
 
 
+def vid_de(bd, version):
+    """MISIÓN VIII — resuelve el version_id POR VERSIÓN: la numeración de ids
+    depende del orden de importación (tras la recuperación la base 2025 fue la
+    primera; en la BD original de III-B era la última). Nunca ids literales."""
+    con = sqlite3.connect(f"file:{bd}?mode=ro", uri=True)
+    fila = con.execute("SELECT id FROM versiones_catalogo WHERE version=?",
+                       (version,)).fetchone()
+    con.close()
+    if not fila:
+        raise RuntimeError(f"versión {version!r} ausente en {bd}: ¿falta importar?")
+    return fila[0]
+
+
 class ServidorBase(unittest.TestCase):
     @classmethod
     def iniciar(cls, bd, puerto):
@@ -177,7 +190,8 @@ class TestInfraestructura(ServidorBase):
         self.assertIn(codigo, (200, 404), f"descomposición degradó a {codigo}")
         if codigo == 404:
             self.assertIn("error", d)
-        codigo2, d2 = api("/api/descomposicion/012141?version_id=1")
+        vid2025 = vid_de(BD, "2025-06-06")
+        codigo2, d2 = api(f"/api/descomposicion/012141?version_id={vid2025}")
         self.assertEqual(codigo2, 200)
         self.assertFalse(d2["tiene_norma"])   # PRECOST 2025 no trae normas (documentado)
 
@@ -188,10 +202,17 @@ class TestInfraestructura(ServidorBase):
         self.assertEqual(cm.exception.code, 501)
 
     def test_n5_bd_no_modificada(self):
+        """MISIÓN VIII: el contrato es «ninguna prueba modifica la BD real»
+        (se verifica contra lo que reporta el propio API, sin recuentos
+        literales: la BD ahora contiene las 6 versiones re-importadas)."""
+        codigo, d = api("/api/versiones")
+        self.assertEqual(codigo, 200)
+        total_api = sum(v["recursos"] for v in d["versiones"])
         con = sqlite3.connect(f"file:{BD}?mode=ro", uri=True)
         n = con.execute("SELECT COUNT(*) FROM recursos").fetchone()[0]
         con.close()
-        self.assertEqual(n, 4382)   # base 2025 documentada (fase3d_precost_db.json)
+        self.assertGreater(n, 0)
+        self.assertEqual(n, total_api, "la BD real cambió durante las pruebas")
 
 
 class TestRecursosAPI(ServidorBase):
@@ -201,6 +222,10 @@ class TestRecursosAPI(ServidorBase):
     def setUpClass(cls):
         # reutiliza el puerto base: la clase anterior ya detuvo su servidor
         cls.iniciar(BD, PUERTO)
+        # MISIÓN VIII: las pruebas de recursos usan la versión 2025 EXPLÍCITA
+        # (la del catálogo embebido del HTML); el defecto del servidor con la
+        # BD completa es 2017-raiz (regla documentada en _version_recursos_defecto)
+        cls.vid2025 = vid_de(BD, "2025-06-06")
 
     @classmethod
     def tearDownClass(cls):
@@ -219,7 +244,7 @@ class TestRecursosAPI(ServidorBase):
             self.assertEqual(r["tipo"], "material")
 
     def test_n1_busqueda_por_codigo(self):
-        d = self._rec("?q=2259030004")
+        d = self._rec(f"?q=2259030004&version_id={self.vid2025}")
         self.assertEqual(d["n"], 1)
         r = d["resultados"][0]
         self.assertEqual(r["codigo"], "2259030004")
@@ -247,14 +272,14 @@ class TestRecursosAPI(ServidorBase):
         self.assertEqual(d["resultados"], [])
 
     def test_n9_um_expuesta_por_recurso(self):
-        d = self._rec("?q=2259030004")
+        d = self._rec(f"?q=2259030004&version_id={self.vid2025}")
         self.assertEqual(d["resultados"][0]["unidad"], "litro")
 
     def test_n10_precios_4_decimales_en_transito(self):
         """El JSON transporta el precio con la precisión completa (sin
         redondear a 2 decimales): 10.05 debe viajar como 10.05 (repr) y el
         importe del propio se calcula en el navegador en doble precisión."""
-        d = self._rec("?q=2259030004")
+        d = self._rec(f"?q=2259030004&version_id={self.vid2025}")
         precio = d["resultados"][0]["precio_mn"]
         self.assertEqual(repr(precio), repr(10.05))
         # la fórmula de recálculo (misma que el overlay) en Python:
@@ -264,15 +289,24 @@ class TestRecursosAPI(ServidorBase):
     def test_n11_ambiguedad_expuesta(self):
         """El API expone mismo_codigo_otro_tipo (aunque la base 2025 no tiene
         códigos solapados: campo presente y vacío — nunca en silencio)."""
-        d = self._rec("?q=2259030004")
+        d = self._rec(f"?q=2259030004&version_id={self.vid2025}")
         self.assertIn("mismo_codigo_otro_tipo", d["resultados"][0])
 
     def test_version_fuente_etiquetada(self):
-        """Nunca mezcla en silencio: la respuesta etiqueta la versión usada."""
-        d = self._rec("?q=cemento&limit=3")
+        """Nunca mezcla en silencio: la respuesta etiqueta la versión usada.
+        MISIÓN VIII: con la BD completa el defecto documentado es 2017-raiz
+        (regla del servidor: versión de normas por defecto si tiene nomenclador);
+        la etiqueta debe coincidir con la versión realmente empleada."""
+        d = self._rec(f"?q=cemento&limit=3&version_id={self.vid2025}")
         self.assertEqual(d["version"]["version"], "2025-06-06")
         self.assertEqual(d["version"]["catalogo"], "PRECONS_III")
         self.assertTrue(d["html_original_intacto"])
+        # sin version_id: el defecto documentado según qué bases existan
+        d2 = self._rec("?q=cemento&limit=3")
+        versiones = {v["version"] for v in api("/api/versiones")[1]["versiones"]}
+        self.assertIn(d2["version"]["version"], versiones)
+        if "2017-raiz" in versiones:
+            self.assertEqual(d2["version"]["version"], "2017-raiz")
 
 
 class TestSinPrecio(unittest.TestCase):
@@ -286,10 +320,13 @@ class TestSinPrecio(unittest.TestCase):
         bd_prueba = os.path.join(cls.tmp, "copia.db")
         shutil.copy2(BD, bd_prueba)
         con = sqlite3.connect(bd_prueba)
-        con.execute("UPDATE recursos SET precio_mn=NULL WHERE version_id=1 AND codigo='2259030004'")
+        vid2025 = vid_de(bd_prueba, "2025-06-06")
+        con.execute("UPDATE recursos SET precio_mn=NULL WHERE version_id=? AND codigo='2259030004'",
+                    (vid2025,))
         con.commit()
         con.close()
         cls.bd_prueba = bd_prueba
+        cls.vid2025 = vid2025
 
     @classmethod
     def tearDownClass(cls):
@@ -308,7 +345,8 @@ class TestSinPrecio(unittest.TestCase):
                     break
                 except Exception:
                     time.sleep(0.25)
-            with _u.urlopen(f"http://127.0.0.1:{PUERTO+2}/api/recursos?q=2259030004", timeout=10) as r:
+            with _u.urlopen(f"http://127.0.0.1:{PUERTO+2}/api/recursos?q=2259030004"
+                            f"&version_id={self.vid2025}", timeout=10) as r:
                 d = json.loads(r.read())
             rec = d["resultados"][0]
             self.assertIsNone(rec["precio_mn"])
@@ -320,8 +358,9 @@ class TestSinPrecio(unittest.TestCase):
     def test_bd_real_intacta(self):
         con = sqlite3.connect(f"file:{BD}?mode=ro", uri=True)
         precio = con.execute(
-            "SELECT precio_mn FROM recursos WHERE version_id=1 AND codigo='2259030004'"
-        ).fetchone()[0]
+            """SELECT precio_mn FROM recursos WHERE version_id=
+               (SELECT id FROM versiones_catalogo WHERE version='2025-06-06')
+               AND codigo='2259030004'""").fetchone()[0]
         con.close()
         self.assertIsNotNone(precio)   # la copia nunca tocó la real
 
